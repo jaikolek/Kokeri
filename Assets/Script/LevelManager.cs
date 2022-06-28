@@ -21,7 +21,7 @@ public class LevelManager : MonoBehaviour
     public AudioSource Button_Sound_2;
     public AudioSource Main_Menu_Sound_1;
 
-    //  Video
+    //  Video Prolog
     [SerializeField] private VideoPlayer video;
     [SerializeField] private GameObject videoUI;
  
