@@ -71,6 +71,7 @@ public class AudioManager : MonoBehaviour
 
         if (!IsBGMPlaying())
         {
+            AudioSourceBGM.loop = true;
             PlayBGM("MainMenu");
         }
     }
