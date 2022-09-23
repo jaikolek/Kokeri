@@ -5,4 +5,12 @@ public enum ShopState
     BERI
 }
 
+public enum MoveType
+{
+    RIGHT,
+    LEFT,
+    UP,
+    DOWN,
+}
+
 

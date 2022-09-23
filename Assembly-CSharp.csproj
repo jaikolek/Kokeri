@@ -36,7 +36,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts.Old\MoveInventory.cs" />
      <Compile Include="Assets\Scripts.Old\LevelManager.cs" />
      <Compile Include="Assets\Kokeri\Scripts\SceneHandler.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Shop\ShopProduct.cs" />
@@ -44,8 +43,7 @@
      <Compile Include="Assets\Kokeri\Scripts\MainMenu\MainMenu.cs" />
      <Compile Include="Assets\Scripts.Old\MoveAssets.cs" />
      <Compile Include="Assets\Kokeri\Scripts\BasePopUp.cs" />
-     <Compile Include="Assets\Kokeri\Scripts\MainLevel\MainLevel.cs" />
-     <Compile Include="Assets\Scripts.Old\Move.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\MainLevel.cs" />
      <Compile Include="Assets\Scripts.Old\GameManagerDesa_1.cs" />
      <Compile Include="Assets\Kokeri\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Kokeri\Scripts\MainMenu\RankingPopUp.cs" />
@@ -54,8 +52,12 @@
      <Compile Include="Assets\Scripts.Old\FunctionTimer.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Shop\ShopPopUp.cs" />
      <Compile Include="Assets\Kokeri\Scripts\EnumContainer.cs" />
-     <Compile Include="Assets\Scripts.Old\CountdownManager.cs" />
      <Compile Include="Assets\Scripts.Old\Delay.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaUI.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\GameManagerDesa.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\Move.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\PhaseState.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\MoveInventory.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
