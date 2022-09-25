@@ -5,12 +5,19 @@ public enum ShopState
     BERI
 }
 
+public enum CaseType
+{
+    HORIZONTAL,
+    VERTICAL,
+    ALL
+}
+
 public enum MoveType
 {
-    RIGHT,
-    LEFT,
-    UP,
-    DOWN,
+    UP = 1,
+    DOWN = 2,
+    LEFT = 3,
+    RIGHT = 4,
 }
 
 

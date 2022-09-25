@@ -167,9 +167,3 @@ public struct ShopItem
     public int price;
 
 }
-
-[Serializable]
-public struct Star {
-    public Sprite starSprite;
-    
-}

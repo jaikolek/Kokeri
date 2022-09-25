@@ -9,7 +9,7 @@ public class DesaUI : MonoBehaviour
     [SerializeField] private Button pauseBtn;
     [SerializeField] private GameObject pausePopUp;
 
-    [Header("Control Button")]
+    [Header("Control Handler")]
     [SerializeField] private Button upBtn;
     [SerializeField] private Button downBtn;
     [SerializeField] private Button rightBtn;
@@ -24,34 +24,57 @@ public class DesaUI : MonoBehaviour
         rightBtn.onClick.AddListener(OnClickRight);
     }
 
+    private void Update()
+    {
+        if (GameManagerDesa.Instance.GetIsPlayerTurn())
+        {
+            SetActiveInputControl(true);
+        }
+        else
+        {
+            SetActiveInputControl(false);
+        }
+    }
+
+    private void SetActiveInputControl(bool _bool)
+    {
+        upBtn.gameObject.SetActive(_bool);
+        downBtn.gameObject.SetActive(_bool);
+        leftBtn.gameObject.SetActive(_bool);
+        rightBtn.gameObject.SetActive(_bool);
+    }
+    // ====================================================================================================
+
+
+    // ====================================================================================================
     private void OnClickPause()
     {
-        AudioManager.Instance.PlaySFX("Click2");
+        AudioManager.Instance.PlaySFX("Click1");
         GameManagerDesa.Instance.HandlePause();
         pausePopUp.SetActive(true);
     }
 
     private void OnClickUp()
     {
-        AudioManager.Instance.PlaySFX("Click1");
+        AudioManager.Instance.PlaySFX("Click2");
         GameManagerDesa.Instance.HandleUpInput();
     }
 
     private void OnClickDown()
     {
-        AudioManager.Instance.PlaySFX("Click1");
+        AudioManager.Instance.PlaySFX("Click2");
         GameManagerDesa.Instance.HandleDownInput();
     }
 
     private void OnClickLeft()
     {
-        AudioManager.Instance.PlaySFX("Click1");
+        AudioManager.Instance.PlaySFX("Click2");
         GameManagerDesa.Instance.HandleLeftInput();
     }
 
     private void OnClickRight()
     {
-        AudioManager.Instance.PlaySFX("Click1");
+        AudioManager.Instance.PlaySFX("Click2");
         GameManagerDesa.Instance.HandleRightInput();
     }
 }

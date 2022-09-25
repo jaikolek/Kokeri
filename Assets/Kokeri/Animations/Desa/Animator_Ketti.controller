@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1102 &-8965809299527657370
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -53,7 +53,7 @@ AnimatorStateTransition:
   m_CanTransitionToSelf: 1
 --- !u!1102 &-8496308670321411290
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104,7 +104,7 @@ AnimatorStateTransition:
   m_CanTransitionToSelf: 1
 --- !u!1102 &-4920058057127765031
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -130,7 +130,7 @@ AnimatorState:
   m_TimeParameter: 
 --- !u!1102 &-1156269676371323501
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -163,14 +163,14 @@ AnimatorController:
   m_Name: Animator_Ketti
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Direction
-    m_Type: 1
+  - m_Name: Move
+    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: Move
-    m_Type: 4
+  - m_Name: Direction
+    m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -190,7 +190,7 @@ AnimatorController:
     m_Controller: {fileID: 9100000}
 --- !u!1102 &5216634599817729561
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -224,7 +224,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 1f6a5a498e4c52d41984eca63838fe9a, type: 2}
+    m_Motion: {fileID: 7400000, guid: 11941ed575c308648a8c69d854bda001, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -232,7 +232,7 @@ BlendTree:
     m_DirectBlendParameter: Direction
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: b96dcdc3a05bcbb4ca984ef56cc634ba, type: 2}
+    m_Motion: {fileID: 7400000, guid: abd3a05f1c8e18245bb933d96871c033, type: 2}
     m_Threshold: 2
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -240,7 +240,7 @@ BlendTree:
     m_DirectBlendParameter: Direction
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 11941ed575c308648a8c69d854bda001, type: 2}
+    m_Motion: {fileID: 7400000, guid: b96dcdc3a05bcbb4ca984ef56cc634ba, type: 2}
     m_Threshold: 3
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -248,7 +248,7 @@ BlendTree:
     m_DirectBlendParameter: Direction
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: abd3a05f1c8e18245bb933d96871c033, type: 2}
+    m_Motion: {fileID: 7400000, guid: 1f6a5a498e4c52d41984eca63838fe9a, type: 2}
     m_Threshold: 4
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -264,7 +264,7 @@ BlendTree:
   m_BlendType: 0
 --- !u!1107 &6815802405814955312
 AnimatorStateMachine:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -288,7 +288,7 @@ AnimatorStateMachine:
     m_Position: {x: 10, y: 400, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5216634599817729561}
-    m_Position: {x: 280, y: 120, z: 0}
+    m_Position: {x: 260, y: 120, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -8925916677203982207}
@@ -302,7 +302,7 @@ AnimatorStateMachine:
   m_DefaultState: {fileID: -8496308670321411290}
 --- !u!1102 &7855251888420491283
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}

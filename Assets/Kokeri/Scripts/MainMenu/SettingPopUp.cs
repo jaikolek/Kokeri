@@ -12,8 +12,8 @@ public class SettingPopUp : BasePopUp
     {
         base.Start();
 
-        bgmSlider.value = AudioManager.Instance.GetBGMVolume();
-        sfxSlider.value = AudioManager.Instance.GetSFXVolume();
+        SetBGMVolume(AudioManager.Instance.GetBGMVolume());
+        SetSFXVolume(AudioManager.Instance.GetSFXVolume());
     }
 
     private void Update()
@@ -24,20 +24,30 @@ public class SettingPopUp : BasePopUp
 
     public void OnChangeBGMVolume()
     {
-        AudioManager.Instance.SetBGMVolume(GetBgmVolume());
+        AudioManager.Instance.SetBGMVolume(GetBGMVolume());
     }
 
     public void OnChangeSFXVolume()
     {
-        AudioManager.Instance.SetSFXVolume(GetSfxVolume());
+        AudioManager.Instance.SetSFXVolume(GetSFXVolume());
     }
 
-    public float GetBgmVolume()
+    public void SetBGMVolume(float _volume)
+    {
+        bgmSlider.value = _volume;
+    }
+
+    public void SetSFXVolume(float _volume)
+    {
+        sfxSlider.value = _volume;
+    }
+
+    public float GetBGMVolume()
     {
         return bgmSlider.value;
     }
 
-    public float GetSfxVolume()
+    public float GetSFXVolume()
     {
         return sfxSlider.value;
     }
