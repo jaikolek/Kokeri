@@ -44,12 +44,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 671de9395a609634e8044d14cf9e5620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHealth: 3
   waitDelay: 1.5
-  moveDelay: 1.5
+  moveDelay: 1
+  currentLevel: 0
+  currentCase: 0
   levelDesignDesaList:
-  - totalMove: 4
+  - totalMove: 2
     caseType: 0
     onCase: 0
+    answerTime: 0
+    score: 10
+  - totalMove: 2
+    caseType: 1
+    onCase: 1
+    answerTime: 0
+    score: 20
   chikoAnimator: {fileID: 0}
   kettiAnimator: {fileID: 0}
   beriAnimator: {fileID: 0}

@@ -38,8 +38,9 @@
   <ItemGroup>
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\MoveInventory.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\GameManagerDesa.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaCameraFocus.cs" />
      <Compile Include="Assets\Scripts.Old\LevelManager.cs" />
-     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\PhaseStateUI.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaPhaseUI.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\Move.cs" />
      <Compile Include="Assets\Kokeri\Scripts\SceneHandler.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaUI.cs" />
