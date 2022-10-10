@@ -38,6 +38,8 @@
   <ItemGroup>
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\MoveInventory.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\GameManagerDesa.cs" />
+     <Compile Include="Assets\Scripts.Old\Events.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\TimerManager.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaCameraFocus.cs" />
      <Compile Include="Assets\Scripts.Old\LevelManager.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaPhaseUI.cs" />
@@ -50,6 +52,7 @@
      <Compile Include="Assets\Scripts.Old\MoveAssets.cs" />
      <Compile Include="Assets\Kokeri\Scripts\BasePopUp.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\MainLevel.cs" />
+     <Compile Include="Assets\Scripts.Old\ContohPlayer.cs" />
      <Compile Include="Assets\Scripts.Old\GameManagerDesa_1.cs" />
      <Compile Include="Assets\Kokeri\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Kokeri\Scripts\MainMenu\RankingPopUp.cs" />

@@ -44,9 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e2e19e46f275b84a86bb91be317aa89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultVolume: 0.5
   BGM:
   - name: MainMenu
     clip: {fileID: 8300000, guid: 2c6497403eab1e14ca5c8039a0e008bd, type: 3}
+    loop: 1
+  - name: Desa
+    clip: {fileID: 8300000, guid: 047998c48b7882a4983aa85aa39f6021, type: 3}
     loop: 1
   SFX:
   - name: Click1

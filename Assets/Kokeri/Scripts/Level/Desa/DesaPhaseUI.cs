@@ -38,7 +38,7 @@ public class DesaPhaseUI : MonoBehaviour
 
 
     // ====================================================================================================
-    [Header("Game Info")]
+    [Header("Container")]
     [SerializeField] private Image infoImage;
 
     [Header("Countdown")]
@@ -47,6 +47,7 @@ public class DesaPhaseUI : MonoBehaviour
     [SerializeField] private List<Sprite> countdownSprite;
 
     [Header("State")]
+    [SerializeField] private float delayTime = 1f;
     [SerializeField] private Sprite startSprite;
     [SerializeField] private Sprite yourTurnSprite;
     [SerializeField] private Sprite gameOverSprite;
@@ -102,7 +103,7 @@ public class DesaPhaseUI : MonoBehaviour
             infoImage.gameObject.SetActive(true);
 
         SetInfoImage(_sprite);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(delayTime);
         infoImage.gameObject.SetActive(false);
 
         SetIsStateRunning(false);

@@ -27,6 +27,8 @@ public class MainMenu : MonoBehaviour
         settingPopUp.SetActive(false);
         shopPopUp.SetActive(false);
         rankingPopUp.SetActive(false);
+
+        AudioManager.Instance.PlayBGM("MainMenu");
     }
 
     private void OnClickPlay()

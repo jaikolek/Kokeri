@@ -27,6 +27,9 @@ public class MainLevel : MonoBehaviour
 
         // pop up init
         shopPopUp.SetActive(false);
+
+        if (!AudioManager.Instance.IsBGMPlaying())
+            AudioManager.Instance.PlayBGM("MainMenu");
     }
 
     private void OnClickBack()

@@ -69,6 +69,10 @@ public class GameManagerDesa : MonoBehaviour
     {
         MoveCase = new MoveInventory();
         MoveAnswer = new MoveInventory();
+
+        if (AudioManager.Instance.IsBGMPlaying())
+            AudioManager.Instance.StopBGM();
+        AudioManager.Instance.PlayBGM("Desa");
     }
 
     private void Update()
@@ -153,18 +157,22 @@ public class GameManagerDesa : MonoBehaviour
         }
 
         DesaPhaseUI.Instance.RemoveAllIndicator();
-
         DesaPhaseUI.Instance.ShowYourTurnState();
-        yield return new WaitForSeconds(waitDelay);
-        SetIsPlayerTurn(true);
 
         DesaCameraFocus.Instance.SetCameraDefault();
 
+        yield return new WaitForSeconds(waitDelay);
+
+        DesaCameraFocus.Instance.SetCameraBeri();
+
+        SetIsPlayerTurn(true);
         SetIsAnimationRunning(false);
     }
 
     private void HandlePlayerAnswer()
     {
+        // Timer timer = TimerManager.Instance.CreateTimer(levelDesignDesaList[currentLevel].answerTime, false);
+
         SetIsPlayerCorrect(true);
 
         for (int i = 0; i < MoveAnswer.GetMoveListCount(); i++)
@@ -232,6 +240,10 @@ public class GameManagerDesa : MonoBehaviour
 
         beriAnimator.SetFloat("State", 1);
 
+        DesaCameraFocus.Instance.SetCameraDefault();
+
+        yield return new WaitForSeconds(waitDelay);
+
         MoveCase.ClearMoveList();
         MoveAnswer.ClearMoveList();
 
@@ -242,6 +254,8 @@ public class GameManagerDesa : MonoBehaviour
     {
         SetIsAnimationRunning(true);
         SetIsPlayerTurn(false);
+
+        DesaCameraFocus.Instance.SetCameraDefault();
 
         yield return new WaitForSeconds(waitDelay);
 

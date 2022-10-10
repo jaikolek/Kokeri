@@ -573,8 +573,8 @@ MonoBehaviour:
   mainCamera: {fileID: 1300114154}
   cameraPositionChikoKetti: {x: -3.25, y: 0, z: -10}
   cameraOrthographicSizeChikoKetti: 2.75
-  cameraPositionBeri: {x: 3, y: 0, z: -10}
-  cameraOrthographicSizeBeri: 2.75
+  cameraPositionBeri: {x: 3, y: -0.6, z: -10}
+  cameraOrthographicSizeBeri: 2.05
 --- !u!1 &1544747599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,6 +1173,76 @@ PrefabInstance:
       propertyPath: kettiAnimator
       value: 
       objectReference: {fileID: 64311697}
+    - target: {fileID: 447037489943283605, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
+        type: 3}
+      propertyPath: levelDesignDesaList.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 447037489943283605, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
+        type: 3}
+      propertyPath: levelDesignDesaList.Array.data[2].score
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 447037489943283605, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
+        type: 3}
+      propertyPath: levelDesignDesaList.Array.data[3].score
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 447037489943283605, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
+        type: 3}
+      propertyPath: levelDesignDesaList.Array.data[2].onCase
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 447037489943283605, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
+        type: 3}
+      propertyPath: levelDesignDesaList.Array.data[3].onCase
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 447037489943283605, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
+        type: 3}
+      propertyPath: levelDesignDesaList.Array.data[2].caseType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 447037489943283605, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
+        type: 3}
+      propertyPath: levelDesignDesaList.Array.data[3].caseType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 447037489943283605, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
+        type: 3}
+      propertyPath: levelDesignDesaList.Array.data[0].totalMove
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 447037489943283605, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
+        type: 3}
+      propertyPath: levelDesignDesaList.Array.data[2].totalMove
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 447037489943283605, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
+        type: 3}
+      propertyPath: levelDesignDesaList.Array.data[3].totalMove
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 447037489943283605, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
+        type: 3}
+      propertyPath: levelDesignDesaList.Array.data[0].answerTime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 447037489943283605, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
+        type: 3}
+      propertyPath: levelDesignDesaList.Array.data[1].answerTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 447037489943283605, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
+        type: 3}
+      propertyPath: levelDesignDesaList.Array.data[2].answerTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 447037489943283605, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
+        type: 3}
+      propertyPath: levelDesignDesaList.Array.data[3].answerTime
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 447037489943283606, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
         type: 3}
       propertyPath: m_RootOrder

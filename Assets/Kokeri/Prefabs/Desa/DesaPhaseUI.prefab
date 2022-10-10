@@ -57,6 +57,7 @@ MonoBehaviour:
   - {fileID: -2056530203, guid: 39b37555f1eee1442b28a8e86b36aa35, type: 3}
   - {fileID: -595091144, guid: 39b37555f1eee1442b28a8e86b36aa35, type: 3}
   - {fileID: 1161836078, guid: 39b37555f1eee1442b28a8e86b36aa35, type: 3}
+  delayTime: 1.5
   startSprite: {fileID: -604462160, guid: 39b37555f1eee1442b28a8e86b36aa35, type: 3}
   yourTurnSprite: {fileID: 1372300761, guid: 8324d9f07cdcc9549955c1d1d9436878, type: 3}
   gameOverSprite: {fileID: -443343021, guid: 8324d9f07cdcc9549955c1d1d9436878, type: 3}
