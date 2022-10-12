@@ -28,8 +28,20 @@ public class MainLevel : MonoBehaviour
         // pop up init
         shopPopUp.SetActive(false);
 
+        SceneHandler.Instance.OnSceneChanged += SceneHandler_OnSceneChanged;
         if (!AudioManager.Instance.IsBGMPlaying())
+        {
             AudioManager.Instance.PlayBGM("MainMenu");
+        }
+    }
+
+    private void SceneHandler_OnSceneChanged(string _sceneName)
+    {
+        if (_sceneName != "MainMenu")
+        {
+            AudioManager.Instance.StopBGM();
+            AudioManager.Instance.PlayBGM("MainMenu");
+        }
     }
 
     private void OnClickBack()

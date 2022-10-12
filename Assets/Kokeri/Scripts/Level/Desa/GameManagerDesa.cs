@@ -70,9 +70,20 @@ public class GameManagerDesa : MonoBehaviour
         MoveCase = new MoveInventory();
         MoveAnswer = new MoveInventory();
 
-        if (AudioManager.Instance.IsBGMPlaying())
+        SceneHandler.Instance.OnSceneChanged += SceneHandler_OnSceneChanged;
+        if (!AudioManager.Instance.IsBGMPlaying())
+        {
+            AudioManager.Instance.PlayBGM("Desa");
+        }
+    }
+
+    private void SceneHandler_OnSceneChanged(string _sceneName)
+    {
+        if (_sceneName == "LevelDesa")
+        {
             AudioManager.Instance.StopBGM();
-        AudioManager.Instance.PlayBGM("Desa");
+            AudioManager.Instance.PlayBGM("Desa");
+        }
     }
 
     private void Update()

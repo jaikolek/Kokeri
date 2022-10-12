@@ -527,7 +527,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -573,8 +573,8 @@ MonoBehaviour:
   mainCamera: {fileID: 1300114154}
   cameraPositionChikoKetti: {x: -3.25, y: 0, z: -10}
   cameraOrthographicSizeChikoKetti: 2.75
-  cameraPositionBeri: {x: 3, y: -0.6, z: -10}
-  cameraOrthographicSizeBeri: 2.05
+  cameraPositionBeri: {x: 3.5, y: -0.4, z: -10}
+  cameraOrthographicSizeBeri: 2.3
 --- !u!1 &1544747599
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,8 +600,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544747599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.52, y: 0.52, z: 0.52}
+  m_LocalPosition: {x: -0.0415, y: 0.0187, z: 0}
+  m_LocalScale: {x: 0.41313395, y: 0.41313395, z: 0.41313395}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1734572745}
@@ -648,12 +648,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6c4ce6c957509504598ac01c68d7fede, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75eab8f98b813594383f8fab3956e8fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 43.159046, y: 19.43}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1211,7 +1211,7 @@ PrefabInstance:
     - target: {fileID: 447037489943283605, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
         type: 3}
       propertyPath: levelDesignDesaList.Array.data[0].totalMove
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 447037489943283605, guid: 3a3d03a7cb81ac146b5053c275f1d77b,
         type: 3}
@@ -1320,7 +1320,7 @@ PrefabInstance:
     - target: {fileID: 2012508540703842660, guid: 977d1b8025f366b4f933653292dac2a9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 2012508540703842660, guid: 977d1b8025f366b4f933653292dac2a9,
         type: 3}

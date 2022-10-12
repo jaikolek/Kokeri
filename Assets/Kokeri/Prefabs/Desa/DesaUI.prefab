@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f12260d58b648ab4b91564fc4c335f56, type: 3}
+  m_Sprite: {fileID: 1991196112, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1756012278, guid: 39b37555f1eee1442b28a8e86b36aa35, type: 3}
+  m_Sprite: {fileID: -749299310, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 774270526, guid: 39b37555f1eee1442b28a8e86b36aa35, type: 3}
+  m_Sprite: {fileID: -1590917719, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -657,7 +657,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -550331482, guid: 39b37555f1eee1442b28a8e86b36aa35, type: 3}
+  m_Sprite: {fileID: 1438951223, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -778,7 +778,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2001373909, guid: 39b37555f1eee1442b28a8e86b36aa35, type: 3}
+  m_Sprite: {fileID: 1469962981, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -962,7 +962,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2114233113, guid: 39b37555f1eee1442b28a8e86b36aa35, type: 3}
+  m_Sprite: {fileID: 749888689, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1077,11 +1077,11 @@ MonoBehaviour:
   downBtn: {fileID: 2762681787957524119}
   rightBtn: {fileID: 1753251957455611633}
   leftBtn: {fileID: 4150036883316505708}
+  scoreText: {fileID: 6175401179949618975}
   healthText: {fileID: 2070065037427156218}
   healthIndicatorContainer: {fileID: 5625224882084061692}
   healthIndicatorPrefab: {fileID: 4100707641336690800, guid: a9cbe5cb5728e7341b6ad75827535c16,
     type: 3}
-  scoreText: {fileID: 6175401179949618975}
 --- !u!1 &6777365170169283924
 GameObject:
   m_ObjectHideFlags: 0

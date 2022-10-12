@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -39,8 +40,13 @@ public class SceneHandler : MonoBehaviour
     }
     #endregion singleton
 
+
+    public event Action<string> OnSceneChanged;
+
     public void LoadScene(string _sceneName)
     {
         SceneManager.LoadScene(_sceneName);
+
+        OnSceneChanged?.Invoke(_sceneName);
     }
 }
