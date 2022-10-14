@@ -49,4 +49,11 @@ public class SceneHandler : MonoBehaviour
 
         OnSceneChanged?.Invoke(_sceneName);
     }
+
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        OnSceneChanged?.Invoke(SceneManager.GetActiveScene().name);
+    }
 }

@@ -112,6 +112,14 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public string GetPlayingBGMName()
+    {
+        if (AudioSourceBGM.clip != null)
+            return AudioSourceBGM.clip.name;
+        else
+            return null;
+    }
+
     public bool IsBGMPlaying()
     {
         return AudioSourceBGM.isPlaying;

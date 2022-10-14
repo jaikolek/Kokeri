@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\MoveInventory.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\PausePopUp.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\GameManagerDesa.cs" />
      <Compile Include="Assets\Scripts.Old\Events.cs" />
      <Compile Include="Assets\Kokeri\Scripts\TimerManager.cs" />
@@ -45,9 +46,11 @@
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaPhaseUI.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\Move.cs" />
      <Compile Include="Assets\Kokeri\Scripts\SceneHandler.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\GameOverPopUp.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaUI.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Shop\ShopProduct.cs" />
      <Compile Include="Assets\Kokeri\Scripts\MainMenu\SettingPopUp.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\DesaHTP.cs" />
      <Compile Include="Assets\Kokeri\Scripts\MainMenu\MainMenu.cs" />
      <Compile Include="Assets\Scripts.Old\MoveAssets.cs" />
      <Compile Include="Assets\Kokeri\Scripts\BasePopUp.cs" />

@@ -29,6 +29,7 @@ public class MainMenu : MonoBehaviour
         rankingPopUp.SetActive(false);
 
         SceneHandler.Instance.OnSceneChanged += SceneHandler_OnSceneChanged;
+
         if (!AudioManager.Instance.IsBGMPlaying())
         {
             AudioManager.Instance.PlayBGM("MainMenu");
@@ -37,10 +38,13 @@ public class MainMenu : MonoBehaviour
 
     private void SceneHandler_OnSceneChanged(string _sceneName)
     {
-        if (_sceneName != "MainLevel")
+        if (_sceneName == "MainMenu")
         {
-            AudioManager.Instance.StopBGM();
-            AudioManager.Instance.PlayBGM("MainMenu");
+            if (AudioManager.Instance.GetPlayingBGMName() != "MainMenu")
+            {
+                AudioManager.Instance.StopBGM();
+                AudioManager.Instance.PlayBGM("MainMenu");
+            }
         }
     }
 
