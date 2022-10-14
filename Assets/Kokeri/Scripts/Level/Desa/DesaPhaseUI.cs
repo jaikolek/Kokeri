@@ -56,6 +56,7 @@ public class DesaPhaseUI : MonoBehaviour
 
     [Header("Indicator Handler")]
     [SerializeField] private GameObject indicatorContainer;
+    private Image indicatorContainerImage;
     [SerializeField] private GameObject indicatorPrefab;
     [SerializeField] private List<Sprite> indicatorSpriteList;
     private List<GameObject> indicatorList;
@@ -67,6 +68,7 @@ public class DesaPhaseUI : MonoBehaviour
         SetInfoImage(startSprite);
         countdownTimerDefault = countdownTimer;
         indicatorList = new List<GameObject>();
+        indicatorContainerImage = indicatorContainer.GetComponent<Image>();
     }
 
     public void SetInfoImage(Sprite _sprite)
@@ -86,11 +88,11 @@ public class DesaPhaseUI : MonoBehaviour
             countdownTimer--;
         }
 
-        SetInfoImage(startSprite);
-        yield return new WaitForSeconds(1f);
         infoImage.gameObject.SetActive(false);
+        yield return new WaitForSeconds(1f);
 
-        GameManagerDesa.Instance.SetIsGameReady(true);
+        if (!GameManagerDesa.Instance.GetIsGameReady())
+            GameManagerDesa.Instance.SetIsGameReady(true);
 
         countdownTimer = countdownTimerDefault;
     }
@@ -99,12 +101,15 @@ public class DesaPhaseUI : MonoBehaviour
     {
         SetIsStateRunning(true);
 
+
         if (!infoImage.gameObject.activeSelf)
             infoImage.gameObject.SetActive(true);
 
         SetInfoImage(_sprite);
         yield return new WaitForSeconds(delayTime);
+
         infoImage.gameObject.SetActive(false);
+        indicatorContainerImage.enabled = false;
 
         SetIsStateRunning(false);
     }
@@ -142,6 +147,16 @@ public class DesaPhaseUI : MonoBehaviour
         if (GetIsStateRunning()) return;
 
         StartCoroutine(ShowState(wrongSprite));
+    }
+
+    public void ShowIndicatorContainer()
+    {
+        indicatorContainerImage.enabled = true;
+    }
+
+    public void HideIndicatorContainer()
+    {
+        indicatorContainerImage.enabled = false;
     }
     // ====================================================================================================
 

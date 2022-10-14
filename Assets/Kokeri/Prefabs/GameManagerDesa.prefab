@@ -50,16 +50,33 @@ MonoBehaviour:
   currentLevel: 0
   currentCase: 0
   levelDesignDesaList:
-  - totalMove: 2
+  - totalMove: 4
     caseType: 0
     onCase: 0
-    answerTime: 0
+    answerTime: 7
     score: 10
-  - totalMove: 2
+  - totalMove: 4
     caseType: 1
     onCase: 1
-    answerTime: 0
-    score: 20
+    answerTime: 7
+    score: 10
+  - totalMove: 4
+    caseType: 2
+    onCase: 2
+    answerTime: 6.5
+    score: 10
+  - totalMove: 5
+    caseType: 2
+    onCase: 6
+    answerTime: 6.5
+    score: 10
+  - totalMove: 6
+    caseType: 2
+    onCase: 9
+    answerTime: 6
+    score: 10
   chikoAnimator: {fileID: 0}
   kettiAnimator: {fileID: 0}
   beriAnimator: {fileID: 0}
+  usernameInputPopUp: {fileID: 0}
+  gameOverPopUp: {fileID: 0}

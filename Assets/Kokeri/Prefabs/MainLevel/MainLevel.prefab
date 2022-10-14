@@ -566,7 +566,7 @@ RectTransform:
   m_GameObject: {fileID: 6743489662129435853}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1174459484135010272}
@@ -715,3 +715,4 @@ MonoBehaviour:
   lautBtn: {fileID: 3263894328571218771}
   hutanBtn: {fileID: 8747390960362502489}
   shopPopUp: {fileID: 0}
+  desaHTP: {fileID: 0}
