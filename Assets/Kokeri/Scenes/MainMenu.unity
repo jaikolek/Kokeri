@@ -124,6 +124,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &184926471 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6743489662583964067, guid: f18c448d0a7ce9843a34a7e97a470b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280226024951855559}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &283589001
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +614,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 473509985}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1083056025 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6743489662850481015, guid: f18c448d0a7ce9843a34a7e97a470b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280226024951855559}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1213303103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1047,7 +1071,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 977611614, guid: c632319b7733df343b2ac9031031d965,
+      objectReference: {fileID: 1225199785, guid: c632319b7733df343b2ac9031031d965,
         type: 3}
     - target: {fileID: 6743489662583964067, guid: f18c448d0a7ce9843a34a7e97a470b4a,
         type: 3}
@@ -1064,6 +1088,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -50
       objectReference: {fileID: 0}
+    - target: {fileID: 6743489662583964069, guid: f18c448d0a7ce9843a34a7e97a470b4a,
+        type: 3}
+      propertyPath: m_Name
+      value: RankingBtn
+      objectReference: {fileID: 0}
     - target: {fileID: 6743489662850481000, guid: f18c448d0a7ce9843a34a7e97a470b4a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1074,11 +1103,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -50
       objectReference: {fileID: 0}
+    - target: {fileID: 6743489662850481001, guid: f18c448d0a7ce9843a34a7e97a470b4a,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingBtn
+      objectReference: {fileID: 0}
     - target: {fileID: 6743489662850481014, guid: f18c448d0a7ce9843a34a7e97a470b4a,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1225199785, guid: c632319b7733df343b2ac9031031d965,
+      objectReference: {fileID: 977611614, guid: c632319b7733df343b2ac9031031d965,
         type: 3}
     - target: {fileID: 6743489662910822592, guid: f18c448d0a7ce9843a34a7e97a470b4a,
         type: 3}
@@ -1091,6 +1125,16 @@ PrefabInstance:
       propertyPath: shopPopUp
       value: 
       objectReference: {fileID: 703954641}
+    - target: {fileID: 6743489663261236970, guid: f18c448d0a7ce9843a34a7e97a470b4a,
+        type: 3}
+      propertyPath: rankingBtn
+      value: 
+      objectReference: {fileID: 184926471}
+    - target: {fileID: 6743489663261236970, guid: f18c448d0a7ce9843a34a7e97a470b4a,
+        type: 3}
+      propertyPath: settingBtn
+      value: 
+      objectReference: {fileID: 1083056025}
     - target: {fileID: 6743489663261236970, guid: f18c448d0a7ce9843a34a7e97a470b4a,
         type: 3}
       propertyPath: rankingPopUp

@@ -50,9 +50,9 @@ public class DesaPhaseUI : MonoBehaviour
     [SerializeField] private float delayTime = 1f;
     [SerializeField] private Sprite startSprite;
     [SerializeField] private Sprite yourTurnSprite;
-    [SerializeField] private Sprite gameOverSprite;
     [SerializeField] private Sprite correctSprite;
     [SerializeField] private Sprite wrongSprite;
+    [SerializeField] private GameObject gameOverPopUp;
 
     [Header("Indicator Handler")]
     [SerializeField] private GameObject indicatorContainer;
@@ -78,6 +78,9 @@ public class DesaPhaseUI : MonoBehaviour
 
     public IEnumerator StartCountdown()
     {
+        AudioManager.Instance.PlayBGM("Desa");
+        yield return new WaitForSeconds(1.5f);
+
         if (!infoImage.gameObject.activeSelf)
             infoImage.gameObject.SetActive(true);
 
@@ -114,6 +117,21 @@ public class DesaPhaseUI : MonoBehaviour
         SetIsStateRunning(false);
     }
 
+    public IEnumerator ShowGameOver()
+    {
+        SetIsStateRunning(true);
+
+
+        if (!gameOverPopUp.activeSelf)
+            gameOverPopUp.SetActive(true);
+
+        yield return new WaitForSeconds(delayTime);
+
+        gameOverPopUp.SetActive(false);
+
+        SetIsStateRunning(false);
+    }
+
     public void ShowStartState()
     {
         if (GetIsStateRunning()) return;
@@ -132,7 +150,7 @@ public class DesaPhaseUI : MonoBehaviour
     {
         if (GetIsStateRunning()) return;
 
-        StartCoroutine(ShowState(gameOverSprite));
+        StartCoroutine(ShowGameOver());
     }
 
     public void ShowCorrectState()

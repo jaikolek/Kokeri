@@ -13,25 +13,17 @@ public class DesaHTP : MonoBehaviour
 
     private void Awake()
     {
+        backBtn.onClick.AddListener(OnClickBack);
+        playBtn.onClick.AddListener(OnClickPlay);
+
         videoPlayer.clip = videoClip;
         videoPlayer.Prepare();
     }
 
     private void Start()
     {
-        backBtn.onClick.AddListener(OnClickBack);
-        playBtn.onClick.AddListener(OnClickPlay);
-
-    }
-
-    private void OnEnable()
-    {
+        videoPlayer.Prepare();
         videoPlayer.Play();
-    }
-
-    private void OnDisable()
-    {
-        videoPlayer.Stop();
     }
 
     private void OnClickBack()

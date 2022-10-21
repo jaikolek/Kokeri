@@ -133,7 +133,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 401329783278980970, guid: 4ac313b4ac16f604d88f3e86372ae41e,
         type: 3}
+      propertyPath: m_RenderMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 401329783278980970, guid: 4ac313b4ac16f604d88f3e86372ae41e,
+        type: 3}
+      propertyPath: m_SkipOnDrop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401329783278980970, guid: 4ac313b4ac16f604d88f3e86372ae41e,
+        type: 3}
       propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401329783278980970, guid: 4ac313b4ac16f604d88f3e86372ae41e,
+        type: 3}
+      propertyPath: m_TargetCamera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 401329783278980970, guid: 4ac313b4ac16f604d88f3e86372ae41e,
+        type: 3}
+      propertyPath: m_WaitForFirstFrame
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6743489663261236971, guid: 4ac313b4ac16f604d88f3e86372ae41e,

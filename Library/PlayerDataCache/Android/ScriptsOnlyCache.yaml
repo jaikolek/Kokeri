@@ -3,14 +3,15 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - AudioManager
     - DesaCameraFocus
+    - DesaGameOverPopUp
     - DesaHTP
+    - DesaPausePopUp
     - DesaPhaseUI
+    - DesaProlog
     - DesaUI
     - GameManagerDesa
-    - GameOverPopUp
     - MainLevel
     - MainMenu
-    - PausePopUp
     - RankingPopUp
     - SceneHandler
     - SettingPopUp
@@ -20,6 +21,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
@@ -30,8 +32,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     - UnityEditor.Tilemaps.TilemapEditorToolPreferences
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
-    Unity.Mobile.AndroidLogcat.Editor.dll:
-    - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -43,8 +43,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -119,6 +121,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -137,6 +141,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 1906}
     - Class: 114
       Script: {instanceID: 2050}
+    - Class: 114
+      Script: {instanceID: 2748}
     - Class: 114
       Script: {instanceID: 2760}
     - Class: 114
@@ -161,6 +167,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3980}
     - Class: 114
       Script: {instanceID: 5398}
+    - Class: 114
+      Script: {instanceID: 32420}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -176,6 +184,10 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
       Script: {instanceID: 0}
     Assets/Kokeri/Scenes/MainLevel.unity:
     - Class: 1
@@ -363,7 +375,7 @@ ScriptsOnlyBuild:
       Hash: 45d9fea983f4550e55d2b911e71fab72
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PausePopUp
+    className: DesaPausePopUp
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -504,7 +516,7 @@ ScriptsOnlyBuild:
     className: SkeletonAsset
   - hash:
       serializedVersion: 2
-      Hash: c93c6a5f1fa36adfbe2657bb7557497a
+      Hash: fa630caea4e286a673271a62c6cab0f5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DesaPhaseUI
@@ -603,7 +615,7 @@ ScriptsOnlyBuild:
       Hash: a9392b38afb9f296af0d84042b6174a0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: GameOverPopUp
+    className: DesaGameOverPopUp
   - hash:
       serializedVersion: 2
       Hash: 811e06483627dac0d2cc16c8455786ce
@@ -976,6 +988,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: c413763d5a04034f69a4c4fad9cb8a47
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DesaProlog
   platform: 13
   scenePathNames:
   - Assets/Kokeri/Scenes/MainMenu.unity

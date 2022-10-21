@@ -40,6 +40,7 @@ public class GameManagerDesa : MonoBehaviour
     private MoveInventory MoveCase;
     private MoveInventory MoveAnswer;
 
+    private bool canStartGame = false;
     private bool isGameInitiated = false;
     private bool isGameReady = false;
     private bool isPhaseRunning = false;
@@ -48,6 +49,9 @@ public class GameManagerDesa : MonoBehaviour
     private bool isPlayerTurn = false;
     private bool isPlayerCorrect = false;
     private bool isGameOver = false;
+
+    [Header("Prolog")]
+
 
     [Header("Player Info")]
     [SerializeField] private int playerHealth = 3;
@@ -78,11 +82,7 @@ public class GameManagerDesa : MonoBehaviour
 
         SceneHandler.Instance.OnSceneChanged += SceneHandler_OnSceneChanged;
 
-        if (AudioManager.Instance.GetPlayingBGMName() != "Desa")
-        {
-            AudioManager.Instance.StopBGM();
-            AudioManager.Instance.PlayBGM("Desa");
-        }
+        AudioManager.Instance.StopBGM();
     }
 
     private void SceneHandler_OnSceneChanged(string _sceneName)
@@ -97,7 +97,7 @@ public class GameManagerDesa : MonoBehaviour
     private void Update()
     {
         // start countdown
-        if (!isGameInitiated)
+        if (canStartGame && !isGameInitiated)
         {
             playerScore = 0;
             currentLevel = 0;
@@ -206,6 +206,8 @@ public class GameManagerDesa : MonoBehaviour
 
     private void HandlePlayerAnswer()
     {
+        DesaPhaseUI.Instance.ShowIndicatorContainer();
+
         for (int i = 0; i < MoveAnswer.GetMoveListCount(); i++)
         {
             if (MoveCase.GetMoveType(i) != MoveAnswer.GetMoveType(i))
@@ -234,10 +236,12 @@ public class GameManagerDesa : MonoBehaviour
         DesaPhaseUI.Instance.RemoveAllIndicator();
         DesaPhaseUI.Instance.ShowCorrectState();
 
+        DesaPhaseUI.Instance.HideIndicatorContainer();
         StartCoroutine(ShowCorrectAnimation());
 
         playerScore += levelDesignDesaList[currentLevel].score;
         DesaUI.Instance.UpdateScore(playerScore);
+
 
         currentCase++;
     }
@@ -247,6 +251,7 @@ public class GameManagerDesa : MonoBehaviour
         DesaPhaseUI.Instance.RemoveAllIndicator();
         DesaPhaseUI.Instance.ShowWrongState();
 
+        DesaPhaseUI.Instance.HideIndicatorContainer();
         StartCoroutine(ShowWrongAnimation());
     }
 
@@ -314,6 +319,7 @@ public class GameManagerDesa : MonoBehaviour
     {
         SetIsAnimationRunning(true);
 
+        yield return new WaitForSeconds(waitDelay * 0.5f);
         DesaPhaseUI.Instance.ShowGameOverState();
         yield return new WaitForSeconds(waitDelay);
 
@@ -368,6 +374,16 @@ public class GameManagerDesa : MonoBehaviour
 
     // boolean setter getter
     // ====================================================================================================
+    public void SetCanStartGame(bool _value)
+    {
+        canStartGame = _value;
+    }
+
+    public bool GetCanStartGame()
+    {
+        return canStartGame;
+    }
+
     public void SetIsGameInitiated(bool _isGameInitiated)
     {
         isGameInitiated = _isGameInitiated;
