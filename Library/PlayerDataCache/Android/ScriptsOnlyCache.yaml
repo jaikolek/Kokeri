@@ -1,22 +1,18 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - AudioManager
-    - DesaCameraFocus
-    - DesaGameOverPopUp
-    - DesaHTP
-    - DesaPausePopUp
-    - DesaPhaseUI
-    - DesaProlog
-    - DesaUI
-    - GameManagerDesa
-    - MainLevel
-    - MainMenu
-    - RankingPopUp
-    - SceneHandler
-    - SettingPopUp
-    - ShopPopUp
-    - ShopProduct
+    - ButtonPointerDownListener
+    - ButtonPointerUpListener
+    - HutanBug
+    - HutanDespawner
+    - HutanEventManager
+    - HutanGameManager
+    - HutanGameOverPopUp
+    - HutanObstacle
+    - HutanPlayer
+    - HutanPlayerControl
+    - HutanSpawner
+    - HutanUIManager
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -58,15 +54,10 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
-    - UnityEngine.UI.RawImage
-    - UnityEngine.UI.Slider
   serializedClasses:
     Assembly-CSharp:
-    - AudioManager/AudioData
-    - LevelDesignDesa
-    - ShopItem
+    - HutanDesignLevel
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
     - TMPro.FontAssetCreationSettings
@@ -83,10 +74,8 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Style
     - TMPro.VertexGradient
     UnityEngine.CoreModule:
-    - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
-    - UnityEngine.Events.PersistentListenerMode
-    - UnityEngine.RectOffset
+    - UnityEngine.Events.UnityEvent
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
@@ -98,173 +87,10 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
-    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve: []
   sceneClasses:
-    Assets/Kokeri/Scenes/LevelDesa.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 84
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1596}
-    - Class: 114
-      Script: {instanceID: 1598}
-    - Class: 114
-      Script: {instanceID: 1682}
-    - Class: 114
-      Script: {instanceID: 1754}
-    - Class: 114
-      Script: {instanceID: 1906}
-    - Class: 114
-      Script: {instanceID: 2050}
-    - Class: 114
-      Script: {instanceID: 2748}
-    - Class: 114
-      Script: {instanceID: 2760}
-    - Class: 114
-      Script: {instanceID: 2918}
-    - Class: 114
-      Script: {instanceID: 3032}
-    - Class: 114
-      Script: {instanceID: 3216}
-    - Class: 114
-      Script: {instanceID: 3276}
-    - Class: 114
-      Script: {instanceID: 3372}
-    - Class: 114
-      Script: {instanceID: 3516}
-    - Class: 114
-      Script: {instanceID: 3734}
-    - Class: 114
-      Script: {instanceID: 3758}
-    - Class: 114
-      Script: {instanceID: 3840}
-    - Class: 114
-      Script: {instanceID: 3980}
-    - Class: 114
-      Script: {instanceID: 5398}
-    - Class: 114
-      Script: {instanceID: 32420}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 328
-      Script: {instanceID: 0}
-    - Class: 329
-      Script: {instanceID: 0}
-    Assets/Kokeri/Scenes/MainLevel.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 84
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1596}
-    - Class: 114
-      Script: {instanceID: 1598}
-    - Class: 114
-      Script: {instanceID: 2050}
-    - Class: 114
-      Script: {instanceID: 2748}
-    - Class: 114
-      Script: {instanceID: 3032}
-    - Class: 114
-      Script: {instanceID: 3216}
-    - Class: 114
-      Script: {instanceID: 3276}
-    - Class: 114
-      Script: {instanceID: 3372}
-    - Class: 114
-      Script: {instanceID: 3516}
-    - Class: 114
-      Script: {instanceID: 3840}
-    - Class: 114
-      Script: {instanceID: 3980}
-    - Class: 114
-      Script: {instanceID: 3998}
-    - Class: 114
-      Script: {instanceID: 4128}
-    - Class: 114
-      Script: {instanceID: 4982}
-    - Class: 114
-      Script: {instanceID: 5398}
-    - Class: 114
-      Script: {instanceID: 6528}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 225
-      Script: {instanceID: 0}
-    - Class: 328
-      Script: {instanceID: 0}
-    - Class: 329
-      Script: {instanceID: 0}
-    - Class: 850595691
-      Script: {instanceID: 0}
-    Assets/Kokeri/Scenes/MainMenu.unity:
+    Assets/Kokeri/Scenes/LevelHutan.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -279,52 +105,62 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
-    - Class: 81
+    - Class: 50
       Script: {instanceID: 0}
-    - Class: 83
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1596}
-    - Class: 114
       Script: {instanceID: 1598}
     - Class: 114
-      Script: {instanceID: 1906}
+      Script: {instanceID: 1908}
     - Class: 114
-      Script: {instanceID: 2050}
+      Script: {instanceID: 2006}
     - Class: 114
-      Script: {instanceID: 2536}
+      Script: {instanceID: 2056}
     - Class: 114
-      Script: {instanceID: 3032}
+      Script: {instanceID: 2542}
     - Class: 114
-      Script: {instanceID: 3216}
+      Script: {instanceID: 2934}
     - Class: 114
-      Script: {instanceID: 3276}
+      Script: {instanceID: 3040}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3224}
     - Class: 114
-      Script: {instanceID: 3516}
+      Script: {instanceID: 3284}
     - Class: 114
-      Script: {instanceID: 3840}
+      Script: {instanceID: 3322}
     - Class: 114
-      Script: {instanceID: 3980}
+      Script: {instanceID: 3458}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3532}
+    - Class: 114
+      Script: {instanceID: 3858}
     - Class: 114
       Script: {instanceID: 3998}
     - Class: 114
-      Script: {instanceID: 4058}
+      Script: {instanceID: 4374}
     - Class: 114
-      Script: {instanceID: 4202}
+      Script: {instanceID: 4992}
     - Class: 114
-      Script: {instanceID: 5398}
+      Script: {instanceID: 5598}
     - Class: 114
-      Script: {instanceID: 5438}
+      Script: {instanceID: 5640}
     - Class: 114
-      Script: {instanceID: 5610}
+      Script: {instanceID: 5652}
     - Class: 114
-      Script: {instanceID: 6060}
+      Script: {instanceID: 5658}
     - Class: 114
-      Script: {instanceID: 6528}
+      Script: {instanceID: 5818}
+    - Class: 114
+      Script: {instanceID: 6096}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -333,6 +169,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
     - Class: 222
@@ -340,10 +178,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 225
-      Script: {instanceID: 0}
-    - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -432,10 +266,28 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
+      Hash: 0c11d0100e509db4d411edbc2be70913
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanGameManager
+  - hash:
+      serializedVersion: 2
+      Hash: eb7c2f71b8d913ae18cabff854102652
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonLongPressListener
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanPlayer
   - hash:
       serializedVersion: 2
       Hash: 300fd99066f8c288e85f5e81ce65fe34
@@ -522,6 +374,12 @@ ScriptsOnlyBuild:
     className: DesaPhaseUI
   - hash:
       serializedVersion: 2
+      Hash: dbff22a2aea563f69f74f6daa8804553
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanGameOverPopUp
+  - hash:
+      serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -564,10 +422,34 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: 13d30424efb311ff22fbbb6df5463f32
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonDoubleClickListener
+  - hash:
+      serializedVersion: 2
+      Hash: 11d3f93e237db24fe332540688c261db
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonPointerUpListener
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SceneHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 860662ce99a85bc1d3f5232a42709706
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanUIManager
+  - hash:
+      serializedVersion: 2
+      Hash: 1d0b54436b6cc12e5a3d91252c7e1f61
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanSpawner
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -714,10 +596,22 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
+      Hash: 626a5cd703be383e63a412fa141d9a99
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonPointerExitListener
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 2940e6d9320102d6d59a001b030bbf31
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanPlayerControl
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -798,6 +692,12 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
+      Hash: c413763d5a04034f69a4c4fad9cb8a47
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DesaProlog
+  - hash:
+      serializedVersion: 2
       Hash: a089d4bb50371ef30e28dcaf580da14b
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
@@ -808,6 +708,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanBug
   - hash:
       serializedVersion: 2
       Hash: 80bbba2cfd3c6641d0f218dd87f638e8
@@ -832,6 +738,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: cd4f3b2de3252bb2b36a167257a3b50e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonPointerEnterListener
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -900,6 +812,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanDespawner
+  - hash:
+      serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -910,6 +828,24 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanObstacle
+  - hash:
+      serializedVersion: 2
+      Hash: 234e9821017389ddeec7abe0ce7e90d0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonPointerDownListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanEventManager
   - hash:
       serializedVersion: 2
       Hash: cc2f46f879d85fb4c3b330475eed4d9c
@@ -988,15 +924,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: c413763d5a04034f69a4c4fad9cb8a47
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DesaProlog
   platform: 13
   scenePathNames:
-  - Assets/Kokeri/Scenes/MainMenu.unity
-  - Assets/Kokeri/Scenes/MainLevel.unity
-  - Assets/Kokeri/Scenes/LevelDesa.unity
-  playerPath: C:/Users/atqam/Documents/repo/unity/Kokeri/Build/demo_desa.apk
+  - Assets/Kokeri/Scenes/LevelHutan.unity
+  playerPath: C:/Users/atqam/Documents/repo/unity/Kokeri/Build/demo_hutan.apk
