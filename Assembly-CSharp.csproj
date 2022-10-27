@@ -79,7 +79,7 @@
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\GameManager.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\LevelDesignDesa.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Object\IkanKecil.cs" />
-    <Compile Include="Assets\PauseMenu.cs" />
+    <Compile Include="Assets\Kokeri\Scripts\Level\Laut\PauseMenu.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaCameraFocus.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\TextUI.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaPhaseUI.cs" />
