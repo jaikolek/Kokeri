@@ -65,6 +65,7 @@
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\Move.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Object\Sampah.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\GameOverPopUp.cs" />
+    <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Object\IkanEmas.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaUI.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Shop\ShopProduct.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Object\Objek.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\GameManager.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\LevelDesignDesa.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Object\IkanKecil.cs" />
+    <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaCameraFocus.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\TextUI.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaPhaseUI.cs" />
@@ -97,7 +99,6 @@
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Object\Spawner.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Shop\ShopPopUp.cs" />
     <Compile Include="Assets\Scripts.Old\Delay.cs" />
-    <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Object\IkanEmas.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

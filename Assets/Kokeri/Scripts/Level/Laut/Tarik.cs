@@ -38,12 +38,11 @@ public class Tarik : MonoBehaviour
     void Update()
     {
         Rotate();
-        PlayerInput();
         MoveRope();
 
         if (move_speed <= 0)
         {
-            move_speed = 0.7f;
+            move_speed = 1f;
         }
 
     }
@@ -68,16 +67,14 @@ public class Tarik : MonoBehaviour
             rotateRight = true;
     }
 
-    void PlayerInput() // ketika player tap
+    public void PlayerInput() // ketika player tap
     {
-        if (Input.GetMouseButtonDown(0))
-        {
             if (canRotate)
             {
                 canRotate = false;
                 moveDown = true;
             }
-        }
+        
     }
 
     void MoveRope() // untuk menggerakkan kail ke bawah
