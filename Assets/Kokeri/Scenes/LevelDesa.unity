@@ -1716,11 +1716,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesaProlog
       objectReference: {fileID: 0}
-    - target: {fileID: 6241177090327691442, guid: f51be53ca685db143b95eb1ae307e7e5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6241177090327691445, guid: f51be53ca685db143b95eb1ae307e7e5,
         type: 3}
       propertyPath: m_Pivot.x

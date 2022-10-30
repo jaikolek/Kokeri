@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
@@ -7,7 +8,7 @@ using UnityEngine.Video;
 public class DesaHTP : MonoBehaviour
 {
     [SerializeField] private VideoPlayer videoPlayer;
-    [SerializeField] private VideoClip videoClip;
+    // [SerializeField] private VideoClip videoClip;
     [SerializeField] private Button backBtn;
     [SerializeField] private Button playBtn;
 
@@ -15,15 +16,47 @@ public class DesaHTP : MonoBehaviour
     {
         backBtn.onClick.AddListener(OnClickBack);
         playBtn.onClick.AddListener(OnClickPlay);
-
-        videoPlayer.clip = videoClip;
-        videoPlayer.Prepare();
     }
 
     private void Start()
     {
+        Application.runInBackground = true;
+    }
+
+    private void OnEnable()
+    {
+        StartCoroutine(PlayVideo());
+    }
+
+    private void OnDisable()
+    {
+        videoPlayer.Stop();
+    }
+
+    private IEnumerator PlayVideo()
+    {
+        videoPlayer.url = Path.Combine(Application.streamingAssetsPath, "Video/HTPDesa.mp4");
+
         videoPlayer.Prepare();
+
+        //Wait until video is prepared
+        while (!videoPlayer.isPrepared)
+        {
+            Debug.Log("Preparing Video");
+            yield return null;
+        }
+
+        //Play Video
         videoPlayer.Play();
+
+        Debug.Log("Playing Video");
+        while (videoPlayer.isPlaying)
+        {
+            Debug.LogWarning("Video Time: " + Mathf.FloorToInt((float)videoPlayer.time));
+            yield return null;
+        }
+
+        Debug.Log("Done Playing Video");
     }
 
     private void OnClickBack()

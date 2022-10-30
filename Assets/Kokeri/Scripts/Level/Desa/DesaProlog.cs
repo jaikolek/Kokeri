@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
@@ -7,16 +8,19 @@ using UnityEngine.Video;
 public class DesaProlog : MonoBehaviour
 {
     [SerializeField] private VideoPlayer videoPlayer;
-    [SerializeField] private VideoClip videoClip;
+    // [SerializeField] private VideoClip videoClip;
     [SerializeField] private Button skipBtn;
+
+    private void Awake()
+    {
+        skipBtn.onClick.AddListener(() => SkipVideo());
+    }
 
     private void Start()
     {
-        videoPlayer.clip = videoClip;
-        videoPlayer.Play();
-        skipBtn.onClick.AddListener(() => SkipVideo());
         skipBtn.gameObject.SetActive(false);
 
+        StartCoroutine(PlayVideo());
         StartCoroutine(ShowSkipBtn());
     }
 
@@ -29,6 +33,32 @@ public class DesaProlog : MonoBehaviour
                 SkipVideo();
             }
         }
+    }
+
+    private IEnumerator PlayVideo()
+    {
+        videoPlayer.url = Path.Combine(Application.streamingAssetsPath, "Video/PrologDesa.mp4");
+
+        videoPlayer.Prepare();
+
+        //Wait until video is prepared
+        while (!videoPlayer.isPrepared)
+        {
+            Debug.Log("Preparing Video");
+            yield return null;
+        }
+
+        //Play Video
+        videoPlayer.Play();
+
+        Debug.Log("Playing Video");
+        while (videoPlayer.isPlaying)
+        {
+            Debug.LogWarning("Video Time: " + Mathf.FloorToInt((float)videoPlayer.time));
+            yield return null;
+        }
+
+        Debug.Log("Done Playing Video");
     }
 
     private IEnumerator ShowSkipBtn()
