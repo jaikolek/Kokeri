@@ -60,6 +60,7 @@ public class HutanUIManager : MonoBehaviour
 
     private void Start()
     {
+        HutanEventManager.Instance.OnCollectRange += HutanEventManager_CollectRange;
         HutanEventManager.Instance.OnGameOver += HutanEventManager_GameOver;
 
         upBtn.GetComponent<ButtonPointerDownListener>().onPointerDown.AddListener(() => HutanEventManager.Instance.Jump());
@@ -69,7 +70,20 @@ public class HutanUIManager : MonoBehaviour
 
         catchBtn.GetComponent<ButtonPointerDownListener>().onPointerDown.AddListener(() => HutanEventManager.Instance.Catch());
 
+        catchBtn.interactable = false;
         StartCoroutine(CountDown());
+    }
+
+    private void HutanEventManager_CollectRange(bool _state)
+    {
+        if (_state)
+        {
+            catchBtn.interactable = true;
+        }
+        else
+        {
+            catchBtn.interactable = false;
+        }
     }
 
     private void HutanEventManager_GameOver()
@@ -101,7 +115,7 @@ public class HutanUIManager : MonoBehaviour
 
     public void UpdateCoin(int coin)
     {
-        this.coin.GetComponentInChildren<TextMeshProUGUI>().text = "Coin: " + coin.ToString();
+        this.coin.GetComponentInChildren<TextMeshProUGUI>().text = "Kumbang: " + coin.ToString();
     }
 
     public void UpdateHealth(int health)

@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - HutanGameManager
     - HutanGameOverPopUp
     - HutanObstacle
+    - HutanParallax
     - HutanPlayer
     - HutanPlayerControl
     - HutanSpawner
@@ -111,6 +112,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 70
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
@@ -118,49 +121,51 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1598}
     - Class: 114
-      Script: {instanceID: 1908}
+      Script: {instanceID: 1960}
     - Class: 114
-      Script: {instanceID: 2006}
+      Script: {instanceID: 2058}
     - Class: 114
-      Script: {instanceID: 2056}
+      Script: {instanceID: 2108}
     - Class: 114
-      Script: {instanceID: 2542}
+      Script: {instanceID: 2594}
     - Class: 114
-      Script: {instanceID: 2934}
+      Script: {instanceID: 2986}
     - Class: 114
-      Script: {instanceID: 3040}
+      Script: {instanceID: 3092}
     - Class: 114
-      Script: {instanceID: 3224}
+      Script: {instanceID: 3276}
     - Class: 114
-      Script: {instanceID: 3284}
+      Script: {instanceID: 3336}
     - Class: 114
-      Script: {instanceID: 3322}
+      Script: {instanceID: 3374}
     - Class: 114
-      Script: {instanceID: 3458}
+      Script: {instanceID: 3510}
     - Class: 114
-      Script: {instanceID: 3492}
+      Script: {instanceID: 3544}
     - Class: 114
-      Script: {instanceID: 3532}
+      Script: {instanceID: 3584}
     - Class: 114
-      Script: {instanceID: 3858}
+      Script: {instanceID: 3910}
     - Class: 114
-      Script: {instanceID: 3998}
+      Script: {instanceID: 4050}
     - Class: 114
-      Script: {instanceID: 4374}
+      Script: {instanceID: 4426}
     - Class: 114
-      Script: {instanceID: 4992}
+      Script: {instanceID: 5044}
     - Class: 114
-      Script: {instanceID: 5598}
+      Script: {instanceID: 5650}
     - Class: 114
-      Script: {instanceID: 5640}
+      Script: {instanceID: 5692}
     - Class: 114
-      Script: {instanceID: 5652}
+      Script: {instanceID: 5704}
     - Class: 114
-      Script: {instanceID: 5658}
+      Script: {instanceID: 5710}
     - Class: 114
-      Script: {instanceID: 5818}
+      Script: {instanceID: 5870}
     - Class: 114
-      Script: {instanceID: 6096}
+      Script: {instanceID: 6148}
+    - Class: 114
+      Script: {instanceID: 23008}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -446,7 +451,7 @@ ScriptsOnlyBuild:
     className: HutanUIManager
   - hash:
       serializedVersion: 2
-      Hash: 1d0b54436b6cc12e5a3d91252c7e1f61
+      Hash: c3e30fd104a159e42657cc6294e58b7d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HutanSpawner
@@ -578,12 +583,6 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: f39435f7eb925f2461744231a2e3647b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DesaHTP
-  - hash:
-      serializedVersion: 2
       Hash: 56c0729328bc0b17373c539b264c1052
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -690,12 +689,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
-  - hash:
-      serializedVersion: 2
-      Hash: c413763d5a04034f69a4c4fad9cb8a47
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DesaProlog
   - hash:
       serializedVersion: 2
       Hash: a089d4bb50371ef30e28dcaf580da14b
@@ -924,6 +917,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: d28cb89ddc3bb400eb4798876386695e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanParallax
   platform: 13
   scenePathNames:
   - Assets/Kokeri/Scenes/LevelHutan.unity

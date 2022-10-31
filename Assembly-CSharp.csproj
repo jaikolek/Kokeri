@@ -59,13 +59,11 @@
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaUI.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Shop\ShopProduct.cs" />
      <Compile Include="Assets\Kokeri\Scripts\MainMenu\SettingPopUp.cs" />
-     <Compile Include="Assets\Kokeri\Scripts\Level\DesaHTP.cs" />
      <Compile Include="Assets\Kokeri\Scripts\MainMenu\MainMenu.cs" />
      <Compile Include="Assets\ButtonEvents\ButtonPointerExitListener.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanPlayerControl.cs" />
      <Compile Include="Assets\Scripts.Old\MoveAssets.cs" />
      <Compile Include="Assets\Kokeri\Scripts\BasePopUp.cs" />
-     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaProlog.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanBug.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\MainLevel.cs" />
      <Compile Include="Assets\ButtonEvents\ButtonPointerEnterListener.cs" />
@@ -84,6 +82,7 @@
      <Compile Include="Assets\Kokeri\Scripts\EnumContainer.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\LevelDesignDesa.cs" />
      <Compile Include="Assets\Scripts.Old\Delay.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanParallax.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

@@ -10,7 +10,6 @@ public class HutanPlayerControl : MonoBehaviour
     private CircleCollider2D playerCircleCollider;
     private bool isOnGround;
     private bool isCrouch;
-    private int counter = 0;
 
     [SerializeField] float jumpForce;
 
@@ -129,12 +128,8 @@ public class HutanPlayerControl : MonoBehaviour
                 Physics2D.IgnoreCollision(collider, GetComponent<Collider2D>());
                 Destroy(collider.gameObject);
 
-                counter++;
-                if (counter == 2)
-                {
-                    HutanGameManager.Instance.AddCoin();
-                    counter = 0;
-                }
+                // ini Kumbang awokawok
+                HutanGameManager.Instance.AddCoin();
             }
         }
     }

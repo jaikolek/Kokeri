@@ -6,7 +6,8 @@ public class HutanSpawner : MonoBehaviour
 {
     [SerializeField] private List<Transform> spawnPointList;
     [SerializeField] private Transform obstacleContainer;
-    [SerializeField] private List<GameObject> obstaclePrefabList;
+    [SerializeField] private List<GameObject> groundObstaclePrefabList;
+    [SerializeField] private List<GameObject> flyingObstaclePrefabList;
     [SerializeField] private Transform bugSpawnPoint;
     [SerializeField] private Transform bugContainer;
     [SerializeField] private GameObject bugPrefab;
@@ -39,20 +40,29 @@ public class HutanSpawner : MonoBehaviour
     {
         isChanceToSpawnBug = true;
         yield return new WaitForSeconds(2f);
-        if (Random.Range(0, 100) < 30)
+        if (Random.Range(0, 100) < 50)
             SpawnBug();
         isChanceToSpawnBug = false;
     }
 
     private void SpawnObstacle()
     {
-        int randomIndex = Random.Range(0, spawnPointList.Count);
-        int randomObstacle = Random.Range(0, obstaclePrefabList.Count);
-
-        Transform spawnPoint = spawnPointList[randomIndex];
-        GameObject obstacle = obstaclePrefabList[randomObstacle];
-
-        Instantiate(obstacle, spawnPoint.position, Quaternion.identity, obstacleContainer);
+        if (Random.Range(0, 100) < 60)
+        {
+            // random obstacle
+            int randomObstacle = Random.Range(0, groundObstaclePrefabList.Count);
+            // spawn obstacle
+            Instantiate(groundObstaclePrefabList[randomObstacle], spawnPointList[0].position, Quaternion.identity, obstacleContainer);
+        }
+        else
+        {
+            // random spawn point
+            int randomSpawnPoint = Random.Range(1, spawnPointList.Count);
+            // random obstacle
+            int randomObstacle = Random.Range(0, flyingObstaclePrefabList.Count);
+            // spawn obstacle
+            Instantiate(flyingObstaclePrefabList[randomObstacle], spawnPointList[randomSpawnPoint].position, Quaternion.identity, obstacleContainer);
+        }
     }
 
     private void SpawnBug()

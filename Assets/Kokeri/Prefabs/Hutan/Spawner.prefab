@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7611517788007342120}
   m_Layer: 0
-  m_Name: Point
+  m_Name: Point (0)
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2190631920570096332}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.5, z: 0}
+  m_LocalPosition: {x: 0, y: -2.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55,7 +55,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6496731098047552504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -86,7 +86,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6496731098337375430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: -0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -146,9 +146,16 @@ MonoBehaviour:
   - {fileID: 6496731099255328582}
   - {fileID: 6496731098337375431}
   obstacleContainer: {fileID: 0}
-  obstaclePrefabList:
+  groundObstaclePrefabList:
   - {fileID: 3037152003042333353, guid: c2c7617e77d1b6d4e81be7c3ced1e275, type: 3}
+  - {fileID: 3037152003042333353, guid: 82badd400eca3cb47997346810c97977, type: 3}
+  - {fileID: 3037152003042333353, guid: 341f741f0a516954b93e4f62b7d5c106, type: 3}
+  - {fileID: 3037152003042333353, guid: 5916b505a02c5334a855650e22b5969d, type: 3}
+  - {fileID: 3037152003042333353, guid: 77785fe46147b9e4c9dd0f85d7b45161, type: 3}
+  - {fileID: 3037152003042333353, guid: 3c17135ed43da66488b781da83c4bb31, type: 3}
+  flyingObstaclePrefabList:
   - {fileID: 6626459977459236439, guid: 26bad38701a899749b04e19f3d6313ed, type: 3}
+  - {fileID: 6626459977459236439, guid: ed37b15a7c72d7d40b67d78744112af8, type: 3}
   bugSpawnPoint: {fileID: 6496731098047552505}
   bugContainer: {fileID: 0}
   bugPrefab: {fileID: 6626459977459236439, guid: 70b1aeddf33dd9e45bad892d02df5ea1,
@@ -177,7 +184,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6496731099255328581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.5, z: 0}
+  m_LocalPosition: {x: 0, y: -1.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
