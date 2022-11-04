@@ -36,6 +36,17 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        if (AudioSourceBGM == null)
+        {
+            AudioSourceBGM = gameObject.AddComponent<AudioSource>();
+        }
+        if (AudioSourceSFX == null)
+        {
+            AudioSourceSFX = gameObject.AddComponent<AudioSource>();
+            AudioSourceSFX.playOnAwake = false;
+            AudioSourceSFX.loop = false;
+        }
     }
     #endregion singleton
 
@@ -48,17 +59,6 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        if (AudioSourceBGM == null)
-        {
-            AudioSourceBGM = gameObject.AddComponent<AudioSource>();
-        }
-        if (AudioSourceSFX == null)
-        {
-            AudioSourceSFX = gameObject.AddComponent<AudioSource>();
-            AudioSourceSFX.playOnAwake = false;
-            AudioSourceSFX.loop = false;
-        }
-
         // audio init
         if (!PlayerPrefs.HasKey("BGMVolume"))
             SetBGMVolume(defaultVolume);
@@ -68,12 +68,6 @@ public class AudioManager : MonoBehaviour
             SetSFXVolume(defaultVolume);
         else
             SetSFXVolume(GetSFXVolume());
-
-        if (!IsBGMPlaying())
-        {
-            AudioSourceBGM.loop = true;
-            PlayBGM("MainMenu");
-        }
     }
 
     public void SetBGMVolume(float _volume)
@@ -116,6 +110,14 @@ public class AudioManager : MonoBehaviour
             AudioSourceSFX.clip = audioData.clip;
             AudioSourceSFX.Play();
         }
+    }
+
+    public string GetPlayingBGMName()
+    {
+        if (AudioSourceBGM.clip != null)
+            return AudioSourceBGM.clip.name;
+        else
+            return null;
     }
 
     public bool IsBGMPlaying()

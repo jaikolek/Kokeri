@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f5797d28ec426b14cb26c63d1b027be1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1b10793c1da7b1d429f3c3b7ba5326ad, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -131,43 +131,43 @@ MonoBehaviour:
   shopState: 0
   chikoItems:
   - name: Chiko_1
-    productImage: {fileID: -1478968966, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+    productImage: {fileID: 488148107, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
     price: 0
   - name: Chiko_2
-    productImage: {fileID: -657151740, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+    productImage: {fileID: 872685877, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
     price: 0
   - name: Chiko_3
-    productImage: {fileID: 1051959898, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+    productImage: {fileID: -38820757, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
     price: 0
   chikoBtn: {fileID: 628999688042604491}
-  chikoClicked: {fileID: 636022766, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
-  chikoUnclicked: {fileID: -201590347, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+  chikoClicked: {fileID: -1057683123, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
+  chikoUnclicked: {fileID: -751048091, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
   kettiItems:
   - name: Ketti_1
-    productImage: {fileID: -518023332, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+    productImage: {fileID: 1344545288, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
     price: 0
   - name: Ketti_2
-    productImage: {fileID: 714877571, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+    productImage: {fileID: 43344817, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
     price: 0
   - name: Ketti_3
-    productImage: {fileID: 600228929, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+    productImage: {fileID: -891809470, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
     price: 0
   kettiBtn: {fileID: 3035296679812027787}
-  kettiClicked: {fileID: -1796494271, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
-  kettiUnclicked: {fileID: 56486294, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+  kettiClicked: {fileID: 288291520, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
+  kettiUnclicked: {fileID: 1794851928, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
   beriItems:
   - name: Beri_1
-    productImage: {fileID: -1381140222, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+    productImage: {fileID: 1685678454, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
     price: 0
   - name: Beri_2
-    productImage: {fileID: 1262259550, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+    productImage: {fileID: -1184208936, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
     price: 0
   - name: Beri_3
-    productImage: {fileID: 15692449, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+    productImage: {fileID: -2081611999, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
     price: 0
   beriBtn: {fileID: 1728118027678831411}
-  beriClicked: {fileID: -1828744260, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
-  beriUnclicked: {fileID: 2125889153, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+  beriClicked: {fileID: 1316132001, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
+  beriUnclicked: {fileID: -1983207426, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
   shopProductContainer: {fileID: 4155439027260439843}
   shopProductPrefab: {fileID: 3268872973209200944, guid: 6223c5ee2d6aee24c909fd8ecb7a255b,
     type: 3}
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1645185980, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+  m_Sprite: {fileID: 986798641, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -364,7 +364,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 428033602, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+  m_Sprite: {fileID: 1473076747, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -441,7 +441,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1510916145, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+  m_Sprite: {fileID: 392458964, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -562,7 +562,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -201590347, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+  m_Sprite: {fileID: -751048091, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -813,7 +813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1326786306, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+  m_Sprite: {fileID: -890423887, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1070,7 +1070,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2125889153, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+  m_Sprite: {fileID: -1983207426, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1191,7 +1191,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 56486294, guid: e651d04ed5433d448a952109f93e5f0e, type: 3}
+  m_Sprite: {fileID: 1794851928, guid: ce1609a34e4128f4abe9e26c4dd09170, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

@@ -33,15 +33,10 @@ public class ShopPopUp : BasePopUp
     [SerializeField] private GameObject shopProductContainer;
     [SerializeField] private GameObject shopProductPrefab;
 
-    new private void Start()
+    public Action<ShopState> OnSwitchState;
+
+    private void Awake()
     {
-        base.Start();
-
-        chikoBtn.onClick.AddListener(OnClickChiko);
-        kettiBtn.onClick.AddListener(OnClickKetti);
-        beriBtn.onClick.AddListener(OnClickBeri);
-
-        // create shop products
         foreach (ShopItem item in chikoItems)
         {
             GameObject shopProduct = Instantiate(shopProductPrefab, shopProductContainer.transform);
@@ -64,14 +59,22 @@ public class ShopPopUp : BasePopUp
         }
     }
 
-    private void Update()
+    new private void Start()
     {
-        HandleShopChange();
+        base.Start();
+
+        chikoBtn.onClick.AddListener(OnClickChiko);
+        kettiBtn.onClick.AddListener(OnClickKetti);
+        beriBtn.onClick.AddListener(OnClickBeri);
+
+        OnSwitchState += HandleShopChange;
+
+        SwitchState(ShopState.CHIKO);
     }
 
-    private void HandleShopChange()
+    private void HandleShopChange(ShopState _shopState)
     {
-        switch (shopState)
+        switch (_shopState)
         {
             case ShopState.CHIKO:
                 chikoBtn.image.sprite = chikoClicked;
@@ -141,6 +144,8 @@ public class ShopPopUp : BasePopUp
     public void SwitchState(ShopState _state)
     {
         shopState = _state;
+
+        OnSwitchState?.Invoke(shopState);
     }
 
     public void OnClickChiko()

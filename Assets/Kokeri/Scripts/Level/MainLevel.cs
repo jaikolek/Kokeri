@@ -16,6 +16,9 @@ public class MainLevel : MonoBehaviour
     [Header("Pop Ups")]
     [SerializeField] private GameObject shopPopUp;
 
+    [Header("Level")]
+    [SerializeField] private GameObject desaHTP;
+
     private void Start()
     {
         backBtn.onClick.AddListener(OnClickBack);
@@ -27,6 +30,20 @@ public class MainLevel : MonoBehaviour
 
         // pop up init
         shopPopUp.SetActive(false);
+
+        SceneHandler.Instance.OnSceneChanged += SceneHandler_OnSceneChanged;
+    }
+
+    private void SceneHandler_OnSceneChanged(string _sceneName)
+    {
+        if (_sceneName == "MainLevel")
+        {
+            if (AudioManager.Instance.GetPlayingBGMName() != "MainMenu")
+            {
+                AudioManager.Instance.StopBGM();
+                AudioManager.Instance.PlayBGM("MainMenu");
+            }
+        }
     }
 
     private void OnClickBack()
@@ -44,7 +61,7 @@ public class MainLevel : MonoBehaviour
     private void OnClickDesa()
     {
         AudioManager.Instance.PlaySFX("Click2");
-        SceneHandler.Instance.LoadScene("LevelDesa");
+        desaHTP.SetActive(true);
     }
 
     private void OnClickLaut()

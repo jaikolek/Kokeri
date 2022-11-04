@@ -2,9 +2,42 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DesaUI : MonoBehaviour
 {
+    #region singleton
+    private static DesaUI instance;
+    public static DesaUI Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<DesaUI>();
+                if (instance == null)
+                {
+                    GameObject obj = new GameObject();
+                    obj.name = typeof(DesaUI).Name;
+                    instance = obj.AddComponent<DesaUI>();
+                }
+            }
+            return instance;
+        }
+    }
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+    #endregion singleton
+    // ====================================================================================================
+
+
+    // ====================================================================================================
     [Header("Pause")]
     [SerializeField] private Button pauseBtn;
     [SerializeField] private GameObject pausePopUp;
@@ -15,6 +48,15 @@ public class DesaUI : MonoBehaviour
     [SerializeField] private Button rightBtn;
     [SerializeField] private Button leftBtn;
 
+    [Header("Score")]
+    [SerializeField] private TextMeshProUGUI scoreText;
+
+    [Header("Health")]
+    [SerializeField] private TextMeshProUGUI healthText;
+    [SerializeField] private Transform healthIndicatorContainer;
+    [SerializeField] private GameObject healthIndicatorPrefab;
+    private List<GameObject> healthIndicatorList;
+
     private void Start()
     {
         pauseBtn.onClick.AddListener(OnClickPause);
@@ -22,6 +64,10 @@ public class DesaUI : MonoBehaviour
         downBtn.onClick.AddListener(OnClickDown);
         leftBtn.onClick.AddListener(OnClickLeft);
         rightBtn.onClick.AddListener(OnClickRight);
+
+        healthIndicatorList = new List<GameObject>();
+
+        InitHealthIndicator(GameManagerDesa.Instance.GetPlayerHealth());
     }
 
     private void Update()
@@ -45,7 +91,53 @@ public class DesaUI : MonoBehaviour
     }
     // ====================================================================================================
 
+    // health
+    // ====================================================================================================
+    private void InitHealthIndicator(int _health)
+    {
+        for (int i = 0; i < _health; i++)
+        {
+            GameObject healthIndicator = Instantiate(healthIndicatorPrefab, healthIndicatorContainer);
+            healthIndicatorList.Add(healthIndicator);
+        }
+    }
 
+    public void UpdateHealth(int _health)
+    {
+        UpdateHealthIndicator(_health);
+        UpdateHealthText(_health);
+    }
+
+    public void UpdateHealthIndicator(int _health)
+    {
+        for (int i = 0; i < healthIndicatorList.Count; i++)
+        {
+            if (i < _health)
+            {
+                healthIndicatorList[i].SetActive(true);
+            }
+            else
+            {
+                healthIndicatorList[i].SetActive(false);
+            }
+        }
+    }
+
+    public void UpdateHealthText(int _health)
+    {
+        healthText.text = _health.ToString() + "X";
+    }
+    // ====================================================================================================
+
+    // score
+    // ====================================================================================================
+    public void UpdateScore(int _score)
+    {
+        scoreText.text = "SCORE : " + _score.ToString();
+    }
+    // ====================================================================================================
+
+    // on click
     // ====================================================================================================
     private void OnClickPause()
     {
