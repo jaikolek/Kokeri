@@ -85,4 +85,11 @@ public class HutanEventManager : MonoBehaviour
     {
         OnCatch?.Invoke();
     }
+
+    public event Action<Character> OnCharacterSelected;
+    public void CharacterChanged(Character _character)
+    {
+        OnCharacterSelected?.Invoke(_character);
+        StartCoroutine(HutanUIManager.Instance.CountDown());
+    }
 }

@@ -20,4 +20,10 @@ public enum MoveType
     RIGHT = 4,
 }
 
+public enum Character
+{
+    Chiko,
+    Ketti,
+    Beri
+}
 

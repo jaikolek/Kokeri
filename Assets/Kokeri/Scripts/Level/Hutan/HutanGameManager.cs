@@ -50,9 +50,9 @@ public class HutanGameManager : MonoBehaviour
     [Header("Design Level")]
     [SerializeField] private List<HutanDesignLevel> designLevelList = new List<HutanDesignLevel>();
 
-    public int GameSpeed { get => gameSpeed; set => gameSpeed = value; }
 
     public bool IsGameReady { get => isGameReady; set => isGameReady = value; }
+    public int GameSpeed { get => gameSpeed; set => gameSpeed = value; }
 
     private void Start()
     {

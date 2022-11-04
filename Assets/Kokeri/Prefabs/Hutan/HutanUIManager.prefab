@@ -44,11 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b3cb843113c8b046b1204ef372196f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameUI: {fileID: 0}
+  chooseCharacterPopUp: {fileID: 0}
   pausePopUp: {fileID: 0}
   gameOverPopUp: {fileID: 0}
   countDownText: {fileID: 0}
   upBtn: {fileID: 0}
   downBtn: {fileID: 0}
+  catchBtn: {fileID: 0}
   score: {fileID: 0}
   coin: {fileID: 0}
   health: {fileID: 0}

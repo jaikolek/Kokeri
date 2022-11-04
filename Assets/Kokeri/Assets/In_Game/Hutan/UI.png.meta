@@ -132,9 +132,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 4
-        width: 768
-        height: 592
+        y: 96
+        width: 643
+        height: 539
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,7 +152,7 @@ TextureImporter:
       name: UI_1
       rect:
         serializedVersion: 2
-        x: 843
+        x: 754
         y: 490
         width: 91
         height: 120
@@ -173,7 +173,7 @@ TextureImporter:
       name: UI_2
       rect:
         serializedVersion: 2
-        x: 974
+        x: 885
         y: 490
         width: 92
         height: 90
@@ -194,9 +194,9 @@ TextureImporter:
       name: UI_3
       rect:
         serializedVersion: 2
-        x: 1102
+        x: 1013
         y: 491
-        width: 106
+        width: 105
         height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -215,7 +215,7 @@ TextureImporter:
       name: UI_4
       rect:
         serializedVersion: 2
-        x: 1297
+        x: 1208
         y: 340
         width: 290
         height: 288
@@ -236,9 +236,9 @@ TextureImporter:
       name: UI_5
       rect:
         serializedVersion: 2
-        x: 1644
+        x: 1556
         y: 340
-        width: 292
+        width: 291
         height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -257,7 +257,7 @@ TextureImporter:
       name: UI_7
       rect:
         serializedVersion: 2
-        x: 814
+        x: 725
         y: 187
         width: 243
         height: 241
@@ -278,7 +278,7 @@ TextureImporter:
       name: UI_8
       rect:
         serializedVersion: 2
-        x: 1085
+        x: 996
         y: 252
         width: 111
         height: 112
@@ -296,10 +296,31 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_9
+      name: UI_10
       rect:
         serializedVersion: 2
-        x: 1434
+        x: 886
+        y: 24
+        width: 175
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadf0a0ff782ffa4a8eced9f91b57a15
+      internalID: 370505318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_11
+      rect:
+        serializedVersion: 2
+        x: 1345
         y: 0
         width: 290
         height: 288
@@ -310,8 +331,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b3e77704c1058149b3adcc58c6749d6
-      internalID: -744201423
+      spriteID: bb3612a90d799b04884c29e724efa2cf
+      internalID: 169453229
       vertices: []
       indices: 
       edges: []
@@ -327,11 +348,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      UI_11: 169453229
       UI_1: 761613296
       UI_4: -1252000234
       UI_2: -372756579
       UI_3: 1582782738
       UI_9: -744201423
+      UI_12: 849584596
       UI_0: 2108725718
       UI_7: 21498589
       UI_10: 370505318

@@ -40,6 +40,8 @@ public class HutanUIManager : MonoBehaviour
 
     // ====================================================================================================
     [Header("UI")]
+    [SerializeField] private GameObject gameUI;
+    [SerializeField] private GameObject chooseCharacterPopUp;
     [SerializeField] private GameObject pausePopUp;
     [SerializeField] private GameObject gameOverPopUp;
     [SerializeField] private TextMeshProUGUI countDownText;
@@ -60,6 +62,7 @@ public class HutanUIManager : MonoBehaviour
 
     private void Start()
     {
+        HutanEventManager.Instance.OnCharacterSelected += HutanEventManager_OnCharacterSelected;
         HutanEventManager.Instance.OnCollectRange += HutanEventManager_CollectRange;
         HutanEventManager.Instance.OnGameOver += HutanEventManager_GameOver;
 
@@ -71,7 +74,15 @@ public class HutanUIManager : MonoBehaviour
         catchBtn.GetComponent<ButtonPointerDownListener>().onPointerDown.AddListener(() => HutanEventManager.Instance.Catch());
 
         catchBtn.interactable = false;
-        StartCoroutine(CountDown());
+
+        gameUI.SetActive(false);
+        chooseCharacterPopUp.SetActive(true);
+    }
+
+    private void HutanEventManager_OnCharacterSelected(Character _character)
+    {
+        gameUI.SetActive(true);
+        chooseCharacterPopUp.SetActive(false);
     }
 
     private void HutanEventManager_CollectRange(bool _state)
@@ -92,7 +103,7 @@ public class HutanUIManager : MonoBehaviour
         gameOverPopUp.SetActive(true);
     }
 
-    private IEnumerator CountDown()
+    public IEnumerator CountDown()
     {
         countDownText.text = "3";
         yield return new WaitForSeconds(1);

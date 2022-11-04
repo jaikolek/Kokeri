@@ -1,18 +1,37 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class HutanPlayer : MonoBehaviour
 {
-    // private void Start()
-    // {
-    //     HutanEventManager.Instance.OnCatch += HutanEventManager_OnCatch;
-    // }
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Sprite chikoSprite;
+    [SerializeField] private Sprite kettiSprite;
+    [SerializeField] private Sprite beriSprite;
 
-    // private void HutanEventManager_OnCatch()
-    // {
-        
-    // }
+    private void Start()
+    {
+        HutanEventManager.Instance.OnCharacterSelected += HutanEventManager_OnCharacterSelected;
+    }
+
+    private void HutanEventManager_OnCharacterSelected(Character character)
+    {
+        switch (character)
+        {
+            case Character.Chiko:
+                // spriteRenderer.sprite = chikoSprite;
+                break;
+            case Character.Ketti:
+                // spriteRenderer.sprite = kettiSprite;
+                break;
+            case Character.Beri:
+                // spriteRenderer.sprite = beriSprite;
+                break;
+            default:
+                break;
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -38,3 +57,4 @@ public class HutanPlayer : MonoBehaviour
         }
     }
 }
+
