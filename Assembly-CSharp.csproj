@@ -57,6 +57,7 @@
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaGameOverPopUp.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanDesignLevel.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaUI.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanChooseCharacterPopUp.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Shop\ShopProduct.cs" />
      <Compile Include="Assets\Kokeri\Scripts\MainMenu\SettingPopUp.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\DesaHTP.cs" />
@@ -85,7 +86,7 @@
      <Compile Include="Assets\Kokeri\Scripts\EnumContainer.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\LevelDesignDesa.cs" />
      <Compile Include="Assets\Scripts.Old\Delay.cs" />
-     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanChooseCharacterPopUp.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanParallaxMasDanang.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
