@@ -1,10 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Gelembung
     - IkanBesar
     - IkanEmas
     - IkanKecil
     - IkanSedang
+    - PauseMenu
     - Sampah
     - Spawner
     - TaliRenderer
@@ -17,11 +19,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -30,8 +35,11 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   serializedClasses:
     Unity.TextMeshPro:
@@ -48,17 +56,35 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteCharacter
     - TMPro.TMP_SpriteGlyph
     - TMPro.TMP_Style
+    - TMPro.VertexGradient
     UnityEngine.CoreModule:
+    - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
+    - UnityEngine.Events.PersistentListenerMode
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
     - UnityEngine.TextCore.GlyphMetrics
     - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.FontData
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
-  methodsToPreserve: []
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.Slider/SliderEvent
+    - UnityEngine.UI.SpriteState
+  methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Resume
+  - assembly: Assembly-CSharp
+    fullTypeName: Tarik
+    methodName: PlayerInput
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Pause
   sceneClasses:
     Assets/Kokeri/Scenes/LevelLaut.unity:
     - Class: 1
@@ -94,41 +120,53 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2212}
+      Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 2634}
+      Script: {instanceID: 2216}
     - Class: 114
-      Script: {instanceID: 2758}
+      Script: {instanceID: 2648}
     - Class: 114
-      Script: {instanceID: 2852}
+      Script: {instanceID: 2772}
     - Class: 114
-      Script: {instanceID: 3024}
+      Script: {instanceID: 2866}
     - Class: 114
-      Script: {instanceID: 3748}
+      Script: {instanceID: 3038}
     - Class: 114
-      Script: {instanceID: 4180}
+      Script: {instanceID: 3166}
     - Class: 114
-      Script: {instanceID: 4444}
+      Script: {instanceID: 3768}
     - Class: 114
-      Script: {instanceID: 4964}
+      Script: {instanceID: 4202}
     - Class: 114
-      Script: {instanceID: 5180}
+      Script: {instanceID: 4468}
     - Class: 114
-      Script: {instanceID: 5446}
+      Script: {instanceID: 4998}
     - Class: 114
-      Script: {instanceID: 5618}
+      Script: {instanceID: 5130}
     - Class: 114
-      Script: {instanceID: 5778}
+      Script: {instanceID: 5216}
     - Class: 114
-      Script: {instanceID: 6260}
+      Script: {instanceID: 5484}
     - Class: 114
-      Script: {instanceID: 6518}
+      Script: {instanceID: 5570}
     - Class: 114
-      Script: {instanceID: 6568}
+      Script: {instanceID: 5658}
     - Class: 114
-      Script: {instanceID: 7566}
+      Script: {instanceID: 5820}
     - Class: 114
-      Script: {instanceID: 7914}
+      Script: {instanceID: 5976}
+    - Class: 114
+      Script: {instanceID: 6316}
+    - Class: 114
+      Script: {instanceID: 6576}
+    - Class: 114
+      Script: {instanceID: 6626}
+    - Class: 114
+      Script: {instanceID: 7630}
+    - Class: 114
+      Script: {instanceID: 7984}
+    - Class: 114
+      Script: {instanceID: 29118}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -140,6 +178,8 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -306,7 +346,7 @@ ScriptsOnlyBuild:
     className: UnityMessageListener
   - hash:
       serializedVersion: 2
-      Hash: ad5257816ce555d48c3a2507a20c0e82
+      Hash: 7e417502e0a27de27672766d30520a1a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Sampah
@@ -378,7 +418,7 @@ ScriptsOnlyBuild:
     className: UnityOnDropdownValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: ad5257816ce555d48c3a2507a20c0e82
+      Hash: 7e417502e0a27de27672766d30520a1a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IkanEmas
@@ -420,7 +460,7 @@ ScriptsOnlyBuild:
     className: UnityOnMouseDownMessageListener
   - hash:
       serializedVersion: 2
-      Hash: ad5257816ce555d48c3a2507a20c0e82
+      Hash: 7e417502e0a27de27672766d30520a1a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Objek
@@ -498,7 +538,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: ad5257816ce555d48c3a2507a20c0e82
+      Hash: 7e417502e0a27de27672766d30520a1a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IkanSedang
@@ -672,7 +712,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: ad5257816ce555d48c3a2507a20c0e82
+      Hash: 7e417502e0a27de27672766d30520a1a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IkanKecil
@@ -744,6 +784,12 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 23480b5f4208cf6a71306c9842e37e54
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
+  - hash:
+      serializedVersion: 2
       Hash: 768772661f0e6c5734df91e94b13cc2a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -756,7 +802,7 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
-      Hash: b9bc03043eb254f6fb4875ad5f486736
+      Hash: 625a2c52630cc421dc4ef61d1e69458c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TextUI
@@ -852,7 +898,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 424ff031df6708fbb7ddeffa03367809
+      Hash: e100078efebd23a90bd3ee6dc37bb48d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TaliRenderer
@@ -1008,7 +1054,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: ad5257816ce555d48c3a2507a20c0e82
+      Hash: 7e417502e0a27de27672766d30520a1a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IkanBesar
@@ -1050,7 +1096,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: b03625223daebba673b59a37dba71529
+      Hash: e270937ad5258b57df3068ac80cf8766
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Spawner
@@ -1090,6 +1136,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Gelembung
   platform: 13
   scenePathNames:
   - Assets/Kokeri/Scenes/LevelLaut.unity

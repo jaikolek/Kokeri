@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 351f56762ba09c2449849c45435120d9
+guid: a97a92b35ee01b54b93ae9ec100c7ec1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -112,122 +112,152 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Skor_UI_0
+      name: UI_1
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 303
+        width: 91
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f0dfbefe6bb374faf137ae50156b82
+      internalID: -1265193850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_2
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 304
+        width: 92
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec602ecbc5ea4b942b1d6a08563391fa
+      internalID: 1922291509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_3
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 303
+        width: 105
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf756df9db883640ae12dd2b35cadb2
+      internalID: -1536790006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 768
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b6d10a631a49b40986716aa55daa49
+      internalID: -675158229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_5
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 0
+        width: 254
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d9019c2637e5d40ace2e5d744c0284
+      internalID: -1680206382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_6
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 59
+        width: 119
+        height: 125
+      alignment: 9
+      pivot: {x: 0.6589751, y: 0.8580802}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b484dad36ffb7443ade72241ac2d0e9
+      internalID: -1206474438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_7
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2119
-        height: 1535
+        width: 770
+        height: 216
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0b1a1b2fa7cb5b4b88344051fe93df6
-      internalID: 896433835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skor_UI_1
-      rect:
-        serializedVersion: 2
-        x: 2618
-        y: 840
-        width: 671
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06cf0c3c274a57343afbf92c21904530
-      internalID: 1280378279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skor_UI_2
-      rect:
-        serializedVersion: 2
-        x: 2212
-        y: 560
-        width: 671
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06c4716617f22f1438d555a4a8740f66
-      internalID: 1061249100
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skor_UI_3
-      rect:
-        serializedVersion: 2
-        x: 3026
-        y: 560
-        width: 668
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69daa4468da2a924f88894b6a7bacd43
-      internalID: 216318967
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skor_UI_4
-      rect:
-        serializedVersion: 2
-        x: 2817
-        y: 143
-        width: 275
-        height: 266
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 448cd13e8a40eba40be3c2d68a9a63c6
-      internalID: 585678916
+      spriteID: c9481fa143594a74ba20794ac9bb0abc
+      internalID: -515721429
       vertices: []
       indices: 
       edges: []
@@ -243,11 +273,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Skor_UI_3: 216318967
-      Skor_UI_2: 1061249100
-      Skor_UI_0: 896433835
-      Skor_UI_4: 585678916
-      Skor_UI_1: 1280378279
+      UI_1: -1265193850
+      UI_4: -675158229
+      UI_2: 1922291509
+      UI_3: -1536790006
+      UI_0: -1107276333
+      UI_7: -515721429
+      UI_6: -1206474438
+      UI_5: -1680206382
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

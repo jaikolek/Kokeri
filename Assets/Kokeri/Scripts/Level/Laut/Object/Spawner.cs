@@ -7,51 +7,60 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     private GameObject[] prefabObjek;
     [SerializeField]
-    private GameObject[] prefabObjek2;
-    [SerializeField]
     private GameObject[] prefabPos;
     [SerializeField]
-    private GameObject[] prefabPos2;
-
+    private GameObject[] gelembungPos;
+    [SerializeField]
+    private GameObject[] sampah;
+    [SerializeField]
+    private GameObject gelembung;
 
     public bool isSpawning = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SpawnObject());
+        if (isSpawning)
+        {
+            StartCoroutine(SpawnIkan());
+            StartCoroutine(SpawnSampah());
+            StartCoroutine(SpawnGelembung());
+        }
     }
-    public void StartSpawning()
-    {
-
-    }
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    IEnumerator SpawnObject()
+    IEnumerator SpawnIkan()
     {
         int waitTime = Random.Range(3, 4);
         yield return new WaitForSeconds(waitTime);
         int randomPrefab = Random.Range(0, prefabObjek.Length);
         int randomPos = Random.Range(0, prefabPos.Length);
-        Instantiate(prefabObjek[randomPrefab], prefabPos[randomPos].transform.position, Quaternion.identity);
-        if (isSpawning)
+        if(randomPrefab == 1 || randomPrefab == 2)
         {
-            StartCoroutine(SpawnObject());
-            StartCoroutine(SpawnIkanBesar());
+            randomPos = Random.Range(1, 2);
         }
+        Instantiate(prefabObjek[randomPrefab], prefabPos[randomPos].transform.position, Quaternion.identity);
+        StartCoroutine(SpawnIkan());
+
     }
 
-    IEnumerator SpawnIkanBesar()
+    IEnumerator SpawnSampah()
     {
-        int waitTime = Random.Range(5, 6);
+        float waitTime = Random.Range(7, 9);
         yield return new WaitForSeconds(waitTime);
-        int randomPrefab = Random.Range(0, prefabObjek2.Length);
-        int randomPos = Random.Range(0, prefabPos2.Length);
-        Instantiate(prefabObjek2[randomPrefab], prefabPos2[randomPos].transform.position, Quaternion.identity);
+        int randomPrefab = Random.Range(0, sampah.Length);
+        int randomPos = Random.Range(0, prefabPos.Length);
+        Instantiate(sampah[randomPrefab], prefabPos[randomPos].transform.position, Quaternion.identity);
+        StartCoroutine(SpawnSampah());
     }
-    
+
+    IEnumerator SpawnGelembung()
+    {
+        int waitTime = Random.Range(2, 3);
+        yield return new WaitForSeconds(waitTime);
+        int randomPos = Random.Range(0, gelembungPos.Length);
+        GameObject gel = Instantiate(gelembung, gelembungPos[randomPos].transform.position, Quaternion.identity);
+        float randomScale = Random.Range(0.4f, 1f);
+        gel.transform.localScale = new Vector3(randomScale, randomScale, 0);
+        StartCoroutine(SpawnGelembung());
+    }
+
 }

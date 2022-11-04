@@ -1,0 +1,384 @@
+fileFormatVersion: 2
+guid: 4ef32d1f53a50b949bb90b9cadc7cbde
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ikan_Layer3.._29
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1223
+        width: 251
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97ba6a239bbd7244b296cb1cde506ff
+      internalID: -2036807225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikan_Layer3.._30
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1088
+        width: 306
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dbdc67a31671740974f6c885917ccb
+      internalID: 1963999402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikan_Layer3.._31
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1152
+        width: 238
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff751b6e92e580439637f4614aa1c50
+      internalID: 861676841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikan_Layer3.._32
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 969
+        width: 800
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1c08859ca87d34d9c6e852c2e8327e
+      internalID: -1754589135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikan_Layer3.._33
+      rect:
+        serializedVersion: 2
+        x: 2785
+        y: 665
+        width: 1208
+        height: 591
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acccd8a2b10b241458caca3badae35a4
+      internalID: -758641830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikan_Layer3.._34
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 752
+        width: 310
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9bf5bf6f0d30bc4886516f451336518
+      internalID: 1792092907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikan_Layer3.._35
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 561
+        width: 866
+        height: 331
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4e37bc49d1fdb4c9091502f3751df5
+      internalID: 724077971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikan_Layer3.._36
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 382
+        width: 407
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e348bf8ba363f3488c501771b6f6819
+      internalID: 1559567381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikan_Layer3.._37
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 0
+        width: 848
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d812252d7cfedd48a28843cd071d237
+      internalID: 753343141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikan_Layer3.._38
+      rect:
+        serializedVersion: 2
+        x: 2654
+        y: 0
+        width: 1611
+        height: 509
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92b43ed53aa7bc47ad0f07ee10f4902
+      internalID: -45783900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Ikan_Layer3.._12: -1831985963
+      Ikan_Layer3.._0: -1639031987
+      Ikan_Layer3.._1: -569231081
+      Ikan_Layer3.._13: -87338368
+      Ikan_Layer3.._6: -2028177520
+      Ikan_Layer3.._3: -1605761331
+      Ikan_Layer3.._5: 1907305483
+      Ikan_Layer3.._22: 259256319
+      Ikan_Layer3.._17: 1499344329
+      Ikan_Layer3.._32: -1754589135
+      Ikan_Layer3.._29: -2036807225
+      Ikan_Layer3.._19: 1360814879
+      Ikan_Layer3.._8: 2009589163
+      Ikan_Layer3.._36: 1559567381
+      Ikan_Layer3.._33: -758641830
+      Ikan_Layer3.._16: 669017577
+      Ikan_Layer3.._28: -737365804
+      Ikan_Layer3.._10: -456157952
+      Ikan_Layer3.._23: 409970975
+      Ikan_Layer3.._27: 1920377442
+      Ikan_Layer3.._14: -1461762435
+      Ikan_Layer3.._9: 2099638938
+      Ikan_Layer3.._37: 753343141
+      Ikan_Layer3.._39: 313245020
+      Ikan_Layer3.._11: 1782889345
+      Ikan_Layer3.._38: -45783900
+      Ikan_Layer3.._24: -1903219104
+      Ikan_Layer3.._15: 1207093686
+      Ikan_Layer3.._20: -1324618766
+      Ikan_Layer3.._30: 1963999402
+      Ikan_Layer3.._2: 1610758271
+      Ikan_Layer3.._7: -1847646832
+      Ikan_Layer3.._4: -1034803281
+      Ikan_Layer3.._18: -1952580091
+      Ikan_Layer3.._35: 724077971
+      Ikan_Layer3.._25: 1453061783
+      Ikan_Layer3.._31: 861676841
+      Ikan_Layer3.._34: 1792092907
+      Ikan_Layer3.._21: 166327491
+      Ikan_Layer3.._26: 1055277069
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,6 +8,8 @@ public class TaliRenderer : MonoBehaviour
 
     [SerializeField]
     private Transform startPos;
+    [SerializeField]
+    private Transform endPos;
 
     private float line_width = 0.05f;
 
@@ -15,49 +17,58 @@ public class TaliRenderer : MonoBehaviour
     {
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.startWidth = line_width;
-        lineRenderer.enabled = false;
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-            
+        Vector3 temp = startPos.position;
+        temp.z = -7f;
+
+        startPos.position = temp;
+        temp = endPos.position;
+        temp.z = 0f;
+
+        endPos.position = temp;
+
+
+        lineRenderer.SetPosition(0, startPos.position);
+        lineRenderer.SetPosition(1, endPos.position);
     }
 
-    public void RenderLine(Vector3 endPosition, bool enableRender)
-    {
-        if (enableRender)
-        {
-            if (!lineRenderer.enabled)
-                lineRenderer.enabled = true;
+    /* public void RenderLine(Vector3 endPosition, bool enableRender)
+     {
+         if (enableRender)
+         {
+             if (!lineRenderer.enabled)
+                 lineRenderer.enabled = true;
 
-            lineRenderer.positionCount = 2;
+             lineRenderer.positionCount = 2;
 
-        }
-        else{
+         }
+         else{
 
-            lineRenderer.positionCount = 0;
+             lineRenderer.positionCount = 0;
 
-            if (lineRenderer.enabled)
-                lineRenderer.enabled = false;
+             if (lineRenderer.enabled)
+                 lineRenderer.enabled = false;
 
-        }
+         }
 
-        if (lineRenderer.enabled)
-        {
-            Vector3 temp = startPos.position;
-            temp.z = -10f;
+         if (lineRenderer.enabled)
+         {
+             Vector3 temp = startPos.position;
+             temp.z = -10f;
 
-            startPos.position = temp;
-            temp = endPosition;
-            temp.z = 0f;
+             startPos.position = temp;
+             temp = endPosition;
+             temp.z = 0f;
 
-            endPosition = temp;
+             endPosition = temp;
 
-            lineRenderer.SetPosition(0, startPos.position);
-            lineRenderer.SetPosition(1, endPosition);
-            
-        }
+             lineRenderer.SetPosition(0, startPos.position);
+             lineRenderer.SetPosition(1, endPosition);
 
-    }
+         }
+
+     }*/
 }

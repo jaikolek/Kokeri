@@ -7,7 +7,8 @@ public class Objek : MonoBehaviour
     private Tarik tarik;
     private TextUI textUi;
 
-    public GameObject gambar;
+
+    private SpriteRenderer spriteRenderer;
     private GameObject player;
     private GameObject tali;
     private GameObject kail;
@@ -18,10 +19,12 @@ public class Objek : MonoBehaviour
     public int skor;
     public bool isKanan, isTarik, isSampah;
 
-    private void Start()
+    public virtual void Start()
     {
         tarik = FindObjectOfType<Tarik>();
         textUi = FindObjectOfType<TextUI>();
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+
 
         player = GameObject.Find("Player");
         tali = player.transform.GetChild(0).gameObject;
@@ -40,6 +43,8 @@ public class Objek : MonoBehaviour
         {
             isKanan = false;
         }
+
+
     }
 
     private void Update()
@@ -50,6 +55,12 @@ public class Objek : MonoBehaviour
             textUi.koin += 2;
             textUi.convertScore -= 10; 
         }
+
+        if (!tarik.moveDown)
+            cirColl.enabled = false;
+
+        if (tarik.canRotate)
+            cirColl.enabled = true;
 
         if (isTarik)
         {
@@ -69,6 +80,12 @@ public class Objek : MonoBehaviour
                 if (isSampah)
                 {
                     textUi.nyawaPlayer -= 1;
+                    if (textUi.minNyawa < 0)
+                    {
+                        textUi.nyawaPlayer = 0;
+                    }
+                    if (textUi.nyawaPlayer >= 0)
+                        textUi.iconNyawa[textUi.nyawaPlayer].enabled = false;
                 }
 
             }
@@ -76,10 +93,26 @@ public class Objek : MonoBehaviour
         }
 
         if (isKanan == false)
+        {
             transform.Translate(Vector3.right * kecepatan * Time.deltaTime);
+            spriteRenderer.flipX = true;
+            if(transform.tag == "IkanKebalik")
+            {
+                spriteRenderer.flipX = false;
+            }
+        }
 
         if (isKanan == true)
+        {
             transform.Translate(Vector3.left * kecepatan * Time.deltaTime);
+            spriteRenderer.flipX = false;
+            if (transform.tag == "IkanKebalik")
+            {
+                spriteRenderer.flipX = true;
+            }
+        }
+
+        
 
     }
 
@@ -99,5 +132,6 @@ public class Objek : MonoBehaviour
         
 
     }
+
 
 }

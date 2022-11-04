@@ -90,12 +90,10 @@ public class Tarik : MonoBehaviour
             if (moveDown)
             {
                 temp -= transform.up * Time.deltaTime * move_speed;
-                taliRenderer.RenderLine(temp, true);
             }
             else
             {
                 temp += transform.up * Time.deltaTime * move_speed;
-                taliRenderer.RenderLine(temp, true);
             }
 
             transform.position = temp;
@@ -107,7 +105,6 @@ public class Tarik : MonoBehaviour
             {
                 canRotate = true;
                 move_speed = initialMoveSpeed;
-                taliRenderer.RenderLine(temp, false);
             }
 
         }
