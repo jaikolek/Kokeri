@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Kokeri/Scenes/LevelLaut.unity
+- path: Assets/Kokeri/Scenes/LevelHutan.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

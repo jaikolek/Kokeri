@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Laut/tumbuhanlaut_Layer4.png.meta
 guid: 6fd47164003898c49a3641a1b7e2af7f
+========
+guid: aa04b7251fee7714c9a3fc8fd25228df
+>>>>>>>> Hutan:Assets/Kokeri/Assets/In_Game/Hutan/hewan.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +120,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Laut/tumbuhanlaut_Layer4.png.meta
       name: tumbuhanlaut_Layer4_0
+========
+      name: hewan_0
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 371
+        width: 315
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf190287141eb34cb43d9755ecf819e
+      internalID: 1052678882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hewan_1
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 178
+        width: 291
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c08ad2e521af894fba3a7df0708fb4b
+      internalID: 559889226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hewan_2
+>>>>>>>> Hutan:Assets/Kokeri/Assets/In_Game/Hutan/hewan.png.meta
       rect:
         serializedVersion: 2
         x: 0
+        y: 14
+        width: 321
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b2afc5a647f8e4395b2782c599b1e3
+      internalID: 2001483512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hewan_3
+      rect:
+        serializedVersion: 2
+        x: 610
         y: 0
+<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Laut/tumbuhanlaut_Layer4.png.meta
         width: 482
         height: 1943
+========
+        width: 224
+        height: 219
+>>>>>>>> Hutan:Assets/Kokeri/Assets/In_Game/Hutan/hewan.png.meta
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,6 +206,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Laut/tumbuhanlaut_Layer4.png.meta
       spriteID: 23f248bc112201247b3886c24fdbd891
       internalID: 804901180
       vertices: []
@@ -237,6 +314,10 @@ TextureImporter:
       bones: []
       spriteID: 0429dfb52af22fd4e8a792f9b13078a0
       internalID: -367872129
+========
+      spriteID: d5ac44a50a63fcc4fb1c88a59e80702c
+      internalID: 1110428507
+>>>>>>>> Hutan:Assets/Kokeri/Assets/In_Game/Hutan/hewan.png.meta
       vertices: []
       indices: 
       edges: []
@@ -252,6 +333,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Laut/tumbuhanlaut_Layer4.png.meta
       tumbuhanlaut_Layer4_8: 412821668
       tumbuhanlaut_Layer4_2: 1767857722
       tumbuhanlaut_Layer4_7: -1267074855
@@ -263,6 +345,12 @@ TextureImporter:
       tumbuhanlaut_Layer4_3: 1614773741
       tumbuhanlaut_Layer4_10: -1510069416
       tumbuhanlaut_Layer4_1: 2022150654
+========
+      hewan_0: 1052678882
+      hewan_1: 559889226
+      hewan_3: 1110428507
+      hewan_2: 2001483512
+>>>>>>>> Hutan:Assets/Kokeri/Assets/In_Game/Hutan/hewan.png.meta
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
