@@ -8,7 +8,6 @@ using UnityEngine.Video;
 public class DesaProlog : MonoBehaviour
 {
     [SerializeField] private VideoPlayer videoPlayer;
-    // [SerializeField] private VideoClip videoClip;
     [SerializeField] private Button skipBtn;
 
     private void Awake()
@@ -37,7 +36,7 @@ public class DesaProlog : MonoBehaviour
 
     private IEnumerator PlayVideo()
     {
-        videoPlayer.url = Path.Combine(Application.streamingAssetsPath, "Video/PrologDesa.mp4");
+        videoPlayer.url = Path.Combine(Application.streamingAssetsPath, "Video/PrologDesa720p.mp4");
 
         videoPlayer.Prepare();
 

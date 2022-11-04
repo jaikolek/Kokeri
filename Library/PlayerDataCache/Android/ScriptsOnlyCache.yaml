@@ -21,16 +21,13 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
-    - UnityEditor.Tilemaps.TilemapEditorToolPreferences
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -134,41 +131,41 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1598}
     - Class: 114
-      Script: {instanceID: 1682}
+      Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 1754}
+      Script: {instanceID: 1684}
     - Class: 114
-      Script: {instanceID: 1906}
+      Script: {instanceID: 1756}
     - Class: 114
-      Script: {instanceID: 2050}
+      Script: {instanceID: 1908}
     - Class: 114
-      Script: {instanceID: 2748}
+      Script: {instanceID: 2058}
     - Class: 114
-      Script: {instanceID: 2760}
+      Script: {instanceID: 2756}
     - Class: 114
-      Script: {instanceID: 2918}
+      Script: {instanceID: 2768}
     - Class: 114
-      Script: {instanceID: 3032}
+      Script: {instanceID: 2926}
     - Class: 114
-      Script: {instanceID: 3216}
+      Script: {instanceID: 3042}
     - Class: 114
-      Script: {instanceID: 3276}
+      Script: {instanceID: 3226}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3286}
     - Class: 114
-      Script: {instanceID: 3516}
+      Script: {instanceID: 3386}
     - Class: 114
-      Script: {instanceID: 3734}
+      Script: {instanceID: 3534}
     - Class: 114
-      Script: {instanceID: 3758}
+      Script: {instanceID: 3752}
     - Class: 114
-      Script: {instanceID: 3840}
+      Script: {instanceID: 3778}
     - Class: 114
-      Script: {instanceID: 3980}
+      Script: {instanceID: 3860}
     - Class: 114
-      Script: {instanceID: 5398}
+      Script: {instanceID: 4962}
     - Class: 114
-      Script: {instanceID: 32420}
+      Script: {instanceID: 5430}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -186,8 +183,6 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 328
-      Script: {instanceID: 0}
-    - Class: 329
       Script: {instanceID: 0}
     Assets/Kokeri/Scenes/MainLevel.unity:
     - Class: 1
@@ -215,33 +210,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1598}
     - Class: 114
-      Script: {instanceID: 2050}
+      Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 2748}
+      Script: {instanceID: 2058}
     - Class: 114
-      Script: {instanceID: 3032}
+      Script: {instanceID: 2756}
     - Class: 114
-      Script: {instanceID: 3216}
+      Script: {instanceID: 3042}
     - Class: 114
-      Script: {instanceID: 3276}
+      Script: {instanceID: 3226}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3286}
     - Class: 114
-      Script: {instanceID: 3516}
+      Script: {instanceID: 3386}
     - Class: 114
-      Script: {instanceID: 3840}
+      Script: {instanceID: 3534}
     - Class: 114
-      Script: {instanceID: 3980}
+      Script: {instanceID: 3860}
     - Class: 114
-      Script: {instanceID: 3998}
+      Script: {instanceID: 4018}
     - Class: 114
-      Script: {instanceID: 4128}
+      Script: {instanceID: 4148}
     - Class: 114
-      Script: {instanceID: 4982}
+      Script: {instanceID: 5012}
     - Class: 114
-      Script: {instanceID: 5398}
+      Script: {instanceID: 5430}
     - Class: 114
-      Script: {instanceID: 6528}
+      Script: {instanceID: 6568}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -259,8 +254,6 @@ ScriptsOnlyBuild:
     - Class: 225
       Script: {instanceID: 0}
     - Class: 328
-      Script: {instanceID: 0}
-    - Class: 329
       Script: {instanceID: 0}
     - Class: 850595691
       Script: {instanceID: 0}
@@ -290,41 +283,41 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1598}
     - Class: 114
-      Script: {instanceID: 1906}
+      Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 2050}
+      Script: {instanceID: 1908}
     - Class: 114
-      Script: {instanceID: 2536}
+      Script: {instanceID: 2058}
     - Class: 114
-      Script: {instanceID: 3032}
+      Script: {instanceID: 2544}
     - Class: 114
-      Script: {instanceID: 3216}
+      Script: {instanceID: 3042}
     - Class: 114
-      Script: {instanceID: 3276}
+      Script: {instanceID: 3226}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3286}
     - Class: 114
-      Script: {instanceID: 3516}
+      Script: {instanceID: 3386}
     - Class: 114
-      Script: {instanceID: 3840}
+      Script: {instanceID: 3534}
     - Class: 114
-      Script: {instanceID: 3980}
+      Script: {instanceID: 3860}
     - Class: 114
-      Script: {instanceID: 3998}
+      Script: {instanceID: 4018}
     - Class: 114
-      Script: {instanceID: 4058}
+      Script: {instanceID: 4078}
     - Class: 114
-      Script: {instanceID: 4202}
+      Script: {instanceID: 4222}
     - Class: 114
-      Script: {instanceID: 5398}
+      Script: {instanceID: 5430}
     - Class: 114
-      Script: {instanceID: 5438}
+      Script: {instanceID: 5470}
     - Class: 114
-      Script: {instanceID: 5610}
+      Script: {instanceID: 5644}
     - Class: 114
-      Script: {instanceID: 6060}
+      Script: {instanceID: 6100}
     - Class: 114
-      Script: {instanceID: 6528}
+      Script: {instanceID: 6568}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -352,6 +345,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: HorizontalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 69415240821be7986b27e72bf9609a30
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
   - hash:
       serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
@@ -660,12 +659,6 @@ ScriptsOnlyBuild:
     className: Bone
   - hash:
       serializedVersion: 2
-      Hash: 69415240821be7986b27e72bf9609a30
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Button
-  - hash:
-      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -696,7 +689,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: f39435f7eb925f2461744231a2e3647b
+      Hash: 63a9f4a7334a3bafc1a14dde71d84833
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DesaHTP
@@ -796,6 +789,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: c21b32ac0d6fd2788b31b403f8b1e0b2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DesaProlog
   - hash:
       serializedVersion: 2
       Hash: a089d4bb50371ef30e28dcaf580da14b
@@ -988,12 +987,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: c413763d5a04034f69a4c4fad9cb8a47
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DesaProlog
   platform: 13
   scenePathNames:
   - Assets/Kokeri/Scenes/MainMenu.unity

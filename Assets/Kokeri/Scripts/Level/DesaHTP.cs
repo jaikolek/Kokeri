@@ -35,7 +35,7 @@ public class DesaHTP : MonoBehaviour
 
     private IEnumerator PlayVideo()
     {
-        videoPlayer.url = Path.Combine(Application.streamingAssetsPath, "Video/HTPDesa.mp4");
+        videoPlayer.url = Path.Combine(Application.streamingAssetsPath, "Video/HowToPlayDesa720p.mp4");
 
         videoPlayer.Prepare();
 
