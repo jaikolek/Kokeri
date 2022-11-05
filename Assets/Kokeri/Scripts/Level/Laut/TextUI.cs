@@ -6,13 +6,14 @@ public class TextUI : MonoBehaviour
 {    
     public TextMeshProUGUI score;
     public TextMeshProUGUI nyawa;
-    public TextMeshProUGUI score2;
     public TextMeshProUGUI koinUI;
+    public TextMeshProUGUI ikanUI;
 
     public Image[] iconNyawa;
     public GameObject gameOverPanel;
 
     public int TotalSkor, convertScore, koin, nyawaPlayer = 3, minNyawa;
+    public int ikanCounter;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,7 @@ public class TextUI : MonoBehaviour
         koin = 0;
         TotalSkor = 0;
         nyawaPlayer = 3;
+        ikanCounter = 0;
         for(int i = 0; i < iconNyawa.Length; i++)
         {
             iconNyawa[i].enabled = true;
@@ -30,7 +32,7 @@ public class TextUI : MonoBehaviour
     void Update()
     {
         minNyawa = nyawaPlayer;
-        score.text = "Skor : " + TotalSkor.ToString();
+        ikanUI.text = ikanCounter.ToString();
         nyawa.text = "X" + nyawaPlayer.ToString();
 
 
@@ -38,7 +40,7 @@ public class TextUI : MonoBehaviour
         {
             Time.timeScale = 0;
             gameOverPanel.SetActive(true);
-            score2.text = TotalSkor.ToString();
+            score.text = TotalSkor.ToString();
             koinUI.text = koin.ToString();
         }
 

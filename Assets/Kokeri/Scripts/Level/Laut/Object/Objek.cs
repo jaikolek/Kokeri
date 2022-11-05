@@ -87,6 +87,10 @@ public class Objek : MonoBehaviour
                     if (textUi.nyawaPlayer >= 0)
                         textUi.iconNyawa[textUi.nyawaPlayer].enabled = false;
                 }
+                else
+                {
+                    textUi.ikanCounter += 1;
+                }
 
             }
 
