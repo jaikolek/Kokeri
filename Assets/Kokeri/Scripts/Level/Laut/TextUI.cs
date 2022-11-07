@@ -8,6 +8,7 @@ public class TextUI : MonoBehaviour
     public TextMeshProUGUI nyawa;
     public TextMeshProUGUI koinUI;
     public TextMeshProUGUI ikanUI;
+    public TextMeshProUGUI ikanUIGameOver;
 
     public Image[] iconNyawa;
     public GameObject gameOverPanel;
@@ -35,13 +36,15 @@ public class TextUI : MonoBehaviour
         ikanUI.text = ikanCounter.ToString();
         nyawa.text = "X" + nyawaPlayer.ToString();
 
+        // untuk game over
+        score.text = TotalSkor.ToString();
+        koinUI.text = koin.ToString();
+        ikanUIGameOver.text = ikanCounter.ToString();
 
         if(nyawaPlayer <= 0)
         {
             Time.timeScale = 0;
             gameOverPanel.SetActive(true);
-            score.text = TotalSkor.ToString();
-            koinUI.text = koin.ToString();
         }
 
     }

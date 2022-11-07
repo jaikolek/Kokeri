@@ -120,11 +120,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 337
-        width: 2084
-        height: 1439
+        y: 481
+        width: 2000
+        height: 1344
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: jeda_1
       rect:
         serializedVersion: 2
-        x: 2203
-        y: 1329
-        width: 265
-        height: 252
+        x: 2242
+        y: 1547
+        width: 223
+        height: 213
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: jeda_2
       rect:
         serializedVersion: 2
-        x: 2208
-        y: 978
-        width: 255
-        height: 253
+        x: 313
+        y: 0
+        width: 142
+        height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: jeda_3
       rect:
         serializedVersion: 2
-        x: 2169
-        y: 877
-        width: 330
-        height: 65
+        x: 2241
+        y: 1117
+        width: 258
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,36 +200,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jeda_8
-      rect:
-        serializedVersion: 2
-        x: 2208
-        y: 479
-        width: 255
-        height: 252
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc8d6e076377c3a43ad2e9784a1ca942
-      internalID: 290615828
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: jeda_9
       rect:
         serializedVersion: 2
-        x: 2253
-        y: 385
-        width: 176
-        height: 67
+        x: 2245
+        y: 648
+        width: 255
+        height: 253
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,36 +221,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jeda_13
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 187
-        width: 111
-        height: 120
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2f6fb9013c428f458da53bd5e996b14
-      internalID: -1874224701
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: jeda_14
       rect:
         serializedVersion: 2
-        x: 650
-        y: 211
-        width: 1032
-        height: 112
+        x: 325
+        y: 176
+        width: 106
+        height: 114
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -287,12 +245,12 @@ TextureImporter:
       name: jeda_15
       rect:
         serializedVersion: 2
-        x: 1796
-        y: 136
-        width: 103
-        height: 140
+        x: 486
+        y: 199
+        width: 969
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -308,12 +266,12 @@ TextureImporter:
       name: jeda_16
       rect:
         serializedVersion: 2
-        x: 480
-        y: 0
-        width: 112
-        height: 98
+        x: 1562
+        y: 129
+        width: 97
+        height: 132
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -326,22 +284,64 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jeda_17
+      name: jeda_4
       rect:
         serializedVersion: 2
-        x: 664
-        y: 47
-        width: 1005
-        height: 85
+        x: 2204
+        y: 1021
+        width: 331
+        height: 67
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13ad2bc189e5ff444814aca5da0394c7
-      internalID: -132619316
+      spriteID: 2215be0b8920bc647b9b487810f77777
+      internalID: 32269419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jeda_10
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 549
+        width: 165
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0cf9586f15529479a0fe312612133c
+      internalID: 1923063782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jeda_18
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 45
+        width: 943
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d82c04fb22f24f4eb480638ca9f735d
+      internalID: 1125663841
       vertices: []
       indices: 
       edges: []
@@ -375,6 +375,7 @@ TextureImporter:
       jeda_12: -1271701388
       jeda_9: 479828166
       jeda_7: 630542906
+      jeda_18: 1125663841
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
