@@ -129,7 +129,7 @@ public class HutanPlayerControl : MonoBehaviour
                 Destroy(collider.gameObject);
 
                 // ini Kumbang awokawok
-                HutanGameManager.Instance.AddCoin();
+                HutanGameManager.Instance.IncrementBug();
             }
         }
     }

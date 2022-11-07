@@ -52,6 +52,6 @@ MonoBehaviour:
   upBtn: {fileID: 0}
   downBtn: {fileID: 0}
   catchBtn: {fileID: 0}
-  score: {fileID: 0}
-  coin: {fileID: 0}
-  health: {fileID: 0}
+  bugText: {fileID: 0}
+  healthContainer: {fileID: 0}
+  healthText: {fileID: 0}

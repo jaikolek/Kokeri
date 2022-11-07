@@ -50,10 +50,40 @@ public class HutanEventManager : MonoBehaviour
         OnDespawned?.Invoke();
     }
 
-    public event Action OnGameOver;
-    public void GameOver()
+    public event Action OnGamePaused;
+    public void GamePaused()
     {
-        OnGameOver?.Invoke();
+        Time.timeScale = 0;
+
+        OnGamePaused?.Invoke();
+    }
+
+    public event Action OnGameResumed;
+    public void GameResumed()
+    {
+        Time.timeScale = 1;
+
+        OnGameResumed?.Invoke();
+    }
+
+    public event Action<int, int, int> OnGameOver;
+    public void GameOver(int _score, int _coin, int _bug)
+    {
+        Time.timeScale = 0;
+
+        OnGameOver?.Invoke(_score, _coin, _bug);
+    }
+
+    public event Action<string, int> OnUserSubmit;
+    public void UserSubmit(string _name, int _score)
+    {
+        OnUserSubmit?.Invoke(_name, _score);
+    }
+
+    public event Action<Character> OnCharacterChanged;
+    public void CharacterChanged(Character _character)
+    {
+        OnCharacterChanged?.Invoke(_character);
     }
 
     public event Action<bool> OnCollectRange;
@@ -84,12 +114,5 @@ public class HutanEventManager : MonoBehaviour
     public void Catch()
     {
         OnCatch?.Invoke();
-    }
-
-    public event Action<Character> OnCharacterSelected;
-    public void CharacterChanged(Character _character)
-    {
-        OnCharacterSelected?.Invoke(_character);
-        StartCoroutine(HutanUIManager.Instance.CountDown());
     }
 }

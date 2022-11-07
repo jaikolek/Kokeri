@@ -37,7 +37,6 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\MoveInventory.cs" />
-     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaPausePopUp.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\GameManagerDesa.cs" />
      <Compile Include="Assets\Scripts.Old\Events.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanGameManager.cs" />
@@ -86,7 +85,8 @@
      <Compile Include="Assets\Kokeri\Scripts\EnumContainer.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\LevelDesignDesa.cs" />
      <Compile Include="Assets\Scripts.Old\Delay.cs" />
-     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanParallaxMasDanang.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\PausePopUp.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\ScoreBoardPopUp.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

@@ -12,10 +12,10 @@ public class HutanPlayer : MonoBehaviour
 
     private void Start()
     {
-        HutanEventManager.Instance.OnCharacterSelected += HutanEventManager_OnCharacterSelected;
+        HutanEventManager.Instance.OnCharacterChanged += HutanEventManager_OnCharacterChanged;
     }
 
-    private void HutanEventManager_OnCharacterSelected(Character character)
+    private void HutanEventManager_OnCharacterChanged(Character character)
     {
         switch (character)
         {

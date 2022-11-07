@@ -50,21 +50,25 @@ public class HutanUIManager : MonoBehaviour
     [SerializeField] private Button upBtn;
     [SerializeField] private Button downBtn;
     [SerializeField] private Button catchBtn;
+    [SerializeField] private Button pauseBtn;
 
-    [Header("Score")]
-    [SerializeField] private GameObject score;
-
-    [Header("Coin")]
-    [SerializeField] private GameObject coin;
+    [Header("Bug")]
+    [SerializeField] private TextMeshProUGUI bugText;
 
     [Header("Health")]
-    [SerializeField] private GameObject health;
+    [SerializeField] private GameObject healthContainer;
+    [SerializeField] private TextMeshProUGUI healthText;
 
     private void Start()
     {
-        HutanEventManager.Instance.OnCharacterSelected += HutanEventManager_OnCharacterSelected;
-        HutanEventManager.Instance.OnCollectRange += HutanEventManager_CollectRange;
-        HutanEventManager.Instance.OnGameOver += HutanEventManager_GameOver;
+        HutanEventManager.Instance.OnCharacterChanged += HutanEventManager_OnCharacterChanged;
+        HutanEventManager.Instance.OnCollectRange += HutanEventManager_OnCollectRange;
+
+        HutanEventManager.Instance.OnGamePaused += HutanEventManager_OnGamePaused;
+        HutanEventManager.Instance.OnGameResumed += HutanEventManager_OnGameResumed;
+        HutanEventManager.Instance.OnGameOver += HutanEventManager_OnGameOver;
+
+        pauseBtn.onClick.AddListener(() => HutanEventManager.Instance.GamePaused());
 
         upBtn.GetComponent<ButtonPointerDownListener>().onPointerDown.AddListener(() => HutanEventManager.Instance.Jump());
 
@@ -79,13 +83,17 @@ public class HutanUIManager : MonoBehaviour
         chooseCharacterPopUp.SetActive(true);
     }
 
-    private void HutanEventManager_OnCharacterSelected(Character _character)
+    private void HutanEventManager_OnCharacterChanged(Character _character)
     {
         gameUI.SetActive(true);
         chooseCharacterPopUp.SetActive(false);
+
+        StartCoroutine(CountDown());
+
+        HutanEventManager.Instance.OnCharacterChanged -= HutanEventManager_OnCharacterChanged;
     }
 
-    private void HutanEventManager_CollectRange(bool _state)
+    private void HutanEventManager_OnCollectRange(bool _state)
     {
         if (_state)
         {
@@ -97,13 +105,22 @@ public class HutanUIManager : MonoBehaviour
         }
     }
 
-    private void HutanEventManager_GameOver()
+    private void HutanEventManager_OnGamePaused()
     {
-        Time.timeScale = 0;
+        pausePopUp.SetActive(true);
+    }
+
+    private void HutanEventManager_OnGameResumed()
+    {
+        pausePopUp.SetActive(false);
+    }
+
+    private void HutanEventManager_OnGameOver(int _score, int _coin, int _bug)
+    {
         gameOverPopUp.SetActive(true);
     }
 
-    public IEnumerator CountDown()
+    private IEnumerator CountDown()
     {
         countDownText.text = "3";
         yield return new WaitForSeconds(1);
@@ -111,7 +128,7 @@ public class HutanUIManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         countDownText.text = "1";
         yield return new WaitForSeconds(1);
-        countDownText.text = "GO";
+        countDownText.text = "GO!";
         yield return new WaitForSeconds(1);
         countDownText.gameObject.SetActive(false);
 
@@ -119,18 +136,26 @@ public class HutanUIManager : MonoBehaviour
         HutanEventManager.Instance.GameStarted();
     }
 
-    public void UpdateScore(int score)
+    public void UpdateBug(int _bug)
     {
-        this.score.GetComponentInChildren<TextMeshProUGUI>().text = "Score: " + score.ToString();
+        this.bugText.text = _bug.ToString();
     }
 
-    public void UpdateCoin(int coin)
+    public void UpdateHealth(int _health, Character _character)
     {
-        this.coin.GetComponentInChildren<TextMeshProUGUI>().text = "Kumbang: " + coin.ToString();
-    }
+        healthText.text = _health.ToString() + "X";
 
-    public void UpdateHealth(int health)
-    {
-        this.health.GetComponentInChildren<TextMeshProUGUI>().text = "Health: " + health.ToString();
+        if (_character == Character.Chiko)
+        {
+            healthContainer.transform.GetChild(0).gameObject.SetActive(false);
+        }
+        else if (_character == Character.Ketti)
+        {
+            healthContainer.transform.GetChild(1).gameObject.SetActive(false);
+        }
+        else
+        {
+            healthContainer.transform.GetChild(2).gameObject.SetActive(false);
+        }
     }
 }

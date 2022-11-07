@@ -132,11 +132,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 643
-        height: 539
+        y: 251
+        width: 644
+        height: 353
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,12 +152,12 @@ TextureImporter:
       name: UI_1
       rect:
         serializedVersion: 2
-        x: 754
+        x: 743
         y: 490
         width: 91
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,12 +173,12 @@ TextureImporter:
       name: UI_2
       rect:
         serializedVersion: 2
-        x: 885
+        x: 874
         y: 490
         width: 92
-        height: 90
+        height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: UI_3
       rect:
         serializedVersion: 2
-        x: 1013
+        x: 1002
         y: 491
-        width: 105
-        height: 90
+        width: 106
+        height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: UI_4
       rect:
         serializedVersion: 2
-        x: 1208
+        x: 1197
         y: 340
         width: 290
         height: 288
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -236,12 +236,12 @@ TextureImporter:
       name: UI_5
       rect:
         serializedVersion: 2
-        x: 1556
+        x: 1544
         y: 340
-        width: 291
+        width: 292
         height: 288
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,12 +257,12 @@ TextureImporter:
       name: UI_7
       rect:
         serializedVersion: 2
-        x: 725
-        y: 187
-        width: 243
-        height: 241
+        x: 708
+        y: 204
+        width: 220
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,12 +278,12 @@ TextureImporter:
       name: UI_8
       rect:
         serializedVersion: 2
-        x: 996
+        x: 985
         y: 252
         width: 111
         height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: UI_10
       rect:
         serializedVersion: 2
-        x: 886
+        x: 876
         y: 24
-        width: 175
+        width: 174
         height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -317,22 +317,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_11
+      name: UI_9
       rect:
         serializedVersion: 2
-        x: 1345
+        x: 1334
         y: 0
         width: 290
         height: 288
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb3612a90d799b04884c29e724efa2cf
-      internalID: 169453229
+      spriteID: c26dc5d589520134a82634903b97366c
+      internalID: -744201423
       vertices: []
       indices: 
       edges: []
@@ -348,13 +348,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UI_11: 169453229
       UI_1: 761613296
       UI_4: -1252000234
       UI_2: -372756579
       UI_3: 1582782738
       UI_9: -744201423
-      UI_12: 849584596
       UI_0: 2108725718
       UI_7: 21498589
       UI_10: 370505318
