@@ -129,9 +129,9 @@ public class Objek : MonoBehaviour
 
         if (collision.gameObject.tag == "Kail")
         {
-           tarik.move_speed -= berat;
            isTarik = true;
            cirColl.enabled = false;
+           tarik.move_speed -= berat;
         }
         
 

@@ -161,10 +161,10 @@ TextureImporter:
       name: UI_Tampilan Akhir_2
       rect:
         serializedVersion: 2
-        x: 2851
-        y: 375
-        width: 112
-        height: 108
+        x: 2860
+        y: 379
+        width: 103
+        height: 99
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -19,6 +19,7 @@ public class TextUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         koin = 0;
         TotalSkor = 0;
         nyawaPlayer = 3;
@@ -46,6 +47,6 @@ public class TextUI : MonoBehaviour
             Time.timeScale = 0;
             gameOverPanel.SetActive(true);
         }
-
+        
     }
 }

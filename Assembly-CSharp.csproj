@@ -84,13 +84,13 @@
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\TextUI.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaPhaseUI.cs" />
     <Compile Include="Assets\Kokeri\Scripts\SceneHandler.cs" />
+    <Compile Include="Assets\Kokeri\Scripts\Level\Laut\InputKeyboard.cs" />
     <Compile Include="Assets\Kokeri\Scripts\MainMenu\SettingPopUp.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\DesaHTP.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\TaliRenderer.cs" />
     <Compile Include="Assets\Kokeri\Scripts\MainMenu\MainMenu.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Tarik.cs" />
     <Compile Include="Assets\Kokeri\Scripts\BasePopUp.cs" />
-    <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Player.cs" />
     <Compile Include="Assets\Scripts.Old\ContohPlayer.cs" />
     <Compile Include="Assets\Kokeri\Scripts\MainMenu\RankingPopUp.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Object\IkanBesar.cs" />
