@@ -1,33 +1,33 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - AudioManager
-    - DesaCameraFocus
-    - DesaGameOverPopUp
-    - DesaHTP
-    - DesaPausePopUp
-    - DesaPhaseUI
-    - DesaProlog
-    - DesaUI
-    - GameManagerDesa
-    - MainLevel
-    - MainMenu
-    - RankingPopUp
-    - SceneHandler
-    - SettingPopUp
-    - ShopPopUp
-    - ShopProduct
+    - ButtonPointerDownListener
+    - ButtonPointerUpListener
+    - HutanBug
+    - HutanDespawner
+    - HutanEventManager
+    - HutanGameManager
+    - HutanGameOverPopUp
+    - HutanObstacle
+    - HutanParallax
+    - HutanPlayer
+    - HutanPlayerControl
+    - HutanSpawner
+    - HutanUIManager
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
+    - UnityEditor.Tilemaps.TilemapEditorToolPreferences
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -55,15 +55,10 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
-    - UnityEngine.UI.RawImage
-    - UnityEngine.UI.Slider
   serializedClasses:
     Assembly-CSharp:
-    - AudioManager/AudioData
-    - LevelDesignDesa
-    - ShopItem
+    - HutanDesignLevel
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
     - TMPro.FontAssetCreationSettings
@@ -80,10 +75,8 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Style
     - TMPro.VertexGradient
     UnityEngine.CoreModule:
-    - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
-    - UnityEngine.Events.PersistentListenerMode
-    - UnityEngine.RectOffset
+    - UnityEngine.Events.UnityEvent
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
@@ -95,11 +88,10 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
-    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve: []
   sceneClasses:
-    Assets/Kokeri/Scenes/LevelDesa.unity:
+    Assets/Kokeri/Scenes/LevelHutan.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -112,61 +104,71 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 74
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 70
       Script: {instanceID: 0}
     - Class: 81
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 84
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1596}
-    - Class: 114
       Script: {instanceID: 1598}
     - Class: 114
-      Script: {instanceID: 1600}
-    - Class: 114
-      Script: {instanceID: 1684}
-    - Class: 114
-      Script: {instanceID: 1756}
-    - Class: 114
-      Script: {instanceID: 1908}
+      Script: {instanceID: 1960}
     - Class: 114
       Script: {instanceID: 2058}
     - Class: 114
-      Script: {instanceID: 2756}
+      Script: {instanceID: 2108}
     - Class: 114
-      Script: {instanceID: 2768}
+      Script: {instanceID: 2594}
     - Class: 114
-      Script: {instanceID: 2926}
+      Script: {instanceID: 2986}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 3092}
     - Class: 114
-      Script: {instanceID: 3226}
+      Script: {instanceID: 3276}
     - Class: 114
-      Script: {instanceID: 3286}
+      Script: {instanceID: 3336}
     - Class: 114
-      Script: {instanceID: 3386}
+      Script: {instanceID: 3374}
     - Class: 114
-      Script: {instanceID: 3534}
+      Script: {instanceID: 3510}
     - Class: 114
-      Script: {instanceID: 3752}
+      Script: {instanceID: 3544}
     - Class: 114
-      Script: {instanceID: 3778}
+      Script: {instanceID: 3584}
     - Class: 114
-      Script: {instanceID: 3860}
+      Script: {instanceID: 3910}
     - Class: 114
-      Script: {instanceID: 4962}
+      Script: {instanceID: 4050}
     - Class: 114
-      Script: {instanceID: 5430}
+      Script: {instanceID: 4426}
+    - Class: 114
+      Script: {instanceID: 5044}
+    - Class: 114
+      Script: {instanceID: 5650}
+    - Class: 114
+      Script: {instanceID: 5692}
+    - Class: 114
+      Script: {instanceID: 5704}
+    - Class: 114
+      Script: {instanceID: 5710}
+    - Class: 114
+      Script: {instanceID: 5870}
+    - Class: 114
+      Script: {instanceID: 6148}
+    - Class: 114
+      Script: {instanceID: 23008}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -182,162 +184,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    - Class: 328
-      Script: {instanceID: 0}
-    Assets/Kokeri/Scenes/MainLevel.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 84
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1596}
-    - Class: 114
-      Script: {instanceID: 1598}
-    - Class: 114
-      Script: {instanceID: 1600}
-    - Class: 114
-      Script: {instanceID: 2058}
-    - Class: 114
-      Script: {instanceID: 2756}
-    - Class: 114
-      Script: {instanceID: 3042}
-    - Class: 114
-      Script: {instanceID: 3226}
-    - Class: 114
-      Script: {instanceID: 3286}
-    - Class: 114
-      Script: {instanceID: 3386}
-    - Class: 114
-      Script: {instanceID: 3534}
-    - Class: 114
-      Script: {instanceID: 3860}
-    - Class: 114
-      Script: {instanceID: 4018}
-    - Class: 114
-      Script: {instanceID: 4148}
-    - Class: 114
-      Script: {instanceID: 5012}
-    - Class: 114
-      Script: {instanceID: 5430}
-    - Class: 114
-      Script: {instanceID: 6568}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 225
-      Script: {instanceID: 0}
-    - Class: 328
-      Script: {instanceID: 0}
-    - Class: 850595691
-      Script: {instanceID: 0}
-    Assets/Kokeri/Scenes/MainMenu.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1596}
-    - Class: 114
-      Script: {instanceID: 1598}
-    - Class: 114
-      Script: {instanceID: 1600}
-    - Class: 114
-      Script: {instanceID: 1908}
-    - Class: 114
-      Script: {instanceID: 2058}
-    - Class: 114
-      Script: {instanceID: 2544}
-    - Class: 114
-      Script: {instanceID: 3042}
-    - Class: 114
-      Script: {instanceID: 3226}
-    - Class: 114
-      Script: {instanceID: 3286}
-    - Class: 114
-      Script: {instanceID: 3386}
-    - Class: 114
-      Script: {instanceID: 3534}
-    - Class: 114
-      Script: {instanceID: 3860}
-    - Class: 114
-      Script: {instanceID: 4018}
-    - Class: 114
-      Script: {instanceID: 4078}
-    - Class: 114
-      Script: {instanceID: 4222}
-    - Class: 114
-      Script: {instanceID: 5430}
-    - Class: 114
-      Script: {instanceID: 5470}
-    - Class: 114
-      Script: {instanceID: 5644}
-    - Class: 114
-      Script: {instanceID: 6100}
-    - Class: 114
-      Script: {instanceID: 6568}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 225
-      Script: {instanceID: 0}
-    - Class: 850595691
-      Script: {instanceID: 0}
   scriptHashData:
   - hash:
       serializedVersion: 2
@@ -345,12 +191,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: HorizontalLayoutGroup
-  - hash:
-      serializedVersion: 2
-      Hash: 69415240821be7986b27e72bf9609a30
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Button
   - hash:
       serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
@@ -431,10 +271,28 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
+      Hash: 0c11d0100e509db4d411edbc2be70913
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanGameManager
+  - hash:
+      serializedVersion: 2
+      Hash: eb7c2f71b8d913ae18cabff854102652
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonLongPressListener
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanPlayer
   - hash:
       serializedVersion: 2
       Hash: 300fd99066f8c288e85f5e81ce65fe34
@@ -521,6 +379,12 @@ ScriptsOnlyBuild:
     className: DesaPhaseUI
   - hash:
       serializedVersion: 2
+      Hash: dbff22a2aea563f69f74f6daa8804553
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanGameOverPopUp
+  - hash:
+      serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -563,10 +427,34 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: 13d30424efb311ff22fbbb6df5463f32
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonDoubleClickListener
+  - hash:
+      serializedVersion: 2
+      Hash: 11d3f93e237db24fe332540688c261db
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonPointerUpListener
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SceneHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 860662ce99a85bc1d3f5232a42709706
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanUIManager
+  - hash:
+      serializedVersion: 2
+      Hash: c3e30fd104a159e42657cc6294e58b7d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanSpawner
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -659,6 +547,12 @@ ScriptsOnlyBuild:
     className: Bone
   - hash:
       serializedVersion: 2
+      Hash: 69415240821be7986b27e72bf9609a30
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -689,12 +583,6 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 63a9f4a7334a3bafc1a14dde71d84833
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DesaHTP
-  - hash:
-      serializedVersion: 2
       Hash: 56c0729328bc0b17373c539b264c1052
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -707,10 +595,22 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
+      Hash: 626a5cd703be383e63a412fa141d9a99
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonPointerExitListener
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 2940e6d9320102d6d59a001b030bbf31
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanPlayerControl
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -791,12 +691,6 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: c21b32ac0d6fd2788b31b403f8b1e0b2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DesaProlog
-  - hash:
-      serializedVersion: 2
       Hash: a089d4bb50371ef30e28dcaf580da14b
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
@@ -807,6 +701,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanBug
   - hash:
       serializedVersion: 2
       Hash: 80bbba2cfd3c6641d0f218dd87f638e8
@@ -831,6 +731,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: cd4f3b2de3252bb2b36a167257a3b50e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonPointerEnterListener
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -899,6 +805,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanDespawner
+  - hash:
+      serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -909,6 +821,24 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanObstacle
+  - hash:
+      serializedVersion: 2
+      Hash: 234e9821017389ddeec7abe0ce7e90d0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonPointerDownListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanEventManager
   - hash:
       serializedVersion: 2
       Hash: cc2f46f879d85fb4c3b330475eed4d9c
@@ -987,9 +917,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: d28cb89ddc3bb400eb4798876386695e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HutanParallax
   platform: 13
   scenePathNames:
-  - Assets/Kokeri/Scenes/MainMenu.unity
-  - Assets/Kokeri/Scenes/MainLevel.unity
-  - Assets/Kokeri/Scenes/LevelDesa.unity
-  playerPath: C:/Users/atqam/Documents/repo/unity/Kokeri/Build/demo_desa.apk
+  - Assets/Kokeri/Scenes/LevelHutan.unity
+  playerPath: C:/Users/atqam/Documents/repo/unity/Kokeri/Build/demo_hutan.apk

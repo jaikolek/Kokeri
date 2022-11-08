@@ -11,13 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Kokeri/Scenes/MainLevel.unity
     guid: 4de1f43d12e531b4cba5d881dbe862f8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Kokeri/Scenes/LevelDesa.unity
     guid: 22c7b896403ffb4438a6bd56bf25730e
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Kokeri/Scenes/LevelHutan.unity
+    guid: b002025256c98cc499c01bdc4ceefd85
   m_configObjects: {}
