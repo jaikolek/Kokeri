@@ -89,6 +89,9 @@ public class HutanGameManager : MonoBehaviour
 
     public void IncrementBug()
     {
+        // show catch state (refactor this later)
+        StartCoroutine(HutanUIManager.Instance.ShowState("catch"));
+
         // increment bug and catchCounter
         bug++;
         HutanUIManager.Instance.UpdateBug(bug);
@@ -101,12 +104,14 @@ public class HutanGameManager : MonoBehaviour
 
             // change to another character
             ChangeCharacter();
-
         }
     }
 
     public void ReduceHealth()
     {
+        // show hit state (refactor this later)
+        StartCoroutine(HutanUIManager.Instance.ShowState("hit"));
+
         // reduce health and update
         health--;
         HutanUIManager.Instance.UpdateHealth(health, character);
@@ -121,8 +126,8 @@ public class HutanGameManager : MonoBehaviour
         // check if game over
         if (health <= 0)
         {
-            isGameReady = false;
             CalculateResult();
+            isGameReady = false;
         }
     }
 

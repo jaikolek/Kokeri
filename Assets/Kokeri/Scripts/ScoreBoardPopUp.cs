@@ -17,45 +17,34 @@ public class ScoreBoardPopUp : MonoBehaviour
 
     void Start()
     {
-        HutanEventManager.Instance.OnUserSubmit += HutanEventManager_OnUserSubmit;
-
         restartBtn.onClick.AddListener(OnClickRestart);
         mapBtn.onClick.AddListener(OnClickMap);
         menuBtn.onClick.AddListener(OnClickMenu);
     }
 
-    private void HutanEventManager_OnUserSubmit(string name, int _score)
+    public void ShowResultHutan(string _name, int _score)
     {
         gameObject.SetActive(true);
 
         GameObject boardItem = Instantiate(boardItemPrefab, scoreboardContainer.transform);
 
         // TODO: get rank
-        boardItem.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "16. " + name;
+        boardItem.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "16. " + _name;
         boardItem.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = _score.ToString();
     }
 
     public void OnClickRestart()
     {
-        if (GameManagerDesa.Instance != null)
-        {
-            // GameManagerDesa.Instance.RestartGame();
-        }
-        else if (HutanGameManager.Instance != null)
-        {
-            HutanGameManager.Instance.RestartGame();
-        }
+        SceneHandler.Instance.ReloadScene();
     }
 
     public void OnClickMap()
     {
-        SceneManager.LoadScene("MainLevel");
+        SceneHandler.Instance.LoadScene("MainLevel");
     }
 
     public void OnClickMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneHandler.Instance.LoadScene("MainMenu");
     }
-
-
 }

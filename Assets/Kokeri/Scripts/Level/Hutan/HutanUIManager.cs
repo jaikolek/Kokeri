@@ -42,8 +42,9 @@ public class HutanUIManager : MonoBehaviour
     [Header("UI")]
     [SerializeField] private GameObject gameUI;
     [SerializeField] private GameObject chooseCharacterPopUp;
-    [SerializeField] private GameObject pausePopUp;
     [SerializeField] private GameObject gameOverPopUp;
+    [SerializeField] private GameObject pausePopUp;
+    [SerializeField] private GameObject scoreBoardPopUp;
     [SerializeField] private TextMeshProUGUI countDownText;
 
     [Header("Input")]
@@ -59,14 +60,20 @@ public class HutanUIManager : MonoBehaviour
     [SerializeField] private GameObject healthContainer;
     [SerializeField] private TextMeshProUGUI healthText;
 
+    [Header("State")]
+    [SerializeField] private TextMeshProUGUI hitText;
+    [SerializeField] private TextMeshProUGUI catchText;
+
     private void Start()
     {
         HutanEventManager.Instance.OnCharacterChanged += HutanEventManager_OnCharacterChanged;
+        HutanEventManager.Instance.OnGameStarted += HutanEventManager_OnGameStarted;
         HutanEventManager.Instance.OnCollectRange += HutanEventManager_OnCollectRange;
 
         HutanEventManager.Instance.OnGamePaused += HutanEventManager_OnGamePaused;
         HutanEventManager.Instance.OnGameResumed += HutanEventManager_OnGameResumed;
         HutanEventManager.Instance.OnGameOver += HutanEventManager_OnGameOver;
+        HutanEventManager.Instance.OnUserSubmit += HutanEventManager_OnUserSubmit;
 
         pauseBtn.onClick.AddListener(() => HutanEventManager.Instance.GamePaused());
 
@@ -85,12 +92,23 @@ public class HutanUIManager : MonoBehaviour
 
     private void HutanEventManager_OnCharacterChanged(Character _character)
     {
-        gameUI.SetActive(true);
         chooseCharacterPopUp.SetActive(false);
+        gameUI.SetActive(true);
+
+        upBtn.interactable = false;
+        downBtn.interactable = false;
 
         StartCoroutine(CountDown());
 
         HutanEventManager.Instance.OnCharacterChanged -= HutanEventManager_OnCharacterChanged;
+    }
+
+    private void HutanEventManager_OnGameStarted()
+    {
+        upBtn.interactable = true;
+        downBtn.interactable = true;
+
+        HutanEventManager.Instance.OnGameStarted -= HutanEventManager_OnGameStarted;
     }
 
     private void HutanEventManager_OnCollectRange(bool _state)
@@ -118,6 +136,13 @@ public class HutanUIManager : MonoBehaviour
     private void HutanEventManager_OnGameOver(int _score, int _coin, int _bug)
     {
         gameOverPopUp.SetActive(true);
+        gameOverPopUp.GetComponent<HutanGameOverPopUp>().ShowResult(_score, _coin, _bug);
+    }
+
+    private void HutanEventManager_OnUserSubmit(string _name, int _score)
+    {
+        scoreBoardPopUp.SetActive(true);
+        scoreBoardPopUp.GetComponent<ScoreBoardPopUp>().ShowResultHutan(_name, _score);
     }
 
     private IEnumerator CountDown()
@@ -156,6 +181,23 @@ public class HutanUIManager : MonoBehaviour
         else
         {
             healthContainer.transform.GetChild(2).gameObject.SetActive(false);
+        }
+    }
+
+    public IEnumerator ShowState(string _state)
+    {
+        // TODO: refactor this later
+        if (_state == "hit")
+        {
+            hitText.gameObject.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            hitText.gameObject.SetActive(false);
+        }
+        else if (_state == "catch")
+        {
+            catchText.gameObject.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            catchText.gameObject.SetActive(false);
         }
     }
 }

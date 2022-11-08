@@ -5,14 +5,25 @@ using UnityEngine;
 
 public class HutanPlayer : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private Sprite chikoSprite;
-    [SerializeField] private Sprite kettiSprite;
-    [SerializeField] private Sprite beriSprite;
+    [SerializeField] private RuntimeAnimatorController chikoAnimatorController;
+    [SerializeField] private RuntimeAnimatorController kettiAnimatorController;
+    [SerializeField] private RuntimeAnimatorController beriAnimatorController;
+
+    private Animator animator;
 
     private void Start()
     {
+        HutanEventManager.Instance.OnGameStarted += HutanEventManager_OnGameStarted;
         HutanEventManager.Instance.OnCharacterChanged += HutanEventManager_OnCharacterChanged;
+
+        animator = GetComponent<Animator>();
+    }
+
+    private void HutanEventManager_OnGameStarted()
+    {
+        animator.SetBool("isGameStarted", true);
+
+        HutanEventManager.Instance.OnGameStarted -= HutanEventManager_OnGameStarted;
     }
 
     private void HutanEventManager_OnCharacterChanged(Character character)
@@ -20,13 +31,13 @@ public class HutanPlayer : MonoBehaviour
         switch (character)
         {
             case Character.Chiko:
-                // spriteRenderer.sprite = chikoSprite;
+                animator.runtimeAnimatorController = chikoAnimatorController;
                 break;
             case Character.Ketti:
-                // spriteRenderer.sprite = kettiSprite;
+                // animator.runtimeAnimatorController = kettiAnimatorController;
                 break;
             case Character.Beri:
-                // spriteRenderer.sprite = beriSprite;
+                // animator.runtimeAnimatorController = beriAnimatorController;
                 break;
             default:
                 break;

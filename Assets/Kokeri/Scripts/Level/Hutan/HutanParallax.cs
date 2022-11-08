@@ -22,6 +22,8 @@ public class HutanParallax : MonoBehaviour
     private void HutanEventManager_OnGameStarted()
     {
         isStarted = true;
+
+        HutanEventManager.Instance.OnGameStarted -= HutanEventManager_OnGameStarted;
     }
 
     private void LateUpdate()

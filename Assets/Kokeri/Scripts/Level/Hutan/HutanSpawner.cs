@@ -27,6 +27,8 @@ public class HutanSpawner : MonoBehaviour
     private void HutanEventManager_OnGameStarted()
     {
         SpawnObstacle();
+
+        HutanEventManager.Instance.OnGameStarted -= HutanEventManager_OnGameStarted;
     }
 
 
