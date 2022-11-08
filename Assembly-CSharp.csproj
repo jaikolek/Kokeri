@@ -36,7 +36,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\MoveInventory.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaGameManager.cs" />
      <Compile Include="Assets\Kokeri\Scripts\PausePopUp.cs" />
      <Compile Include="Assets\Scripts.Old\Events.cs" />
@@ -47,17 +46,15 @@
      <Compile Include="Assets\Kokeri\Scripts\ScoreBoardPopUp.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaCameraFocus.cs" />
      <Compile Include="Assets\Scripts.Old\LevelManager.cs" />
-     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaPhaseUI.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanGameOverPopUp.cs" />
      <Compile Include="Assets\ButtonEvents\ButtonDoubleClickListener.cs" />
      <Compile Include="Assets\ButtonEvents\ButtonPointerUpListener.cs" />
-     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\Move.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaMove.cs" />
      <Compile Include="Assets\Kokeri\Scripts\SceneHandler.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanUIManager.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanSpawner.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaGameOverPopUp.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanDesignLevel.cs" />
-     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaUI.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanChooseCharacterPopUp.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Shop\ShopProduct.cs" />
      <Compile Include="Assets\Kokeri\Scripts\MainMenu\SettingPopUp.cs" />
@@ -87,6 +84,9 @@
      <Compile Include="Assets\Kokeri\Scripts\EnumContainer.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaDesignLevel.cs" />
      <Compile Include="Assets\Scripts.Old\Delay.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaEventManager.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaMoveInventory.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaUIManager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

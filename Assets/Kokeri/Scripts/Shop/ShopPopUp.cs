@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ShopPopUp : BasePopUp
 {
-    [SerializeField] private ShopState shopState;
+    [SerializeField] private Character shopState;
 
     [Header("Chiko")]
     [SerializeField] private List<ShopItem> chikoItems;
@@ -33,7 +33,7 @@ public class ShopPopUp : BasePopUp
     [SerializeField] private GameObject shopProductContainer;
     [SerializeField] private GameObject shopProductPrefab;
 
-    public Action<ShopState> OnSwitchState;
+    public Action<Character> OnSwitchState;
 
     private void Awake()
     {
@@ -69,14 +69,14 @@ public class ShopPopUp : BasePopUp
 
         OnSwitchState += HandleShopChange;
 
-        SwitchState(ShopState.CHIKO);
+        SwitchState(Character.CHIKO);
     }
 
-    private void HandleShopChange(ShopState _shopState)
+    private void HandleShopChange(Character _shopState)
     {
         switch (_shopState)
         {
-            case ShopState.CHIKO:
+            case Character.CHIKO:
                 chikoBtn.image.sprite = chikoClicked;
                 kettiBtn.image.sprite = kettiUnclicked;
                 beriBtn.image.sprite = beriUnclicked;
@@ -97,7 +97,7 @@ public class ShopPopUp : BasePopUp
                 }
                 break;
 
-            case ShopState.KETTI:
+            case Character.KETTI:
                 chikoBtn.image.sprite = chikoUnclicked;
                 kettiBtn.image.sprite = kettiClicked;
                 beriBtn.image.sprite = beriUnclicked;
@@ -118,7 +118,7 @@ public class ShopPopUp : BasePopUp
                 }
                 break;
 
-            case ShopState.BERI:
+            case Character.BERI:
                 chikoBtn.image.sprite = chikoUnclicked;
                 kettiBtn.image.sprite = kettiUnclicked;
                 beriBtn.image.sprite = beriClicked;
@@ -141,7 +141,7 @@ public class ShopPopUp : BasePopUp
         }
     }
 
-    public void SwitchState(ShopState _state)
+    public void SwitchState(Character _state)
     {
         shopState = _state;
 
@@ -150,17 +150,17 @@ public class ShopPopUp : BasePopUp
 
     public void OnClickChiko()
     {
-        SwitchState(ShopState.CHIKO);
+        SwitchState(Character.CHIKO);
     }
 
     public void OnClickKetti()
     {
-        SwitchState(ShopState.KETTI);
+        SwitchState(Character.KETTI);
     }
 
     public void OnClickBeri()
     {
-        SwitchState(ShopState.BERI);
+        SwitchState(Character.BERI);
     }
 }
 

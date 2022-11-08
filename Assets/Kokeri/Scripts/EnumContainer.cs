@@ -1,29 +1,31 @@
-public enum ShopState
+public enum Character
 {
     CHIKO,
     KETTI,
     BERI
 }
 
-public enum CaseType
+public enum DStateType
+{
+    CASE,
+    ANSWER,
+    CORRECT,
+    WRONG,
+    GAME_OVER
+}
+
+public enum DCaseType
 {
     HORIZONTAL,
     VERTICAL,
     ALL
 }
 
-public enum MoveType
+public enum DMoveType
 {
     UP = 1,
     DOWN = 2,
     LEFT = 3,
     RIGHT = 4,
-}
-
-public enum Character
-{
-    Chiko,
-    Ketti,
-    Beri
 }
 

@@ -30,13 +30,13 @@ public class HutanPlayer : MonoBehaviour
     {
         switch (character)
         {
-            case Character.Chiko:
+            case Character.CHIKO:
                 animator.runtimeAnimatorController = chikoAnimatorController;
                 break;
-            case Character.Ketti:
+            case Character.KETTI:
                 // animator.runtimeAnimatorController = kettiAnimatorController;
                 break;
-            case Character.Beri:
+            case Character.BERI:
                 // animator.runtimeAnimatorController = beriAnimatorController;
                 break;
             default:

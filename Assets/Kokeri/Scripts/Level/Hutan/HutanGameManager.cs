@@ -15,13 +15,6 @@ public class HutanGameManager : MonoBehaviour
             if (instance == null)
             {
                 instance = FindObjectOfType<HutanGameManager>();
-                if (instance == null)
-                {
-                    GameObject obj = new GameObject();
-                    obj.transform.parent = GameObject.Find("ManagerContainer").transform;
-                    obj.name = typeof(HutanGameManager).Name;
-                    instance = obj.AddComponent<HutanGameManager>();
-                }
             }
             return instance;
         }
@@ -39,17 +32,17 @@ public class HutanGameManager : MonoBehaviour
 
 
     // ====================================================================================================
-    [Header("Player Info")]
+    [Header("Player")]
+    [SerializeField] private int health = 3;
     [SerializeField] private float length;
     [SerializeField] private int bug;
-    [SerializeField] private int health = 3;
     [SerializeField] private int catchCounter;
 
     [Header("Game")]
     [SerializeField] private bool isGameReady = false;
     [SerializeField] private int gameSpeed;
     private Character character;
-    private List<Character> characterList = new List<Character>() { Character.Chiko, Character.Ketti, Character.Beri };
+    private List<Character> characterList = new List<Character>() { Character.CHIKO, Character.KETTI, Character.BERI };
 
     [Header("Design Level")]
     [SerializeField] private List<HutanDesignLevel> designLevelList = new List<HutanDesignLevel>();

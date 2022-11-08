@@ -14,12 +14,6 @@ public class DesaGameManager : MonoBehaviour
             if (instance == null)
             {
                 instance = FindObjectOfType<DesaGameManager>();
-                if (instance == null)
-                {
-                    GameObject obj = new GameObject();
-                    obj.name = typeof(DesaGameManager).Name;
-                    instance = obj.AddComponent<DesaGameManager>();
-                }
             }
             return instance;
         }
@@ -37,405 +31,224 @@ public class DesaGameManager : MonoBehaviour
 
 
     // ====================================================================================================
-    private MoveInventory MoveCase;
-    private MoveInventory MoveAnswer;
+    private DesaMoveInventory moveCase;
+    private DesaMoveInventory moveAnswer;
 
-    private bool canStartGame = false;
-    private bool isGameInitiated = false;
-    private bool isGameReady = false;
-    private bool isPhaseRunning = false;
-    private bool isAnimationRunning = false;
-    private bool isTimerRunning = false;
-    private bool isPlayerTurn = false;
-    private bool isPlayerCorrect = false;
-    private bool isGameOver = false;
+    [Header("Player")]
+    [SerializeField] private int health = 3;
+    [SerializeField] private int score;
 
-    [Header("Prolog")]
-
-
-    [Header("Player Info")]
-    [SerializeField] private int playerHealth = 3;
-    private int playerScore;
-
-    [Header("Game Info")]
-    [SerializeField] private float waitDelay = 1f;
-    [SerializeField] private float moveDelay = 1f;
+    [Header("Game")]
+    [SerializeField] private float animationTime = 1f;
+    [SerializeField] private float animationDelay = 0.5f;
     [SerializeField] private int currentLevel;
     [SerializeField] private int currentCase;
 
-    [Header("Level Design")]
-    [SerializeField] private List<DesaDesignLevel> levelDesignDesaList;
+    [Header("Design Level")]
+    [SerializeField] private List<DesaDesignLevel> designLevelList = new List<DesaDesignLevel>();
 
     [Header("Animator")]
     [SerializeField] private Animator chikoAnimator;
     [SerializeField] private Animator kettiAnimator;
     [SerializeField] private Animator beriAnimator;
 
-    [Header("End Game")]
-    [SerializeField] private GameObject usernameInputPopUp;
-    [SerializeField] private GameObject gameOverPopUp;
-
     private void Start()
     {
-        MoveCase = new MoveInventory();
-        MoveAnswer = new MoveInventory();
+        DesaEventManager.Instance.OnUp += DesaEventManager_OnUp;
+        DesaEventManager.Instance.OnDown += DesaEventManager_OnDown;
+        DesaEventManager.Instance.OnLeft += DesaEventManager_OnLeft;
+        DesaEventManager.Instance.OnRight += DesaEventManager_OnRight;
 
-        SceneHandler.Instance.OnSceneChanged += SceneHandler_OnSceneChanged;
+        DesaEventManager.Instance.OnPhaseStart += DesaEventManager_OnPhaseStart;
+        DesaEventManager.Instance.OnPlayerAnswer += DesaEventManager_OnPlayerAnswer;
+        DesaEventManager.Instance.OnCorrect += DesaEventManager_OnCorrect;
+        DesaEventManager.Instance.OnWrong += DesaEventManager_OnWrong;
 
-        AudioManager.Instance.StopBGM();
+        moveCase = new DesaMoveInventory();
+        moveAnswer = new DesaMoveInventory();
     }
 
-    private void SceneHandler_OnSceneChanged(string _sceneName)
+    private void DesaEventManager_OnUp()
     {
-        if (_sceneName == "LevelDesa")
+        moveAnswer.AddMove(new DesaMove(DMoveType.UP));
+        DesaUIManager.Instance.AddMoveIndicator(DMoveType.UP);
+    }
+
+    private void DesaEventManager_OnDown()
+    {
+        moveAnswer.AddMove(new DesaMove(DMoveType.DOWN));
+        DesaUIManager.Instance.AddMoveIndicator(DMoveType.DOWN);
+    }
+
+    private void DesaEventManager_OnLeft()
+    {
+        moveAnswer.AddMove(new DesaMove(DMoveType.LEFT));
+        DesaUIManager.Instance.AddMoveIndicator(DMoveType.LEFT);
+    }
+
+    private void DesaEventManager_OnRight()
+    {
+        moveAnswer.AddMove(new DesaMove(DMoveType.RIGHT));
+        DesaUIManager.Instance.AddMoveIndicator(DMoveType.RIGHT);
+    }
+
+    private void DesaEventManager_OnPhaseStart()
+    {
+        DesaUIManager.Instance.DisableButton();
+
+        StartCoroutine(DesaUIManager.Instance.ShowState(DStateType.CASE, () =>
         {
-            AudioManager.Instance.StopBGM();
-            AudioManager.Instance.PlayBGM("Desa");
+            MakeCase();
+            StartCoroutine(PlayPhase());
+        }));
+    }
+
+    private void DesaEventManager_OnPlayerAnswer()
+    {
+        if (moveAnswer.GetMoveListCount() == moveCase.GetMoveListCount())
+        {
+            StopCoroutine(AnswerTimer());
+            DesaEventManager.Instance.Correct();
+        }
+
+        for (int i = 0; i < moveAnswer.GetMoveListCount(); i++)
+        {
+            if (moveCase.GetMoveType(i) != moveAnswer.GetMoveType(i))
+            {
+                DesaEventManager.Instance.Wrong();
+                break;
+            }
         }
     }
 
-    private void Update()
+    private void DesaEventManager_OnCorrect()
     {
-        // start countdown
-        if (canStartGame && !isGameInitiated)
+        DesaCameraFocus.Instance.SetCameraDefault();
+        DesaUIManager.Instance.HideMoveIndicatorContainer();
+
+        StartCoroutine(DesaUIManager.Instance.ShowState(DStateType.CORRECT, () =>
         {
-            playerScore = 0;
-            currentLevel = 0;
-            currentCase = 0;
+            StartCoroutine(PlayAnswer());
+        }));
 
-            DesaUI.Instance.UpdateHealth(playerHealth);
-            DesaUI.Instance.UpdateScore(playerScore);
+        score += designLevelList[currentLevel].score;
+        DesaUIManager.Instance.UpdateScore(score);
+    }
 
-            StartCoroutine(DesaPhaseUI.Instance.StartCountdown());
-            SetIsGameInitiated(true);
+    private void DesaEventManager_OnWrong()
+    {
+        DesaCameraFocus.Instance.SetCameraDefault();
+        DesaUIManager.Instance.RemoveAllMoveIndicator();
+        DesaUIManager.Instance.HideMoveIndicatorContainer();
+
+        StartCoroutine(DesaUIManager.Instance.ShowState(DStateType.WRONG, () =>
+        {
+            DesaEventManager.Instance.PhaseStart();
+        }));
+
+        health--;
+
+        if (health <= 0)
+        {
+            DesaEventManager.Instance.GameOver(score, 0);
         }
-
-        else if (isGameReady && !isPhaseRunning)
+        else
         {
-            SetIsPhaseRunning(true);
+            DesaUIManager.Instance.UpdateHealth(health);
 
-            // chiko and ketti turn
-            if (!isAnimationRunning && !isPlayerTurn && !isGameOver)
-            {
-                MakeCase();
-                StartCoroutine(ShowCase());
-            }
-
-            // beri turn
-            if (!isAnimationRunning && isPlayerTurn && !isGameOver)
-            {
-                if (!isTimerRunning)
-                {
-                    StartCoroutine(AnswerTimer());
-                }
-
-                HandlePlayerAnswer();
-
-                if (MoveCase.GetMoveList().Count == MoveAnswer.GetMoveList().Count && GetIsPlayerCorrect())
-                {
-                    HandleCorrectAnswer();
-                }
-            }
-
-            if (!isAnimationRunning && isGameOver)
-            {
-                StartCoroutine(ShowGameOver());
-            }
-
-            SetIsPhaseRunning(false);
         }
     }
 
     private void MakeCase()
     {
-        for (int i = 0; i < levelDesignDesaList.Count; i++)
+        for (int i = 0; i < designLevelList.Count; i++)
         {
-            if (levelDesignDesaList[i].onCase == currentCase)
+            if (designLevelList[i].onCase == currentCase)
             {
                 currentLevel = i;
             }
         }
 
-        MoveCase.CreateMoveCase(levelDesignDesaList[currentLevel].totalMove, levelDesignDesaList[currentLevel].caseType);
+        moveCase.CreateMoveCase(designLevelList[currentLevel].totalMove, designLevelList[currentLevel].caseType);
     }
 
-    private IEnumerator ShowCase()
+    private IEnumerator PlayPhase()
     {
-        SetIsAnimationRunning(true);
-
         DesaCameraFocus.Instance.SetCameraChikoKetti();
+        yield return new WaitForSeconds(animationTime);
 
-        DesaPhaseUI.Instance.ShowStartState();
-        yield return new WaitForSeconds(waitDelay);
+        DesaUIManager.Instance.ShowMoveIndicatorContainer();
 
-        DesaPhaseUI.Instance.ShowIndicatorContainer();
-
-        for (int i = 0; i < MoveCase.GetMoveListCount(); i++)
+        for (int i = 0; i < moveCase.GetMoveListCount(); i++)
         {
             chikoAnimator.SetBool("Move", true);
             kettiAnimator.SetBool("Move", true);
 
-            DesaPhaseUI.Instance.AddIndicator(MoveCase.GetMoveType(i));
-            chikoAnimator.SetFloat("Direction", Convert.ToInt32(MoveCase.GetMoveType(i)));
-            kettiAnimator.SetFloat("Direction", Convert.ToInt32(MoveCase.GetMoveType(i)));
+            DesaUIManager.Instance.AddActiveMoveIndicator(moveCase.GetMoveType(i));
+            chikoAnimator.SetFloat("Direction", Convert.ToInt32(moveCase.GetMoveType(i)));
+            kettiAnimator.SetFloat("Direction", Convert.ToInt32(moveCase.GetMoveType(i)));
 
-            yield return new WaitForSeconds(moveDelay);
+            yield return new WaitForSeconds(animationTime);
 
             chikoAnimator.SetBool("Move", false);
             kettiAnimator.SetBool("Move", false);
 
-            yield return new WaitForSeconds(moveDelay * 0.25f);
+            yield return new WaitForSeconds(animationDelay);
         }
-
-        DesaPhaseUI.Instance.HideIndicatorContainer();
-
-        DesaPhaseUI.Instance.RemoveAllIndicator();
-        DesaPhaseUI.Instance.ShowYourTurnState();
 
         DesaCameraFocus.Instance.SetCameraDefault();
+        DesaUIManager.Instance.RemoveAllMoveIndicator();
+        DesaUIManager.Instance.HideMoveIndicatorContainer();
 
-        yield return new WaitForSeconds(waitDelay);
-
-        DesaCameraFocus.Instance.SetCameraBeri();
-
-
-        SetIsPlayerTurn(true);
-        SetIsPlayerCorrect(true);
-        SetIsAnimationRunning(false);
-    }
-
-    private void HandlePlayerAnswer()
-    {
-        DesaPhaseUI.Instance.ShowIndicatorContainer();
-
-        for (int i = 0; i < MoveAnswer.GetMoveListCount(); i++)
+        StartCoroutine(DesaUIManager.Instance.ShowState(DStateType.ANSWER, () =>
         {
-            if (MoveCase.GetMoveType(i) != MoveAnswer.GetMoveType(i))
-            {
-                SetIsPlayerCorrect(false);
-                break;
-            }
-        }
-
-        if (!GetIsPlayerCorrect())
-        {
-            HandleWrongAnswer();
-
-            playerHealth--;
-            DesaUI.Instance.UpdateHealth(playerHealth);
-
-            if (playerHealth <= 0)
-            {
-                isGameOver = true;
-            }
-        }
+            DesaUIManager.Instance.EnableButton();
+            DesaCameraFocus.Instance.SetCameraBeri();
+            DesaUIManager.Instance.ShowMoveIndicatorContainer();
+            StartCoroutine(AnswerTimer());
+        }));
     }
 
-    private void HandleCorrectAnswer()
+    private IEnumerator PlayAnswer()
     {
-        DesaPhaseUI.Instance.RemoveAllIndicator();
-        DesaPhaseUI.Instance.ShowCorrectState();
-
-        DesaPhaseUI.Instance.HideIndicatorContainer();
-        StartCoroutine(ShowCorrectAnimation());
-
-        playerScore += levelDesignDesaList[currentLevel].score;
-        DesaUI.Instance.UpdateScore(playerScore);
-
-
-        currentCase++;
-    }
-
-    private void HandleWrongAnswer()
-    {
-        DesaPhaseUI.Instance.RemoveAllIndicator();
-        DesaPhaseUI.Instance.ShowWrongState();
-
-        DesaPhaseUI.Instance.HideIndicatorContainer();
-        StartCoroutine(ShowWrongAnimation());
-    }
-
-    private IEnumerator ShowCorrectAnimation()
-    {
-        SetIsAnimationRunning(true);
-        SetIsPlayerTurn(false);
+        DesaUIManager.Instance.ShowMoveIndicatorContainer();
 
         beriAnimator.SetFloat("State", 2);
 
-        for (int i = 0; i < MoveCase.GetMoveListCount(); i++)
+        for (int i = 0; i < moveAnswer.GetMoveListCount(); i++)
         {
             beriAnimator.SetBool("Move", true);
 
-            beriAnimator.SetFloat("Direction", Convert.ToInt32(MoveCase.GetMoveType(i)));
+            DesaUIManager.Instance.ChangeToActiveMoveIndicator(i, moveAnswer.GetMoveType(i));
+            beriAnimator.SetFloat("Direction", Convert.ToInt32(moveAnswer.GetMoveType(i)));
 
-            yield return new WaitForSeconds(moveDelay);
+            yield return new WaitForSeconds(animationTime);
 
             beriAnimator.SetBool("Move", false);
 
-            yield return new WaitForSeconds(moveDelay * 0.25f);
+            yield return new WaitForSeconds(animationDelay);
         }
 
         beriAnimator.SetFloat("State", 1);
 
         DesaCameraFocus.Instance.SetCameraDefault();
+        DesaUIManager.Instance.RemoveAllMoveIndicator();
+        DesaUIManager.Instance.HideMoveIndicatorContainer();
 
-        yield return new WaitForSeconds(waitDelay);
+        currentCase++;
+        DesaEventManager.Instance.PhaseStart();
 
-        MoveCase.ClearMoveList();
-        MoveAnswer.ClearMoveList();
-
-        SetIsAnimationRunning(false);
-    }
-
-    private IEnumerator ShowWrongAnimation()
-    {
-        SetIsAnimationRunning(true);
-        SetIsPlayerTurn(false);
-
-        DesaCameraFocus.Instance.SetCameraDefault();
-
-        yield return new WaitForSeconds(waitDelay);
-
-        MoveCase.ClearMoveList();
-        MoveAnswer.ClearMoveList();
-
-        SetIsAnimationRunning(false);
     }
 
     private IEnumerator AnswerTimer()
     {
-        isTimerRunning = true;
-
-        for (float i = levelDesignDesaList[currentLevel].answerTime; i > 0; i--)
+        yield return new WaitForSeconds(designLevelList[currentLevel].answerTime - 3);
+        for (float i = 3; i > 0; i--)
         {
+            // show countdown
             yield return new WaitForSeconds(1f);
         }
 
-        SetIsPlayerCorrect(false);
-        isTimerRunning = false;
-    }
-
-    private IEnumerator ShowGameOver()
-    {
-        SetIsAnimationRunning(true);
-
-        yield return new WaitForSeconds(waitDelay * 0.5f);
-        DesaPhaseUI.Instance.ShowGameOverState();
-        yield return new WaitForSeconds(waitDelay);
-
-        gameOverPopUp.SetActive(true);
-    }
-    // ====================================================================================================
-
-    // player input handler
-    // ====================================================================================================
-    public void HandlePause()
-    {
-        Time.timeScale = 0f;
-    }
-
-    public void HandleResume()
-    {
-        Time.timeScale = 1f;
-    }
-
-    public void HandleUpInput()
-    {
-        MoveAnswer.AddMove(new Move(MoveType.UP));
-        DesaPhaseUI.Instance.AddIndicator(MoveType.UP);
-    }
-
-    public void HandleDownInput()
-    {
-        MoveAnswer.AddMove(new Move(MoveType.DOWN));
-        DesaPhaseUI.Instance.AddIndicator(MoveType.DOWN);
-    }
-
-    public void HandleLeftInput()
-    {
-        MoveAnswer.AddMove(new Move(MoveType.LEFT));
-        DesaPhaseUI.Instance.AddIndicator(MoveType.LEFT);
-    }
-
-    public void HandleRightInput()
-    {
-        MoveAnswer.AddMove(new Move(MoveType.RIGHT));
-        DesaPhaseUI.Instance.AddIndicator(MoveType.RIGHT);
-    }
-    // ====================================================================================================
-
-    // setter getter
-    // ====================================================================================================
-    public int GetPlayerHealth()
-    {
-        return playerHealth;
-    }
-    // ====================================================================================================
-
-    // boolean setter getter
-    // ====================================================================================================
-    public void SetCanStartGame(bool _value)
-    {
-        canStartGame = _value;
-    }
-
-    public bool GetCanStartGame()
-    {
-        return canStartGame;
-    }
-
-    public void SetIsGameInitiated(bool _isGameInitiated)
-    {
-        isGameInitiated = _isGameInitiated;
-    }
-    public bool GetIsGameInitiated()
-    {
-        return isGameInitiated;
-    }
-
-    public void SetIsGameReady(bool _isGameReady)
-    {
-        isGameReady = _isGameReady;
-    }
-    public bool GetIsGameReady()
-    {
-        return isGameReady;
-    }
-
-    public void SetIsPhaseRunning(bool _isCaseRunning)
-    {
-        isPhaseRunning = _isCaseRunning;
-    }
-    public bool GetIsPhaseRunning()
-    {
-        return isPhaseRunning;
-    }
-
-    public void SetIsAnimationRunning(bool _isAnimationRunning)
-    {
-        isAnimationRunning = _isAnimationRunning;
-    }
-    public bool GetIsAnimationRunning()
-    {
-        return isAnimationRunning;
-    }
-
-    public void SetIsPlayerTurn(bool _isPlayerTurn)
-    {
-        isPlayerTurn = _isPlayerTurn;
-    }
-    public bool GetIsPlayerTurn()
-    {
-        return isPlayerTurn;
-    }
-
-    public void SetIsPlayerCorrect(bool _isPlayerCorrect)
-    {
-        isPlayerCorrect = _isPlayerCorrect;
-    }
-
-    public bool GetIsPlayerCorrect()
-    {
-        return isPlayerCorrect;
+        DesaEventManager.Instance.TimerStopped();
     }
 }

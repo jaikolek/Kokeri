@@ -15,11 +15,24 @@ public class PausePopUp : BasePopUp
     {
         base.Start();
 
+        HutanEventManager.Instance.OnGamePaused += HutanEventManager_OnGamePaused;
+        HutanEventManager.Instance.OnGameResumed += HutanEventManager_OnGameResumed;
+
         mapBtn.onClick.AddListener(OnClickMap);
         menuBtn.onClick.AddListener(OnClickMenu);
 
         SetBGMVolume(AudioManager.Instance.GetBGMVolume());
         SetSFXVolume(AudioManager.Instance.GetSFXVolume());
+    }
+
+    private void HutanEventManager_OnGamePaused()
+    {
+        gameObject.SetActive(true);
+    }
+
+    private void HutanEventManager_OnGameResumed()
+    {
+        gameObject.SetActive(false);
     }
 
     private void Update()
@@ -33,7 +46,7 @@ public class PausePopUp : BasePopUp
         base.OnClickClose();
         if (DesaGameManager.Instance != null)
         {
-            DesaGameManager.Instance.HandleResume();
+            DesaEventManager.Instance.GameResumed();
         }
         else if (HutanEventManager.Instance != null)
         {

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,13 +16,6 @@ public class HutanUIManager : MonoBehaviour
             if (instance == null)
             {
                 instance = FindObjectOfType<HutanUIManager>();
-                if (instance == null)
-                {
-                    GameObject obj = new GameObject();
-                    obj.transform.parent = GameObject.Find("ManagerContainer").transform;
-                    obj.name = typeof(HutanUIManager).Name;
-                    instance = obj.AddComponent<HutanUIManager>();
-                }
             }
             return instance;
         }
@@ -70,8 +64,6 @@ public class HutanUIManager : MonoBehaviour
         HutanEventManager.Instance.OnGameStarted += HutanEventManager_OnGameStarted;
         HutanEventManager.Instance.OnCollectRange += HutanEventManager_OnCollectRange;
 
-        HutanEventManager.Instance.OnGamePaused += HutanEventManager_OnGamePaused;
-        HutanEventManager.Instance.OnGameResumed += HutanEventManager_OnGameResumed;
         HutanEventManager.Instance.OnGameOver += HutanEventManager_OnGameOver;
         HutanEventManager.Instance.OnUserSubmit += HutanEventManager_OnUserSubmit;
 
@@ -98,7 +90,7 @@ public class HutanUIManager : MonoBehaviour
         upBtn.interactable = false;
         downBtn.interactable = false;
 
-        StartCoroutine(CountDown());
+        StartCoroutine(Countdown());
 
         HutanEventManager.Instance.OnCharacterChanged -= HutanEventManager_OnCharacterChanged;
     }
@@ -123,15 +115,15 @@ public class HutanUIManager : MonoBehaviour
         }
     }
 
-    private void HutanEventManager_OnGamePaused()
-    {
-        pausePopUp.SetActive(true);
-    }
+    // private void HutanEventManager_OnGamePaused()
+    // {
+    //     pausePopUp.SetActive(true);
+    // }
 
-    private void HutanEventManager_OnGameResumed()
-    {
-        pausePopUp.SetActive(false);
-    }
+    // private void HutanEventManager_OnGameResumed()
+    // {
+    //     pausePopUp.SetActive(false);
+    // }
 
     private void HutanEventManager_OnGameOver(int _score, int _coin, int _bug)
     {
@@ -145,14 +137,14 @@ public class HutanUIManager : MonoBehaviour
         scoreBoardPopUp.GetComponent<ScoreBoardPopUp>().ShowResultHutan(_name, _score);
     }
 
-    private IEnumerator CountDown()
+    private IEnumerator Countdown()
     {
-        countDownText.text = "3";
-        yield return new WaitForSeconds(1);
-        countDownText.text = "2";
-        yield return new WaitForSeconds(1);
-        countDownText.text = "1";
-        yield return new WaitForSeconds(1);
+        countDownText.gameObject.SetActive(true);
+        for (int i = 3; i > 0; i--)
+        {
+            countDownText.text = Convert.ToString(i);
+            yield return new WaitForSeconds(1);
+        }
         countDownText.text = "GO!";
         yield return new WaitForSeconds(1);
         countDownText.gameObject.SetActive(false);
@@ -170,11 +162,11 @@ public class HutanUIManager : MonoBehaviour
     {
         healthText.text = _health.ToString() + "X";
 
-        if (_character == Character.Chiko)
+        if (_character == Character.CHIKO)
         {
             healthContainer.transform.GetChild(0).gameObject.SetActive(false);
         }
-        else if (_character == Character.Ketti)
+        else if (_character == Character.KETTI)
         {
             healthContainer.transform.GetChild(1).gameObject.SetActive(false);
         }

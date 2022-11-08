@@ -7,8 +7,8 @@ using UnityEngine.Video;
 
 public class DesaProlog : MonoBehaviour
 {
-    [SerializeField] private VideoPlayer videoPlayer;
     [SerializeField] private Button skipBtn;
+    [SerializeField] private VideoPlayer videoPlayer;
 
     private void Awake()
     {
@@ -17,8 +17,6 @@ public class DesaProlog : MonoBehaviour
 
     private void Start()
     {
-        skipBtn.gameObject.SetActive(false);
-
         StartCoroutine(PlayVideo());
         StartCoroutine(ShowSkipBtn());
     }
@@ -40,14 +38,12 @@ public class DesaProlog : MonoBehaviour
 
         videoPlayer.Prepare();
 
-        //Wait until video is prepared
         while (!videoPlayer.isPrepared)
         {
             // Debug.Log("Preparing Video");
             yield return null;
         }
 
-        //Play Video
         videoPlayer.Play();
 
         Debug.Log("Playing Video");
@@ -73,6 +69,6 @@ public class DesaProlog : MonoBehaviour
         videoPlayer.enabled = false;
         gameObject.SetActive(false);
 
-        DesaGameManager.Instance.SetCanStartGame(true);
+        DesaEventManager.Instance.GameStarted();
     }
 }
