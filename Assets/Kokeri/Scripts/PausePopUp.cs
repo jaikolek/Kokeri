@@ -31,9 +31,9 @@ public class PausePopUp : BasePopUp
     public override void OnClickClose()
     {
         base.OnClickClose();
-        if (GameManagerDesa.Instance != null)
+        if (DesaGameManager.Instance != null)
         {
-            GameManagerDesa.Instance.HandleResume();
+            DesaGameManager.Instance.HandleResume();
         }
         else if (HutanEventManager.Instance != null)
         {

@@ -67,12 +67,12 @@ public class DesaUI : MonoBehaviour
 
         healthIndicatorList = new List<GameObject>();
 
-        InitHealthIndicator(GameManagerDesa.Instance.GetPlayerHealth());
+        InitHealthIndicator(DesaGameManager.Instance.GetPlayerHealth());
     }
 
     private void Update()
     {
-        if (GameManagerDesa.Instance.GetIsPlayerTurn())
+        if (DesaGameManager.Instance.GetIsPlayerTurn())
         {
             SetActiveInputControl(true);
         }
@@ -142,31 +142,31 @@ public class DesaUI : MonoBehaviour
     private void OnClickPause()
     {
         AudioManager.Instance.PlaySFX("Click1");
-        GameManagerDesa.Instance.HandlePause();
+        DesaGameManager.Instance.HandlePause();
         pausePopUp.SetActive(true);
     }
 
     private void OnClickUp()
     {
         AudioManager.Instance.PlaySFX("Click2");
-        GameManagerDesa.Instance.HandleUpInput();
+        DesaGameManager.Instance.HandleUpInput();
     }
 
     private void OnClickDown()
     {
         AudioManager.Instance.PlaySFX("Click2");
-        GameManagerDesa.Instance.HandleDownInput();
+        DesaGameManager.Instance.HandleDownInput();
     }
 
     private void OnClickLeft()
     {
         AudioManager.Instance.PlaySFX("Click2");
-        GameManagerDesa.Instance.HandleLeftInput();
+        DesaGameManager.Instance.HandleLeftInput();
     }
 
     private void OnClickRight()
     {
         AudioManager.Instance.PlaySFX("Click2");
-        GameManagerDesa.Instance.HandleRightInput();
+        DesaGameManager.Instance.HandleRightInput();
     }
 }

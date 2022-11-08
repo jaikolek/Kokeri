@@ -94,8 +94,8 @@ public class DesaPhaseUI : MonoBehaviour
         infoImage.gameObject.SetActive(false);
         yield return new WaitForSeconds(1f);
 
-        if (!GameManagerDesa.Instance.GetIsGameReady())
-            GameManagerDesa.Instance.SetIsGameReady(true);
+        if (!DesaGameManager.Instance.GetIsGameReady())
+            DesaGameManager.Instance.SetIsGameReady(true);
 
         countdownTimer = countdownTimerDefault;
     }

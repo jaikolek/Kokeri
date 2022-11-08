@@ -73,6 +73,6 @@ public class DesaProlog : MonoBehaviour
         videoPlayer.enabled = false;
         gameObject.SetActive(false);
 
-        GameManagerDesa.Instance.SetCanStartGame(true);
+        DesaGameManager.Instance.SetCanStartGame(true);
     }
 }

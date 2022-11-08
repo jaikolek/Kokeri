@@ -3,22 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManagerDesa : MonoBehaviour
+public class DesaGameManager : MonoBehaviour
 {
     #region singleton
-    private static GameManagerDesa instance;
-    public static GameManagerDesa Instance
+    private static DesaGameManager instance;
+    public static DesaGameManager Instance
     {
         get
         {
             if (instance == null)
             {
-                instance = FindObjectOfType<GameManagerDesa>();
+                instance = FindObjectOfType<DesaGameManager>();
                 if (instance == null)
                 {
                     GameObject obj = new GameObject();
-                    obj.name = typeof(GameManagerDesa).Name;
-                    instance = obj.AddComponent<GameManagerDesa>();
+                    obj.name = typeof(DesaGameManager).Name;
+                    instance = obj.AddComponent<DesaGameManager>();
                 }
             }
             return instance;
@@ -64,7 +64,7 @@ public class GameManagerDesa : MonoBehaviour
     [SerializeField] private int currentCase;
 
     [Header("Level Design")]
-    [SerializeField] private List<LevelDesignDesa> levelDesignDesaList;
+    [SerializeField] private List<DesaDesignLevel> levelDesignDesaList;
 
     [Header("Animator")]
     [SerializeField] private Animator chikoAnimator;

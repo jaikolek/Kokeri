@@ -1,7 +1,7 @@
 using System;
 
 [Serializable]
-public struct LevelDesignDesa
+public struct DesaDesignLevel
 {
     public int totalMove;
     public CaseType caseType;
