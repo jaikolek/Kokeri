@@ -2,33 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DesaGameOverPopUp : MonoBehaviour
 {
-    [SerializeField] private Button restartBtn;
-    [SerializeField] private Button mapBtn;
-    [SerializeField] private Button menuBtn;
+    [SerializeField] private Button submitBtn;
+
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI coinText;
+
+    private TMP_InputField nameInputField;
 
     private void Start()
     {
-        restartBtn.onClick.AddListener(OnClickRestart);
-        mapBtn.onClick.AddListener(OnClickMap);
-        menuBtn.onClick.AddListener(OnClickMenu);
+        submitBtn.onClick.AddListener(OnSubmit);
+
+        nameInputField = GetComponentInChildren<TMP_InputField>();
     }
 
-    public void OnClickRestart()
+    public void ShowResult(int _score, int _coin)
     {
-        SceneHandler.Instance.ReloadScene();
+        scoreText.text = _score.ToString();
+        coinText.text = _coin.ToString();
     }
 
-    public void OnClickMap()
+    public void OnSubmit()
     {
-        SceneHandler.Instance.LoadScene("MainLevel");
-    }
-
-    public void OnClickMenu()
-    {
-        SceneHandler.Instance.LoadScene("MainMenu");
+        DesaEventManager.Instance.UserSubmit(nameInputField.text, int.Parse(scoreText.text));
+        gameObject.SetActive(false);
     }
 }
 

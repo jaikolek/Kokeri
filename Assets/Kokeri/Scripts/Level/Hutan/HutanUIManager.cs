@@ -60,14 +60,20 @@ public class HutanUIManager : MonoBehaviour
 
     private void Start()
     {
-        HutanEventManager.Instance.OnCharacterChanged += HutanEventManager_OnCharacterChanged;
         HutanEventManager.Instance.OnGameStarted += HutanEventManager_OnGameStarted;
+        HutanEventManager.Instance.OnCharacterChanged += HutanEventManager_OnCharacterChanged;
         HutanEventManager.Instance.OnCollectRange += HutanEventManager_OnCollectRange;
-
+        HutanEventManager.Instance.OnGamePaused += HutanEventManager_OnGamePaused;
+        HutanEventManager.Instance.OnGameResumed += HutanEventManager_OnGameResumed;
         HutanEventManager.Instance.OnGameOver += HutanEventManager_OnGameOver;
+
         HutanEventManager.Instance.OnUserSubmit += HutanEventManager_OnUserSubmit;
 
-        pauseBtn.onClick.AddListener(() => HutanEventManager.Instance.GamePaused());
+        pauseBtn.onClick.AddListener(() =>
+        {
+            AudioManager.Instance.PlaySFX("Click2");
+            HutanEventManager.Instance.GamePaused();
+        });
 
         upBtn.GetComponent<ButtonPointerDownListener>().onPointerDown.AddListener(() => HutanEventManager.Instance.Jump());
 
@@ -80,6 +86,14 @@ public class HutanUIManager : MonoBehaviour
 
         gameUI.SetActive(false);
         chooseCharacterPopUp.SetActive(true);
+    }
+
+    private void HutanEventManager_OnGameStarted()
+    {
+        upBtn.interactable = true;
+        downBtn.interactable = true;
+
+        HutanEventManager.Instance.OnGameStarted -= HutanEventManager_OnGameStarted;
     }
 
     private void HutanEventManager_OnCharacterChanged(Character _character)
@@ -95,14 +109,6 @@ public class HutanUIManager : MonoBehaviour
         HutanEventManager.Instance.OnCharacterChanged -= HutanEventManager_OnCharacterChanged;
     }
 
-    private void HutanEventManager_OnGameStarted()
-    {
-        upBtn.interactable = true;
-        downBtn.interactable = true;
-
-        HutanEventManager.Instance.OnGameStarted -= HutanEventManager_OnGameStarted;
-    }
-
     private void HutanEventManager_OnCollectRange(bool _state)
     {
         if (_state)
@@ -115,20 +121,23 @@ public class HutanUIManager : MonoBehaviour
         }
     }
 
-    // private void HutanEventManager_OnGamePaused()
-    // {
-    //     pausePopUp.SetActive(true);
-    // }
+    private void HutanEventManager_OnGamePaused()
+    {
+        pausePopUp.SetActive(true);
+    }
 
-    // private void HutanEventManager_OnGameResumed()
-    // {
-    //     pausePopUp.SetActive(false);
-    // }
+    private void HutanEventManager_OnGameResumed()
+    {
+        pausePopUp.SetActive(false);
+    }
 
     private void HutanEventManager_OnGameOver(int _score, int _coin, int _bug)
     {
         gameOverPopUp.SetActive(true);
         gameOverPopUp.GetComponent<HutanGameOverPopUp>().ShowResult(_score, _coin, _bug);
+
+        HutanEventManager.Instance.OnGamePaused -= HutanEventManager_OnGamePaused;
+        HutanEventManager.Instance.OnGameResumed -= HutanEventManager_OnGameResumed;
     }
 
     private void HutanEventManager_OnUserSubmit(string _name, int _score)

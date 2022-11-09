@@ -53,9 +53,25 @@ public class HutanGameManager : MonoBehaviour
 
     private void Start()
     {
-        HutanEventManager.Instance.OnCharacterChanged += HutanEventManager_OnCharacterChanged;
+        SceneHandler.Instance.OnSceneReloaded += SceneHandler_OnSceneReloaded;
+        HutanEventManager.Instance.OnGameStarted += HutanEventManager_OnGameStarted;
 
-        Time.timeScale = 1;
+        HutanEventManager.Instance.OnCharacterChanged += HutanEventManager_OnCharacterChanged;
+    }
+
+    private void SceneHandler_OnSceneReloaded()
+    {
+        HutanEventManager.Instance.GameResumed();
+    }
+
+    private void HutanEventManager_OnGameStarted()
+    {
+        // play audio
+
+        catchCounter = 0;
+        bug = 0;
+        length = 0;
+        health = 3;
     }
 
     private void HutanEventManager_OnCharacterChanged(Character _character)

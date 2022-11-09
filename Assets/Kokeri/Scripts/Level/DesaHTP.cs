@@ -8,7 +8,7 @@ using UnityEngine.Video;
 public class DesaHTP : MonoBehaviour
 {
     [SerializeField] private VideoPlayer videoPlayer;
-    // [SerializeField] private VideoClip videoClip;
+    [SerializeField] private VideoClip videoClip;
     [SerializeField] private Button backBtn;
     [SerializeField] private Button playBtn;
 
@@ -35,18 +35,16 @@ public class DesaHTP : MonoBehaviour
 
     private IEnumerator PlayVideo()
     {
-        videoPlayer.url = Path.Combine(Application.streamingAssetsPath, "Video/HowToPlayDesa720p.mp4");
+        videoPlayer.clip = videoClip;
 
         videoPlayer.Prepare();
 
-        //Wait until video is prepared
         while (!videoPlayer.isPrepared)
         {
             // Debug.Log("Preparing Video");
             yield return null;
         }
 
-        //Play Video
         videoPlayer.Play();
 
         Debug.Log("Playing Video");

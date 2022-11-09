@@ -40,6 +40,7 @@ public class DesaEventManager : MonoBehaviour
     public event Action OnTimerStopped;
     public event Action OnCorrect;
     public event Action OnWrong;
+    public event Action<string, int> OnUserSubmit;
 
     public void GameStarted()
     {
@@ -48,7 +49,7 @@ public class DesaEventManager : MonoBehaviour
     public void GameOver(int _score, int _coin)
     {
         Time.timeScale = 0;
-
+        
         OnGameOver?.Invoke(_score, _coin);
     }
     public void GamePaused()
@@ -82,6 +83,10 @@ public class DesaEventManager : MonoBehaviour
     public void Wrong()
     {
         OnWrong?.Invoke();
+    }
+    public void UserSubmit(string _name, int _score)
+    {
+        OnUserSubmit?.Invoke(_name, _score);
     }
 
     // ====================================================================================================

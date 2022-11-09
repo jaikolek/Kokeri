@@ -54,6 +54,9 @@ public class DesaGameManager : MonoBehaviour
 
     private void Start()
     {
+        SceneHandler.Instance.OnSceneReloaded += SceneHandler_OnSceneReloaded;
+        DesaEventManager.Instance.OnGameStarted += GameStarted;
+
         DesaEventManager.Instance.OnUp += DesaEventManager_OnUp;
         DesaEventManager.Instance.OnDown += DesaEventManager_OnDown;
         DesaEventManager.Instance.OnLeft += DesaEventManager_OnLeft;
@@ -66,6 +69,22 @@ public class DesaGameManager : MonoBehaviour
 
         moveCase = new DesaMoveInventory();
         moveAnswer = new DesaMoveInventory();
+    }
+
+    private void SceneHandler_OnSceneReloaded()
+    {
+        DesaEventManager.Instance.GameResumed();
+    }
+
+    private void GameStarted()
+    {
+        // play audio
+        AudioManager.Instance.PlayBGM("Desa");
+
+        currentLevel = 0;
+        currentCase = 0;
+        score = 0;
+        health = 3;
     }
 
     private void DesaEventManager_OnUp()
@@ -141,22 +160,16 @@ public class DesaGameManager : MonoBehaviour
         DesaUIManager.Instance.RemoveAllMoveIndicator();
         DesaUIManager.Instance.HideMoveIndicatorContainer();
 
+        health--;
+        DesaUIManager.Instance.UpdateHealth(health);
+
         StartCoroutine(DesaUIManager.Instance.ShowState(DStateType.WRONG, () =>
         {
-            DesaEventManager.Instance.PhaseStart();
+            if (health > 0)
+                DesaEventManager.Instance.PhaseStart();
+            else
+                CalculateResult();
         }));
-
-        health--;
-
-        if (health <= 0)
-        {
-            DesaEventManager.Instance.GameOver(score, 0);
-        }
-        else
-        {
-            DesaUIManager.Instance.UpdateHealth(health);
-
-        }
     }
 
     private void MakeCase()
@@ -250,5 +263,13 @@ public class DesaGameManager : MonoBehaviour
         }
 
         DesaEventManager.Instance.TimerStopped();
+    }
+
+    private void CalculateResult()
+    {
+        // 5 score = 1 coin
+        int coin = score / 5;
+
+        DesaEventManager.Instance.GameOver(score, coin);
     }
 }

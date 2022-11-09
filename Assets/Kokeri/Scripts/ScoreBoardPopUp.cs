@@ -7,7 +7,6 @@ using TMPro;
 
 public class ScoreBoardPopUp : MonoBehaviour
 {
-
     [SerializeField] private GameObject scoreboardContainer;
     [SerializeField] private GameObject boardItemPrefab;
 
@@ -22,10 +21,17 @@ public class ScoreBoardPopUp : MonoBehaviour
         menuBtn.onClick.AddListener(OnClickMenu);
     }
 
+    public void ShowResultDesa(string _name, int _score)
+    {
+        GameObject boardItem = Instantiate(boardItemPrefab, scoreboardContainer.transform);
+
+        // TODO: get rank
+        boardItem.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "16. " + _name;
+        boardItem.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = _score.ToString();
+    }
+
     public void ShowResultHutan(string _name, int _score)
     {
-        gameObject.SetActive(true);
-
         GameObject boardItem = Instantiate(boardItemPrefab, scoreboardContainer.transform);
 
         // TODO: get rank

@@ -9,6 +9,7 @@ public class DesaProlog : MonoBehaviour
 {
     [SerializeField] private Button skipBtn;
     [SerializeField] private VideoPlayer videoPlayer;
+    [SerializeField] private VideoClip videoClip;
 
     private void Awake()
     {
@@ -34,7 +35,7 @@ public class DesaProlog : MonoBehaviour
 
     private IEnumerator PlayVideo()
     {
-        videoPlayer.url = Path.Combine(Application.streamingAssetsPath, "Video/PrologDesa720p.mp4");
+        videoPlayer.clip = videoClip;
 
         videoPlayer.Prepare();
 
@@ -64,6 +65,8 @@ public class DesaProlog : MonoBehaviour
 
     private void SkipVideo()
     {
+        AudioManager.Instance.PlaySFX("Click2");
+
         videoPlayer.Stop();
         videoPlayer.clip = null;
         videoPlayer.enabled = false;

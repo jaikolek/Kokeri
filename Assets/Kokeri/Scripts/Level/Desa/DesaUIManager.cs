@@ -72,8 +72,18 @@ public class DesaUIManager : MonoBehaviour
     private void Start()
     {
         DesaEventManager.Instance.OnGameStarted += DesaEventManager_OnGameStarted;
+        DesaEventManager.Instance.OnGamePaused += DesaEventManager_OnGamePaused;
+        DesaEventManager.Instance.OnGameResumed += DesaEventManager_OnGameResumed;
+        DesaEventManager.Instance.OnGameOver += DesaEventManager_OnGameOver;
 
-        pauseBtn.onClick.AddListener(() => DesaEventManager.Instance.GamePaused());
+        DesaEventManager.Instance.OnUserSubmit += DesaEventManager_OnUserSubmit;
+
+        pauseBtn.onClick.AddListener(() =>
+        {
+            AudioManager.Instance.PlaySFX("Click2");
+
+            DesaEventManager.Instance.GamePaused();
+        });
 
         upBtn.onClick.AddListener(() => DesaEventManager.Instance.Up());
         downBtn.onClick.AddListener(() => DesaEventManager.Instance.Down());
@@ -89,16 +99,28 @@ public class DesaUIManager : MonoBehaviour
         StartCoroutine(Countdown());
     }
 
-    public void UpdateScore(int score)
+    private void DesaEventManager_OnGamePaused()
     {
-        scoreText.text = "Score : " + score.ToString();
+        pausePopUp.SetActive(true);
     }
 
-    public void UpdateHealth(int health)
+    private void DesaEventManager_OnGameResumed()
     {
-        healthText.text = health.ToString() + "X";
+        pausePopUp.SetActive(false);
+    }
 
-        healthContainer.transform.GetChild(health - 1).gameObject.SetActive(false);
+    private void DesaEventManager_OnGameOver(int _score, int _coin)
+    {
+        StartCoroutine(ShowGameOver(_score, _coin));
+
+        DesaEventManager.Instance.OnGamePaused -= DesaEventManager_OnGamePaused;
+        DesaEventManager.Instance.OnGameResumed -= DesaEventManager_OnGameResumed;
+    }
+
+    private void DesaEventManager_OnUserSubmit(string _name, int _score)
+    {
+        scoreBoardPopUp.SetActive(true);
+        scoreBoardPopUp.GetComponent<ScoreBoardPopUp>().ShowResultDesa(_name, _score);
     }
 
     private IEnumerator Countdown()
@@ -112,6 +134,18 @@ public class DesaUIManager : MonoBehaviour
         statePanelImage.gameObject.SetActive(false);
 
         DesaEventManager.Instance.PhaseStart();
+    }
+
+    public void UpdateScore(int _score)
+    {
+        scoreText.text = "Score : " + _score.ToString();
+    }
+
+    public void UpdateHealth(int _health)
+    {
+        healthText.text = _health.ToString() + "X";
+
+        healthContainer.transform.GetChild(_health).gameObject.SetActive(false);
     }
 
     public IEnumerator ShowState(DStateType _stateType, Action _callback = null)
@@ -144,11 +178,18 @@ public class DesaUIManager : MonoBehaviour
         }
     }
 
-    public IEnumerator ShowGameOver()
+    private IEnumerator ShowGameOver(int _score, int _coin)
     {
+        DesaEventManager.Instance.GameResumed();
+
         gameOverPanel.SetActive(true);
         yield return new WaitForSeconds(1);
         gameOverPanel.SetActive(false);
+
+        DesaEventManager.Instance.GamePaused();
+
+        gameOverPopUp.SetActive(true);
+        gameOverPopUp.GetComponent<DesaGameOverPopUp>().ShowResult(_score, _coin);
     }
 
     public void ShowMoveIndicatorContainer()
