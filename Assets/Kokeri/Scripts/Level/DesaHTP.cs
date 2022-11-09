@@ -12,15 +12,10 @@ public class DesaHTP : MonoBehaviour
     [SerializeField] private Button backBtn;
     [SerializeField] private Button playBtn;
 
-    private void Awake()
+    private void Start()
     {
         backBtn.onClick.AddListener(OnClickBack);
         playBtn.onClick.AddListener(OnClickPlay);
-    }
-
-    private void Start()
-    {
-        Application.runInBackground = true;
     }
 
     private void OnEnable()

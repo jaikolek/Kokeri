@@ -61,6 +61,8 @@ public class HutanGameManager : MonoBehaviour
 
     private void SceneHandler_OnSceneReloaded()
     {
+        AudioManager.Instance.StopBGM();
+
         HutanEventManager.Instance.GameResumed();
     }
 

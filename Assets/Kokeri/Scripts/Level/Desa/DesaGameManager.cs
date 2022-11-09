@@ -31,18 +31,20 @@ public class DesaGameManager : MonoBehaviour
 
 
     // ====================================================================================================
+    private IEnumerator timerCoroutine;
     private DesaMoveInventory moveCase;
     private DesaMoveInventory moveAnswer;
 
     [Header("Player")]
-    [SerializeField] private int health = 3;
+    [SerializeField] private int currentCase = 1;
+    [SerializeField] private int currentLevel;
     [SerializeField] private int score;
+    [SerializeField] private int health = 3;
 
     [Header("Game")]
     [SerializeField] private float animationTime = 1f;
     [SerializeField] private float animationDelay = 0.5f;
-    [SerializeField] private int currentLevel;
-    [SerializeField] private int currentCase;
+
 
     [Header("Design Level")]
     [SerializeField] private List<DesaDesignLevel> designLevelList = new List<DesaDesignLevel>();
@@ -73,6 +75,8 @@ public class DesaGameManager : MonoBehaviour
 
     private void SceneHandler_OnSceneReloaded()
     {
+        AudioManager.Instance.StopBGM();
+
         DesaEventManager.Instance.GameResumed();
     }
 
@@ -81,8 +85,8 @@ public class DesaGameManager : MonoBehaviour
         // play audio
         AudioManager.Instance.PlayBGM("Desa");
 
+        currentCase = 1;
         currentLevel = 0;
-        currentCase = 0;
         score = 0;
         health = 3;
     }
@@ -118,6 +122,8 @@ public class DesaGameManager : MonoBehaviour
         StartCoroutine(DesaUIManager.Instance.ShowState(DStateType.CASE, () =>
         {
             MakeCase();
+            moveAnswer.ClearMoveList();
+
             StartCoroutine(PlayPhase());
         }));
     }
@@ -126,8 +132,10 @@ public class DesaGameManager : MonoBehaviour
     {
         if (moveAnswer.GetMoveListCount() == moveCase.GetMoveListCount())
         {
-            StopCoroutine(AnswerTimer());
-            DesaEventManager.Instance.Correct();
+            if (moveAnswer.CompareMoveList(moveCase))
+            {
+                DesaEventManager.Instance.Correct();
+            }
         }
 
         for (int i = 0; i < moveAnswer.GetMoveListCount(); i++)
@@ -142,8 +150,14 @@ public class DesaGameManager : MonoBehaviour
 
     private void DesaEventManager_OnCorrect()
     {
+        StopCoroutine(timerCoroutine);
+
+        DesaUIManager.Instance.DisableButton();
+
         DesaCameraFocus.Instance.SetCameraDefault();
         DesaUIManager.Instance.HideMoveIndicatorContainer();
+
+        beriAnimator.SetFloat("State", 2);
 
         StartCoroutine(DesaUIManager.Instance.ShowState(DStateType.CORRECT, () =>
         {
@@ -156,6 +170,10 @@ public class DesaGameManager : MonoBehaviour
 
     private void DesaEventManager_OnWrong()
     {
+        StopCoroutine(timerCoroutine);
+
+        DesaUIManager.Instance.DisableButton();
+
         DesaCameraFocus.Instance.SetCameraDefault();
         DesaUIManager.Instance.RemoveAllMoveIndicator();
         DesaUIManager.Instance.HideMoveIndicatorContainer();
@@ -218,15 +236,15 @@ public class DesaGameManager : MonoBehaviour
             DesaUIManager.Instance.EnableButton();
             DesaCameraFocus.Instance.SetCameraBeri();
             DesaUIManager.Instance.ShowMoveIndicatorContainer();
-            StartCoroutine(AnswerTimer());
+
+            timerCoroutine = AnswerTimer();
+            StartCoroutine(timerCoroutine);
         }));
     }
 
     private IEnumerator PlayAnswer()
     {
         DesaUIManager.Instance.ShowMoveIndicatorContainer();
-
-        beriAnimator.SetFloat("State", 2);
 
         for (int i = 0; i < moveAnswer.GetMoveListCount(); i++)
         {

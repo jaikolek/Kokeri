@@ -92,8 +92,6 @@ public class AudioManager : MonoBehaviour
                 AudioManager.Instance.StopBGM();
             }
         }
-
-
     }
 
     public void SetBGMVolume(float _volume)

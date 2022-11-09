@@ -35,6 +35,24 @@ public class DesaMoveInventory
     {
         return moveList[_index].GetMoveType();
     }
+
+    public bool CompareMoveList(DesaMoveInventory _moveInventory)
+    {
+        if (moveList.Count != _moveInventory.GetMoveListCount())
+        {
+            return false;
+        }
+
+        for (int i = 0; i < moveList.Count; i++)
+        {
+            if (moveList[i].GetMoveType() != _moveInventory.GetMoveType(i))
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
     // ====================================================================================================
 
 

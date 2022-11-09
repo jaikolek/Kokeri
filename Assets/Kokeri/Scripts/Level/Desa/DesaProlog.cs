@@ -11,13 +11,15 @@ public class DesaProlog : MonoBehaviour
     [SerializeField] private VideoPlayer videoPlayer;
     [SerializeField] private VideoClip videoClip;
 
-    private void Awake()
-    {
-        skipBtn.onClick.AddListener(() => SkipVideo());
-    }
-
     private void Start()
     {
+        skipBtn.onClick.AddListener(() =>
+        {
+            AudioManager.Instance.PlaySFX("Click2");
+
+            SkipVideo();
+        });
+
         StartCoroutine(PlayVideo());
         StartCoroutine(ShowSkipBtn());
     }
@@ -65,10 +67,7 @@ public class DesaProlog : MonoBehaviour
 
     private void SkipVideo()
     {
-        AudioManager.Instance.PlaySFX("Click2");
-
         videoPlayer.Stop();
-        videoPlayer.clip = null;
         videoPlayer.enabled = false;
         gameObject.SetActive(false);
 

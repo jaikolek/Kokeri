@@ -44,22 +44,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 671de9395a609634e8044d14cf9e5620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  currentCase: 1
+  currentLevel: 0
   score: 0
+  health: 3
   animationTime: 1
   animationDelay: 0.25
-  currentLevel: 0
-  currentCase: 0
   designLevelList:
   - totalMove: 4
     caseType: 0
-    onCase: 0
-    answerTime: 6
+    onCase: 1
+    answerTime: 7
     score: 10
-  - totalMove: 0
-    caseType: 0
-    onCase: 0
-    answerTime: 0
+  - totalMove: 4
+    caseType: 1
+    onCase: 2
+    answerTime: 7
+    score: 10
+  - totalMove: 4
+    caseType: 2
+    onCase: 3
+    answerTime: 6.5
+    score: 10
+  - totalMove: 5
+    caseType: 2
+    onCase: 7
+    answerTime: 6.5
+    score: 10
+  - totalMove: 6
+    caseType: 2
+    onCase: 10
+    answerTime: 6
     score: 10
   chikoAnimator: {fileID: 0}
   kettiAnimator: {fileID: 0}
