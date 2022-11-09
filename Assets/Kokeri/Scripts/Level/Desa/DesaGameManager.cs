@@ -256,13 +256,11 @@ public class DesaGameManager : MonoBehaviour
     private IEnumerator AnswerTimer()
     {
         yield return new WaitForSeconds(designLevelList[currentLevel].answerTime - 3);
-        for (float i = 3; i > 0; i--)
-        {
-            // show countdown
-            yield return new WaitForSeconds(1f);
-        }
 
-        DesaEventManager.Instance.TimerStopped();
+        StartCoroutine(DesaUIManager.Instance.ShowTimeUpCountdown(() =>
+        {
+            DesaEventManager.Instance.Wrong();
+        }));
     }
 
     private void CalculateResult()

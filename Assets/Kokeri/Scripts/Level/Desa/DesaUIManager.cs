@@ -69,6 +69,9 @@ public class DesaUIManager : MonoBehaviour
     [SerializeField] private List<Sprite> moveIndicatorActiveSpriteList;
     private List<GameObject> moveIndicatorList = new List<GameObject>();
 
+    [Header("TimeUp Countdown")]
+    [SerializeField] private TextMeshProUGUI timeUpCountdownText;
+
     private void Start()
     {
         DesaEventManager.Instance.OnGameStarted += DesaEventManager_OnGameStarted;
@@ -85,10 +88,26 @@ public class DesaUIManager : MonoBehaviour
             DesaEventManager.Instance.GamePaused();
         });
 
-        upBtn.onClick.AddListener(() => DesaEventManager.Instance.Up());
-        downBtn.onClick.AddListener(() => DesaEventManager.Instance.Down());
-        leftBtn.onClick.AddListener(() => DesaEventManager.Instance.Left());
-        rightBtn.onClick.AddListener(() => DesaEventManager.Instance.Right());
+        upBtn.onClick.AddListener(() =>
+        {
+            AudioManager.Instance.PlaySFX("Click2");
+            DesaEventManager.Instance.Up();
+        });
+        downBtn.onClick.AddListener(() =>
+        {
+            AudioManager.Instance.PlaySFX("Click2");
+            DesaEventManager.Instance.Down();
+        });
+        leftBtn.onClick.AddListener(() =>
+        {
+            AudioManager.Instance.PlaySFX("Click2");
+            DesaEventManager.Instance.Left();
+        });
+        rightBtn.onClick.AddListener(() =>
+        {
+            AudioManager.Instance.PlaySFX("Click2");
+            DesaEventManager.Instance.Right();
+        });
 
         DisableButton();
     }
@@ -254,5 +273,21 @@ public class DesaUIManager : MonoBehaviour
             Destroy(item);
         }
         moveIndicatorList.Clear();
+    }
+
+    public IEnumerator ShowTimeUpCountdown(Action _callback = null)
+    {
+        timeUpCountdownText.gameObject.SetActive(true);
+        for (int i = 0; i < 3; i++)
+        {
+            timeUpCountdownText.text = (3 - i).ToString();
+            yield return new WaitForSeconds(1);
+        }
+        timeUpCountdownText.gameObject.SetActive(false);
+
+        if (_callback != null)
+        {
+            _callback();
+        }
     }
 }

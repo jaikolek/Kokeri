@@ -37,7 +37,6 @@ public class DesaEventManager : MonoBehaviour
     public event Action OnGameResumed;
     public event Action OnPhaseStart;
     public event Action OnPlayerAnswer;
-    public event Action OnTimerStopped;
     public event Action OnCorrect;
     public event Action OnWrong;
     public event Action<string, int> OnUserSubmit;
@@ -49,7 +48,7 @@ public class DesaEventManager : MonoBehaviour
     public void GameOver(int _score, int _coin)
     {
         Time.timeScale = 0;
-        
+
         OnGameOver?.Invoke(_score, _coin);
     }
     public void GamePaused()
@@ -71,10 +70,6 @@ public class DesaEventManager : MonoBehaviour
     public void PlayerAnswer()
     {
         OnPlayerAnswer?.Invoke();
-    }
-    public void TimerStopped()
-    {
-        OnTimerStopped?.Invoke();
     }
     public void Correct()
     {

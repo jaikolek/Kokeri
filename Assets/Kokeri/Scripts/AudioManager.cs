@@ -85,15 +85,11 @@ public class AudioManager : MonoBehaviour
                 }
             }
         }
-        else if (_sceneName == "Desa")
+        else
         {
             if (AudioManager.Instance.IsBGMPlaying())
             {
-                if (AudioManager.Instance.GetPlayingBGMName() != "Desa")
-                {
-                    AudioManager.Instance.StopBGM();
-                    AudioManager.Instance.PlayBGM("Desa");
-                }
+                AudioManager.Instance.StopBGM();
             }
         }
 
