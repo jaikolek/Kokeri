@@ -7,6 +7,10 @@ TagManager:
   - Obstacle
   - Ground
   - Bug
+  - Kail
+  - Penghapus
+  - Ikan
+  - IkanKebalik
   layers:
   - Default
   - TransparentFX
@@ -47,9 +51,12 @@ TagManager:
   - name: Background
     uniqueID: 154484429
     locked: 0
-  - name: Character
-    uniqueID: 2393472365
-    locked: 0
   - name: UI
     uniqueID: 3200666917
+    locked: 0
+  - name: Shader
+    uniqueID: 1609094883
+    locked: 0
+  - name: Character
+    uniqueID: 2393472365
     locked: 0
