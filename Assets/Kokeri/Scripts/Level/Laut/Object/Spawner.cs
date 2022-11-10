@@ -20,6 +20,8 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AudioManager.Instance.PlayBGM("Laut");
+
         if (isSpawning)
         {
             StartCoroutine(SpawnIkan());

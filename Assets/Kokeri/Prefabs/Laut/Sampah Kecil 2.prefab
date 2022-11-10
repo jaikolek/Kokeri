@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   berat: 2
-  kecepatan: 1
+  kecepatan: 2
   skor: 0
   isKanan: 0
   isTarik: 0

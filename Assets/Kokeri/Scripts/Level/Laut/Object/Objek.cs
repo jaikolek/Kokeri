@@ -69,6 +69,7 @@ public class Objek : MonoBehaviour
             
             if (tarik.canRotate)
             {
+                AudioManager.Instance.StopSFX();
                 Object.Destroy(gameObject);
                 isTarik = false;
 
@@ -129,6 +130,8 @@ public class Objek : MonoBehaviour
 
         if (collision.gameObject.tag == "Kail")
         {
+
+           AudioManager.Instance.PlaySFX("Tarik");
            isTarik = true;
            cirColl.enabled = false;
            tarik.move_speed -= berat;
