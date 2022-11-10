@@ -42,17 +42,17 @@ public class SceneHandler : MonoBehaviour
 
 
     public event Action<string> OnSceneChanged;
-
     public void LoadScene(string _sceneName)
     {
         SceneManager.LoadScene(_sceneName);
-
         OnSceneChanged?.Invoke(_sceneName);
     }
 
+    public event Action OnSceneReloaded;
     public void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        OnSceneReloaded?.Invoke();
 
         OnSceneChanged?.Invoke(SceneManager.GetActiveScene().name);
     }

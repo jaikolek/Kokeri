@@ -7,17 +7,18 @@ using UnityEngine.Video;
 
 public class DesaProlog : MonoBehaviour
 {
-    [SerializeField] private VideoPlayer videoPlayer;
     [SerializeField] private Button skipBtn;
-
-    private void Awake()
-    {
-        skipBtn.onClick.AddListener(() => SkipVideo());
-    }
+    [SerializeField] private VideoPlayer videoPlayer;
+    [SerializeField] private VideoClip videoClip;
 
     private void Start()
     {
-        skipBtn.gameObject.SetActive(false);
+        skipBtn.onClick.AddListener(() =>
+        {
+            AudioManager.Instance.PlaySFX("Click2");
+
+            SkipVideo();
+        });
 
         StartCoroutine(PlayVideo());
         StartCoroutine(ShowSkipBtn());
@@ -36,18 +37,16 @@ public class DesaProlog : MonoBehaviour
 
     private IEnumerator PlayVideo()
     {
-        videoPlayer.url = Path.Combine(Application.streamingAssetsPath, "Video/PrologDesa720p.mp4");
+        videoPlayer.clip = videoClip;
 
         videoPlayer.Prepare();
 
-        //Wait until video is prepared
         while (!videoPlayer.isPrepared)
         {
             // Debug.Log("Preparing Video");
             yield return null;
         }
 
-        //Play Video
         videoPlayer.Play();
 
         Debug.Log("Playing Video");
@@ -69,10 +68,9 @@ public class DesaProlog : MonoBehaviour
     private void SkipVideo()
     {
         videoPlayer.Stop();
-        videoPlayer.clip = null;
         videoPlayer.enabled = false;
         gameObject.SetActive(false);
 
-        GameManagerDesa.Instance.SetCanStartGame(true);
+        DesaEventManager.Instance.GameStarted();
     }
 }

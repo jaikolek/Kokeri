@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &762908933625975971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 762908933625975964}
+  - component: {fileID: 762908933625975965}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &762908933625975964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762908933625975971}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &762908933625975965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762908933625975971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f235cff25b006e4283213b65c3c1e9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameUI: {fileID: 0}
+  gameOverPopUp: {fileID: 0}
+  pausePopUp: {fileID: 0}
+  scoreBoardPopUp: {fileID: 0}
+  upBtn: {fileID: 0}
+  downBtn: {fileID: 0}
+  leftBtn: {fileID: 0}
+  rightBtn: {fileID: 0}
+  pauseBtn: {fileID: 0}
+  scoreText: {fileID: 0}
+  healthContainer: {fileID: 0}
+  healthText: {fileID: 0}
+  statePanelImage: {fileID: 0}
+  caseSprite: {fileID: 15570269, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  answerSprite: {fileID: 1888124740, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  correctSprite: {fileID: -317474758, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  wrongSprite: {fileID: 131113769, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  gameOverPanel: {fileID: 0}
+  countdownSprite:
+  - {fileID: 1778330947, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  - {fileID: 158255012, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  - {fileID: 1469962981, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  moveIndicatorPrefab: {fileID: 231859731699702307, guid: fbf8a3eba3aeb5741be5c3a608a0b830,
+    type: 3}
+  moveIndicatorContainer: {fileID: 0}
+  moveIndicatorSpriteList:
+  - {fileID: -1250567483, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  - {fileID: -2033698995, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  - {fileID: 91377028, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  - {fileID: -981888753, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  moveIndicatorActiveSpriteList:
+  - {fileID: -601694560, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  - {fileID: 601084234, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  - {fileID: -203356968, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  - {fileID: -1269489310, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  timeUpCountdownText: {fileID: 0}

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 2559f5e9ce08dc24082fec778525f15e
+<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Desa/SpriteAnimasi Beri_Tampilan Akhir.png.meta
+guid: 91867ea9c9f2de745a173a698276b08e
+========
+guid: 3709325b9f211b643843a70cc14374fd
+>>>>>>>> Desa:Assets/Kokeri/Assets/In_Game/Desa/SpriteAnimasi chiko_Tampilan Akhir.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

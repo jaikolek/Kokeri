@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 10388af0d060f2e42a650880276f035f
+<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Laut/contoh_Jeda_02.png.meta
+guid: bec0127d303d10c4eae91c175dde9db6
+========
+guid: aff591bf74baf974a9704bd4347543d9
+>>>>>>>> Desa:Assets/Kokeri/Assets/In_Game/Laut/SpriteAnimasi Beri_Tampilan Akhir.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

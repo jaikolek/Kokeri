@@ -5,28 +5,39 @@ using UnityEngine;
 
 public class HutanPlayer : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private Sprite chikoSprite;
-    [SerializeField] private Sprite kettiSprite;
-    [SerializeField] private Sprite beriSprite;
+    [SerializeField] private RuntimeAnimatorController chikoAnimatorController;
+    [SerializeField] private RuntimeAnimatorController kettiAnimatorController;
+    [SerializeField] private RuntimeAnimatorController beriAnimatorController;
+
+    private Animator animator;
 
     private void Start()
     {
-        HutanEventManager.Instance.OnCharacterSelected += HutanEventManager_OnCharacterSelected;
+        HutanEventManager.Instance.OnGameStarted += HutanEventManager_OnGameStarted;
+        HutanEventManager.Instance.OnCharacterChanged += HutanEventManager_OnCharacterChanged;
+
+        animator = GetComponent<Animator>();
     }
 
-    private void HutanEventManager_OnCharacterSelected(Character character)
+    private void HutanEventManager_OnGameStarted()
+    {
+        animator.SetBool("isGameStarted", true);
+
+        HutanEventManager.Instance.OnGameStarted -= HutanEventManager_OnGameStarted;
+    }
+
+    private void HutanEventManager_OnCharacterChanged(Character character)
     {
         switch (character)
         {
-            case Character.Chiko:
-                // spriteRenderer.sprite = chikoSprite;
+            case Character.CHIKO:
+                animator.runtimeAnimatorController = chikoAnimatorController;
                 break;
-            case Character.Ketti:
-                // spriteRenderer.sprite = kettiSprite;
+            case Character.KETTI:
+                // animator.runtimeAnimatorController = kettiAnimatorController;
                 break;
-            case Character.Beri:
-                // spriteRenderer.sprite = beriSprite;
+            case Character.BERI:
+                // animator.runtimeAnimatorController = beriAnimatorController;
                 break;
             default:
                 break;

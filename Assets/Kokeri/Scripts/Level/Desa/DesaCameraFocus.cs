@@ -13,12 +13,6 @@ public class DesaCameraFocus : MonoBehaviour
             if (instance == null)
             {
                 instance = FindObjectOfType<DesaCameraFocus>();
-                if (instance == null)
-                {
-                    GameObject obj = new GameObject();
-                    obj.name = typeof(DesaCameraFocus).Name;
-                    instance = obj.AddComponent<DesaCameraFocus>();
-                }
             }
             return instance;
         }

@@ -59,6 +59,8 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
+        SceneHandler.Instance.OnSceneChanged += SceneHandler_SceneChanged;
+
         // audio init
         if (!PlayerPrefs.HasKey("BGMVolume"))
             SetBGMVolume(defaultVolume);
@@ -68,6 +70,28 @@ public class AudioManager : MonoBehaviour
             SetSFXVolume(defaultVolume);
         else
             SetSFXVolume(GetSFXVolume());
+    }
+
+    private void SceneHandler_SceneChanged(string _sceneName)
+    {
+        if (_sceneName == "MainMenu" || _sceneName == "MainLevel")
+        {
+            if (AudioManager.Instance.IsBGMPlaying())
+            {
+                if (AudioManager.Instance.GetPlayingBGMName() != "MainMenu")
+                {
+                    AudioManager.Instance.StopBGM();
+                    AudioManager.Instance.PlayBGM("MainMenu");
+                }
+            }
+        }
+        else
+        {
+            if (AudioManager.Instance.IsBGMPlaying())
+            {
+                AudioManager.Instance.StopBGM();
+            }
+        }
     }
 
     public void SetBGMVolume(float _volume)
