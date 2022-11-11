@@ -80,6 +80,7 @@ public class Objek : MonoBehaviour
 
                 if (isSampah)
                 {
+                    AudioManager.Instance.PlaySFX("Feedback Sampah");
                     textUi.nyawaPlayer -= 1;
                     if (textUi.minNyawa < 0)
                     {
@@ -90,6 +91,7 @@ public class Objek : MonoBehaviour
                 }
                 else
                 {
+                    AudioManager.Instance.PlaySFX("Feedback Ikan");
                     textUi.ikanCounter += 1;
                 }
 
