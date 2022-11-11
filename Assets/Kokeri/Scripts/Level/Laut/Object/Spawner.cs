@@ -20,8 +20,6 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AudioManager.Instance.PlayBGM("Laut");
-
         if (isSpawning)
         {
             StartCoroutine(SpawnIkan());
@@ -35,7 +33,7 @@ public class Spawner : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         int randomPrefab = Random.Range(0, prefabObjek.Length);
         int randomPos = Random.Range(0, prefabPos.Length);
-        if(randomPrefab == 0 || randomPrefab == 1)
+        if(randomPrefab == 1 || randomPrefab == 2)
         {
             randomPos = Random.Range(1, 2);
         }

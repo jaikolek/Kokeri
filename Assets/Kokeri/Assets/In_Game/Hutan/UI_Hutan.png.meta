@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Hutan/UI_Hutan.png.meta
 guid: ddda27b1142b9294b994b3bef0bb1a39
-========
-guid: c9a77db2bc9ee1745837a462c86be11a
->>>>>>>> origin/Laut:Assets/Kokeri/Assets/In_Game/Laut/SpriteAnimasi chiko_Tampilan Akhir.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,11 +112,22 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Hutan/UI_Hutan.png.meta
       name: UI_0
       rect:
         serializedVersion: 2
@@ -128,15 +135,6 @@ TextureImporter:
         y: 251
         width: 644
         height: 353
-========
-      name: SpriteAnimasi chiko_Tampilan Akhir_0
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 0
-        width: 404
-        height: 834
->>>>>>>> origin/Laut:Assets/Kokeri/Assets/In_Game/Laut/SpriteAnimasi chiko_Tampilan Akhir.png.meta
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,19 +142,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Hutan/UI_Hutan.png.meta
       spriteID: f25818c694febe04f8ffbd75f1e1d4c2
       internalID: 2108725718
-========
-      spriteID: 545e50779f3e5474784a526c724be9c2
-      internalID: -450838732
->>>>>>>> origin/Laut:Assets/Kokeri/Assets/In_Game/Laut/SpriteAnimasi chiko_Tampilan Akhir.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Hutan/UI_Hutan.png.meta
       name: UI_1
       rect:
         serializedVersion: 2
@@ -164,15 +156,6 @@ TextureImporter:
         y: 490
         width: 91
         height: 120
-========
-      name: SpriteAnimasi chiko_Tampilan Akhir_1
-      rect:
-        serializedVersion: 2
-        x: 534
-        y: 0
-        width: 404
-        height: 834
->>>>>>>> origin/Laut:Assets/Kokeri/Assets/In_Game/Laut/SpriteAnimasi chiko_Tampilan Akhir.png.meta
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,19 +163,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Hutan/UI_Hutan.png.meta
       spriteID: d491051fb4342c544a7e1001675a1993
       internalID: 761613296
-========
-      spriteID: 8f72e3dab0d755b47bd3c65e8f848f89
-      internalID: -1158848483
->>>>>>>> origin/Laut:Assets/Kokeri/Assets/In_Game/Laut/SpriteAnimasi chiko_Tampilan Akhir.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Hutan/UI_Hutan.png.meta
       name: UI_2
       rect:
         serializedVersion: 2
@@ -200,15 +177,6 @@ TextureImporter:
         y: 490
         width: 92
         height: 120
-========
-      name: SpriteAnimasi chiko_Tampilan Akhir_2
-      rect:
-        serializedVersion: 2
-        x: 1004
-        y: 0
-        width: 404
-        height: 834
->>>>>>>> origin/Laut:Assets/Kokeri/Assets/In_Game/Laut/SpriteAnimasi chiko_Tampilan Akhir.png.meta
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,19 +184,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Hutan/UI_Hutan.png.meta
       spriteID: bb99440359bc9f4478daaf1dcbc89862
       internalID: -372756579
-========
-      spriteID: 136e9faeecd72124296612ca6c07e059
-      internalID: 397443622
->>>>>>>> origin/Laut:Assets/Kokeri/Assets/In_Game/Laut/SpriteAnimasi chiko_Tampilan Akhir.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Hutan/UI_Hutan.png.meta
       name: UI_3
       rect:
         serializedVersion: 2
@@ -236,15 +198,6 @@ TextureImporter:
         y: 491
         width: 106
         height: 120
-========
-      name: SpriteAnimasi chiko_Tampilan Akhir_3
-      rect:
-        serializedVersion: 2
-        x: 1483
-        y: 0
-        width: 402
-        height: 834
->>>>>>>> origin/Laut:Assets/Kokeri/Assets/In_Game/Laut/SpriteAnimasi chiko_Tampilan Akhir.png.meta
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,19 +205,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Hutan/UI_Hutan.png.meta
       spriteID: 08157e6d6882c3e428e2a389e436c285
       internalID: 1582782738
-========
-      spriteID: 7dfbc9653661d6743ad8b3937286a80c
-      internalID: -2049721133
->>>>>>>> origin/Laut:Assets/Kokeri/Assets/In_Game/Laut/SpriteAnimasi chiko_Tampilan Akhir.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Hutan/UI_Hutan.png.meta
       name: UI_4
       rect:
         serializedVersion: 2
@@ -272,15 +219,6 @@ TextureImporter:
         y: 340
         width: 290
         height: 288
-========
-      name: SpriteAnimasi chiko_Tampilan Akhir_4
-      rect:
-        serializedVersion: 2
-        x: 1956
-        y: 0
-        width: 402
-        height: 834
->>>>>>>> origin/Laut:Assets/Kokeri/Assets/In_Game/Laut/SpriteAnimasi chiko_Tampilan Akhir.png.meta
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,7 +226,6 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Hutan/UI_Hutan.png.meta
       spriteID: fe25735c7dbafe04fbf0fa8e904bb124
       internalID: -1252000234
       vertices: []
@@ -396,10 +333,6 @@ TextureImporter:
       bones: []
       spriteID: c26dc5d589520134a82634903b97366c
       internalID: -744201423
-========
-      spriteID: 873b9b534ea8d424f9fbee84fd86b21c
-      internalID: 231274049
->>>>>>>> origin/Laut:Assets/Kokeri/Assets/In_Game/Laut/SpriteAnimasi chiko_Tampilan Akhir.png.meta
       vertices: []
       indices: 
       edges: []
@@ -415,7 +348,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-<<<<<<<< HEAD:Assets/Kokeri/Assets/In_Game/Hutan/UI_Hutan.png.meta
       UI_1: 761613296
       UI_4: -1252000234
       UI_2: -372756579
@@ -427,13 +359,6 @@ TextureImporter:
       UI_8: -11509008
       UI_6: -1140817524
       UI_5: 1296372431
-========
-      SpriteAnimasi chiko_Tampilan Akhir_3: -2049721133
-      SpriteAnimasi chiko_Tampilan Akhir_4: 231274049
-      SpriteAnimasi chiko_Tampilan Akhir_0: -450838732
-      SpriteAnimasi chiko_Tampilan Akhir_1: -1158848483
-      SpriteAnimasi chiko_Tampilan Akhir_2: 397443622
->>>>>>>> origin/Laut:Assets/Kokeri/Assets/In_Game/Laut/SpriteAnimasi chiko_Tampilan Akhir.png.meta
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

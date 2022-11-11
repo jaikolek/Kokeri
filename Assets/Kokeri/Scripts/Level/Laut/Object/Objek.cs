@@ -69,7 +69,6 @@ public class Objek : MonoBehaviour
             
             if (tarik.canRotate)
             {
-                AudioManager.Instance.StopSFX();
                 Object.Destroy(gameObject);
                 isTarik = false;
 
@@ -80,7 +79,6 @@ public class Objek : MonoBehaviour
 
                 if (isSampah)
                 {
-                    AudioManager.Instance.PlaySFX("Feedback Sampah");
                     textUi.nyawaPlayer -= 1;
                     if (textUi.minNyawa < 0)
                     {
@@ -88,11 +86,6 @@ public class Objek : MonoBehaviour
                     }
                     if (textUi.nyawaPlayer >= 0)
                         textUi.iconNyawa[textUi.nyawaPlayer].enabled = false;
-                }
-                else
-                {
-                    AudioManager.Instance.PlaySFX("Feedback Ikan");
-                    textUi.ikanCounter += 1;
                 }
 
             }
@@ -132,11 +125,9 @@ public class Objek : MonoBehaviour
 
         if (collision.gameObject.tag == "Kail")
         {
-
-           AudioManager.Instance.PlaySFX("Tarik");
+           tarik.move_speed -= berat;
            isTarik = true;
            cirColl.enabled = false;
-           tarik.move_speed -= berat;
         }
         
 
