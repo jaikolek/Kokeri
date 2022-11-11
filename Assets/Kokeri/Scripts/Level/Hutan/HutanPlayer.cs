@@ -65,7 +65,18 @@ public class HutanPlayer : MonoBehaviour
         if (other.gameObject.CompareTag("Obstacle"))
         {
             HutanGameManager.Instance.ReduceHealth();
+            StartCoroutine(AfterHitCooldown());
+
+            Collider2D collider = other.gameObject.GetComponent<Collider2D>();
+            collider.enabled = false;
         }
+    }
+
+    private IEnumerator AfterHitCooldown()
+    {
+        Time.timeScale = 0;
+        yield return new WaitForSecondsRealtime(1);
+        Time.timeScale = 1;
     }
 }
 

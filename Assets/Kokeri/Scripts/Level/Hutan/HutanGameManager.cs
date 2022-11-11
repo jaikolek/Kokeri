@@ -26,6 +26,8 @@ public class HutanGameManager : MonoBehaviour
         {
             instance = this;
         }
+
+        Time.timeScale = 1;
     }
     #endregion singleton
     // ====================================================================================================
@@ -62,8 +64,6 @@ public class HutanGameManager : MonoBehaviour
     private void SceneHandler_OnSceneReloaded()
     {
         AudioManager.Instance.StopBGM();
-
-        HutanEventManager.Instance.GameResumed();
     }
 
     private void HutanEventManager_OnGameStarted()

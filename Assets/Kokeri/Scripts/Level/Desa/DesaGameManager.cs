@@ -25,6 +25,8 @@ public class DesaGameManager : MonoBehaviour
         {
             instance = this;
         }
+
+        Time.timeScale = 1;
     }
     #endregion singleton
     // ====================================================================================================
@@ -76,8 +78,6 @@ public class DesaGameManager : MonoBehaviour
     private void SceneHandler_OnSceneReloaded()
     {
         AudioManager.Instance.StopBGM();
-
-        DesaEventManager.Instance.GameResumed();
     }
 
     private void GameStarted()
