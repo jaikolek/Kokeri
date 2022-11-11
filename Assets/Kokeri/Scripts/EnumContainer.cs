@@ -29,3 +29,8 @@ public enum DMoveType
     RIGHT = 4,
 }
 
+public enum Datatype
+{
+    DESA, HUTAN, LAUT, DEFAULT,
+    SHOP,
+}
