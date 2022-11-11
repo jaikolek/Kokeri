@@ -121,10 +121,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2527
-        height: 1556
+        width: 2702
+        height: 1461
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: UI_Tampilan Akhir_1
       rect:
         serializedVersion: 2
-        x: 2668
-        y: 749
-        width: 75
+        x: 2874
+        y: 722
+        width: 80
         height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.56825197, y: 0.5000008}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: UI_Tampilan Akhir_2
       rect:
         serializedVersion: 2
-        x: 2695
-        y: 357
-        width: 112
-        height: 108
+        x: 2860
+        y: 379
+        width: 103
+        height: 99
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
