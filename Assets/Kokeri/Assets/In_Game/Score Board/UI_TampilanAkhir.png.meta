@@ -132,11 +132,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 14
-        y: 265
+        y: 357
         width: 2411
-        height: 1483
+        height: 1508
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,12 +152,12 @@ TextureImporter:
       name: UI_TampilanAkhir_1
       rect:
         serializedVersion: 2
-        x: 1066
-        y: 72
-        width: 187
-        height: 183
+        x: 1068
+        y: 70
+        width: 188
+        height: 188
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,12 +173,12 @@ TextureImporter:
       name: UI_TampilanAkhir_2
       rect:
         serializedVersion: 2
-        x: 1439
+        x: 1437
         y: 70
-        width: 186
-        height: 185
+        width: 189
+        height: 188
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: UI_TampilanAkhir_3
       rect:
         serializedVersion: 2
-        x: 1774
-        y: 72
-        width: 186
-        height: 184
+        x: 1807
+        y: 70
+        width: 190
+        height: 188
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,8 +223,11 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       UI_TampilanAkhir_2: 2031138626
+      UI_TampilanAkhir_7: -1045194324
       UI_TampilanAkhir_3: 463508050
       UI_TampilanAkhir_1: 1003253857
+      UI_TampilanAkhir_4: -1459711605
+      UI_TampilanAkhir_6: 1588905285
       UI_TampilanAkhir_0: -1282449569
       UI_TampilanAkhir_5: 1060718972
   spritePackingTag: 

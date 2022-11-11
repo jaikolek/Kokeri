@@ -52,7 +52,9 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] private float defaultVolume = 0.5f;
     [SerializeField] private List<AudioData> BGM;
-    [SerializeField] private List<AudioData> SFX;
+    [SerializeField] private List<AudioData> mainSFX;
+    [SerializeField] private List<AudioData> desaSFX;
+    [SerializeField] private List<AudioData> hutanSFX;
 
     private AudioSource AudioSourceBGM;
     private AudioSource AudioSourceSFX;
@@ -128,7 +130,27 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySFX(string _name)
     {
-        AudioData audioData = SFX.Find(x => x.name == _name);
+        AudioData audioData = mainSFX.Find(x => x.name == _name);
+        if (audioData != null)
+        {
+            AudioSourceSFX.clip = audioData.clip;
+            AudioSourceSFX.Play();
+        }
+    }
+
+    public void PlayDesaSFX(string _name)
+    {
+        AudioData audioData = desaSFX.Find(x => x.name == _name);
+        if (audioData != null)
+        {
+            AudioSourceSFX.clip = audioData.clip;
+            AudioSourceSFX.Play();
+        }
+    }
+
+    public void PlayHutanSFX(string _name)
+    {
+        AudioData audioData = hutanSFX.Find(x => x.name == _name);
         if (audioData != null)
         {
             AudioSourceSFX.clip = audioData.clip;
@@ -162,50 +184,6 @@ public class AudioManager : MonoBehaviour
     public void StopSFX()
     {
         AudioSourceSFX.Stop();
-    }
-
-    public void AddBGM(string _name, AudioClip _clip)
-    {
-        AudioData audioData = new AudioData();
-        audioData.name = _name;
-        audioData.clip = _clip;
-        BGM.Add(audioData);
-    }
-
-    public void AddSFX(string _name, AudioClip _clip)
-    {
-        AudioData audioData = new AudioData();
-        audioData.name = _name;
-        audioData.clip = _clip;
-        SFX.Add(audioData);
-    }
-
-    public void RemoveBGM(string _name)
-    {
-        AudioData audioData = BGM.Find(x => x.name == _name);
-        if (audioData != null)
-        {
-            BGM.Remove(audioData);
-        }
-    }
-
-    public void RemoveSFX(string _name)
-    {
-        AudioData audioData = SFX.Find(x => x.name == _name);
-        if (audioData != null)
-        {
-            SFX.Remove(audioData);
-        }
-    }
-
-    public void RemoveAllBGM()
-    {
-        BGM.Clear();
-    }
-
-    public void RemoveAllSFX()
-    {
-        SFX.Clear();
     }
 
     [Serializable]

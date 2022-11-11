@@ -70,7 +70,7 @@ public class DesaUIManager : MonoBehaviour
     private List<GameObject> moveIndicatorList = new List<GameObject>();
 
     [Header("TimeUp Countdown")]
-    [SerializeField] private TextMeshProUGUI timeUpCountdownText;
+    [SerializeField] private GameObject timeUpCountdown;
 
     private void Start()
     {
@@ -277,13 +277,16 @@ public class DesaUIManager : MonoBehaviour
 
     public IEnumerator ShowTimeUpCountdown(Action _callback = null)
     {
-        timeUpCountdownText.gameObject.SetActive(true);
+        timeUpCountdown.gameObject.SetActive(true);
         for (int i = 0; i < 3; i++)
         {
-            timeUpCountdownText.text = (3 - i).ToString();
+            timeUpCountdown.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = countdownSprite[i];
+            timeUpCountdown.transform.GetChild(1).gameObject.GetComponent<Image>().sprite = countdownSprite[i];
             yield return new WaitForSeconds(1);
         }
-        timeUpCountdownText.gameObject.SetActive(false);
+        timeUpCountdown.gameObject.SetActive(false);
+
+        yield return new WaitForSeconds(1);
 
         if (_callback != null)
         {

@@ -51,29 +51,34 @@ MonoBehaviour:
   animationTime: 1
   animationDelay: 0.25
   designLevelList:
-  - totalMove: 4
+  - totalMove: 2
     caseType: 0
     onCase: 1
     answerTime: 7
     score: 10
-  - totalMove: 4
+  - totalMove: 2
     caseType: 1
-    onCase: 2
+    onCase: 3
     answerTime: 7
+    score: 10
+  - totalMove: 2
+    caseType: 2
+    onCase: 5
+    answerTime: 6.5
+    score: 10
+  - totalMove: 3
+    caseType: 2
+    onCase: 11
+    answerTime: 6.5
     score: 10
   - totalMove: 4
     caseType: 2
-    onCase: 3
-    answerTime: 6.5
+    onCase: 15
+    answerTime: 6
     score: 10
   - totalMove: 5
     caseType: 2
-    onCase: 7
-    answerTime: 6.5
-    score: 10
-  - totalMove: 6
-    caseType: 2
-    onCase: 10
+    onCase: 20
     answerTime: 6
     score: 10
   chikoAnimator: {fileID: 0}

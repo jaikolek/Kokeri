@@ -150,14 +150,15 @@ public class DesaGameManager : MonoBehaviour
 
     private void DesaEventManager_OnCorrect()
     {
+        AudioManager.Instance.PlayDesaSFX("Correct");
+
         StopCoroutine(timerCoroutine);
 
         DesaUIManager.Instance.DisableButton();
 
-        DesaCameraFocus.Instance.SetCameraDefault();
         DesaUIManager.Instance.HideMoveIndicatorContainer();
 
-        beriAnimator.SetFloat("State", 2);
+        beriAnimator.SetBool("isIdle", true);
 
         StartCoroutine(DesaUIManager.Instance.ShowState(DStateType.CORRECT, () =>
         {
@@ -170,11 +171,13 @@ public class DesaGameManager : MonoBehaviour
 
     private void DesaEventManager_OnWrong()
     {
+        AudioManager.Instance.PlayDesaSFX("Wrong");
+
         StopCoroutine(timerCoroutine);
 
         DesaUIManager.Instance.DisableButton();
 
-        DesaCameraFocus.Instance.SetCameraDefault();
+        DesaInGame.Instance.ZoomToDefault();
         DesaUIManager.Instance.RemoveAllMoveIndicator();
         DesaUIManager.Instance.HideMoveIndicatorContainer();
 
@@ -205,36 +208,33 @@ public class DesaGameManager : MonoBehaviour
 
     private IEnumerator PlayPhase()
     {
-        DesaCameraFocus.Instance.SetCameraChikoKetti();
+        DesaInGame.Instance.ZoomToChikoKetti();
         yield return new WaitForSeconds(animationTime);
 
         DesaUIManager.Instance.ShowMoveIndicatorContainer();
 
         for (int i = 0; i < moveCase.GetMoveListCount(); i++)
         {
-            chikoAnimator.SetBool("Move", true);
-            kettiAnimator.SetBool("Move", true);
-
             DesaUIManager.Instance.AddActiveMoveIndicator(moveCase.GetMoveType(i));
-            chikoAnimator.SetFloat("Direction", Convert.ToInt32(moveCase.GetMoveType(i)));
-            kettiAnimator.SetFloat("Direction", Convert.ToInt32(moveCase.GetMoveType(i)));
-
-            yield return new WaitForSeconds(animationTime);
-
-            chikoAnimator.SetBool("Move", false);
-            kettiAnimator.SetBool("Move", false);
+            PlayMoveAnimation(kettiAnimator, moveCase.GetMoveType(i));
+            PlayMoveAnimation(chikoAnimator, moveCase.GetMoveType(i));
+            yield return new WaitForSeconds(chikoAnimator.GetCurrentAnimatorStateInfo(0).length);
+            StopMoveAnimation(kettiAnimator, moveCase.GetMoveType(i));
+            StopMoveAnimation(chikoAnimator, moveCase.GetMoveType(i));
 
             yield return new WaitForSeconds(animationDelay);
         }
 
-        DesaCameraFocus.Instance.SetCameraDefault();
+        yield return new WaitForSeconds(animationTime);
+
+        DesaInGame.Instance.ZoomToDefault();
         DesaUIManager.Instance.RemoveAllMoveIndicator();
         DesaUIManager.Instance.HideMoveIndicatorContainer();
 
         StartCoroutine(DesaUIManager.Instance.ShowState(DStateType.ANSWER, () =>
         {
             DesaUIManager.Instance.EnableButton();
-            DesaCameraFocus.Instance.SetCameraBeri();
+            DesaInGame.Instance.ZoomToBeri();
             DesaUIManager.Instance.ShowMoveIndicatorContainer();
 
             timerCoroutine = AnswerTimer();
@@ -248,21 +248,18 @@ public class DesaGameManager : MonoBehaviour
 
         for (int i = 0; i < moveAnswer.GetMoveListCount(); i++)
         {
-            beriAnimator.SetBool("Move", true);
-
             DesaUIManager.Instance.ChangeToActiveMoveIndicator(i, moveAnswer.GetMoveType(i));
-            beriAnimator.SetFloat("Direction", Convert.ToInt32(moveAnswer.GetMoveType(i)));
-
-            yield return new WaitForSeconds(animationTime);
-
-            beriAnimator.SetBool("Move", false);
+            PlayMoveAnimation(beriAnimator, moveAnswer.GetMoveType(i));
+            yield return new WaitForSeconds(beriAnimator.GetCurrentAnimatorStateInfo(0).length);
+            StopMoveAnimation(beriAnimator, moveAnswer.GetMoveType(i));
 
             yield return new WaitForSeconds(animationDelay);
         }
 
-        beriAnimator.SetFloat("State", 1);
+        beriAnimator.SetBool("isIdle", false);
+        yield return new WaitForSeconds(animationTime);
 
-        DesaCameraFocus.Instance.SetCameraDefault();
+        DesaInGame.Instance.ZoomToDefault();
         DesaUIManager.Instance.RemoveAllMoveIndicator();
         DesaUIManager.Instance.HideMoveIndicatorContainer();
 
@@ -279,6 +276,20 @@ public class DesaGameManager : MonoBehaviour
         {
             DesaEventManager.Instance.Wrong();
         }));
+    }
+
+    private void PlayMoveAnimation(Animator _animator, DMoveType _moveType)
+    {
+        string moveTypeString = _moveType.ToString();
+
+        _animator.SetBool(moveTypeString, true);
+    }
+
+    private void StopMoveAnimation(Animator _animator, DMoveType _moveType)
+    {
+        string moveTypeString = _moveType.ToString();
+
+        _animator.SetBool(moveTypeString, false);
     }
 
     private void CalculateResult()

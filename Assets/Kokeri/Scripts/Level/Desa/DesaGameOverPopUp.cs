@@ -10,6 +10,7 @@ public class DesaGameOverPopUp : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI coinText;
+    [SerializeField] private TextMeshProUGUI errorText;
 
     private TMP_InputField nameInputField;
 
@@ -28,8 +29,16 @@ public class DesaGameOverPopUp : MonoBehaviour
 
     public void OnSubmit()
     {
-        DesaEventManager.Instance.UserSubmit(nameInputField.text, int.Parse(scoreText.text));
-        gameObject.SetActive(false);
+        if (nameInputField.text == "")
+        {
+            errorText.gameObject.SetActive(true);
+            errorText.text = "Ayo tulis nama kamu!";
+        }
+        else
+        {
+            DesaEventManager.Instance.UserSubmit(nameInputField.text, int.Parse(scoreText.text));
+            gameObject.SetActive(false);
+        }
     }
 }
 
