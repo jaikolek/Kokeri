@@ -34,6 +34,18 @@ public class GameData
             SortData();
             m_Count++;
         }
+        else
+        {
+            foreach (MockData data in m_MockData)
+            {
+                if (data.Score < _data.Score)
+                {
+                    m_MockData.Add(_data);
+                    SortData();
+                    m_Count++;
+                }
+            }
+        }
     }
 
     public Datatype GetDataType()

@@ -107,6 +107,7 @@
     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanPlayerControl.cs" />
     <Compile Include="Assets\Kokeri\Scripts\BasePopUp.cs" />
     <Compile Include="Assets\Kokeri\Scripts\SaveLoad\SaveSystem.cs" />
+    <Compile Include="Assets\Kokeri\Scripts\SaveLoad\GameData.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanParallax.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaProlog.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Player.cs" />
@@ -119,14 +120,13 @@
     <Compile Include="Assets\Kokeri\Scripts\SaveLoad\SaveLoad.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanEventManager.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Object\IkanBesar.cs" />
+    <Compile Include="Assets\Kokeri\Scripts\SaveLoad\ShopData.cs" />
     <Compile Include="Assets\Scripts.Old\MoveUI.cs" />
     <Compile Include="Assets\Scripts.Old\FunctionTimer.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Object\Spawner.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Shop\ShopPopUp.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Gelembung.cs" />
     <Compile Include="Assets\Scripts.Old\Delay.cs" />
-    <Compile Include="Assets\Kokeri\Scripts\SaveLoad\ShopData.cs" />
-    <Compile Include="Assets\Kokeri\Scripts\SaveLoad\GameData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
