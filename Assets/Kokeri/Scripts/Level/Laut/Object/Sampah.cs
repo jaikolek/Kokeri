@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class Sampah : Objek
 {
-
+    public override void UbahSpeed()
+    {
+        kecepatan = GameManager.tempSpeed;
+    }
 }

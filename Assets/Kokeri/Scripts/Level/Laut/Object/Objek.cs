@@ -19,7 +19,7 @@ public class Objek : MonoBehaviour
     public int skor;
     public bool isKanan, isTarik, isSampah;
 
-    public virtual void Start()
+    private void Start()
     {
         tarik = FindObjectOfType<Tarik>();
         textUi = FindObjectOfType<TextUI>();
@@ -49,7 +49,7 @@ public class Objek : MonoBehaviour
 
     private void Update()
     {
-
+        UbahSpeed();
         if(textUi.convertScore >= 10)
         {
             textUi.koin += 2;
@@ -120,6 +120,11 @@ public class Objek : MonoBehaviour
         }
 
         
+
+    }
+
+    public virtual void UbahSpeed()
+    {
 
     }
 

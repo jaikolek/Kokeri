@@ -89,6 +89,9 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: Assembly-CSharp
+    fullTypeName: InputKeyboard
+    methodName: Submit
+  - assembly: Assembly-CSharp
     fullTypeName: Tarik
     methodName: PlayerInput
   - assembly: Assembly-CSharp
@@ -709,7 +712,7 @@ ScriptsOnlyBuild:
     className: SceneVariables
   - hash:
       serializedVersion: 2
-      Hash: 3867d52f3587abf7e2a6c692fc32381a
+      Hash: 00e2e236975db7f3fe45253c409409d2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -835,7 +838,7 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
-      Hash: 9e98b4731d6d7690ff5be24f40a6b7fc
+      Hash: fa0a2b96e19471631ec203ea32362b5d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TextUI
@@ -877,7 +880,7 @@ ScriptsOnlyBuild:
     className: SceneHandler
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: bccfb4b3c95ac6a7d74790cda5c0d01a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InputKeyboard
@@ -1129,7 +1132,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: e270937ad5258b57df3068ac80cf8766
+      Hash: 2b7bea9a8f2df6d946d3a7d555bef908
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Spawner
