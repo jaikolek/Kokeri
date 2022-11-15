@@ -45,11 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  length: 0
   bug: 0
   catchCounter: 0
   isGameReady: 0
   timer: 0
   gameSpeed: 1
-  gameSpeedIncrement: 0.001
+  gameSpeedIncrement: 0.0001
   maxGameSpeed: 4

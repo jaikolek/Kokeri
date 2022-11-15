@@ -155,6 +155,7 @@ public class DesaGameManager : MonoBehaviour
         if (showTimeUpCountdownCoroutine != null)
         {
             StopCoroutine(showTimeUpCountdownCoroutine);
+            DesaUIManager.Instance.HideTimeUpCountdown();
         }
 
         AudioManager.Instance.PlayDesaSFX("Correct");

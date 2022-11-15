@@ -293,4 +293,9 @@ public class DesaUIManager : MonoBehaviour
             _callback();
         }
     }
+
+    public void HideTimeUpCountdown()
+    {
+        timeUpCountdown.gameObject.SetActive(false);
+    }
 }
