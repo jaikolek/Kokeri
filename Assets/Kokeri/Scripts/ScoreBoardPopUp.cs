@@ -26,7 +26,7 @@ public class ScoreBoardPopUp : MonoBehaviour
         GameObject boardItem = Instantiate(boardItemPrefab, scoreboardContainer.transform);
 
         // TODO: get rank
-        boardItem.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "16. " + _name;
+        boardItem.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "01. " + _name;
         boardItem.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = _score.ToString();
     }
 
@@ -35,7 +35,7 @@ public class ScoreBoardPopUp : MonoBehaviour
         GameObject boardItem = Instantiate(boardItemPrefab, scoreboardContainer.transform);
 
         // TODO: get rank
-        boardItem.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "16. " + _name;
+        boardItem.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "01. " + _name;
         boardItem.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = _score.ToString();
     }
 

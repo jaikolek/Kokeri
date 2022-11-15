@@ -26,18 +26,21 @@ public class DesaProlog : MonoBehaviour
 
     private void Update()
     {
-        if (SceneHandler.Instance.isDesaPrologPlayed)
-        {
-            SkipVideo();
-        }
-
         if (videoPlayer.time >= 5)
         {
             if (!videoPlayer.isPlaying)
             {
                 SkipVideo();
+                return;
             }
-            
+
+        }
+
+        // Debug.Log(SceneHandler.Instance.isDesaPrologPlayed);
+        if (SceneHandler.Instance.isDesaPrologPlayed)
+        {
+            SkipVideo();
+            return;
         }
     }
 
@@ -76,6 +79,8 @@ public class DesaProlog : MonoBehaviour
         videoPlayer.Stop();
         videoPlayer.enabled = false;
         gameObject.SetActive(false);
+
+        SceneHandler.Instance.isDesaPrologPlayed = true;
 
         DesaEventManager.Instance.GameStarted();
     }

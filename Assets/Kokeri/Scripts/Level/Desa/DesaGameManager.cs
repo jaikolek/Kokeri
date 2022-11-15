@@ -177,6 +177,13 @@ public class DesaGameManager : MonoBehaviour
 
     private void DesaEventManager_OnWrong()
     {
+        StopCoroutine(timerCoroutine);
+        if (showTimeUpCountdownCoroutine != null)
+        {
+            StopCoroutine(showTimeUpCountdownCoroutine);
+            DesaUIManager.Instance.HideTimeUpCountdown();
+        }
+
         AudioManager.Instance.PlayDesaSFX("Wrong");
 
         DesaUIManager.Instance.DisableButton();
