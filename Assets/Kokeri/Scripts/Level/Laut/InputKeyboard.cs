@@ -20,5 +20,6 @@ public class InputKeyboard : MonoBehaviour
     public void Submit()
     {
         textUI.namaPenampung = nama;
+        textUI.gameOverPanelisActive = false;
     }
 }

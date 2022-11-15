@@ -610,7 +610,7 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: a08b690a222e60826d089f1874a91711
+      Hash: 9bc40b603ccc555561f934d19e4beabd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AudioManager
@@ -838,7 +838,7 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
-      Hash: fa0a2b96e19471631ec203ea32362b5d
+      Hash: 1baa764b6fb262ba44b804cd02f793c3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TextUI

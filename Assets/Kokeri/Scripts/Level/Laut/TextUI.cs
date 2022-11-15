@@ -15,6 +15,8 @@ public class TextUI : MonoBehaviour
 
     public string namaPenampung;
 
+    public bool gameOverPanelisActive;
+
     public Image[] iconNyawa;
     public GameObject gameOverPanel;
 
@@ -24,11 +26,13 @@ public class TextUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameOverPanelisActive = true;
         koin = 0;
         TotalSkor = 0;
         nyawaPlayer = 3;
         ikanCounter = 0;
+        convertScore = 0;
+
         for(int i = 0; i < iconNyawa.Length; i++)
         {
             iconNyawa[i].enabled = true;
@@ -54,7 +58,8 @@ public class TextUI : MonoBehaviour
         if(nyawaPlayer <= 0)
         {
             Time.timeScale = 0;
-            gameOverPanel.SetActive(true);
+            if(gameOverPanelisActive)
+                gameOverPanel.SetActive(true);
         }
         
     }
