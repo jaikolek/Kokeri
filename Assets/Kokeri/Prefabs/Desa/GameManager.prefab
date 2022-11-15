@@ -68,17 +68,17 @@ MonoBehaviour:
     score: 10
   - totalMove: 3
     caseType: 2
-    onCase: 11
+    onCase: 7
     answerTime: 6.5
     score: 10
   - totalMove: 4
     caseType: 2
-    onCase: 15
+    onCase: 12
     answerTime: 6
     score: 10
   - totalMove: 5
     caseType: 2
-    onCase: 20
+    onCase: 15
     answerTime: 6
     score: 10
   chikoAnimator: {fileID: 0}
