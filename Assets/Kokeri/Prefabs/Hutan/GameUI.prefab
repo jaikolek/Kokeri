@@ -354,7 +354,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ouch!
+  m_text: Aduh!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1775825fab7b44a439e2cfb2889905a3, type: 2}
   m_sharedMaterial: {fileID: -3812617167830478058, guid: 1775825fab7b44a439e2cfb2889905a3,
@@ -1763,7 +1763,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gotcha!
+  m_text: YEY DAPET!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1775825fab7b44a439e2cfb2889905a3, type: 2}
   m_sharedMaterial: {fileID: -3812617167830478058, guid: 1775825fab7b44a439e2cfb2889905a3,

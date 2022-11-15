@@ -34,6 +34,7 @@ public class DesaGameManager : MonoBehaviour
 
     // ====================================================================================================
     private IEnumerator timerCoroutine;
+    private IEnumerator showTimeUpCountdownCoroutine;
     private DesaMoveInventory moveCase;
     private DesaMoveInventory moveAnswer;
 
@@ -150,9 +151,13 @@ public class DesaGameManager : MonoBehaviour
 
     private void DesaEventManager_OnCorrect()
     {
-        AudioManager.Instance.PlayDesaSFX("Correct");
-
         StopCoroutine(timerCoroutine);
+        if (showTimeUpCountdownCoroutine != null)
+        {
+            StopCoroutine(showTimeUpCountdownCoroutine);
+        }
+
+        AudioManager.Instance.PlayDesaSFX("Correct");
 
         DesaUIManager.Instance.DisableButton();
 
@@ -172,8 +177,6 @@ public class DesaGameManager : MonoBehaviour
     private void DesaEventManager_OnWrong()
     {
         AudioManager.Instance.PlayDesaSFX("Wrong");
-
-        StopCoroutine(timerCoroutine);
 
         DesaUIManager.Instance.DisableButton();
 
@@ -272,10 +275,12 @@ public class DesaGameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(designLevelList[currentLevel].answerTime - 3);
 
-        StartCoroutine(DesaUIManager.Instance.ShowTimeUpCountdown(() =>
+        showTimeUpCountdownCoroutine = DesaUIManager.Instance.ShowTimeUpCountdown(() =>
         {
             DesaEventManager.Instance.Wrong();
-        }));
+        });
+
+        StartCoroutine(showTimeUpCountdownCoroutine);
     }
 
     private void PlayMoveAnimation(Animator _animator, DMoveType _moveType)

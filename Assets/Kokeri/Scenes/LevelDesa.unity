@@ -1902,6 +1902,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2044525537}
     m_Modifications:
+    - target: {fileID: 6241177090205344747, guid: f51be53ca685db143b95eb1ae307e7e5,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6241177090205344747, guid: f51be53ca685db143b95eb1ae307e7e5,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6241177090205344747, guid: f51be53ca685db143b95eb1ae307e7e5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6241177090205344749, guid: f51be53ca685db143b95eb1ae307e7e5,
         type: 3}
       propertyPath: m_AspectRatio
@@ -1911,11 +1926,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Prolog
-      objectReference: {fileID: 0}
-    - target: {fileID: 6241177090327691442, guid: f51be53ca685db143b95eb1ae307e7e5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6241177090327691445, guid: f51be53ca685db143b95eb1ae307e7e5,
         type: 3}

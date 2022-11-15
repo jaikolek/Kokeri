@@ -26,12 +26,18 @@ public class DesaProlog : MonoBehaviour
 
     private void Update()
     {
+        if (SceneHandler.Instance.isDesaPrologPlayed)
+        {
+            SkipVideo();
+        }
+
         if (videoPlayer.time >= 5)
         {
             if (!videoPlayer.isPlaying)
             {
                 SkipVideo();
             }
+            
         }
     }
 

@@ -40,6 +40,7 @@ public class SceneHandler : MonoBehaviour
     }
     #endregion singleton
 
+    public bool isDesaPrologPlayed = false;
 
     public event Action<string> OnSceneChanged;
     public void LoadScene(string _sceneName)

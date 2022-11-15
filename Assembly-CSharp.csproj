@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts.Old\LevelManager.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanGameOverPopUp.cs" />
      <Compile Include="Assets\ButtonEvents\ButtonDoubleClickListener.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanPlayerSprite.cs" />
      <Compile Include="Assets\ButtonEvents\ButtonPointerUpListener.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaMove.cs" />
      <Compile Include="Assets\Kokeri\Scripts\SceneHandler.cs" />
@@ -113,7 +114,6 @@
      <Compile Include="Assets\Kokeri\Scripts\Level\Laut\GameManager.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Gelembung.cs" />
      <Compile Include="Assets\Scripts.Old\Delay.cs" />
-     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanPlayerSprite.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
