@@ -35,23 +35,25 @@ public class HutanGameManager : MonoBehaviour
 
     // ====================================================================================================
     [Header("Player")]
-    [SerializeField] private int health = 3;
-    [SerializeField] private float length;
+    [SerializeField] private int health;
     [SerializeField] private int bug;
     [SerializeField] private int catchCounter;
 
     [Header("Game")]
     [SerializeField] private bool isGameReady = false;
-    [SerializeField] private int gameSpeed;
+    [SerializeField] private float timer;
+    [SerializeField] private float gameSpeed;
+    [SerializeField] private float gameSpeedIncrement;
+    [SerializeField] private float maxGameSpeed;
     private Character character;
     private List<Character> characterList = new List<Character>() { Character.CHIKO, Character.KETTI, Character.BERI };
 
-    [Header("Design Level")]
-    [SerializeField] private List<HutanDesignLevel> designLevelList = new List<HutanDesignLevel>();
+    // [Header("Design Level")]
+    // [SerializeField] private List<HutanDesignLevel> designLevelList = new List<HutanDesignLevel>();
 
 
     public bool IsGameReady { get => isGameReady; set => isGameReady = value; }
-    public int GameSpeed { get => gameSpeed; set => gameSpeed = value; }
+    public float GameSpeed { get => gameSpeed; set => gameSpeed = value; }
 
     private void Start()
     {
@@ -59,6 +61,23 @@ public class HutanGameManager : MonoBehaviour
         HutanEventManager.Instance.OnGameStarted += HutanEventManager_OnGameStarted;
 
         HutanEventManager.Instance.OnCharacterChanged += HutanEventManager_OnCharacterChanged;
+
+        // play audio
+        AudioManager.Instance.PlayBGM("Hutan");
+    }
+
+    private void FixedUpdate()
+    {
+        if (isGameReady)
+        {
+            timer += Time.deltaTime;
+
+            if (timer >= 1)
+            {
+                gameSpeed += gameSpeedIncrement;
+                gameSpeed = Mathf.Clamp(gameSpeed, 0, maxGameSpeed);
+            }
+        }
     }
 
     private void SceneHandler_OnSceneReloaded()
@@ -68,11 +87,8 @@ public class HutanGameManager : MonoBehaviour
 
     private void HutanEventManager_OnGameStarted()
     {
-        // play audio
-
         catchCounter = 0;
         bug = 0;
-        length = 0;
         health = 3;
     }
 
@@ -81,22 +97,22 @@ public class HutanGameManager : MonoBehaviour
         character = _character;
     }
 
-    private void Update()
-    {
-        if (isGameReady)
-            IncrementLength();
-    }
+    // private void Update()
+    // {
+    //     if (isGameReady)
+    //         IncrementLength();
+    // }
 
-    public void IncrementLength()
-    {
-        length += Time.deltaTime * gameSpeed * 2.5f;
+    // public void IncrementLength()
+    // {
+    //     length += Time.deltaTime * gameSpeed * 2.5f;
 
-        if (length >= designLevelList[0].onLength && designLevelList.Count > 1)
-        {
-            gameSpeed = designLevelList[1].gameSpeed;
-            designLevelList.RemoveAt(0);
-        }
-    }
+    //     if (length >= designLevelList[0].onLength && designLevelList.Count > 1)
+    //     {
+    //         gameSpeed = designLevelList[1].gameSpeed;
+    //         designLevelList.RemoveAt(0);
+    //     }
+    // }
 
     public void IncrementBug()
     {
@@ -126,13 +142,6 @@ public class HutanGameManager : MonoBehaviour
         // reduce health and update
         health--;
         HutanUIManager.Instance.UpdateHealth(health, character);
-
-        // remove character from list
-        characterList.Remove(character);
-
-        // change to another character
-        ChangeCharacter();
-
 
         // check if game over
         if (health <= 0)

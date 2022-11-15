@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class HutanSpawner : MonoBehaviour
 {
-    [SerializeField] private List<Transform> spawnPointList;
+    [SerializeField] private List<Transform> spawnPointList = new List<Transform>();
     [SerializeField] private Transform obstacleContainer;
-    [SerializeField] private List<GameObject> groundObstaclePrefabList;
-    [SerializeField] private List<GameObject> flyingObstaclePrefabList;
+    [SerializeField] private List<GameObject> groundObstaclePrefabList = new List<GameObject>();
+    // [SerializeField] private List<GameObject> flyingObstaclePrefabList = new List<GameObject>();
     [SerializeField] private Transform bugSpawnPoint;
     [SerializeField] private Transform bugContainer;
     [SerializeField] private GameObject bugPrefab;
@@ -49,22 +49,27 @@ public class HutanSpawner : MonoBehaviour
 
     private void SpawnObstacle()
     {
-        if (Random.Range(0, 100) < 60)
-        {
-            // random obstacle
-            int randomObstacle = Random.Range(0, groundObstaclePrefabList.Count);
-            // spawn obstacle
-            Instantiate(groundObstaclePrefabList[randomObstacle], spawnPointList[0].position, Quaternion.identity, obstacleContainer);
-        }
-        else
-        {
-            // random spawn point
-            int randomSpawnPoint = Random.Range(1, spawnPointList.Count);
-            // random obstacle
-            int randomObstacle = Random.Range(0, flyingObstaclePrefabList.Count);
-            // spawn obstacle
-            Instantiate(flyingObstaclePrefabList[randomObstacle], spawnPointList[randomSpawnPoint].position, Quaternion.identity, obstacleContainer);
-        }
+        // if (Random.Range(0, 100) < 60)
+        // {
+        //     // random obstacle
+        //     int randomObstacle = Random.Range(0, groundObstaclePrefabList.Count);
+        //     // spawn obstacle
+        //     Instantiate(groundObstaclePrefabList[randomObstacle], spawnPointList[0].position, Quaternion.identity, obstacleContainer);
+        // }
+        // else
+        // {
+        //     // random spawn point
+        //     int randomSpawnPoint = Random.Range(1, spawnPointList.Count);
+        //     // random obstacle
+        //     int randomObstacle = Random.Range(0, flyingObstaclePrefabList.Count);
+        //     // spawn obstacle
+        //     Instantiate(flyingObstaclePrefabList[randomObstacle], spawnPointList[randomSpawnPoint].position, Quaternion.identity, obstacleContainer);
+        // }
+
+        // random obstacle
+        int randomObstacle = Random.Range(0, groundObstaclePrefabList.Count);
+        // spawn obstacle
+        Instantiate(groundObstaclePrefabList[randomObstacle], spawnPointList[0].position, Quaternion.identity, obstacleContainer);
     }
 
     private void SpawnBug()

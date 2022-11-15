@@ -53,6 +53,7 @@ public class HutanUIManager : MonoBehaviour
     [Header("Health")]
     [SerializeField] private GameObject healthContainer;
     [SerializeField] private TextMeshProUGUI healthText;
+    [SerializeField] private List<Sprite> healthImageList = new List<Sprite>();
 
     [Header("State")]
     [SerializeField] private TextMeshProUGUI hitText;
@@ -103,6 +104,16 @@ public class HutanUIManager : MonoBehaviour
 
         upBtn.interactable = false;
         downBtn.interactable = false;
+
+        foreach (Transform child in healthContainer.transform)
+        {
+            if (_character == Character.CHIKO)
+                child.GetComponent<Image>().sprite = healthImageList[0];
+            if (_character == Character.KETTI)
+                child.GetComponent<Image>().sprite = healthImageList[1];
+            if (_character == Character.BERI)
+                child.GetComponent<Image>().sprite = healthImageList[2];
+        }
 
         StartCoroutine(Countdown());
 
@@ -158,8 +169,8 @@ public class HutanUIManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         countDownText.gameObject.SetActive(false);
 
-        HutanGameManager.Instance.IsGameReady = true;
         HutanEventManager.Instance.GameStarted();
+        HutanGameManager.Instance.IsGameReady = true;
     }
 
     public void UpdateBug(int _bug)
@@ -171,18 +182,7 @@ public class HutanUIManager : MonoBehaviour
     {
         healthText.text = _health.ToString() + "X";
 
-        if (_character == Character.CHIKO)
-        {
-            healthContainer.transform.GetChild(0).gameObject.SetActive(false);
-        }
-        else if (_character == Character.KETTI)
-        {
-            healthContainer.transform.GetChild(1).gameObject.SetActive(false);
-        }
-        else
-        {
-            healthContainer.transform.GetChild(2).gameObject.SetActive(false);
-        }
+        healthContainer.transform.GetChild(_health).gameObject.SetActive(false);
     }
 
     public IEnumerator ShowState(string _state)

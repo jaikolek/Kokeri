@@ -69,9 +69,9 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
+    textureCompression: 3
+    compressionQuality: 100
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -789,7 +789,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      skeleton-Chiko-ChikoLeft_7: -219559370
+      skeleton-Chiko-ChikoLeft_21: 1204054940
       skeleton-Chiko-ChikoLeft_24: 1262689407
       skeleton-Chiko-ChikoLeft_13: -861827307
       skeleton-Chiko-ChikoLeft_19: -1296617253
@@ -817,9 +817,9 @@ TextureImporter:
       skeleton-Chiko-ChikoLeft_22: 1030314947
       skeleton-Chiko-ChikoLeft_10: -41175590
       skeleton-Chiko-ChikoLeft_9: -1319997662
-      skeleton-Chiko-ChikoLeft_21: 1204054940
-      skeleton-Chiko-ChikoLeft_20: -451350397
+      skeleton-Chiko-ChikoLeft_7: -219559370
       skeleton-Chiko-ChikoLeft_6: -302560767
+      skeleton-Chiko-ChikoLeft_20: -451350397
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -37,17 +37,21 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Object\IkanKecil.cs" />
+     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Test\Rotate.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaGameManager.cs" />
      <Compile Include="Assets\Kokeri\Scripts\PausePopUp.cs" />
      <Compile Include="Assets\Scripts.Old\Events.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanGameManager.cs" />
      <Compile Include="Assets\Kokeri\Scripts\TimerManager.cs" />
      <Compile Include="Assets\ButtonEvents\ButtonLongPressListener.cs" />
+     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\ReporterGUI.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanPlayer.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaEventManager.cs" />
      <Compile Include="Assets\Kokeri\Scripts\SaveLoad\MockData.cs" />
      <Compile Include="Assets\Kokeri\Scripts\ScoreBoardPopUp.cs" />
+     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\MultiKeyDictionary.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Laut\PauseMenu.cs" />
+     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Reporter.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Laut\TextUI.cs" />
      <Compile Include="Assets\Scripts.Old\LevelManager.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanGameOverPopUp.cs" />
@@ -58,9 +62,10 @@
      <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Object\Sampah.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanUIManager.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanSpawner.cs" />
+     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\ReporterMessageReceiver.cs" />
+     <Compile Include="Assets\Scripts.Old\FindRatio.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaGameOverPopUp.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Object\IkanEmas.cs" />
-     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanDesignLevel.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanChooseCharacterPopUp.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Shop\ShopProduct.cs" />
      <Compile Include="Assets\Kokeri\Scripts\SaveLoad\Data.cs" />
@@ -73,6 +78,7 @@
      <Compile Include="Assets\ButtonEvents\ButtonPointerExitListener.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanPlayerControl.cs" />
      <Compile Include="Assets\Scripts.Old\MoveAssets.cs" />
+     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Test\TestReporter.cs" />
      <Compile Include="Assets\Kokeri\Scripts\BasePopUp.cs" />
      <Compile Include="Assets\Kokeri\Scripts\SaveLoad\SaveSystem.cs" />
      <Compile Include="Assets\Kokeri\Scripts\SaveLoad\GameData.cs" />
@@ -107,13 +113,7 @@
      <Compile Include="Assets\Kokeri\Scripts\Level\Laut\GameManager.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Gelembung.cs" />
      <Compile Include="Assets\Scripts.Old\Delay.cs" />
-     <Compile Include="Assets\Scripts.Old\FindRatio.cs" />
-     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Test\TestReporter.cs" />
-     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\ReporterGUI.cs" />
-     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Reporter.cs" />
-     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\ReporterMessageReceiver.cs" />
-     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Test\Rotate.cs" />
-     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\MultiKeyDictionary.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanPlayerSprite.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

@@ -11,6 +11,7 @@ public class HutanGameOverPopUp : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI coinText;
     [SerializeField] private TextMeshProUGUI bugText;
+    [SerializeField] private TextMeshProUGUI errorText;
 
     private TMP_InputField nameInputField;
 
@@ -30,7 +31,17 @@ public class HutanGameOverPopUp : MonoBehaviour
 
     public void OnSubmit()
     {
-        HutanEventManager.Instance.UserSubmit(nameInputField.text, int.Parse(scoreText.text));
-        gameObject.SetActive(false);
+        AudioManager.Instance.PlaySFX("Click2");
+
+        if (nameInputField.text == "")
+        {
+            errorText.gameObject.SetActive(true);
+            errorText.text = "Ayo tulis nama kamu!";
+        }
+        else
+        {
+            HutanEventManager.Instance.UserSubmit(nameInputField.text, int.Parse(scoreText.text));
+            gameObject.SetActive(false);
+        }
     }
 }

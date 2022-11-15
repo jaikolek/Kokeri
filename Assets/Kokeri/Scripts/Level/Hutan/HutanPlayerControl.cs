@@ -68,11 +68,6 @@ public class HutanPlayerControl : MonoBehaviour
         {
             PlayerStand();
         }
-
-        if (Input.GetKey(KeyCode.LeftControl))
-        {
-            PlayerCatch();
-        }
     }
 
     void OnCollisionEnter2D(Collision2D other)

@@ -52,6 +52,9 @@ MonoBehaviour:
   - name: Desa
     clip: {fileID: 8300000, guid: 047998c48b7882a4983aa85aa39f6021, type: 3}
     loop: 1
+  - name: Hutan
+    clip: {fileID: 8300000, guid: 9d345f0724c061f42aedd98471b5ced2, type: 3}
+    loop: 1
   mainSFX:
   - name: Click1
     clip: {fileID: 8300000, guid: 85551db082c6c7d418a991ab9f4ffb0e, type: 3}
@@ -66,4 +69,10 @@ MonoBehaviour:
   - name: Wrong
     clip: {fileID: 8300000, guid: 92889a37cebf7f040a9d060f24a16fa5, type: 3}
     loop: 0
-  hutanSFX: []
+  hutanSFX:
+  - name: Jump
+    clip: {fileID: 8300000, guid: fe52c90eaca4e724986bc12d3e2ce302, type: 3}
+    loop: 0
+  - name: Catch
+    clip: {fileID: 8300000, guid: de79aa9449430a1459064f4781cc684c, type: 3}
+    loop: 0

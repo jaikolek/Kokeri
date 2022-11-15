@@ -89,6 +89,8 @@ public class HutanEventManager : MonoBehaviour
 
     public void Jump()
     {
+        AudioManager.Instance.PlayHutanSFX("Jump");
+
         OnJump?.Invoke();
     }
     public void Crouch()
@@ -101,6 +103,8 @@ public class HutanEventManager : MonoBehaviour
     }
     public void Catch()
     {
+        AudioManager.Instance.PlayHutanSFX("Catch");
+
         OnCatch?.Invoke();
     }
 }

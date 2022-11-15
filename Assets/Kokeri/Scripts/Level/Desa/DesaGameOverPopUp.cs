@@ -29,6 +29,8 @@ public class DesaGameOverPopUp : MonoBehaviour
 
     public void OnSubmit()
     {
+        AudioManager.Instance.PlaySFX("Click2");
+
         if (nameInputField.text == "")
         {
             errorText.gameObject.SetActive(true);

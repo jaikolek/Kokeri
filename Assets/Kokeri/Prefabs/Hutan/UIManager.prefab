@@ -46,12 +46,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameUI: {fileID: 0}
   chooseCharacterPopUp: {fileID: 0}
-  pausePopUp: {fileID: 0}
   gameOverPopUp: {fileID: 0}
+  pausePopUp: {fileID: 0}
+  scoreBoardPopUp: {fileID: 0}
   countDownText: {fileID: 0}
   upBtn: {fileID: 0}
   downBtn: {fileID: 0}
   catchBtn: {fileID: 0}
+  pauseBtn: {fileID: 0}
   bugText: {fileID: 0}
   healthContainer: {fileID: 0}
   healthText: {fileID: 0}
+  hitText: {fileID: 0}
+  catchText: {fileID: 0}

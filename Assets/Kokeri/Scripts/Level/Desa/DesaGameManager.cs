@@ -59,7 +59,7 @@ public class DesaGameManager : MonoBehaviour
     private void Start()
     {
         SceneHandler.Instance.OnSceneReloaded += SceneHandler_OnSceneReloaded;
-        DesaEventManager.Instance.OnGameStarted += GameStarted;
+        DesaEventManager.Instance.OnGameStarted += DesaEventManager_OnGameStarted;
 
         DesaEventManager.Instance.OnUp += DesaEventManager_OnUp;
         DesaEventManager.Instance.OnDown += DesaEventManager_OnDown;
@@ -80,7 +80,7 @@ public class DesaGameManager : MonoBehaviour
         AudioManager.Instance.StopBGM();
     }
 
-    private void GameStarted()
+    private void DesaEventManager_OnGameStarted()
     {
         // play audio
         AudioManager.Instance.PlayBGM("Desa");

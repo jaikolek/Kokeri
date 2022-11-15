@@ -40,6 +40,8 @@ public class AudioManager : MonoBehaviour
         if (AudioSourceBGM == null)
         {
             AudioSourceBGM = gameObject.AddComponent<AudioSource>();
+            AudioSourceBGM.playOnAwake = true;
+            AudioSourceBGM.loop = true;
         }
         if (AudioSourceSFX == null)
         {
@@ -124,6 +126,7 @@ public class AudioManager : MonoBehaviour
         if (audioData != null)
         {
             AudioSourceBGM.clip = audioData.clip;
+            AudioSourceBGM.loop = audioData.loop;
             AudioSourceBGM.Play();
         }
     }
