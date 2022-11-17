@@ -1599,7 +1599,7 @@ PrefabInstance:
         type: 3}
       propertyPath: BGM.Array.data[2].clip
       value: 
-      objectReference: {fileID: 8300000, guid: f6ffe3fe141b8ef42a901476644d8340, type: 3}
+      objectReference: {fileID: 8300000, guid: 62bdef7ffd375974888196ad4ff25eb5, type: 3}
     - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
         type: 3}
       propertyPath: BGM.Array.data[2].loop
@@ -1679,7 +1679,7 @@ PrefabInstance:
         type: 3}
       propertyPath: mainSFX.Array.data[2].clip
       value: 
-      objectReference: {fileID: 8300000, guid: f1968e6882d76fe418e6c48c242a97ac, type: 3}
+      objectReference: {fileID: 8300000, guid: bdace146bb515044f94add27a4ed3847, type: 3}
     - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
         type: 3}
       propertyPath: mainSFX.Array.data[2].name
@@ -1689,7 +1689,7 @@ PrefabInstance:
         type: 3}
       propertyPath: mainSFX.Array.data[3].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 08dee5996d1830c4b8de2e28a58774d3, type: 3}
+      objectReference: {fileID: 8300000, guid: 63ec8ef8da1672e4b81e95bbaae344ea, type: 3}
     - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
         type: 3}
       propertyPath: mainSFX.Array.data[3].name
@@ -1699,7 +1699,7 @@ PrefabInstance:
         type: 3}
       propertyPath: mainSFX.Array.data[4].clip
       value: 
-      objectReference: {fileID: 8300000, guid: e1fa1ba93fbdeba459ee62cad0fe3d0c, type: 3}
+      objectReference: {fileID: 8300000, guid: b5493e5fb77cace4fb3323c42fb8c3b8, type: 3}
     - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
         type: 3}
       propertyPath: mainSFX.Array.data[4].name
