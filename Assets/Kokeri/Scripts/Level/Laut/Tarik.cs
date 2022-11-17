@@ -16,7 +16,7 @@ public class Tarik : MonoBehaviour
     private float rotateAngle;
     public float initialMoveSpeed;
     private float initialY;
-
+    
     public bool moveDown;
     private bool rotateRight;
     public bool canRotate;
@@ -73,6 +73,8 @@ public class Tarik : MonoBehaviour
             {
                 canRotate = false;
                 moveDown = true;
+            
+                AudioManager.Instance.PlaySFX("Tarik");
             }
         
     }
@@ -82,6 +84,8 @@ public class Tarik : MonoBehaviour
         if (canRotate)
             return;
 
+
+        
         if (!canRotate)
         {
             // play sound

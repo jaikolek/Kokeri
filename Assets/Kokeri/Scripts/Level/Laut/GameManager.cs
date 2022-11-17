@@ -37,25 +37,24 @@ public class GameManager : MonoBehaviour
 
         if(timer >= 60f && timer < 120f)
         {
-            spawner.waktuSpawnSampah = 7f;
+            spawner.waktuSpawnSampah = 4.5f;
             tempSpeed = 2.5f;
 
         }
         else if (timer >= 120f && timer < 180f)
         {
-            spawner.waktuSpawnSampah = 6f;
+            spawner.waktuSpawnSampah = 3.5f;
             tempSpeed = 3f;
-
         }
         else if(timer >= 180f)
         {
-            spawner.waktuSpawnSampah = 5f;
+            spawner.waktuSpawnSampah = 2.5f;
             tempSpeed = 3.5f;
         }
         else
         {
-            spawner.waktuSpawnSampah = 9f;
-            tempSpeed = 2f;
+            spawner.waktuSpawnSampah = 5f;
+            tempSpeed = 2.1f;
         }
     }
 

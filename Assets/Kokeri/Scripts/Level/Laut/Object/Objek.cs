@@ -17,15 +17,14 @@ public class Objek : MonoBehaviour
 
     public float berat, kecepatan;
     public int skor;
-    public bool isKanan, isTarik, isSampah;
-    // private bool playSFXForOnce = true;
+    public bool isKanan, isTarik, isSampah;/*
+    private bool playSFXForOnce = true;*/
 
     private void Start()
     {
         tarik = FindObjectOfType<Tarik>();
         textUi = FindObjectOfType<TextUI>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-
 
         player = GameObject.Find("Player");
         tali = player.transform.GetChild(0).gameObject;
@@ -45,7 +44,6 @@ public class Objek : MonoBehaviour
             isKanan = false;
         }
 
-
     }
 
     private void Update()
@@ -60,21 +58,12 @@ public class Objek : MonoBehaviour
         if (!tarik.moveDown)
         {
             cirColl.enabled = false;
-            /*if (playSFXForOnce && !tarik.canRotate)
-            {
-                AudioManager.Instance.PlaySFX("Tarik");
-                playSFXForOnce = false;
-            }*/
         }
 
         if (tarik.canRotate)
         {
             cirColl.enabled = true;
-          /*  if (!playSFXForOnce)
-            {
-                playSFXForOnce = true;
-                AudioManager.Instance.StopSFX();
-            }*/
+            
         }
 
         if (isTarik)
@@ -84,7 +73,6 @@ public class Objek : MonoBehaviour
             
             if (tarik.canRotate)
             {
-            AudioManager.Instance.StopSFX();
                 Object.Destroy(gameObject);
                 isTarik = false;
 
@@ -111,7 +99,6 @@ public class Objek : MonoBehaviour
                 }
 
             }
-
         }
 
         if (isKanan == false)
@@ -133,14 +120,17 @@ public class Objek : MonoBehaviour
                 spriteRenderer.flipX = true;
             }
         }
-
-        
-
     }
 
     public virtual void UbahSpeed()
     {
 
+    }
+
+    public void SFX()
+    {
+        AudioManager.Instance.StopSFX();
+        return;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -152,7 +142,6 @@ public class Objek : MonoBehaviour
 
         if (collision.gameObject.tag == "Kail")
         {
-           AudioManager.Instance.PlaySFX("Tarik");
            isTarik = true;
            cirColl.enabled = false;
            tarik.move_speed -= berat;
