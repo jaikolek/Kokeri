@@ -39,6 +39,15 @@ public class ScoreBoardPopUp : MonoBehaviour
         boardItem.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = _score.ToString();
     }
 
+    public void ShowResultLaut(string _name, int _score)
+    {
+        GameObject boardItem = Instantiate(boardItemPrefab, scoreboardContainer.transform);
+
+        // TODO: get rank
+        boardItem.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "01. " + _name;
+        boardItem.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = _score.ToString();
+    }
+
     public void OnClickRestart()
     {
         AudioManager.Instance.PlaySFX("Click2");

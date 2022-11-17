@@ -82,6 +82,7 @@
      <Compile Include="Assets\Kokeri\Scripts\SceneHandler.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanUIManager.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanSpawner.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\InputKeyboard.cs" />
      <Compile Include="Assets\Unity-Logs-Viewer\Reporter\ReporterMessageReceiver.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanChooseCharacterPopUp.cs" />
      <Compile Include="Assets\Kokeri\Scripts\SaveLoad\Data.cs" />
