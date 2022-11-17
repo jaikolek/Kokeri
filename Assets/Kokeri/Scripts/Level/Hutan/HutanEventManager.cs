@@ -14,13 +14,6 @@ public class HutanEventManager : MonoBehaviour
             if (instance == null)
             {
                 instance = FindObjectOfType<HutanEventManager>();
-                if (instance == null)
-                {
-                    GameObject obj = new GameObject();
-                    obj.transform.parent = GameObject.Find("ManagerContainer").transform;
-                    obj.name = typeof(HutanEventManager).Name;
-                    instance = obj.AddComponent<HutanEventManager>();
-                }
             }
             return instance;
         }
@@ -39,57 +32,79 @@ public class HutanEventManager : MonoBehaviour
 
     // ====================================================================================================
     public event Action OnGameStarted;
+    public event Action<int, int, int> OnGameOver;
+    public event Action OnDespawned;
+    public event Action OnGamePaused;
+    public event Action OnGameResumed;
+    public event Action<Character> OnCharacterChanged;
+    public event Action<bool> OnCollectRange;
+    public event Action<string, int> OnUserSubmit;
+
     public void GameStarted()
     {
         OnGameStarted?.Invoke();
     }
+    public void GameOver(int _score, int _coin, int _bug)
+    {
+        Time.timeScale = 0;
 
-    public event Action OnDespawned;
+        OnGameOver?.Invoke(_score, _coin, _bug);
+    }
     public void Despawned()
     {
         OnDespawned?.Invoke();
     }
-
-    public event Action OnGameOver;
-    public void GameOver()
+    public void GamePaused()
     {
-        OnGameOver?.Invoke();
-    }
+        Time.timeScale = 0;
 
-    public event Action<bool> OnCollectRange;
+        OnGamePaused?.Invoke();
+    }
+    public void GameResumed()
+    {
+        Time.timeScale = 1;
+
+        OnGameResumed?.Invoke();
+    }
+    public void CharacterChanged(Character _character)
+    {
+        OnCharacterChanged?.Invoke(_character);
+    }
     public void CollectRange(bool _state)
     {
         OnCollectRange?.Invoke(_state);
     }
+    public void UserSubmit(string _name, int _score)
+    {
+        OnUserSubmit?.Invoke(_name, _score);
+    }
+    // ====================================================================================================
 
+
+    // ====================================================================================================
     public event Action OnJump;
+    public event Action OnCrouch;
+    public event Action OnStand;
+    public event Action OnCatch;
+
     public void Jump()
     {
+        AudioManager.Instance.PlayHutanSFX("Jump");
+
         OnJump?.Invoke();
     }
-
-    public event Action OnCrouch;
     public void Crouch()
     {
         OnCrouch?.Invoke();
     }
-
-    public event Action OnStand;
     public void Stand()
     {
         OnStand?.Invoke();
     }
-
-    public event Action OnCatch;
     public void Catch()
     {
-        OnCatch?.Invoke();
-    }
+        AudioManager.Instance.PlayHutanSFX("Catch");
 
-    public event Action<Character> OnCharacterSelected;
-    public void CharacterChanged(Character _character)
-    {
-        OnCharacterSelected?.Invoke(_character);
-        StartCoroutine(HutanUIManager.Instance.CountDown());
+        OnCatch?.Invoke();
     }
 }

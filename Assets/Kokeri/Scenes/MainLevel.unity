@@ -246,11 +246,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesaHTP
       objectReference: {fileID: 0}
-    - target: {fileID: 6743489663261236972, guid: 4ac313b4ac16f604d88f3e86372ae41e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ac313b4ac16f604d88f3e86372ae41e, type: 3}
 --- !u!224 &356798479 stripped
@@ -447,11 +442,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -50
       objectReference: {fileID: 0}
-    - target: {fileID: 6875265109047120130, guid: b01eb47559f46e746b5e79774aeb5f18,
-        type: 3}
-      propertyPath: shopState
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6929878583063024473, guid: b01eb47559f46e746b5e79774aeb5f18,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -640,7 +630,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: -1094300379
   m_SortingOrder: 0
   m_TargetDisplay: 0

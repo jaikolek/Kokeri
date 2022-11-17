@@ -1,0 +1,784 @@
+fileFormatVersion: 2
+guid: a7208b06c687d6d4f8edcfa6a2612d3d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1522
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba53d35a3265c445ba7167f4be07790
+      internalID: 158999095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_1
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 1522
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9998b6e820b93d45b99706be4f944f6
+      internalID: 734783363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_2
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1522
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50cddf0951a02784fa83794d0a05ebea
+      internalID: 1685055055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_3
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1522
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a411e24f9389ac478889fbe3dd0ee87
+      internalID: -885293189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_4
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 1522
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbebca4e21f2139469bb0389eb33a88b
+      internalID: -870039301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_5
+      rect:
+        serializedVersion: 2
+        x: 2725
+        y: 1522
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9547d605c2ec14ab3d8064f0dd5112
+      internalID: -1103800860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_6
+      rect:
+        serializedVersion: 2
+        x: 3270
+        y: 1522
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1f8acf6611943458a70aa1100c6bff
+      internalID: -841730100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_7
+      rect:
+        serializedVersion: 2
+        x: 3815
+        y: 1522
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0965cd6ae1f59c4ba599194b5c78312
+      internalID: -1940392707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_8
+      rect:
+        serializedVersion: 2
+        x: 4360
+        y: 1522
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f7f4d8e6e064546a9f6c68c49eab17
+      internalID: 1563229686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_9
+      rect:
+        serializedVersion: 2
+        x: 4905
+        y: 1522
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ab042f31c9c7a4db912a0c03825dc9
+      internalID: -2105842630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 761
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3a4f6fbe5cef548a174127d9c19024
+      internalID: 42987392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_11
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 761
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32ab214a9982bd48b60549fa74d8b51
+      internalID: 2030771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_12
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 761
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca721bfe48d856440a31d3f16386197e
+      internalID: -1290376402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_13
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 761
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ba76a9740633d469d75ddb76b54de1
+      internalID: 152746499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_14
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 761
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91916f6e0e67c5046b3e1d209904fe9f
+      internalID: -1342199054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_15
+      rect:
+        serializedVersion: 2
+        x: 2725
+        y: 761
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0139f5c41a2f98d459ad079adfd117db
+      internalID: 1642640245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_16
+      rect:
+        serializedVersion: 2
+        x: 3270
+        y: 761
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11d5252d6eb99346a67b2e0206d1032
+      internalID: 1408357560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_17
+      rect:
+        serializedVersion: 2
+        x: 3815
+        y: 761
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb16ab35a113ef94b850137438263893
+      internalID: 1663474721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_18
+      rect:
+        serializedVersion: 2
+        x: 4360
+        y: 761
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14e0751814efd546b5b3e360ddd4df2
+      internalID: -763489329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_19
+      rect:
+        serializedVersion: 2
+        x: 4905
+        y: 761
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029c0dbcbe7489b4cafa97256f83c84a
+      internalID: -2079478031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4013f4ff452ef94d90bb8daf76797f3
+      internalID: 1344312167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_21
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 0
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00aa11b517b61d74f9b3df1d72d4ad87
+      internalID: 507642653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_22
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 0
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb73aede83166541a9bc6f8bfdbd081
+      internalID: 457499588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_23
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 0
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfa1e9a3e6a28949bcadbf079751acb
+      internalID: -2135615163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_24
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 0
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5010222c43a267f4caa668cf6de8f463
+      internalID: 751849967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_25
+      rect:
+        serializedVersion: 2
+        x: 2725
+        y: 0
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9761f4c10a38e444f993a4a2982d14e4
+      internalID: 1672045391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_26
+      rect:
+        serializedVersion: 2
+        x: 3270
+        y: 0
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad353cf71ea21c24994ce852f6f5005c
+      internalID: -1237555047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_27
+      rect:
+        serializedVersion: 2
+        x: 3815
+        y: 0
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8b23b917e24cc41b949b158777854b
+      internalID: -2028836516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Down_28
+      rect:
+        serializedVersion: 2
+        x: 4360
+        y: 0
+        width: 545
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb9c17a1b196f24ca2cefcd92637494
+      internalID: 1159337213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      skeleton-Keti-Down_17: 1663474721
+      skeleton-Keti-Down_23: -2135615163
+      skeleton-Keti-Down_24: 751849967
+      skeleton-Keti-Down_12: -1290376402
+      skeleton-Keti-Down_15: 1642640245
+      skeleton-Keti-Down_11: 2030771
+      skeleton-Keti-Down_0: 158999095
+      skeleton-Keti-Down_8: 1563229686
+      skeleton-Keti-Down_10: 42987392
+      skeleton-Keti-Down_14: -1342199054
+      skeleton-Keti-Down_18: -763489329
+      skeleton-Keti-Down_21: 507642653
+      skeleton-Keti-Down_6: -841730100
+      skeleton-Keti-Down_13: 152746499
+      skeleton-Keti-Down_9: -2105842630
+      skeleton-Keti-Down_5: -1103800860
+      skeleton-Keti-Down_25: 1672045391
+      skeleton-Keti-Down_20: 1344312167
+      skeleton-Keti-Down_2: 1685055055
+      skeleton-Keti-Down_22: 457499588
+      skeleton-Keti-Down_1: 734783363
+      skeleton-Keti-Down_26: -1237555047
+      skeleton-Keti-Down_27: -2028836516
+      skeleton-Keti-Down_7: -1940392707
+      skeleton-Keti-Down_28: 1159337213
+      skeleton-Keti-Down_3: -885293189
+      skeleton-Keti-Down_16: 1408357560
+      skeleton-Keti-Down_19: -2079478031
+      skeleton-Keti-Down_4: -870039301
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: bfe0043b0429c9747ac5021fd7759d21
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2348
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92655aaf33bc2584ebd9cb4a09b9d54b
+      internalID: 1351714560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_1
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 2348
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d14ba70b6892b47a26c823161d48f7
+      internalID: -1238288448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_2
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 2348
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969f00ce6ffdbb043b5ad9e36a93a698
+      internalID: 781021378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_3
+      rect:
+        serializedVersion: 2
+        x: 2982
+        y: 2348
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e6d7e7fc5b7da46992a6265cc40f21
+      internalID: -1448632414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_4
+      rect:
+        serializedVersion: 2
+        x: 3976
+        y: 2348
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af869ad1c03c074da813a8d0fcf47c0
+      internalID: -667326503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_5
+      rect:
+        serializedVersion: 2
+        x: 4970
+        y: 2348
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4421175412a08864ebd124d75cfc5754
+      internalID: -763530522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_6
+      rect:
+        serializedVersion: 2
+        x: 5964
+        y: 2348
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329111158587acc4b989ee5e540867f5
+      internalID: -383691347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_7
+      rect:
+        serializedVersion: 2
+        x: 6958
+        y: 2348
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecf9c6225481a34b8c7b0eff50bb33f
+      internalID: -279927091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_8
+      rect:
+        serializedVersion: 2
+        x: 7952
+        y: 2348
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc3bff69dfebb6429bef3c2845505bb
+      internalID: 733222736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_9
+      rect:
+        serializedVersion: 2
+        x: 8946
+        y: 2348
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63731cbd45de01a4ea1a4f411ff9bd6a
+      internalID: 1460783661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1174
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240fa1b35bd81434492608c841474d72
+      internalID: 1112086623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_11
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 1174
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4b71e55d69676488952abe7b34bdd0
+      internalID: 1304275619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_12
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 1174
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db98f9cf55901334d833e3968eacd7ba
+      internalID: 2139298421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_13
+      rect:
+        serializedVersion: 2
+        x: 2982
+        y: 1174
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91409baa0695a134989cbd13f1cda191
+      internalID: 1768626263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_14
+      rect:
+        serializedVersion: 2
+        x: 3976
+        y: 1174
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fb09913768f454ea518d79652258ae
+      internalID: 911200408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_15
+      rect:
+        serializedVersion: 2
+        x: 4970
+        y: 1174
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964d9d964d4bb0540970195acde2114d
+      internalID: 669304357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_16
+      rect:
+        serializedVersion: 2
+        x: 5964
+        y: 1174
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdf83df3864a1840b6bf584ec610ea7
+      internalID: 1065644028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_17
+      rect:
+        serializedVersion: 2
+        x: 6958
+        y: 1174
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa19a28655464584f876dd2f951f1d5c
+      internalID: 1422132900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_18
+      rect:
+        serializedVersion: 2
+        x: 7952
+        y: 1174
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7427bbc4526c54b95ddc55af2c3888
+      internalID: 3089608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_19
+      rect:
+        serializedVersion: 2
+        x: 8946
+        y: 1174
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7826d21521620664ea0e170b7266e20c
+      internalID: 1375478904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780dab5ca3d50d048a197916daeec3e0
+      internalID: 538551852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_21
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 0
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa4158f354b74d428edbdcf5f1adb3e
+      internalID: -466821305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_22
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 0
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9341ca32329b6bb4aa9688ea901eeee9
+      internalID: 303770333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_23
+      rect:
+        serializedVersion: 2
+        x: 2982
+        y: 0
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeba11f92bd6a954ea62422642e9279c
+      internalID: 565268118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_24
+      rect:
+        serializedVersion: 2
+        x: 3976
+        y: 0
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a561e573377a745958ea941fc912d8
+      internalID: -2083078322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_25
+      rect:
+        serializedVersion: 2
+        x: 4970
+        y: 0
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc52c2ecf27153e4a89bfa324fb7cc62
+      internalID: -1741487027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_26
+      rect:
+        serializedVersion: 2
+        x: 5964
+        y: 0
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e7e0d52028dfe48bd918ea25e54dcb
+      internalID: 1578487384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_27
+      rect:
+        serializedVersion: 2
+        x: 6958
+        y: 0
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7a5dcad2f6d504896067b53886bfe2
+      internalID: 646629294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_28
+      rect:
+        serializedVersion: 2
+        x: 7952
+        y: 0
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0c91cbfee27bd4eae84690e4ac3ba0
+      internalID: -2082581733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Chiko_Run_29
+      rect:
+        serializedVersion: 2
+        x: 8946
+        y: 0
+        width: 994
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15f7e59ce126ba4c9fc2932b6b37e48
+      internalID: 926014920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Anim_Chiko_Run_5: -763530522
+      Anim_Chiko_Run_0: 1351714560
+      Anim_Chiko_Run_22: 303770333
+      Anim_Chiko_Run_21: -466821305
+      Anim_Chiko_Run_10: 1112086623
+      Anim_Chiko_Run_13: 1768626263
+      Anim_Chiko_Run_8: 733222736
+      Anim_Chiko_Run_18: 3089608
+      Anim_Chiko_Run_19: 1375478904
+      Anim_Chiko_Run_29: 926014920
+      Anim_Chiko_Run_3: -1448632414
+      Anim_Chiko_Run_15: 669304357
+      Anim_Chiko_Run_2: 781021378
+      Anim_Chiko_Run_7: -279927091
+      Anim_Chiko_Run_6: -383691347
+      Anim_Chiko_Run_11: 1304275619
+      Anim_Chiko_Run_25: -1741487027
+      Anim_Chiko_Run_12: 2139298421
+      Anim_Chiko_Run_23: 565268118
+      Anim_Chiko_Run_24: -2083078322
+      Anim_Chiko_Run_28: -2082581733
+      Anim_Chiko_Run_27: 646629294
+      Anim_Chiko_Run_4: -667326503
+      Anim_Chiko_Run_20: 538551852
+      Anim_Chiko_Run_26: 1578487384
+      Anim_Chiko_Run_1: -1238288448
+      Anim_Chiko_Run_16: 1065644028
+      Anim_Chiko_Run_17: 1422132900
+      Anim_Chiko_Run_9: 1460783661
+      Anim_Chiko_Run_14: 911200408
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

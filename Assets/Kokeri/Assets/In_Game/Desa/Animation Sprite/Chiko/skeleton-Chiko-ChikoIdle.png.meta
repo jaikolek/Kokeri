@@ -1,0 +1,608 @@
+fileFormatVersion: 2
+guid: 9fe8763ade4326c4ba97f78f4e521e5a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1888
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817143d691361d54eba19582abf5d931
+      internalID: -1288164275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_1
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1888
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33a0a9ed1f0dff418478b122da9a1db
+      internalID: 1812462440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_2
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 1888
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372c15f0a2af8184d93ecf735526970b
+      internalID: -1603176671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_3
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 1888
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c03004f0284734b8c176a48b752017
+      internalID: 1184441031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_4
+      rect:
+        serializedVersion: 2
+        x: 2356
+        y: 1888
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16710e65b069ae40a0ce5ecb40506a8
+      internalID: -1445356793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_5
+      rect:
+        serializedVersion: 2
+        x: 2945
+        y: 1888
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d8787ed7ae8df4495cefe322b2e8c5
+      internalID: 480185942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_6
+      rect:
+        serializedVersion: 2
+        x: 3534
+        y: 1888
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f4a013d4de47541a615af5d266c016
+      internalID: 1177742617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_7
+      rect:
+        serializedVersion: 2
+        x: 4123
+        y: 1888
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341f6df32b83ff74c98035a73cfc0171
+      internalID: -1035240022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_8
+      rect:
+        serializedVersion: 2
+        x: 4712
+        y: 1888
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a97a2c34be005a45a9403f2ef84c116
+      internalID: 202706131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_9
+      rect:
+        serializedVersion: 2
+        x: 5301
+        y: 1888
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc35d45037b2144cbe95517b3f9a2fe
+      internalID: 12135311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 944
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1911a0b2ddf9664a8d5cafb6bd5c485
+      internalID: 467634033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_11
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 944
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f603e97af4adffd4faa9849710a5f1a4
+      internalID: 1208512566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_12
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 944
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e8af3381d67cd4db9c634761ba738f
+      internalID: -1302529164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_13
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 944
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c52cbdf1d9411428c778ba774b8760
+      internalID: -1276184118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_14
+      rect:
+        serializedVersion: 2
+        x: 2356
+        y: 944
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64f4ead2d4a88946b13ecfb8273dfa7
+      internalID: 398153416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_15
+      rect:
+        serializedVersion: 2
+        x: 2945
+        y: 944
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db93605f5d4625e498f1f4b774825ba0
+      internalID: 1543609110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_16
+      rect:
+        serializedVersion: 2
+        x: 3534
+        y: 944
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18c82fa74956bb4384f4751d7a4cdf7
+      internalID: 541815324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_17
+      rect:
+        serializedVersion: 2
+        x: 4123
+        y: 944
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b88f5bf20dd6ec40a4a619f47ba2df4
+      internalID: 270803842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_18
+      rect:
+        serializedVersion: 2
+        x: 4712
+        y: 944
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8dbc2aaa519c7746a5c14ab78fa8da7
+      internalID: -381310783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_19
+      rect:
+        serializedVersion: 2
+        x: 5301
+        y: 944
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db8b42b8a4f4b142a3d1ac1cd1ed43c
+      internalID: -997847082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Chiko-ChikoIdle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 589
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7f48c871ddc4a449f02669d2d7f59c
+      internalID: -1303938173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      skeleton-Chiko-ChikoIdle_20: -1303938173
+      skeleton-Chiko-ChikoIdle_12: -1302529164
+      skeleton-Chiko-ChikoIdle_17: 270803842
+      skeleton-Chiko-ChikoIdle_18: -381310783
+      skeleton-Chiko-ChikoIdle_19: -997847082
+      skeleton-Chiko-ChikoIdle_4: -1445356793
+      skeleton-Chiko-ChikoIdle_5: 480185942
+      skeleton-Chiko-ChikoIdle_3: 1184441031
+      skeleton-Chiko-ChikoIdle_2: -1603176671
+      skeleton-Chiko-ChikoIdle_14: 398153416
+      skeleton-Chiko-ChikoIdle_11: 1208512566
+      skeleton-Chiko-ChikoIdle_15: 1543609110
+      skeleton-Chiko-ChikoIdle_6: 1177742617
+      skeleton-Chiko-ChikoIdle_13: -1276184118
+      skeleton-Chiko-ChikoIdle_0: -1288164275
+      skeleton-Chiko-ChikoIdle_9: 12135311
+      skeleton-Chiko-ChikoIdle_1: 1812462440
+      skeleton-Chiko-ChikoIdle_10: 467634033
+      skeleton-Chiko-ChikoIdle_16: 541815324
+      skeleton-Chiko-ChikoIdle_7: -1035240022
+      skeleton-Chiko-ChikoIdle_8: 202706131
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

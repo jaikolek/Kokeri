@@ -1,0 +1,1048 @@
+fileFormatVersion: 2
+guid: 124ba36bbb11ca143a35fd525cf715fb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3348
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc271458cda9b7149a0457f0007bd264
+      internalID: -1355821640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_1
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 3348
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9840f411da947dc409526cade726a0a8
+      internalID: 829400374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_2
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 3348
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305527404c3c4684294e90c2e5c3dd80
+      internalID: 1945889743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_3
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 3348
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e15dbef5ec166144a8bc7f8f6140d21
+      internalID: -905300914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_4
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 3348
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39674d67970353944aceb2ef60f9db90
+      internalID: -1715213204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_5
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 3348
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f77d38dbe2f83d419b2454bb57e0978
+      internalID: 392095725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_6
+      rect:
+        serializedVersion: 2
+        x: 3252
+        y: 3348
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4da165f0041624a930e30d05ae0f2b
+      internalID: -46643559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_7
+      rect:
+        serializedVersion: 2
+        x: 3794
+        y: 3348
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146ce9e6d2fc1f54f89b0b106fe6869f
+      internalID: -313707179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_8
+      rect:
+        serializedVersion: 2
+        x: 4336
+        y: 3348
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e998a995dbd01f4dad0f0cf0a427540
+      internalID: 933106537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_9
+      rect:
+        serializedVersion: 2
+        x: 4878
+        y: 3348
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e804c67906ecfbb41b00aa0810642fee
+      internalID: -1164766302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2511
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6c0f4ea53091c4b9014bbbd11808cc
+      internalID: -1503466564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_11
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 2511
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd9c38ce8a7aed449873d0437ef5cf3
+      internalID: -1979356569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_12
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 2511
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975ef9eec6b894d47ad99c7e6dfe189d
+      internalID: -1384931012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_13
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 2511
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b4dccb31065ec43a0fe146a858cc1d
+      internalID: -1166324330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_14
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 2511
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a712aa2da4fb63d408e0a48996242208
+      internalID: -801214767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_15
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 2511
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8f0fc3687649a47951a55ec2050d95
+      internalID: 2063850956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_16
+      rect:
+        serializedVersion: 2
+        x: 3252
+        y: 2511
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f368a0e27e2e024383816ed68c976b3
+      internalID: -1998411826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_17
+      rect:
+        serializedVersion: 2
+        x: 3794
+        y: 2511
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae36f6d6b2494a488821fa07d4a06b1
+      internalID: 690948809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_18
+      rect:
+        serializedVersion: 2
+        x: 4336
+        y: 2511
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dc9ee6043f76847afa97be49a46606
+      internalID: -1590975113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_19
+      rect:
+        serializedVersion: 2
+        x: 4878
+        y: 2511
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c75c7c245de774c94079446860909f
+      internalID: 163006252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1674
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556823de9161df741813cf36f29af4ad
+      internalID: -2089005254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_21
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1674
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b664fee9f462543b1b2e7d5f83a95b
+      internalID: 1736182614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_22
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 1674
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9102b1d6f173944aa0feef2491a8840
+      internalID: 449141234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_23
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 1674
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be4d22150a870c4db102720bf95bed3
+      internalID: 55128353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_24
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 1674
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d20839500eedfb4daa5d38b169dc99d
+      internalID: -310920035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_25
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 1674
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7ac0e07cb46004495cf97fcdaa4c1f
+      internalID: -1488438364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_26
+      rect:
+        serializedVersion: 2
+        x: 3252
+        y: 1674
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34fcf2337dd6f0341926000d09c688ac
+      internalID: -1771496579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_27
+      rect:
+        serializedVersion: 2
+        x: 3794
+        y: 1674
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1e2edccdc9fe443b4b115eade63ecd
+      internalID: 44692194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_28
+      rect:
+        serializedVersion: 2
+        x: 4336
+        y: 1674
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b41824f8a599cc47989507a242db895
+      internalID: -1229364553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_29
+      rect:
+        serializedVersion: 2
+        x: 4878
+        y: 1674
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59bac4ed21dde2f4a8261e0d0fccaf45
+      internalID: 1187188281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 837
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429f464ea16524541a5077612d8457a2
+      internalID: 1250757049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_31
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 837
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69fe71994ef168b4097de24815d49988
+      internalID: 37803115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_32
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 837
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18870b1132b93a40b1564fd42ca77aa
+      internalID: -203537553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_33
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 837
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42277054743d15042805afaa3885ffc1
+      internalID: 1390884594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_34
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 837
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5343bcec87fb54496b1339ff348e4e
+      internalID: -767248498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_35
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 837
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547b39cc6d562ce4890c6e57ae859e21
+      internalID: 339686461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_36
+      rect:
+        serializedVersion: 2
+        x: 3252
+        y: 837
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb74eab26646cd49ab41b937a9cb64d
+      internalID: -1055586665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_37
+      rect:
+        serializedVersion: 2
+        x: 3794
+        y: 837
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c761abbded8f646abd6fa9d39b1750
+      internalID: -1908069444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_38
+      rect:
+        serializedVersion: 2
+        x: 4336
+        y: 837
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7a69e2af399f54090a8ee2da530846
+      internalID: 1744963920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_39
+      rect:
+        serializedVersion: 2
+        x: 4878
+        y: 837
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c32d5dd4e864f4eaacd82939e0c96c
+      internalID: -765007426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Idle Beri_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 542
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68d93a3ed045334aabbc157085ed550
+      internalID: 908637648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      skeleton-Beri-Idle Beri_34: -767248498
+      skeleton-Beri-Idle Beri_30: 1250757049
+      skeleton-Beri-Idle Beri_32: -203537553
+      skeleton-Beri-Idle Beri_3: -905300914
+      skeleton-Beri-Idle Beri_14: -801214767
+      skeleton-Beri-Idle Beri_39: -765007426
+      skeleton-Beri-Idle Beri_9: -1164766302
+      skeleton-Beri-Idle Beri_16: -1998411826
+      skeleton-Beri-Idle Beri_10: -1503466564
+      skeleton-Beri-Idle Beri_5: 392095725
+      skeleton-Beri-Idle Beri_29: 1187188281
+      skeleton-Beri-Idle Beri_15: 2063850956
+      skeleton-Beri-Idle Beri_24: -310920035
+      skeleton-Beri-Idle Beri_4: -1715213204
+      skeleton-Beri-Idle Beri_35: 339686461
+      skeleton-Beri-Idle Beri_8: 933106537
+      skeleton-Beri-Idle Beri_38: 1744963920
+      skeleton-Beri-Idle Beri_27: 44692194
+      skeleton-Beri-Idle Beri_37: -1908069444
+      skeleton-Beri-Idle Beri_6: -46643559
+      skeleton-Beri-Idle Beri_21: 1736182614
+      skeleton-Beri-Idle Beri_36: -1055586665
+      skeleton-Beri-Idle Beri_0: -1355821640
+      skeleton-Beri-Idle Beri_1: 829400374
+      skeleton-Beri-Idle Beri_18: -1590975113
+      skeleton-Beri-Idle Beri_2: 1945889743
+      skeleton-Beri-Idle Beri_7: -313707179
+      skeleton-Beri-Idle Beri_33: 1390884594
+      skeleton-Beri-Idle Beri_31: 37803115
+      skeleton-Beri-Idle Beri_13: -1166324330
+      skeleton-Beri-Idle Beri_20: -2089005254
+      skeleton-Beri-Idle Beri_26: -1771496579
+      skeleton-Beri-Idle Beri_40: 908637648
+      skeleton-Beri-Idle Beri_17: 690948809
+      skeleton-Beri-Idle Beri_23: 55128353
+      skeleton-Beri-Idle Beri_11: -1979356569
+      skeleton-Beri-Idle Beri_22: 449141234
+      skeleton-Beri-Idle Beri_12: -1384931012
+      skeleton-Beri-Idle Beri_19: 163006252
+      skeleton-Beri-Idle Beri_25: -1488438364
+      skeleton-Beri-Idle Beri_28: -1229364553
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

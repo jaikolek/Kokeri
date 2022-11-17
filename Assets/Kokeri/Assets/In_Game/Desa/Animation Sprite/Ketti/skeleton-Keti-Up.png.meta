@@ -1,0 +1,784 @@
+fileFormatVersion: 2
+guid: 25f04d1de557d854c9b29acd3dfbb172
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1530
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad7b1632ca895941a1c3866673bf5b6
+      internalID: -970506090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_1
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 1530
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92453e4984982384dafd9ddff0f84722
+      internalID: -1331923701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_2
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 1530
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc2a8e204b3c28469087751b75a22d3
+      internalID: 1396076303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_3
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 1530
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ec95a5a69bff840adfde8e54063adb
+      internalID: -1791183070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_4
+      rect:
+        serializedVersion: 2
+        x: 2324
+        y: 1530
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3d3ec79ec16ec42b01a93580c8d3ad
+      internalID: 1386333350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_5
+      rect:
+        serializedVersion: 2
+        x: 2905
+        y: 1530
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc5f082708f9e046a5d05be9d0e089e
+      internalID: -1468520906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_6
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 1530
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24240870614f2f643b0ae0c2c1bd3670
+      internalID: -1956820417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_7
+      rect:
+        serializedVersion: 2
+        x: 4067
+        y: 1530
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c9299f8f4ae104db3d7d684a92a76f
+      internalID: 1397339996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_8
+      rect:
+        serializedVersion: 2
+        x: 4648
+        y: 1530
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e033934059eff4ca413533436a8cbd
+      internalID: 839936727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_9
+      rect:
+        serializedVersion: 2
+        x: 5229
+        y: 1530
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ea2c4ce59ae23479f59ae5a2cd9f19
+      internalID: -1285460808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 765
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd9ecdb7b1730f419c3878533f428f7
+      internalID: 1165915709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_11
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 765
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556c71b130301794ba91fdec05ed2283
+      internalID: 1652416989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_12
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 765
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8330e2f1465a34fb6baa0cf92f7078
+      internalID: 2050732404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_13
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 765
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc0b1bb5af3a124a868c60e164e2557
+      internalID: -2022566716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_14
+      rect:
+        serializedVersion: 2
+        x: 2324
+        y: 765
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6c0c3d89ede3e4589e1d2a18e83367
+      internalID: 1348634622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_15
+      rect:
+        serializedVersion: 2
+        x: 2905
+        y: 765
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3327b060aa6374784e757083d9f41c
+      internalID: -1725066998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_16
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 765
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02d7b9f9828b5748b43d266acf5a7f1
+      internalID: 1640356037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_17
+      rect:
+        serializedVersion: 2
+        x: 4067
+        y: 765
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a2fb1d2b9eaae48857b4139fbc14d8
+      internalID: -1077577639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_18
+      rect:
+        serializedVersion: 2
+        x: 4648
+        y: 765
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d047156ea068e8d4285a85e96769805c
+      internalID: 821952759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_19
+      rect:
+        serializedVersion: 2
+        x: 5229
+        y: 765
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ad92fbfd8b2184bbf132ef2530b88f
+      internalID: 219778562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc9f875b0342fc4083e840ee281432e
+      internalID: -1523896914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_21
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 0
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6d7ec1a0def224eac1e1842ffe174b
+      internalID: 1346783665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_22
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 0
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5a05ea652049243b25cef04d76d1b4
+      internalID: -1455152454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_23
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 0
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4368cde9ded9d04b8b989382689e06e
+      internalID: -1085919446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_24
+      rect:
+        serializedVersion: 2
+        x: 2324
+        y: 0
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eed6bf5eb16d2d4f892bd144730fe85
+      internalID: 519075096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_25
+      rect:
+        serializedVersion: 2
+        x: 2905
+        y: 0
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209e4af204c125449aaeb897508fe51f
+      internalID: 2015695994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_26
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 0
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7f0b55db9295946a78fb135d6533dc
+      internalID: -549513515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_27
+      rect:
+        serializedVersion: 2
+        x: 4067
+        y: 0
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881944a310e089f48a13dbf3be09ebf7
+      internalID: -201485390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Keti-Up_28
+      rect:
+        serializedVersion: 2
+        x: 4648
+        y: 0
+        width: 581
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352f4c2d690ad3741adebe1694069c2e
+      internalID: 63344981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      skeleton-Keti-Up_7: 1397339996
+      skeleton-Keti-Up_22: -1455152454
+      skeleton-Keti-Up_5: -1468520906
+      skeleton-Keti-Up_23: -1085919446
+      skeleton-Keti-Up_1: -1331923701
+      skeleton-Keti-Up_2: 1396076303
+      skeleton-Keti-Up_18: 821952759
+      skeleton-Keti-Up_17: -1077577639
+      skeleton-Keti-Up_0: -970506090
+      skeleton-Keti-Up_9: -1285460808
+      skeleton-Keti-Up_16: 1640356037
+      skeleton-Keti-Up_10: 1165915709
+      skeleton-Keti-Up_27: -201485390
+      skeleton-Keti-Up_24: 519075096
+      skeleton-Keti-Up_13: -2022566716
+      skeleton-Keti-Up_28: 63344981
+      skeleton-Keti-Up_25: 2015695994
+      skeleton-Keti-Up_20: -1523896914
+      skeleton-Keti-Up_12: 2050732404
+      skeleton-Keti-Up_3: -1791183070
+      skeleton-Keti-Up_4: 1386333350
+      skeleton-Keti-Up_21: 1346783665
+      skeleton-Keti-Up_8: 839936727
+      skeleton-Keti-Up_19: 219778562
+      skeleton-Keti-Up_26: -549513515
+      skeleton-Keti-Up_11: 1652416989
+      skeleton-Keti-Up_15: -1725066998
+      skeleton-Keti-Up_6: -1956820417
+      skeleton-Keti-Up_14: 1348634622
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

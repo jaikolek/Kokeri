@@ -14,7 +14,6 @@ public class HutanPlayerControl : MonoBehaviour
     [SerializeField] float jumpForce;
 
     [Header("Sprites")]
-    [SerializeField] private Transform playerSpriteTransform;
     [SerializeField] private Transform playerRadiusTransform;
 
     public bool IsCrouch { get => isCrouch; set => isCrouch = value; }
@@ -69,11 +68,6 @@ public class HutanPlayerControl : MonoBehaviour
         {
             PlayerStand();
         }
-
-        if (Input.GetKey(KeyCode.LeftControl))
-        {
-            PlayerCatch();
-        }
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -95,8 +89,6 @@ public class HutanPlayerControl : MonoBehaviour
     {
         playerBoxCollider.offset = new Vector2(0, 0.5f);
         playerBoxCollider.size = new Vector2(1, 1);
-        playerSpriteTransform.position = transform.position + new Vector3(0, 0.5f, 0);
-        playerSpriteTransform.localScale = new Vector3(1, 1, 1);
 
         playerCircleCollider.offset = new Vector3(0, 1, 0);
         playerRadiusTransform.position = transform.position + new Vector3(0, 1, 0);
@@ -109,8 +101,6 @@ public class HutanPlayerControl : MonoBehaviour
     {
         playerBoxCollider.offset = new Vector2(0, 0.75f);
         playerBoxCollider.size = new Vector2(1, 1.5f);
-        playerSpriteTransform.position = transform.position + new Vector3(0, 0.75f, 0);
-        playerSpriteTransform.localScale = new Vector3(1, 1.5f, 1);
 
         playerCircleCollider.offset = new Vector2(0, 1.5f);
         playerRadiusTransform.position = transform.position + new Vector3(0, 1.5f, 0);
@@ -129,7 +119,7 @@ public class HutanPlayerControl : MonoBehaviour
                 Destroy(collider.gameObject);
 
                 // ini Kumbang awokawok
-                HutanGameManager.Instance.AddCoin();
+                HutanGameManager.Instance.IncrementBug();
             }
         }
     }

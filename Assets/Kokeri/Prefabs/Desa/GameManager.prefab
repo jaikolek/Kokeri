@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &447037489943283607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 447037489943283606}
+  - component: {fileID: 447037489943283605}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &447037489943283606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447037489943283607}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &447037489943283605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447037489943283607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 671de9395a609634e8044d14cf9e5620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCase: 1
+  currentLevel: 0
+  score: 0
+  health: 3
+  animationTime: 1
+  animationDelay: 0.25
+  designLevelList:
+  - totalMove: 2
+    caseType: 0
+    onCase: 1
+    answerTime: 7
+    score: 10
+  - totalMove: 2
+    caseType: 1
+    onCase: 3
+    answerTime: 7
+    score: 10
+  - totalMove: 2
+    caseType: 2
+    onCase: 5
+    answerTime: 6.5
+    score: 10
+  - totalMove: 3
+    caseType: 2
+    onCase: 7
+    answerTime: 6.5
+    score: 10
+  - totalMove: 4
+    caseType: 2
+    onCase: 12
+    answerTime: 6
+    score: 10
+  - totalMove: 5
+    caseType: 2
+    onCase: 15
+    answerTime: 6
+    score: 10
+  chikoAnimator: {fileID: 0}
+  kettiAnimator: {fileID: 0}
+  beriAnimator: {fileID: 0}

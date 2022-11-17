@@ -11,8 +11,20 @@ public class HutanChooseCharacterPopUp : MonoBehaviour
 
     private void Start()
     {
-        chikoButton.onClick.AddListener(() => HutanEventManager.Instance.CharacterChanged(Character.Chiko));
-        kettiButton.onClick.AddListener(() => HutanEventManager.Instance.CharacterChanged(Character.Ketti));
-        beriButton.onClick.AddListener(() => HutanEventManager.Instance.CharacterChanged(Character.Beri));
+        chikoButton.onClick.AddListener(() =>
+        {
+            AudioManager.Instance.PlaySFX("Click2");
+            HutanEventManager.Instance.CharacterChanged(Character.CHIKO);
+        });
+        kettiButton.onClick.AddListener(() =>
+        {
+            AudioManager.Instance.PlaySFX("Click2");
+            HutanEventManager.Instance.CharacterChanged(Character.KETTI);
+        });
+        beriButton.onClick.AddListener(() =>
+        {
+            AudioManager.Instance.PlaySFX("Click2");
+            HutanEventManager.Instance.CharacterChanged(Character.BERI);
+        });
     }
 }

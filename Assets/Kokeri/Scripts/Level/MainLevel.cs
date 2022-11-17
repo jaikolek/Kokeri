@@ -28,51 +28,41 @@ public class MainLevel : MonoBehaviour
         lautBtn.onClick.AddListener(OnClickLaut);
         hutanBtn.onClick.AddListener(OnClickHutan);
 
-        // pop up init
         shopPopUp.SetActive(false);
-
-        SceneHandler.Instance.OnSceneChanged += SceneHandler_OnSceneChanged;
-    }
-
-    private void SceneHandler_OnSceneChanged(string _sceneName)
-    {
-        if (_sceneName == "MainLevel")
-        {
-            if (AudioManager.Instance.GetPlayingBGMName() != "MainMenu")
-            {
-                AudioManager.Instance.StopBGM();
-                AudioManager.Instance.PlayBGM("MainMenu");
-            }
-        }
     }
 
     private void OnClickBack()
     {
         AudioManager.Instance.PlaySFX("Click2");
+
         SceneHandler.Instance.LoadScene("MainMenu");
     }
 
     private void OnClickShop()
     {
         AudioManager.Instance.PlaySFX("Click2");
+
         shopPopUp.SetActive(true);
     }
 
     private void OnClickDesa()
     {
         AudioManager.Instance.PlaySFX("Click2");
+
         desaHTP.SetActive(true);
     }
 
     private void OnClickLaut()
     {
         AudioManager.Instance.PlaySFX("Click2");
+
         SceneHandler.Instance.LoadScene("LevelLaut");
     }
 
     private void OnClickHutan()
     {
         AudioManager.Instance.PlaySFX("Click2");
+
         SceneHandler.Instance.LoadScene("LevelHutan");
     }
 }

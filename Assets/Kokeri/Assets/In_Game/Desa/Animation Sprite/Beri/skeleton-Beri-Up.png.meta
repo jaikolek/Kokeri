@@ -1,0 +1,784 @@
+fileFormatVersion: 2
+guid: 88bc4af28ca7b3046a500a1b326bb186
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1608
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6a6ca9c8d8cba48ac55756c91a8f02
+      internalID: -598792112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_1
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1608
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ea15b855533ec409ec1f7ebf9d2344
+      internalID: -262595200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_2
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 1608
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45331ab3583eda147badb17a1e9fcf18
+      internalID: 1508779859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_3
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 1608
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1847c77bcddd3bc498d3d06f226e5ba8
+      internalID: -1722574938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_4
+      rect:
+        serializedVersion: 2
+        x: 2384
+        y: 1608
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541e26b32e35c174090eebc7fa809e3f
+      internalID: -1437031036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_5
+      rect:
+        serializedVersion: 2
+        x: 2980
+        y: 1608
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e963bd2dc1a92498d142b5cb3f56d8
+      internalID: 1049230672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_6
+      rect:
+        serializedVersion: 2
+        x: 3576
+        y: 1608
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8000d322cbfe341b53e10841c11510
+      internalID: -242944901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_7
+      rect:
+        serializedVersion: 2
+        x: 4172
+        y: 1608
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfe1edf5968224448eabf6d9eccc89a
+      internalID: -1743134701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_8
+      rect:
+        serializedVersion: 2
+        x: 4768
+        y: 1608
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c2052f0df22fc4e9f1330fbc9475ab
+      internalID: 512908634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_9
+      rect:
+        serializedVersion: 2
+        x: 5364
+        y: 1608
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f07b7fb08d3f341aa3fe60c47924a4
+      internalID: -938266037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 804
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd5060818eb1f741a05ec9f8497e461
+      internalID: -1791325240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_11
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 804
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85312e49c3a049148b01dd200aa36c82
+      internalID: -1516256004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_12
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 804
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbb9b016cbb5f844a2d6b7ed8c95c0e
+      internalID: -391709343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_13
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 804
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8c5b05445d6f54fbc114fdffd5cc34
+      internalID: 1986013860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_14
+      rect:
+        serializedVersion: 2
+        x: 2384
+        y: 804
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64d46c0bfd100247b05b8bdd3af2bb0
+      internalID: 1854590107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_15
+      rect:
+        serializedVersion: 2
+        x: 2980
+        y: 804
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2905d263fb880464a979d03b27b0186f
+      internalID: 968270525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_16
+      rect:
+        serializedVersion: 2
+        x: 3576
+        y: 804
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a19197701702764396405689bf1e752
+      internalID: -794941549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_17
+      rect:
+        serializedVersion: 2
+        x: 4172
+        y: 804
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03be507ccafd4cf4ea598cdb3c5e70df
+      internalID: 53019225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_18
+      rect:
+        serializedVersion: 2
+        x: 4768
+        y: 804
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32e2a9a0c2bf1b46bbd75715acf833d
+      internalID: 893138601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_19
+      rect:
+        serializedVersion: 2
+        x: 5364
+        y: 804
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a35c10cfcb776b40906f3ba080cc86c
+      internalID: 259788047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02381a73ba0cc674fbb6894818a199e2
+      internalID: -65122191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_21
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 0
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c7b0cacdf46534887ceb35594c451b
+      internalID: 1691042822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_22
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 0
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6730d3f3bb36147b89ec820b8e873a
+      internalID: 426796875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_23
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 0
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06493c05cdf4ff43a7afbb7759507a5
+      internalID: 71767091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_24
+      rect:
+        serializedVersion: 2
+        x: 2384
+        y: 0
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f2abd345640eb40b7aa96bb1441dac
+      internalID: -875893745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_25
+      rect:
+        serializedVersion: 2
+        x: 2980
+        y: 0
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f566baf7d85a174583aa43f2c91c8e0
+      internalID: -940874281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_26
+      rect:
+        serializedVersion: 2
+        x: 3576
+        y: 0
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1711d2699f0a3bb428b3cafbf80c7ce3
+      internalID: 1108510321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_27
+      rect:
+        serializedVersion: 2
+        x: 4172
+        y: 0
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f446c494e35dbd045a7ae1d0e3176d4d
+      internalID: -629974094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-Beri-Up_28
+      rect:
+        serializedVersion: 2
+        x: 4768
+        y: 0
+        width: 596
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9aefec77f1b48f4db28cf63ec4b3974
+      internalID: -1176592926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      skeleton-Beri-Up_12: -391709343
+      skeleton-Beri-Up_21: 1691042822
+      skeleton-Beri-Up_3: -1722574938
+      skeleton-Beri-Up_26: 1108510321
+      skeleton-Beri-Up_20: -65122191
+      skeleton-Beri-Up_14: 1854590107
+      skeleton-Beri-Up_17: 53019225
+      skeleton-Beri-Up_0: -598792112
+      skeleton-Beri-Up_8: 512908634
+      skeleton-Beri-Up_28: -1176592926
+      skeleton-Beri-Up_13: 1986013860
+      skeleton-Beri-Up_11: -1516256004
+      skeleton-Beri-Up_1: -262595200
+      skeleton-Beri-Up_23: 71767091
+      skeleton-Beri-Up_25: -940874281
+      skeleton-Beri-Up_16: -794941549
+      skeleton-Beri-Up_24: -875893745
+      skeleton-Beri-Up_7: -1743134701
+      skeleton-Beri-Up_10: -1791325240
+      skeleton-Beri-Up_6: -242944901
+      skeleton-Beri-Up_4: -1437031036
+      skeleton-Beri-Up_2: 1508779859
+      skeleton-Beri-Up_15: 968270525
+      skeleton-Beri-Up_27: -629974094
+      skeleton-Beri-Up_19: 259788047
+      skeleton-Beri-Up_5: 1049230672
+      skeleton-Beri-Up_9: -938266037
+      skeleton-Beri-Up_22: 426796875
+      skeleton-Beri-Up_18: 893138601
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

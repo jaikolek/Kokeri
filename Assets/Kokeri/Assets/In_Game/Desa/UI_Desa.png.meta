@@ -69,9 +69,9 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
+    textureCompression: 3
+    compressionQuality: 100
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -128,28 +128,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_Desa_0
-      rect:
-        serializedVersion: 2
-        x: 1349
-        y: 1664
-        width: 248
-        height: 244
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab4ab76c9e8b1454fa5e40bd99c070ad
-      internalID: -1590917719
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Desa_1
+      name: UI_Desa_24
       rect:
         serializedVersion: 2
         x: 1706
@@ -170,54 +149,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_2
+      name: UI_Desa_1
       rect:
         serializedVersion: 2
-        x: 1840
-        y: 1886
-        width: 109
-        height: 92
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 324707a2d2f4f8743bc50906d268839e
-      internalID: 1308581680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Desa_3
-      rect:
-        serializedVersion: 2
-        x: 1975
-        y: 1886
-        width: 108
-        height: 92
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c54964ef2aa715c4c89b97dc8ef9040f
-      internalID: -1335856614
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Desa_5
-      rect:
-        serializedVersion: 2
-        x: 2445
+        x: 2454
         y: 1781
-        width: 721
+        width: 712
         height: 134
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -233,7 +170,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_6
+      name: UI_Desa_23
       rect:
         serializedVersion: 2
         x: 1135
@@ -254,158 +191,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_7
-      rect:
-        serializedVersion: 2
-        x: 1717
-        y: 1769
-        width: 95
-        height: 94
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b8723d21c214e34d8290c90d18a29d4
-      internalID: -1689073925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Desa_8
-      rect:
-        serializedVersion: 2
-        x: 1847
-        y: 1768
-        width: 95
-        height: 94
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 358b9641a5bd97f46851be182b41357c
-      internalID: -1908823311
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Desa_9
-      rect:
-        serializedVersion: 2
-        x: 1983
-        y: 1768
-        width: 94
-        height: 94
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40ce19e4c95822f4caa72312a6afb7f3
-      internalID: -1255054658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Desa_10
-      rect:
-        serializedVersion: 2
-        x: 1716
-        y: 1630
-        width: 94
-        height: 123
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e41366dd26abfc48a559c8cff4462bc
-      internalID: -2062819401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Desa_11
-      rect:
-        serializedVersion: 2
-        x: 1850
-        y: 1630
-        width: 94
-        height: 123
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ceee053eeff4d974c8cf60e2d7e4407b
-      internalID: 121037283
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Desa_12
-      rect:
-        serializedVersion: 2
-        x: 1984
-        y: 1630
-        width: 95
-        height: 123
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21acdfdacda505e4f8d163fb30446d60
-      internalID: 1146103550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: UI_Desa_14
       rect:
         serializedVersion: 2
-        x: 2448
-        y: 1558
-        width: 726
-        height: 143
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8af42595f4db8774aba0b56a00913d8d
-      internalID: 1779725869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Desa_15
-      rect:
-        serializedVersion: 2
         x: 1344
-        y: 1397
+        y: 1400
         width: 171
         height: 169
       alignment: 0
@@ -422,7 +212,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_16
+      name: UI_Desa_15
       rect:
         serializedVersion: 2
         x: 1551
@@ -443,7 +233,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_17
+      name: UI_Desa_16
       rect:
         serializedVersion: 2
         x: 1760
@@ -464,7 +254,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_18
+      name: UI_Desa_17
       rect:
         serializedVersion: 2
         x: 1964
@@ -485,7 +275,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_19
+      name: UI_Desa_3
       rect:
         serializedVersion: 2
         x: 2397
@@ -506,28 +296,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_20
-      rect:
-        serializedVersion: 2
-        x: 479
-        y: 647
-        width: 772
-        height: 592
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97fefc5799364b045ac3a4155c57ba5f
-      internalID: 1991196112
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Desa_22
+      name: UI_Desa_18
       rect:
         serializedVersion: 2
         x: 1375
@@ -548,7 +317,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_23
+      name: UI_Desa_19
       rect:
         serializedVersion: 2
         x: 1560
@@ -569,7 +338,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_24
+      name: UI_Desa_20
       rect:
         serializedVersion: 2
         x: 1748
@@ -590,10 +359,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_25
+      name: UI_Desa_21
       rect:
         serializedVersion: 2
-        x: 1935
+        x: 1936
         y: 1179
         width: 171
         height: 170
@@ -611,7 +380,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_26
+      name: UI_Desa_4
       rect:
         serializedVersion: 2
         x: 2373
@@ -632,7 +401,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_27
+      name: UI_Desa_9
       rect:
         serializedVersion: 2
         x: 1364
@@ -653,7 +422,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_28
+      name: UI_Desa_10
       rect:
         serializedVersion: 2
         x: 1743
@@ -674,7 +443,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_29
+      name: UI_Desa_5
       rect:
         serializedVersion: 2
         x: 2250
@@ -695,13 +464,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_31
+      name: UI_Desa_11
       rect:
         serializedVersion: 2
-        x: 2308
-        y: 588
-        width: 139
-        height: 204
+        x: 1372
+        y: 281
+        width: 323
+        height: 321
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -716,13 +485,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_32
+      name: UI_Desa_12
       rect:
         serializedVersion: 2
-        x: 2516
-        y: 588
-        width: 156
-        height: 204
+        x: 1743
+        y: 289
+        width: 324
+        height: 321
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -737,12 +506,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_33
+      name: UI_Desa_8
       rect:
         serializedVersion: 2
-        x: 2743
+        x: 2308
         y: 588
-        width: 119
+        width: 139
         height: 204
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -758,13 +527,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_34
+      name: UI_Desa_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 260
-        width: 1250
-        height: 332
+        x: 2516
+        y: 588
+        width: 156
+        height: 204
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -779,13 +548,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_35
+      name: UI_Desa_6
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 281
-        width: 323
-        height: 321
+        x: 2743
+        y: 588
+        width: 119
+        height: 204
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -800,12 +569,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_36
+      name: UI_Desa_22
       rect:
         serializedVersion: 2
-        x: 2249
+        x: 2251
         y: 0
-        width: 670
+        width: 668
         height: 225
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -821,13 +590,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_37
+      name: UI_Desa_2
       rect:
         serializedVersion: 2
-        x: 1743
-        y: 289
-        width: 324
-        height: 321
+        x: 2453
+        y: 1558
+        width: 721
+        height: 143
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -835,20 +604,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be642d891bffd8248a396fbb124d466c
-      internalID: 1438951223
+      spriteID: 92fbb224cda99f2448d59c69d0a7ae1a
+      internalID: -317474758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Desa_38
+      name: UI_Desa_13
       rect:
         serializedVersion: 2
-        x: 2248
-        y: 351
-        width: 643
-        height: 152
+        x: 0
+        y: 260
+        width: 1250
+        height: 332
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -856,8 +625,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e16b248fc3ffd8b479003caa8aac7065
-      internalID: 920503433
+      spriteID: d136744e61673c445af9355bc0b67c37
+      internalID: 1123320736
       vertices: []
       indices: 
       edges: []
@@ -873,45 +642,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UI_Desa_30: 1123320736
-      UI_Desa_31: -1100432319
-      UI_Desa_8: -1908823311
-      UI_Desa_10: -2062819401
-      UI_Desa_12: 1146103550
-      UI_Desa_17: 601084234
-      UI_Desa_20: 1991196112
-      UI_Desa_18: -1269489310
-      UI_Desa_13: -317474758
-      UI_Desa_32: 1223223020
-      UI_Desa_23: 91377028
-      UI_Desa_2: 1308581680
-      UI_Desa_19: 1888124740
-      UI_Desa_0: -1590917719
-      UI_Desa_6: -1696956927
-      UI_Desa_4: 1958754380
-      UI_Desa_22: -1250567483
-      UI_Desa_28: 749888689
-      UI_Desa_1: -1635645251
-      UI_Desa_38: 920503433
-      UI_Desa_3: -1335856614
-      UI_Desa_37: 1438951223
-      UI_Desa_16: -203356968
-      UI_Desa_25: -2033698995
-      UI_Desa_26: 1079976829
-      UI_Desa_9: -1255054658
-      UI_Desa_15: -601694560
-      UI_Desa_27: -749299310
-      UI_Desa_34: 158255012
-      UI_Desa_24: -981888753
-      UI_Desa_14: 1779725869
-      UI_Desa_33: 1778330947
-      UI_Desa_35: 1469962981
-      UI_Desa_29: 15570269
-      UI_Desa_21: -547298773
-      UI_Desa_36: -246453382
-      UI_Desa_7: -1689073925
-      UI_Desa_11: 121037283
-      UI_Desa_5: 131113769
+      UI_Desa_8: 1778330947
+      UI_Desa_10: 749888689
+      UI_Desa_12: 1223223020
+      UI_Desa_17: -1269489310
+      UI_Desa_20: -981888753
+      UI_Desa_18: -1250567483
+      UI_Desa_13: 1123320736
+      UI_Desa_23: -1696956927
+      UI_Desa_2: -317474758
+      UI_Desa_19: 91377028
+      UI_Desa_6: 1469962981
+      UI_Desa_4: 1079976829
+      UI_Desa_22: -246453382
+      UI_Desa_1: 131113769
+      UI_Desa_3: -2033698995
+      UI_Desa_16: 601084234
+      UI_Desa_9: -749299310
+      UI_Desa_15: -203356968
+      UI_Desa_24: -1635645251
+      UI_Desa_14: -601694560
+      UI_Desa_21: -2033698995
+      UI_Desa_11: -1100432319
+      UI_Desa_7: 158255012
+      UI_Desa_5: 15570269
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
