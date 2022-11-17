@@ -19,8 +19,8 @@ TagManager:
   - Water
   - UI
   - ScreenSpace
-  - 
-  - 
+  - Buoyance
+  - Player
   - 
   - 
   - 
@@ -54,9 +54,9 @@ TagManager:
   - name: UI
     uniqueID: 3200666917
     locked: 0
-  - name: Shader
-    uniqueID: 1609094883
-    locked: 0
   - name: Character
     uniqueID: 2393472365
+    locked: 0
+  - name: Shader
+    uniqueID: 1609094883
     locked: 0

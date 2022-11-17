@@ -341,7 +341,7 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 408.0000305175781,
+            "x": 405.6000061035156,
             "y": -559.2000122070313
         },
         "m_Blocks": [
@@ -1208,7 +1208,7 @@
     "m_ShaderOutputName": "OutMinMax",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 0.019999999552965165,
+        "x": 0.0,
         "y": 0.019999999552965165
     },
     "m_DefaultValue": {
