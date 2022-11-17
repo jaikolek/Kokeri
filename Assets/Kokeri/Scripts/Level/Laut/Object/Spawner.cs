@@ -15,11 +15,14 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     private GameObject gelembung;
 
+    public float waktuSpawnSampah;
+
     public bool isSpawning = true;
 
     // Start is called before the first frame update
     void Start()
     {
+
         if (isSpawning)
         {
             StartCoroutine(SpawnIkan());
@@ -33,7 +36,7 @@ public class Spawner : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         int randomPrefab = Random.Range(0, prefabObjek.Length);
         int randomPos = Random.Range(0, prefabPos.Length);
-        if(randomPrefab == 1 || randomPrefab == 2)
+        if(randomPrefab == 0 || randomPrefab == 1)
         {
             randomPos = Random.Range(1, 2);
         }
@@ -44,8 +47,7 @@ public class Spawner : MonoBehaviour
 
     IEnumerator SpawnSampah()
     {
-        float waitTime = Random.Range(7, 9);
-        yield return new WaitForSeconds(waitTime);
+        yield return new WaitForSeconds(waktuSpawnSampah);
         int randomPrefab = Random.Range(0, sampah.Length);
         int randomPos = Random.Range(0, prefabPos.Length);
         Instantiate(sampah[randomPrefab], prefabPos[randomPos].transform.position, Quaternion.identity);

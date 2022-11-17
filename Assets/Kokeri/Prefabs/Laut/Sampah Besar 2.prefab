@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -5204572639130940815}
   m_Layer: 0
   m_Name: Sampah Besar 2
-  m_TagString: Untagged
+  m_TagString: Sampah
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   berat: 2
-  kecepatan: 1
+  kecepatan: 2
   skor: 0
   isKanan: 0
   isTarik: 0

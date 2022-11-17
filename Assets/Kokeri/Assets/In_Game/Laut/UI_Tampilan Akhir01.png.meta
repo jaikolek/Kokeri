@@ -119,10 +119,10 @@ TextureImporter:
       name: UI_Tampilan Akhir01_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 270
-        width: 2428
-        height: 1494
+        x: 40
+        y: 263
+        width: 2371
+        height: 1485
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,9 +141,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1040
-        y: 69
-        width: 196
-        height: 195
+        y: 0
+        width: 249
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,55 +158,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Tampilan Akhir01_2
-      rect:
-        serializedVersion: 2
-        x: 1423
-        y: 69
-        width: 199
-        height: 195
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c73660c50509ad4282bcd000fa7718d
-      internalID: 1350258490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Tampilan Akhir01_3
-      rect:
-        serializedVersion: 2
-        x: 1802
-        y: 69
-        width: 195
-        height: 195
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef92e2861577fbe4296d69260bb4cd46
-      internalID: -687328331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: UI_Tampilan Akhir01_4
       rect:
         serializedVersion: 2
-        x: 1013
+        x: 1470
         y: 0
-        width: 93
-        height: 43
+        width: 124
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,9 +182,9 @@ TextureImporter:
       name: UI_Tampilan Akhir01_5
       rect:
         serializedVersion: 2
-        x: 1107
+        x: 1745
         y: 0
-        width: 32
+        width: 246
         height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -245,10 +203,10 @@ TextureImporter:
       name: UI_Tampilan Akhir01_6
       rect:
         serializedVersion: 2
-        x: 1153
-        y: 0
-        width: 95
-        height: 43
+        x: 1435
+        y: 69
+        width: 192
+        height: 189
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,29 +214,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3ec658d3d6d1194a86c3d8306c7a5ce
+      spriteID: d8f80db3cbae3234599b31e1461545d4
       internalID: 1192600322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Tampilan Akhir01_7
-      rect:
-        serializedVersion: 2
-        x: 1249
-        y: 0
-        width: 15
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 877c26fd49991944783c0d1003c41f98
-      internalID: 795091567
       vertices: []
       indices: 
       edges: []
@@ -287,10 +224,10 @@ TextureImporter:
       name: UI_Tampilan Akhir01_8
       rect:
         serializedVersion: 2
-        x: 1458
-        y: 0
-        width: 27
-        height: 43
+        x: 1066
+        y: 68
+        width: 192
+        height: 189
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,20 +235,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c964b57de475cf4697b757e0bca631c
+      spriteID: 6009349f9e88de346aff44c83c76bcd9
       internalID: -1080056434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_Tampilan Akhir01_9
+      name: UI_Tampilan Akhir01_7
       rect:
         serializedVersion: 2
-        x: 1486
-        y: 0
-        width: 68
-        height: 43
+        x: 1771
+        y: 69
+        width: 192
+        height: 189
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -319,92 +256,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0459298b5d02b664989ccf1fd0c8ca57
-      internalID: -629610059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Tampilan Akhir01_10
-      rect:
-        serializedVersion: 2
-        x: 1543
-        y: 0
-        width: 40
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d66c1f0a7e773db49bff11831eb04d66
-      internalID: -1542222206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Tampilan Akhir01_11
-      rect:
-        serializedVersion: 2
-        x: 1773
-        y: 0
-        width: 92
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1968e1fe1d9f7d64aa73b81c25b5f265
-      internalID: -1721839892
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Tampilan Akhir01_12
-      rect:
-        serializedVersion: 2
-        x: 1867
-        y: 0
-        width: 97
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8b3f0546c465a245b3a5e0c1f3f1273
-      internalID: 1629202442
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Tampilan Akhir01_13
-      rect:
-        serializedVersion: 2
-        x: 1965
-        y: 0
-        width: 62
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35349f39a0504aa4f911e33ae9ba27cd
-      internalID: -1600901552
+      spriteID: a27e9f820566e7b41bb47fdc94102149
+      internalID: 795091567
       vertices: []
       indices: 
       edges: []
@@ -422,15 +275,10 @@ TextureImporter:
     nameFileIdTable:
       UI_Tampilan Akhir01_7: 795091567
       UI_Tampilan Akhir01_0: 921796683
-      UI_Tampilan Akhir01_13: -1600901552
-      UI_Tampilan Akhir01_11: -1721839892
-      UI_Tampilan Akhir01_10: -1542222206
       UI_Tampilan Akhir01_2: 1350258490
       UI_Tampilan Akhir01_5: -1348770564
-      UI_Tampilan Akhir01_9: -629610059
       UI_Tampilan Akhir01_3: -687328331
       UI_Tampilan Akhir01_1: 1279567312
-      UI_Tampilan Akhir01_12: 1629202442
       UI_Tampilan Akhir01_4: -1559561696
       UI_Tampilan Akhir01_6: 1192600322
       UI_Tampilan Akhir01_8: -1080056434

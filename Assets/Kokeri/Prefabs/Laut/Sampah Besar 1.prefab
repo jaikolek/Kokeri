@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4751837425426408732}
   m_Layer: 0
   m_Name: Sampah Besar 1
-  m_TagString: Untagged
+  m_TagString: Sampah
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   berat: 2
-  kecepatan: 1
+  kecepatan: 2
   skor: 0
   isKanan: 0
   isTarik: 0
@@ -117,7 +117,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.059896946}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -128,5 +128,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.841486, y: 3.88}
+  m_Size: {x: 2.841486, y: 3.7602062}
   m_EdgeRadius: 0

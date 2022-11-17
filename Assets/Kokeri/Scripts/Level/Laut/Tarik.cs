@@ -37,6 +37,7 @@ public class Tarik : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         Rotate();
         MoveRope();
 
@@ -44,14 +45,13 @@ public class Tarik : MonoBehaviour
         {
             move_speed = 1f;
         }
-
     }
 
     void Rotate() // untuk rotasi alat pancing
     {
         if (!canRotate)
             return;
-
+        
         if (rotateRight)
         {
             rotateAngle += rotateSpeed * Time.deltaTime;
@@ -106,7 +106,6 @@ public class Tarik : MonoBehaviour
                 canRotate = true;
                 move_speed = initialMoveSpeed;
             }
-
         }
     }
 }

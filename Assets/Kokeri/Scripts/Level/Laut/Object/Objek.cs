@@ -18,8 +18,9 @@ public class Objek : MonoBehaviour
     public float berat, kecepatan;
     public int skor;
     public bool isKanan, isTarik, isSampah;
+    // private bool playSFXForOnce = true;
 
-    public virtual void Start()
+    private void Start()
     {
         tarik = FindObjectOfType<Tarik>();
         textUi = FindObjectOfType<TextUI>();
@@ -49,7 +50,7 @@ public class Objek : MonoBehaviour
 
     private void Update()
     {
-
+        UbahSpeed();
         if(textUi.convertScore >= 10)
         {
             textUi.koin += 2;
@@ -57,10 +58,24 @@ public class Objek : MonoBehaviour
         }
 
         if (!tarik.moveDown)
+        {
             cirColl.enabled = false;
+            /*if (playSFXForOnce && !tarik.canRotate)
+            {
+                AudioManager.Instance.PlaySFX("Tarik");
+                playSFXForOnce = false;
+            }*/
+        }
 
         if (tarik.canRotate)
+        {
             cirColl.enabled = true;
+          /*  if (!playSFXForOnce)
+            {
+                playSFXForOnce = true;
+                AudioManager.Instance.StopSFX();
+            }*/
+        }
 
         if (isTarik)
         {
@@ -69,6 +84,7 @@ public class Objek : MonoBehaviour
             
             if (tarik.canRotate)
             {
+            AudioManager.Instance.StopSFX();
                 Object.Destroy(gameObject);
                 isTarik = false;
 
@@ -79,6 +95,7 @@ public class Objek : MonoBehaviour
 
                 if (isSampah)
                 {
+                    AudioManager.Instance.PlaySFX("Feedback Sampah");
                     textUi.nyawaPlayer -= 1;
                     if (textUi.minNyawa < 0)
                     {
@@ -86,6 +103,11 @@ public class Objek : MonoBehaviour
                     }
                     if (textUi.nyawaPlayer >= 0)
                         textUi.iconNyawa[textUi.nyawaPlayer].enabled = false;
+                }
+                else
+                {
+                    AudioManager.Instance.PlaySFX("Feedback Ikan");
+                    textUi.ikanCounter += 1;
                 }
 
             }
@@ -116,6 +138,11 @@ public class Objek : MonoBehaviour
 
     }
 
+    public virtual void UbahSpeed()
+    {
+
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Penghapus")
@@ -125,9 +152,10 @@ public class Objek : MonoBehaviour
 
         if (collision.gameObject.tag == "Kail")
         {
-           tarik.move_speed -= berat;
+           AudioManager.Instance.PlaySFX("Tarik");
            isTarik = true;
            cirColl.enabled = false;
+           tarik.move_speed -= berat;
         }
         
 

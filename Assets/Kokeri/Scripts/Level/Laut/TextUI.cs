@@ -6,20 +6,33 @@ public class TextUI : MonoBehaviour
 {    
     public TextMeshProUGUI score;
     public TextMeshProUGUI nyawa;
-    public TextMeshProUGUI score2;
     public TextMeshProUGUI koinUI;
+    public TextMeshProUGUI ikanUI;
+    public TextMeshProUGUI ikanUIGameOver;
+
+    public TextMeshProUGUI nama;
+    public TextMeshProUGUI scoreBoard;
+
+    public string namaPenampung;
+
+    public bool gameOverPanelisActive;
 
     public Image[] iconNyawa;
     public GameObject gameOverPanel;
 
     public int TotalSkor, convertScore, koin, nyawaPlayer = 3, minNyawa;
+    public int ikanCounter;
 
     // Start is called before the first frame update
     void Start()
     {
+        gameOverPanelisActive = true;
         koin = 0;
         TotalSkor = 0;
         nyawaPlayer = 3;
+        ikanCounter = 0;
+        convertScore = 0;
+
         for(int i = 0; i < iconNyawa.Length; i++)
         {
             iconNyawa[i].enabled = true;
@@ -30,17 +43,26 @@ public class TextUI : MonoBehaviour
     void Update()
     {
         minNyawa = nyawaPlayer;
-        score.text = "Skor : " + TotalSkor.ToString();
+        ikanUI.text = ikanCounter.ToString();
         nyawa.text = "X" + nyawaPlayer.ToString();
 
+        // untuk game over
+        score.text = TotalSkor.ToString();
+        koinUI.text = koin.ToString();
+        ikanUIGameOver.text = ikanCounter.ToString();
+
+        // Leader Board
+        nama.text = "1. " + namaPenampung + " " + TotalSkor.ToString();
+        
 
         if(nyawaPlayer <= 0)
         {
             Time.timeScale = 0;
-            gameOverPanel.SetActive(true);
-            score2.text = TotalSkor.ToString();
-            koinUI.text = koin.ToString();
+            if(gameOverPanelisActive)
+                gameOverPanel.SetActive(true);
         }
-
+        
     }
+
+
 }
