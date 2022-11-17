@@ -116,6 +116,7 @@
     <Compile Include="Assets\Kokeri\Scripts\MainMenu\RankingPopUp.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaMoveInventory.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanObstacle.cs" />
+    <Compile Include="Assets\Shader\Script\InfiniteMove.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaUIManager.cs" />
     <Compile Include="Assets\Kokeri\Scripts\SaveLoad\SaveLoad.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanEventManager.cs" />
@@ -127,7 +128,6 @@
     <Compile Include="Assets\Kokeri\Scripts\Shop\ShopPopUp.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Gelembung.cs" />
     <Compile Include="Assets\Scripts.Old\Delay.cs" />
-    <Compile Include="Assets\Shader\Script\InfiniteMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
