@@ -43,14 +43,14 @@ public class PausePopUp : BasePopUp
 
     public void OnClickMap()
     {
-        AudioManager.Instance.PlaySFX("Click1");
+        AudioManager.Instance.PlaySFX1("Click1");
 
         SceneHandler.Instance.LoadScene("MainLevel");
     }
 
     public void OnClickMenu()
     {
-        AudioManager.Instance.PlaySFX("Click1");
+        AudioManager.Instance.PlaySFX1("Click1");
 
         SceneHandler.Instance.LoadScene("MainMenu");
     }

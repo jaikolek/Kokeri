@@ -50,21 +50,21 @@ public class ScoreBoardPopUp : MonoBehaviour
 
     public void OnClickRestart()
     {
-        AudioManager.Instance.PlaySFX("Click2");
+        AudioManager.Instance.PlaySFX1("Click2");
 
         SceneHandler.Instance.ReloadScene();
     }
 
     public void OnClickMap()
     {
-        AudioManager.Instance.PlaySFX("Click2");
+        AudioManager.Instance.PlaySFX1("Click2");
 
         SceneHandler.Instance.LoadScene("MainLevel");
     }
 
     public void OnClickMenu()
     {
-        AudioManager.Instance.PlaySFX("Click2");
+        AudioManager.Instance.PlaySFX1("Click2");
 
         SceneHandler.Instance.LoadScene("MainMenu");
     }

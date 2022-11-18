@@ -34,25 +34,25 @@ public class MainMenu : MonoBehaviour
 
     private void OnClickPlay()
     {
-        AudioManager.Instance.PlaySFX("Click1");
+        AudioManager.Instance.PlaySFX1("Click1");
         SceneHandler.Instance.LoadScene("MainLevel");
     }
 
     private void OnClickSetting()
     {
-        AudioManager.Instance.PlaySFX("Click2");
+        AudioManager.Instance.PlaySFX1("Click2");
         settingPopUp.SetActive(true);
     }
 
     private void OnClickShop()
     {
-        AudioManager.Instance.PlaySFX("Click2");
+        AudioManager.Instance.PlaySFX1("Click2");
         shopPopUp.SetActive(true);
     }
 
     private void OnClickRanking()
     {
-        AudioManager.Instance.PlaySFX("Click2");
+        AudioManager.Instance.PlaySFX1("Click2");
         rankingPopUp.SetActive(true);
     }
 }

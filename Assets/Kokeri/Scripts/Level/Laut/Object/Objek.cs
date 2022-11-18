@@ -73,7 +73,7 @@ public class Objek : MonoBehaviour
             if (tarik.canRotate)
             {
                 Object.Destroy(gameObject);
-                
+
 
                 tarik.move_speed = tarik.initialMoveSpeed;
                 textUi.TotalSkor += skor;

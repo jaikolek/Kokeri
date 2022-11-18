@@ -31,7 +31,7 @@ public class HutanGameOverPopUp : MonoBehaviour
 
     public void OnSubmit()
     {
-        AudioManager.Instance.PlaySFX("Click2");
+        AudioManager.Instance.PlaySFX1("Click2");
 
         if (nameInputField.text == "")
         {

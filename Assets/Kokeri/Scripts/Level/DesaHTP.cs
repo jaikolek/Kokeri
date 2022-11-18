@@ -54,13 +54,13 @@ public class DesaHTP : MonoBehaviour
 
     private void OnClickBack()
     {
-        AudioManager.Instance.PlaySFX("Click2");
+        AudioManager.Instance.PlaySFX1("Click2");
         gameObject.SetActive(false);
     }
 
     private void OnClickPlay()
     {
-        AudioManager.Instance.PlaySFX("Click2");
+        AudioManager.Instance.PlaySFX1("Click2");
         SceneHandler.Instance.LoadScene("LevelDesa");
     }
 }

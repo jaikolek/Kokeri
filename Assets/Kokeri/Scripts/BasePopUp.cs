@@ -15,6 +15,6 @@ public class BasePopUp : MonoBehaviour
     public virtual void OnClickClose()
     {
         gameObject.SetActive(false);
-        AudioManager.Instance.PlaySFX("Click2");
+        AudioManager.Instance.PlaySFX1("Click2");
     }
 }

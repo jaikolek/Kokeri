@@ -50,19 +50,21 @@ public class Tarik : MonoBehaviour
     {
         if (!canRotate)
             return;
-        
+
         if (rotateRight)
         {
             rotateAngle += rotateSpeed * Time.deltaTime;
-        }else{
+        }
+        else
+        {
             rotateAngle -= rotateSpeed * Time.deltaTime;
         }
 
         transform.rotation = Quaternion.AngleAxis(rotateAngle, Vector3.forward);
 
-        if (rotateAngle >= rotationMaxZ) 
+        if (rotateAngle >= rotationMaxZ)
             rotateRight = false;
-        else if (rotateAngle <= rotationMinZ) 
+        else if (rotateAngle <= rotationMinZ)
             rotateRight = true;
 
         AudioManager.Instance.StopSFX1();
@@ -71,14 +73,14 @@ public class Tarik : MonoBehaviour
 
     public void PlayerInput() // ketika player tap
     {
-            if (canRotate)
-            {
-                canRotate = false;
-                moveDown = true;
+        if (canRotate)
+        {
+            canRotate = false;
+            moveDown = true;
 
-                AudioManager.Instance.PlaySFX1("Tarik");
-            }
-        
+            AudioManager.Instance.PlaySFX1("Tarik");
+        }
+
     }
 
     void MoveRope() // untuk menggerakkan kail ke bawah
