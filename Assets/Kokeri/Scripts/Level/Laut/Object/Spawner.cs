@@ -52,6 +52,7 @@ public class Spawner : MonoBehaviour
         int randomPos = Random.Range(0, prefabPos.Length);
         Instantiate(sampah[randomPrefab], prefabPos[randomPos].transform.position, Quaternion.identity);
         StartCoroutine(SpawnSampah());
+        
     }
 
     IEnumerator SpawnGelembung()
