@@ -9,11 +9,14 @@ TagManager:
   - Bug
   - Ikan
   - IkanKebalik
+  - Sampah
+  - Kail
+  - Penghapus
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
@@ -51,6 +54,15 @@ TagManager:
     locked: 0
   - name: Character
     uniqueID: 2393472365
+    locked: 0
+  - name: Ikan Sampah
+    uniqueID: 3245530559
+    locked: 0
+  - name: Aksesoris
+    uniqueID: 2336232383
+    locked: 0
+  - name: Shader
+    uniqueID: 1324613445
     locked: 0
   - name: UI
     uniqueID: 3200666917

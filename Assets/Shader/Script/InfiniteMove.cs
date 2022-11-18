@@ -5,15 +5,20 @@ using UnityEngine.Audio;
 
 public class InfiniteMove : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	[SerializeField] private float rangeMove = 1f;
+	[SerializeField] private float moveSpeed = 0.5f;
+	private bool moveRight = true;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	void Update()
+	{
+		if (transform.position.x > rangeMove)
+			moveRight = false;
+		if (transform.position.x < -rangeMove)
+			moveRight = true;
+
+		if (moveRight)
+			transform.position = new Vector2(transform.position.x + moveSpeed * Time.deltaTime, transform.position.y);
+		else
+			transform.position = new Vector2(transform.position.x - moveSpeed * Time.deltaTime, transform.position.y);
+	}
 }
