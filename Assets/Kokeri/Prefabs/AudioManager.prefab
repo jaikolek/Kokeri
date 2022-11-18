@@ -52,8 +52,8 @@ MonoBehaviour:
   - name: Desa
     clip: {fileID: 8300000, guid: 047998c48b7882a4983aa85aa39f6021, type: 3}
     loop: 1
-  - name: Hutan
-    clip: {fileID: 8300000, guid: 9d345f0724c061f42aedd98471b5ced2, type: 3}
+  - name: Laut
+    clip: {fileID: 8300000, guid: f6ffe3fe141b8ef42a901476644d8340, type: 3}
     loop: 1
   mainSFX:
   - name: Click1
@@ -61,6 +61,15 @@ MonoBehaviour:
     loop: 0
   - name: Click2
     clip: {fileID: 8300000, guid: 7c7e1a9cb9ea6934bb70b4c1d0b0c11b, type: 3}
+    loop: 0
+  - name: Tarik
+    clip: {fileID: 8300000, guid: f1968e6882d76fe418e6c48c242a97ac, type: 3}
+    loop: 0
+  - name: Feedback Sampah
+    clip: {fileID: 8300000, guid: 08dee5996d1830c4b8de2e28a58774d3, type: 3}
+    loop: 0
+  - name: Feedback Ikan
+    clip: {fileID: 8300000, guid: e1fa1ba93fbdeba459ee62cad0fe3d0c, type: 3}
     loop: 0
   desaSFX:
   - name: Correct

@@ -325,7 +325,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43833588}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.401548, y: -7.964136, z: 0}
+  m_LocalPosition: {x: -9.77, y: -7.964136, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -373,15 +373,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 1767857722, guid: 6fd47164003898c49a3641a1b7e2af7f, type: 3}
+  m_Sprite: {fileID: 80945985, guid: 6fd47164003898c49a3641a1b7e2af7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.5600002, y: 3.6800814}
+  m_Size: {x: 1.4399999, y: 1.900042}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &76628508
@@ -1582,129 +1582,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
         type: 3}
-      propertyPath: BGM.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: SFX.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: mainSFX.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
       propertyPath: BGM.Array.data[2].clip
       value: 
-      objectReference: {fileID: 8300000, guid: f6ffe3fe141b8ef42a901476644d8340, type: 3}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: BGM.Array.data[2].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: BGM.Array.data[2].name
-      value: Laut
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: BGM.Array.data[3].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: f6ffe3fe141b8ef42a901476644d8340, type: 3}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: BGM.Array.data[3].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: BGM.Array.data[3].name
-      value: Laut
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: SFX.Array.data[2].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: f1968e6882d76fe418e6c48c242a97ac, type: 3}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: SFX.Array.data[2].name
-      value: Tarik
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: SFX.Array.data[3].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: e1fa1ba93fbdeba459ee62cad0fe3d0c, type: 3}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: SFX.Array.data[3].name
-      value: Feedback Ikan
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: SFX.Array.data[4].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 08dee5996d1830c4b8de2e28a58774d3, type: 3}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: SFX.Array.data[4].name
-      value: Feedback Sampah
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: mainSFX.Array.data[0].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 85551db082c6c7d418a991ab9f4ffb0e, type: 3}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: mainSFX.Array.data[0].name
-      value: Click1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: mainSFX.Array.data[1].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 7c7e1a9cb9ea6934bb70b4c1d0b0c11b, type: 3}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: mainSFX.Array.data[1].name
-      value: Click2
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 10de443e86d4ba543aac82745ae5957b, type: 3}
     - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
         type: 3}
       propertyPath: mainSFX.Array.data[2].clip
       value: 
-      objectReference: {fileID: 8300000, guid: f1968e6882d76fe418e6c48c242a97ac, type: 3}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: mainSFX.Array.data[2].name
-      value: Tarik
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: fd26272a41912504eb6e5247ebce7a12, type: 3}
     - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
         type: 3}
       propertyPath: mainSFX.Array.data[3].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 08dee5996d1830c4b8de2e28a58774d3, type: 3}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: mainSFX.Array.data[3].name
-      value: Feedback Sampah
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 7399654a1379ff7488ea47f8bb6f0591, type: 3}
     - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
         type: 3}
       propertyPath: mainSFX.Array.data[4].clip
       value: 
-      objectReference: {fileID: 8300000, guid: e1fa1ba93fbdeba459ee62cad0fe3d0c, type: 3}
-    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
-        type: 3}
-      propertyPath: mainSFX.Array.data[4].name
-      value: Feedback Ikan
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: c4d465c5227b22a41abe592f9524053b, type: 3}
     - target: {fileID: 8408258825284843203, guid: 0cef6262b1c9a3c44881c5751a5141d3,
         type: 3}
       propertyPath: m_RootOrder
@@ -1958,7 +1853,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448029497}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.523209, y: -7.9289746, z: 0}
+  m_LocalPosition: {x: -25.891663, y: -7.9289746, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2006,7 +1901,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 1767857722, guid: 6fd47164003898c49a3641a1b7e2af7f, type: 3}
+  m_Sprite: {fileID: 80945985, guid: 6fd47164003898c49a3641a1b7e2af7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2014,7 +1909,7 @@ SpriteRenderer:
   m_Size: {x: 3.5600002, y: 3.6800814}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &450097283
@@ -2994,7 +2889,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631226415}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.312942, y: -8.403657, z: 0}
+  m_LocalPosition: {x: -17.681395, y: -8.403657, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3353,7 +3248,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 804901180, guid: 6fd47164003898c49a3641a1b7e2af7f, type: 3}
+  m_Sprite: {fileID: 1718349897, guid: 6fd47164003898c49a3641a1b7e2af7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3361,7 +3256,7 @@ SpriteRenderer:
   m_Size: {x: 4.82, y: 19.43043}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &702771124
@@ -4448,7 +4343,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1963999402, guid: 4ef32d1f53a50b949bb90b9cadc7cbde, type: 3}
+  m_Sprite: {fileID: -114741056, guid: 4ef32d1f53a50b949bb90b9cadc7cbde, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5246,7 +5141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105085242}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.3684533, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5294,15 +5189,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 1614773741, guid: 6fd47164003898c49a3641a1b7e2af7f, type: 3}
+  m_Sprite: {fileID: -429286238, guid: 6fd47164003898c49a3641a1b7e2af7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.4800005, y: 19.43043}
+  m_Size: {x: 6.001825, y: 5.9100003}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1142833558

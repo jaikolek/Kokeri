@@ -37,7 +37,7 @@ public class Tarik : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log(canRotate);
         Rotate();
         MoveRope();
 
@@ -73,6 +73,8 @@ public class Tarik : MonoBehaviour
             {
                 canRotate = false;
                 moveDown = true;
+
+                AudioManager.Instance.PlaySFX("Tarik");
             }
         
     }

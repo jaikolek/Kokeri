@@ -32,7 +32,7 @@ public class Spawner : MonoBehaviour
     }
     IEnumerator SpawnIkan()
     {
-        int waitTime = Random.Range(3, 4);
+        int waitTime = Random.Range(4, 5);
         yield return new WaitForSeconds(waitTime);
         int randomPrefab = Random.Range(0, prefabObjek.Length);
         int randomPos = Random.Range(0, prefabPos.Length);
