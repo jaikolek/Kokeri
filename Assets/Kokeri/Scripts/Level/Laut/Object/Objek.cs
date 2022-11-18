@@ -82,7 +82,7 @@ public class Objek : MonoBehaviour
 
                 if (isSampah)
                 {
-                    AudioManager.Instance.PlaySFX("Feedback Sampah");
+                    AudioManager.Instance.PlaySFX2("Feedback Sampah");
                     textUi.nyawaPlayer -= 1;
                     if (textUi.minNyawa < 0)
                     {
@@ -93,7 +93,7 @@ public class Objek : MonoBehaviour
                 }
                 else
                 {
-                    AudioManager.Instance.PlaySFX("Feedback Ikan");
+                    AudioManager.Instance.PlaySFX2("Feedback Ikan");
                     textUi.ikanCounter += 1;
                 }
                 isTarik = false;

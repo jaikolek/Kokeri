@@ -64,6 +64,9 @@ public class Tarik : MonoBehaviour
             rotateRight = false;
         else if (rotateAngle <= rotationMinZ) 
             rotateRight = true;
+
+        AudioManager.Instance.StopSFX1();
+
     }
 
     public void PlayerInput() // ketika player tap
@@ -73,7 +76,7 @@ public class Tarik : MonoBehaviour
                 canRotate = false;
                 moveDown = true;
 
-                AudioManager.Instance.PlaySFX("Tarik");
+                AudioManager.Instance.PlaySFX1("Tarik");
             }
         
     }
