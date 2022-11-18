@@ -72,7 +72,7 @@ public class HutanUIManager : MonoBehaviour
 
         pauseBtn.onClick.AddListener(() =>
         {
-            AudioManager.Instance.PlaySFX("Click2");
+            AudioManager.Instance.PlaySFX1("Click2");
             HutanEventManager.Instance.GamePaused();
         });
 

@@ -83,29 +83,29 @@ public class DesaUIManager : MonoBehaviour
 
         pauseBtn.onClick.AddListener(() =>
         {
-            AudioManager.Instance.PlaySFX("Click2");
+            AudioManager.Instance.PlaySFX1("Click2");
 
             DesaEventManager.Instance.GamePaused();
         });
 
         upBtn.onClick.AddListener(() =>
         {
-            AudioManager.Instance.PlaySFX("Click2");
+            AudioManager.Instance.PlaySFX1("Click2");
             DesaEventManager.Instance.Up();
         });
         downBtn.onClick.AddListener(() =>
         {
-            AudioManager.Instance.PlaySFX("Click2");
+            AudioManager.Instance.PlaySFX1("Click2");
             DesaEventManager.Instance.Down();
         });
         leftBtn.onClick.AddListener(() =>
         {
-            AudioManager.Instance.PlaySFX("Click2");
+            AudioManager.Instance.PlaySFX1("Click2");
             DesaEventManager.Instance.Left();
         });
         rightBtn.onClick.AddListener(() =>
         {
-            AudioManager.Instance.PlaySFX("Click2");
+            AudioManager.Instance.PlaySFX1("Click2");
             DesaEventManager.Instance.Right();
         });
 

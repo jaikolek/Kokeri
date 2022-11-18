@@ -33,35 +33,35 @@ public class MainLevel : MonoBehaviour
 
     private void OnClickBack()
     {
-        AudioManager.Instance.PlaySFX("Click2");
+        AudioManager.Instance.PlaySFX1("Click2");
 
         SceneHandler.Instance.LoadScene("MainMenu");
     }
 
     private void OnClickShop()
     {
-        AudioManager.Instance.PlaySFX("Click2");
+        AudioManager.Instance.PlaySFX1("Click2");
 
         shopPopUp.SetActive(true);
     }
 
     private void OnClickDesa()
     {
-        AudioManager.Instance.PlaySFX("Click2");
+        AudioManager.Instance.PlaySFX1("Click2");
 
         desaHTP.SetActive(true);
     }
 
     private void OnClickLaut()
     {
-        AudioManager.Instance.PlaySFX("Click2");
+        AudioManager.Instance.PlaySFX1("Click2");
 
         SceneHandler.Instance.LoadScene("LevelLaut");
     }
 
     private void OnClickHutan()
     {
-        AudioManager.Instance.PlaySFX("Click2");
+        AudioManager.Instance.PlaySFX1("Click2");
 
         SceneHandler.Instance.LoadScene("LevelHutan");
     }
