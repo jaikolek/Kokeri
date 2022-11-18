@@ -52,8 +52,11 @@ MonoBehaviour:
   - name: Desa
     clip: {fileID: 8300000, guid: 047998c48b7882a4983aa85aa39f6021, type: 3}
     loop: 1
+  - name: Hutan
+    clip: {fileID: 8300000, guid: 9d345f0724c061f42aedd98471b5ced2, type: 3}
+    loop: 1
   - name: Laut
-    clip: {fileID: 8300000, guid: f6ffe3fe141b8ef42a901476644d8340, type: 3}
+    clip: {fileID: 8300000, guid: 10de443e86d4ba543aac82745ae5957b, type: 3}
     loop: 1
   mainSFX:
   - name: Click1

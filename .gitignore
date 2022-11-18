@@ -366,6 +366,7 @@ FodyWeavers.xsd
 Library/*
 Logs/*
 Temp/*
+UserSettings/*
 
 .vsconfig
 *.sln
