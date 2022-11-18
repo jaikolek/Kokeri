@@ -124,6 +124,7 @@
     <Compile Include="Assets\Kokeri\Scripts\MainMenu\RankingPopUp.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaMoveInventory.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanObstacle.cs" />
+    <Compile Include="Assets\Shader\Script\InfiniteMove.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaUIManager.cs" />
     <Compile Include="Assets\Kokeri\Scripts\SaveLoad\SaveLoad.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanEventManager.cs" />
