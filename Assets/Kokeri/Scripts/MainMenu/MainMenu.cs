@@ -18,7 +18,7 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-        playBtn.onClick.AddListener(OnClickPlay);  
+        playBtn.onClick.AddListener(OnClickPlay);
         settingBtn.onClick.AddListener(OnClickSetting);
         shopBtn.onClick.AddListener(OnClickShop);
         rankingBtn.onClick.AddListener(OnClickRanking);
