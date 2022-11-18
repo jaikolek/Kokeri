@@ -43,11 +43,17 @@ public class AudioManager : MonoBehaviour
             AudioSourceBGM.playOnAwake = true;
             AudioSourceBGM.loop = true;
         }
-        if (AudioSourceSFX == null)
+        if (AudioSourceSFX1 == null)
         {
-            AudioSourceSFX = gameObject.AddComponent<AudioSource>();
-            AudioSourceSFX.playOnAwake = false;
-            AudioSourceSFX.loop = false;
+            AudioSourceSFX1 = gameObject.AddComponent<AudioSource>();
+            AudioSourceSFX1.playOnAwake = false;
+            AudioSourceSFX1.loop = false;
+        }
+        if (AudioSourceSFX2 == null)
+        {
+            AudioSourceSFX2 = gameObject.AddComponent<AudioSource>();
+            AudioSourceSFX2.playOnAwake = false;
+            AudioSourceSFX2.loop = false;
         }
     }
     #endregion singleton
@@ -59,7 +65,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private List<AudioData> hutanSFX;
 
     private AudioSource AudioSourceBGM;
-    private AudioSource AudioSourceSFX;
+    private AudioSource AudioSourceSFX1;
+    private AudioSource AudioSourceSFX2;
+
 
     private void Start()
     {
@@ -106,7 +114,8 @@ public class AudioManager : MonoBehaviour
 
     public void SetSFXVolume(float _volume)
     {
-        AudioSourceSFX.volume = _volume;
+        AudioSourceSFX1.volume = _volume;
+        AudioSourceSFX2.volume = _volume;
         PlayerPrefs.SetFloat("SFXVolume", _volume);
     }
 
@@ -131,13 +140,23 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlaySFX(string _name)
+    public void PlaySFX1(string _name)
     {
         AudioData audioData = mainSFX.Find(x => x.name == _name);
         if (audioData != null)
         {
-            AudioSourceSFX.clip = audioData.clip;
-            AudioSourceSFX.Play();
+            AudioSourceSFX1.clip = audioData.clip;
+            AudioSourceSFX1.Play();
+        }
+    }
+
+    public void PlaySFX2(string _name)
+    {
+        AudioData audioData = mainSFX.Find(x => x.name == _name);
+        if (audioData != null)
+        {
+            AudioSourceSFX2.clip = audioData.clip;
+            AudioSourceSFX2.Play();
         }
     }
 
@@ -146,8 +165,8 @@ public class AudioManager : MonoBehaviour
         AudioData audioData = desaSFX.Find(x => x.name == _name);
         if (audioData != null)
         {
-            AudioSourceSFX.clip = audioData.clip;
-            AudioSourceSFX.Play();
+            AudioSourceSFX1.clip = audioData.clip;
+            AudioSourceSFX1.Play();
         }
     }
 
@@ -156,8 +175,8 @@ public class AudioManager : MonoBehaviour
         AudioData audioData = hutanSFX.Find(x => x.name == _name);
         if (audioData != null)
         {
-            AudioSourceSFX.clip = audioData.clip;
-            AudioSourceSFX.Play();
+            AudioSourceSFX1.clip = audioData.clip;
+            AudioSourceSFX1.Play();
         }
     }
 
@@ -174,9 +193,14 @@ public class AudioManager : MonoBehaviour
         return AudioSourceBGM.isPlaying;
     }
 
-    public bool IsSFXPlaying()
+    public bool IsSFX1Playing()
     {
-        return AudioSourceSFX.isPlaying;
+        return AudioSourceSFX1.isPlaying;
+    }
+
+    public bool IsSFX2Playing()
+    {
+        return AudioSourceSFX2.isPlaying;
     }
 
     public void StopBGM()
@@ -184,9 +208,20 @@ public class AudioManager : MonoBehaviour
         AudioSourceBGM.Stop();
     }
 
-    public void StopSFX()
+    public void StopAllSFX()
     {
-        AudioSourceSFX.Stop();
+        AudioSourceSFX1.Stop();
+        AudioSourceSFX2.Stop();
+    }
+
+    public void StopSFX1()
+    {
+        AudioSourceSFX1.Stop();
+    }
+
+    public void StopSFX2()
+    {
+        AudioSourceSFX1.Stop();
     }
 
     [Serializable]
