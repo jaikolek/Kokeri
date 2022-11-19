@@ -1051,6 +1051,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4315589825393122919, guid: dde801861e67e0140af3797b64ef31d3,
         type: 3}
+      propertyPath: m_Looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4315589825393122919, guid: dde801861e67e0140af3797b64ef31d3,
+        type: 3}
       propertyPath: m_TargetCamera
       value: 
       objectReference: {fileID: 519420031}
@@ -1059,6 +1064,12 @@ PrefabInstance:
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 8400000, guid: be862671eeca8d148af4f3638c6cf151, type: 2}
+    - target: {fileID: 4715164626017286703, guid: dde801861e67e0140af3797b64ef31d3,
+        type: 3}
+      propertyPath: videoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: f682c15744cb06c46a2b9b4f8e2a777b,
+        type: 3}
     - target: {fileID: 7196876749157453793, guid: dde801861e67e0140af3797b64ef31d3,
         type: 3}
       propertyPath: m_Name
