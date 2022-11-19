@@ -296,7 +296,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21498589, guid: ddda27b1142b9294b994b3bef0bb1a39, type: 3}
+  m_Sprite: {fileID: -1162748260, guid: 96e8ef02959d83a4ab932abbf4c9eae4, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -848,7 +848,7 @@ GameObject:
   - component: {fileID: 2624689959047841897}
   - component: {fileID: 8169705909750998834}
   - component: {fileID: 744836318561171125}
-  - component: {fileID: 229913602743095767}
+  - component: {fileID: 7821360304182936115}
   m_Layer: 5
   m_Name: MoveIndicatorContainer
   m_TagString: Untagged
@@ -914,7 +914,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &229913602743095767
+--- !u!114 &7821360304182936115
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -923,7 +923,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4460412128333020679}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
@@ -932,14 +932,12 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: -40
-  m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 200, y: 200}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 0
+  m_ConstraintCount: 2
 --- !u!1 &4917348806597497414
 GameObject:
   m_ObjectHideFlags: 0

@@ -63,9 +63,11 @@ MonoBehaviour:
   wrongSprite: {fileID: 131113769, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
   gameOverPanel: {fileID: 0}
   countdownSprite:
-  - {fileID: 1778330947, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
-  - {fileID: 158255012, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
   - {fileID: 1469962981, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  - {fileID: 158255012, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  - {fileID: 1778330947, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
+  - {fileID: -149504441, guid: 96e8ef02959d83a4ab932abbf4c9eae4, type: 3}
+  - {fileID: 550221040, guid: 96e8ef02959d83a4ab932abbf4c9eae4, type: 3}
   moveIndicatorPrefab: {fileID: 231859731699702307, guid: fbf8a3eba3aeb5741be5c3a608a0b830,
     type: 3}
   moveIndicatorContainer: {fileID: 0}
@@ -74,9 +76,14 @@ MonoBehaviour:
   - {fileID: -2033698995, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
   - {fileID: 91377028, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
   - {fileID: -981888753, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
-  moveIndicatorActiveSpriteList:
+  moveIndicatorCorrectSpriteList:
   - {fileID: -601694560, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
   - {fileID: 601084234, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
   - {fileID: -203356968, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
   - {fileID: -1269489310, guid: 9a2af1d733b7645408dae5f96838bfca, type: 3}
-  timeUpCountdownText: {fileID: 0}
+  moveIndicatorWrongSpriteList:
+  - {fileID: -1346951493, guid: 96e8ef02959d83a4ab932abbf4c9eae4, type: 3}
+  - {fileID: 1263631200, guid: 96e8ef02959d83a4ab932abbf4c9eae4, type: 3}
+  - {fileID: 1354122993, guid: 96e8ef02959d83a4ab932abbf4c9eae4, type: 3}
+  - {fileID: 2004411288, guid: 96e8ef02959d83a4ab932abbf4c9eae4, type: 3}
+  timeUpCountdown: {fileID: 0}

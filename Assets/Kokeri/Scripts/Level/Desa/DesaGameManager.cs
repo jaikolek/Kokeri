@@ -95,25 +95,25 @@ public class DesaGameManager : MonoBehaviour
     private void DesaEventManager_OnUp()
     {
         moveAnswer.AddMove(new DesaMove(DMoveType.UP));
-        DesaUIManager.Instance.AddMoveIndicator(DMoveType.UP);
+        DesaUIManager.Instance.AddMoveAnswerIndicator(DMoveType.UP);
     }
 
     private void DesaEventManager_OnDown()
     {
         moveAnswer.AddMove(new DesaMove(DMoveType.DOWN));
-        DesaUIManager.Instance.AddMoveIndicator(DMoveType.DOWN);
+        DesaUIManager.Instance.AddMoveAnswerIndicator(DMoveType.DOWN);
     }
 
     private void DesaEventManager_OnLeft()
     {
         moveAnswer.AddMove(new DesaMove(DMoveType.LEFT));
-        DesaUIManager.Instance.AddMoveIndicator(DMoveType.LEFT);
+        DesaUIManager.Instance.AddMoveAnswerIndicator(DMoveType.LEFT);
     }
 
     private void DesaEventManager_OnRight()
     {
         moveAnswer.AddMove(new DesaMove(DMoveType.RIGHT));
-        DesaUIManager.Instance.AddMoveIndicator(DMoveType.RIGHT);
+        DesaUIManager.Instance.AddMoveAnswerIndicator(DMoveType.RIGHT);
     }
 
     private void DesaEventManager_OnPhaseStart()
@@ -133,57 +133,41 @@ public class DesaGameManager : MonoBehaviour
     {
         if (moveAnswer.GetMoveListCount() == moveCase.GetMoveListCount())
         {
-            if (moveAnswer.CompareMoveList(moveCase))
+            StopCoroutine(timerCoroutine);
+            if (showTimeUpCountdownCoroutine != null)
             {
-                DesaEventManager.Instance.Correct();
+                StopCoroutine(showTimeUpCountdownCoroutine);
+                DesaUIManager.Instance.HideTimeUpCountdown();
             }
-        }
 
-        for (int i = 0; i < moveAnswer.GetMoveListCount(); i++)
-        {
-            if (moveCase.GetMoveType(i) != moveAnswer.GetMoveType(i))
-            {
-                DesaEventManager.Instance.Wrong();
-                break;
-            }
+            DesaUIManager.Instance.DisableButton();
+            beriAnimator.SetBool("isIdle", true);
+
+            AudioManager.Instance.PlayDesaSFX("Correct");
+
+            StartCoroutine(PlayAnswer());
         }
     }
 
     private void DesaEventManager_OnCorrect()
     {
-        StopCoroutine(timerCoroutine);
-        if (showTimeUpCountdownCoroutine != null)
-        {
-            StopCoroutine(showTimeUpCountdownCoroutine);
-            DesaUIManager.Instance.HideTimeUpCountdown();
-        }
-
         AudioManager.Instance.PlayDesaSFX("Correct");
-
-        DesaUIManager.Instance.DisableButton();
 
         DesaUIManager.Instance.HideMoveIndicatorContainer();
 
-        beriAnimator.SetBool("isIdle", true);
+        score += designLevelList[currentLevel].score;
+        DesaUIManager.Instance.UpdateScore(score);
+
+        currentCase++;
 
         StartCoroutine(DesaUIManager.Instance.ShowState(DStateType.CORRECT, () =>
         {
-            StartCoroutine(PlayAnswer());
+            DesaEventManager.Instance.PhaseStart();
         }));
-
-        score += designLevelList[currentLevel].score;
-        DesaUIManager.Instance.UpdateScore(score);
     }
 
     private void DesaEventManager_OnWrong()
     {
-        StopCoroutine(timerCoroutine);
-        if (showTimeUpCountdownCoroutine != null)
-        {
-            StopCoroutine(showTimeUpCountdownCoroutine);
-            DesaUIManager.Instance.HideTimeUpCountdown();
-        }
-
         AudioManager.Instance.PlayDesaSFX("Wrong");
 
         DesaUIManager.Instance.DisableButton();
@@ -223,10 +207,13 @@ public class DesaGameManager : MonoBehaviour
         yield return new WaitForSeconds(animationTime);
 
         DesaUIManager.Instance.ShowMoveIndicatorContainer();
+        DesaUIManager.Instance.MakeMoveIndicator(moveCase);
+        DesaUIManager.Instance.DisableAllMoveIndicator();
 
         for (int i = 0; i < moveCase.GetMoveListCount(); i++)
         {
-            DesaUIManager.Instance.AddActiveMoveIndicator(moveCase.GetMoveType(i));
+            DesaUIManager.Instance.EnableMoveIndicator(i);
+            DesaUIManager.Instance.ChangeToCorrectMoveIndicator(i, moveCase.GetMoveType(i));
             PlayMoveAnimation(kettiAnimator, moveCase.GetMoveType(i));
             PlayMoveAnimation(chikoAnimator, moveCase.GetMoveType(i));
             yield return new WaitForSeconds(chikoAnimator.GetCurrentAnimatorStateInfo(0).length);
@@ -255,11 +242,30 @@ public class DesaGameManager : MonoBehaviour
 
     private IEnumerator PlayAnswer()
     {
-        DesaUIManager.Instance.ShowMoveIndicatorContainer();
+        bool isCorrect = true;
+
+        yield return new WaitForSeconds(animationTime);
+        DesaUIManager.Instance.RemoveAllMoveIndicator();
+
+        yield return new WaitForSeconds(animationTime);
+        DesaUIManager.Instance.MakeMoveIndicator(moveAnswer);
+
 
         for (int i = 0; i < moveAnswer.GetMoveListCount(); i++)
         {
-            DesaUIManager.Instance.ChangeToActiveMoveIndicator(i, moveAnswer.GetMoveType(i));
+            if (moveAnswer.GetMoveType(i) != moveCase.GetMoveType(i))
+            {
+                DesaUIManager.Instance.ChangeToWrongMoveIndicator(i, moveAnswer.GetMoveType(i));
+                isCorrect = false;
+                PlayMoveAnimation(beriAnimator, moveAnswer.GetMoveType(i));
+                yield return new WaitForSeconds(beriAnimator.GetCurrentAnimatorStateInfo(0).length);
+                StopMoveAnimation(beriAnimator, moveAnswer.GetMoveType(i));
+                yield return new WaitForSeconds(animationTime);
+                break;
+            }
+
+            DesaUIManager.Instance.ChangeToCorrectMoveIndicator(i, moveCase.GetMoveType(i));
+
             PlayMoveAnimation(beriAnimator, moveAnswer.GetMoveType(i));
             yield return new WaitForSeconds(beriAnimator.GetCurrentAnimatorStateInfo(0).length);
             StopMoveAnimation(beriAnimator, moveAnswer.GetMoveType(i));
@@ -274,14 +280,15 @@ public class DesaGameManager : MonoBehaviour
         DesaUIManager.Instance.RemoveAllMoveIndicator();
         DesaUIManager.Instance.HideMoveIndicatorContainer();
 
-        currentCase++;
-        DesaEventManager.Instance.PhaseStart();
-
+        if (isCorrect)
+            DesaEventManager.Instance.Correct();
+        else
+            DesaEventManager.Instance.Wrong();
     }
 
     private IEnumerator AnswerTimer()
     {
-        yield return new WaitForSeconds(designLevelList[currentLevel].answerTime - 3);
+        yield return new WaitForSeconds(designLevelList[currentLevel].answerTime - 5);
 
         showTimeUpCountdownCoroutine = DesaUIManager.Instance.ShowTimeUpCountdown(() =>
         {
