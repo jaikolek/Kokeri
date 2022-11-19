@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject[] gameobject;
     public Spawner spawner;
     public static float tempSpeed;
 
@@ -22,13 +21,17 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
-    public void GameOver()
+    
+    public void MainMenu()
     {
-        gameobject[0].SetActive(false);
-        gameobject[1].SetActive(true);
-
+        SceneManager.LoadScene(0);
     }
+    
+    public void Peta()
+    {
+        SceneManager.LoadScene(1);
+    }
+
 
     private void Update()
     {
