@@ -1381,6 +1381,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
+        type: 3}
+      propertyPath: BGM.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 10de443e86d4ba543aac82745ae5957b, type: 3}
+    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
+        type: 3}
+      propertyPath: mainSFX.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fd26272a41912504eb6e5247ebce7a12, type: 3}
+    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
+        type: 3}
+      propertyPath: mainSFX.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7399654a1379ff7488ea47f8bb6f0591, type: 3}
+    - target: {fileID: 8408258825284843202, guid: 0cef6262b1c9a3c44881c5751a5141d3,
+        type: 3}
+      propertyPath: mainSFX.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c4d465c5227b22a41abe592f9524053b, type: 3}
     - target: {fileID: 8408258825284843203, guid: 0cef6262b1c9a3c44881c5751a5141d3,
         type: 3}
       propertyPath: m_RootOrder

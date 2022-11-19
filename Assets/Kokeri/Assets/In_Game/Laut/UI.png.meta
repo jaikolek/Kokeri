@@ -119,8 +119,8 @@ TextureImporter:
       name: UI_1
       rect:
         serializedVersion: 2
-        x: 843
-        y: 303
+        x: 894
+        y: 320
         width: 91
         height: 120
       alignment: 0
@@ -140,10 +140,10 @@ TextureImporter:
       name: UI_2
       rect:
         serializedVersion: 2
-        x: 975
-        y: 304
+        x: 1025
+        y: 320
         width: 92
-        height: 90
+        height: 91
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,8 +161,8 @@ TextureImporter:
       name: UI_3
       rect:
         serializedVersion: 2
-        x: 1102
-        y: 303
+        x: 1153
+        y: 318
         width: 105
         height: 90
       alignment: 0
@@ -183,9 +183,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 208
+        y: 254
         width: 768
-        height: 215
+        height: 169
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,10 +203,10 @@ TextureImporter:
       name: UI_5
       rect:
         serializedVersion: 2
-        x: 807
+        x: 837
         y: 0
-        width: 254
-        height: 251
+        width: 238
+        height: 226
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,12 +224,12 @@ TextureImporter:
       name: UI_6
       rect:
         serializedVersion: 2
-        x: 1083
-        y: 59
+        x: 1132
+        y: 76
         width: 119
         height: 125
       alignment: 9
-      pivot: {x: 0.6589751, y: 0.8580802}
+      pivot: {x: 0.5257517, y: 0.53308046}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -246,9 +246,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 41
         width: 770
-        height: 216
+        height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

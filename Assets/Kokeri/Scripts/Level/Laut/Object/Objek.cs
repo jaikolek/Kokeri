@@ -10,6 +10,7 @@ public class Objek : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private GameObject player;
+    private GameObject pancing;
     private GameObject tali;
     private GameObject kail;
     private GameObject objectHolder;
@@ -26,7 +27,8 @@ public class Objek : MonoBehaviour
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
         player = GameObject.Find("Player");
-        tali = player.transform.GetChild(0).gameObject;
+        pancing = player.transform.GetChild(0).gameObject;
+        tali = pancing.transform.GetChild(0).gameObject;
         kail = tali.transform.GetChild(0).gameObject;
         objectHolder = kail.transform.GetChild(0).gameObject;
         cirColl = objectHolder.GetComponent<CircleCollider2D>();
@@ -82,7 +84,7 @@ public class Objek : MonoBehaviour
 
                 if (isSampah)
                 {
-                    AudioManager.Instance.PlaySFX2("Feedback Sampah");
+                    AudioManager.Instance.PlaySFX1("Feedback Sampah");
                     textUi.nyawaPlayer -= 1;
                     if (textUi.minNyawa < 0)
                     {
@@ -93,7 +95,7 @@ public class Objek : MonoBehaviour
                 }
                 else
                 {
-                    AudioManager.Instance.PlaySFX2("Feedback Ikan");
+                    AudioManager.Instance.PlaySFX1("Feedback Ikan");
                     textUi.ikanCounter += 1;
                 }
                 isTarik = false;
@@ -124,10 +126,6 @@ public class Objek : MonoBehaviour
     public virtual void UbahSpeed()
     {
 
-    }
-
-    public void SFX()
-    {
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

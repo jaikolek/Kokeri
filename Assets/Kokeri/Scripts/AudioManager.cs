@@ -221,7 +221,7 @@ public class AudioManager : MonoBehaviour
 
     public void StopSFX2()
     {
-        AudioSourceSFX1.Stop();
+        AudioSourceSFX2.Stop();
     }
 
     [Serializable]

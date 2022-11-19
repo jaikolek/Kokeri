@@ -136,6 +136,7 @@
     <Compile Include="Assets\Kokeri\Scripts\Shop\ShopPopUp.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Gelembung.cs" />
     <Compile Include="Assets\Scripts.Old\Delay.cs" />
+    <Compile Include="Assets\Kokeri\Scripts\Level\LautHTP.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
