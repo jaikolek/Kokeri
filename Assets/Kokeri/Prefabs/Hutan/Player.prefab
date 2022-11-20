@@ -220,8 +220,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chikoAnimatorController: {fileID: 9100000, guid: 50f1e17d365b302478550e1ed57daef2,
     type: 2}
-  kettiAnimatorController: {fileID: 0}
-  beriAnimatorController: {fileID: 0}
+  kettiAnimatorController: {fileID: 9100000, guid: 2c118995546c13d4e8974108da497aa2,
+    type: 2}
+  beriAnimatorController: {fileID: 9100000, guid: 1930a2227ad996b4f8ca361bb733030a,
+    type: 2}
 --- !u!114 &4170662748785101359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,7 +254,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4170662749650832969
 Transform:
   m_ObjectHideFlags: 0

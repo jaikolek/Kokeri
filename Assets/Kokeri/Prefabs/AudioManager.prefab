@@ -66,13 +66,13 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 7c7e1a9cb9ea6934bb70b4c1d0b0c11b, type: 3}
     loop: 0
   - name: Tarik
-    clip: {fileID: 8300000, guid: f1968e6882d76fe418e6c48c242a97ac, type: 3}
+    clip: {fileID: 8300000, guid: fd26272a41912504eb6e5247ebce7a12, type: 3}
     loop: 0
   - name: Feedback Sampah
-    clip: {fileID: 8300000, guid: 08dee5996d1830c4b8de2e28a58774d3, type: 3}
+    clip: {fileID: 8300000, guid: 7399654a1379ff7488ea47f8bb6f0591, type: 3}
     loop: 0
   - name: Feedback Ikan
-    clip: {fileID: 8300000, guid: e1fa1ba93fbdeba459ee62cad0fe3d0c, type: 3}
+    clip: {fileID: 8300000, guid: c4d465c5227b22a41abe592f9524053b, type: 3}
     loop: 0
   desaSFX:
   - name: Correct
@@ -87,4 +87,10 @@ MonoBehaviour:
     loop: 0
   - name: Catch
     clip: {fileID: 8300000, guid: de79aa9449430a1459064f4781cc684c, type: 3}
+    loop: 0
+  - name: Hit
+    clip: {fileID: 8300000, guid: af19eb7d4609b134a833f786b5c11429, type: 3}
+    loop: 0
+  - name: Gotcha
+    clip: {fileID: 8300000, guid: bc67f8ba83ab25e44ba53b8026db3481, type: 3}
     loop: 0

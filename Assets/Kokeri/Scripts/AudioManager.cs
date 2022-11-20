@@ -180,6 +180,16 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void PlayHutanSFX2(string _name)
+    {
+        AudioData audioData = hutanSFX.Find(x => x.name == _name);
+        if (audioData != null)
+        {
+            AudioSourceSFX2.clip = audioData.clip;
+            AudioSourceSFX2.Play();
+        }
+    }
+
     public string GetPlayingBGMName()
     {
         if (AudioSourceBGM.clip != null)

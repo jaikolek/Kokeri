@@ -117,6 +117,8 @@ public class HutanGameManager : MonoBehaviour
     public void IncrementBug()
     {
         // show catch state (refactor this later)
+        AudioManager.Instance.PlayHutanSFX2("Gotcha");
+
         StartCoroutine(HutanUIManager.Instance.ShowState("catch"));
 
         // increment bug and catchCounter

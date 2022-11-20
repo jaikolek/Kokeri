@@ -54,6 +54,7 @@ public class HutanUIManager : MonoBehaviour
     [SerializeField] private GameObject healthContainer;
     [SerializeField] private TextMeshProUGUI healthText;
     [SerializeField] private List<Sprite> healthImageList = new List<Sprite>();
+    [SerializeField] private GameObject gameOverPanel;
 
     [Header("State")]
     [SerializeField] private TextMeshProUGUI hitText;
@@ -63,7 +64,7 @@ public class HutanUIManager : MonoBehaviour
     {
         HutanEventManager.Instance.OnGameStarted += HutanEventManager_OnGameStarted;
         HutanEventManager.Instance.OnCharacterChanged += HutanEventManager_OnCharacterChanged;
-        HutanEventManager.Instance.OnCollectRange += HutanEventManager_OnCollectRange;
+        // HutanEventManager.Instance.OnCollectRange += HutanEventManager_OnCollectRange;
         HutanEventManager.Instance.OnGamePaused += HutanEventManager_OnGamePaused;
         HutanEventManager.Instance.OnGameResumed += HutanEventManager_OnGameResumed;
         HutanEventManager.Instance.OnGameOver += HutanEventManager_OnGameOver;
@@ -83,7 +84,6 @@ public class HutanUIManager : MonoBehaviour
 
         catchBtn.GetComponent<ButtonPointerDownListener>().onPointerDown.AddListener(() => HutanEventManager.Instance.Catch());
 
-        catchBtn.interactable = false;
 
         gameUI.SetActive(false);
         chooseCharacterPopUp.SetActive(true);
@@ -93,6 +93,7 @@ public class HutanUIManager : MonoBehaviour
     {
         upBtn.interactable = true;
         downBtn.interactable = true;
+        catchBtn.interactable = true;
 
         HutanEventManager.Instance.OnGameStarted -= HutanEventManager_OnGameStarted;
     }
@@ -104,6 +105,7 @@ public class HutanUIManager : MonoBehaviour
 
         upBtn.interactable = false;
         downBtn.interactable = false;
+        catchBtn.interactable = false;
 
         foreach (Transform child in healthContainer.transform)
         {
@@ -120,17 +122,17 @@ public class HutanUIManager : MonoBehaviour
         HutanEventManager.Instance.OnCharacterChanged -= HutanEventManager_OnCharacterChanged;
     }
 
-    private void HutanEventManager_OnCollectRange(bool _state)
-    {
-        if (_state)
-        {
-            catchBtn.interactable = true;
-        }
-        else
-        {
-            catchBtn.interactable = false;
-        }
-    }
+    // private void HutanEventManager_OnCollectRange(bool _state)
+    // {
+    //     if (_state)
+    //     {
+    //         catchBtn.interactable = true;
+    //     }
+    //     else
+    //     {
+    //         catchBtn.interactable = false;
+    //     }
+    // }
 
     private void HutanEventManager_OnGamePaused()
     {
@@ -144,8 +146,7 @@ public class HutanUIManager : MonoBehaviour
 
     private void HutanEventManager_OnGameOver(int _score, int _coin, int _bug)
     {
-        gameOverPopUp.SetActive(true);
-        gameOverPopUp.GetComponent<HutanGameOverPopUp>().ShowResult(_score, _coin, _bug);
+        StartCoroutine(ShowGameOver(_score, _coin, _bug));
 
         HutanEventManager.Instance.OnGamePaused -= HutanEventManager_OnGamePaused;
         HutanEventManager.Instance.OnGameResumed -= HutanEventManager_OnGameResumed;
@@ -200,5 +201,19 @@ public class HutanUIManager : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
             catchText.gameObject.SetActive(false);
         }
+    }
+
+    public IEnumerator ShowGameOver(int _score, int _coin, int _bug)
+    {
+        yield return new WaitForSecondsRealtime(0.5f);
+
+        gameOverPanel.SetActive(true);
+
+        yield return new WaitForSecondsRealtime(1);
+        Time.timeScale = 0;
+
+        gameOverPanel.SetActive(false);
+        gameOverPopUp.SetActive(true);
+        gameOverPopUp.GetComponent<HutanGameOverPopUp>().ShowResult(_score, _coin, _bug);
     }
 }
