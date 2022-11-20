@@ -714,5 +714,9 @@ MonoBehaviour:
   desaBtn: {fileID: 8558258067993425710}
   lautBtn: {fileID: 3263894328571218771}
   hutanBtn: {fileID: 8747390960362502489}
-  shopPopUp: {fileID: 0}
-  desaHTP: {fileID: 0}
+  shopPopUp: {fileID: 1013633789451944823, guid: b01eb47559f46e746b5e79774aeb5f18,
+    type: 3}
+  desaHTP: {fileID: 6743489663261236972, guid: 4ac313b4ac16f604d88f3e86372ae41e, type: 3}
+  lautHTP: {fileID: 7196876749157453793, guid: dde801861e67e0140af3797b64ef31d3, type: 3}
+  hutanHTP: {fileID: 4227649030249421848, guid: 952ab3cca448e69448e22af1ff4ff478,
+    type: 3}

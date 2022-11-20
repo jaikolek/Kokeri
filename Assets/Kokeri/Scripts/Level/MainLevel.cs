@@ -22,6 +22,9 @@ public class MainLevel : MonoBehaviour
     [Header("Level Laut")]
     [SerializeField] private GameObject lautHTP;
 
+    [Header("Level Hutan")]
+    [SerializeField] private GameObject hutanHTP;
+
     private void Start()
     {
         backBtn.onClick.AddListener(OnClickBack);
@@ -58,14 +61,14 @@ public class MainLevel : MonoBehaviour
     private void OnClickLaut()
     {
         AudioManager.Instance.PlaySFX1("Click2");
+        
         lautHTP.SetActive(true);
-        // SceneHandler.Instance.LoadScene("LevelLaut");
     }
 
     private void OnClickHutan()
     {
         AudioManager.Instance.PlaySFX1("Click2");
 
-        SceneHandler.Instance.LoadScene("LevelHutan");
+        hutanHTP.SetActive(true);
     }
 }
