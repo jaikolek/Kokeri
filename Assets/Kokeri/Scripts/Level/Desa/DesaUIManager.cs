@@ -66,7 +66,8 @@ public class DesaUIManager : MonoBehaviour
     [SerializeField] private GameObject moveIndicatorPrefab;
     [SerializeField] private GameObject moveIndicatorContainer;
     [SerializeField] private List<Sprite> moveIndicatorSpriteList;
-    [SerializeField] private List<Sprite> moveIndicatorActiveSpriteList;
+    [SerializeField] private List<Sprite> moveIndicatorCorrectSpriteList;
+    [SerializeField] private List<Sprite> moveIndicatorWrongSpriteList;
     private List<GameObject> moveIndicatorList = new List<GameObject>();
 
     [Header("TimeUp Countdown")]
@@ -145,7 +146,7 @@ public class DesaUIManager : MonoBehaviour
     private IEnumerator Countdown()
     {
         statePanelImage.gameObject.SetActive(true);
-        for (int i = 0; i < countdownSprite.Count; i++)
+        for (int i = 2; i >= 0; i--)
         {
             statePanelImage.sprite = countdownSprite[i];
             yield return new WaitForSeconds(1f);
@@ -237,34 +238,59 @@ public class DesaUIManager : MonoBehaviour
         rightBtn.interactable = false;
     }
 
-    public void AddActiveMoveIndicator(DMoveType _moveType)
+    public void MakeMoveIndicator(DesaMoveInventory _moveInventory)
+    {
+        for (int i = 0; i < _moveInventory.GetMoveListCount(); i++)
+        {
+            GameObject moveIndicator = Instantiate(moveIndicatorPrefab, moveIndicatorContainer.transform);
+            Image moveIndicatorImage = moveIndicator.GetComponent<Image>();
+            moveIndicatorImage.sprite = moveIndicatorSpriteList[(int)_moveInventory.GetMoveType(i) - 1];
+            moveIndicatorList.Add(moveIndicator);
+        }
+    }
+
+    public void DisableAllMoveIndicator()
+    {
+        for (int i = 0; i < moveIndicatorList.Count; i++)
+        {
+            moveIndicatorList[i].GetComponent<Image>().enabled = false;
+        }
+    }
+
+    public void EnableMoveIndicator(int _index)
+    {
+        moveIndicatorList[_index].GetComponent<Image>().enabled = true;
+    }
+
+    public void ChangeToCorrectMoveIndicator(int _index, DMoveType _moveType)
+    {
+        moveIndicatorList[_index].GetComponent<Image>().sprite = moveIndicatorCorrectSpriteList[(int)_moveType - 1];
+    }
+
+    public void ChangeToWrongMoveIndicator(int _index, DMoveType _moveType)
+    {
+        moveIndicatorList[_index].GetComponent<Image>().sprite = moveIndicatorWrongSpriteList[(int)_moveType - 1];
+    }
+
+    public void AddMoveAnswerIndicator(DMoveType _moveType)
     {
         GameObject moveIndicator = Instantiate(moveIndicatorPrefab, moveIndicatorContainer.transform);
-        moveIndicator.GetComponent<Image>().sprite = moveIndicatorActiveSpriteList[Convert.ToInt32(_moveType) - 1];
+        moveIndicator.GetComponent<Image>().sprite = moveIndicatorSpriteList[(int)_moveType - 1];
         moveIndicatorList.Add(moveIndicator);
-
-        if (moveIndicatorList.Count % 2 == 0)
-            moveIndicator.GetComponent<RectTransform>().pivot = new Vector2(0.5f, 0.8f);
-        else
-            moveIndicator.GetComponent<RectTransform>().pivot = new Vector2(0.5f, 0.2f);
     }
 
-    public void AddMoveIndicator(DMoveType _moveType)
-    {
-        GameObject moveIndicator = Instantiate(moveIndicatorPrefab, moveIndicatorContainer.transform);
-        moveIndicator.GetComponent<Image>().sprite = moveIndicatorSpriteList[Convert.ToInt32(_moveType) - 1];
-        moveIndicatorList.Add(moveIndicator);
+    // public void AddActiveMoveIndicator(DMoveType _moveType)
+    // {
+    //     GameObject moveIndicator = Instantiate(moveIndicatorPrefab, moveIndicatorContainer.transform);
+    //     moveIndicator.GetComponent<Image>().sprite = moveIndicatorCorrectSpriteList[Convert.ToInt32(_moveType) - 1];
+    //     moveIndicatorList.Add(moveIndicator);
+    // }
 
-        if (moveIndicatorList.Count % 2 == 0)
-            moveIndicator.GetComponent<RectTransform>().pivot = new Vector2(0.5f, 0.8f);
-        else
-            moveIndicator.GetComponent<RectTransform>().pivot = new Vector2(0.5f, 0.2f);
-    }
 
-    public void ChangeToActiveMoveIndicator(int _index, DMoveType _moveType)
-    {
-        moveIndicatorList[_index].GetComponent<Image>().sprite = moveIndicatorActiveSpriteList[Convert.ToInt32(_moveType) - 1];
-    }
+    // public void ChangeToActiveMoveIndicator(int _index, DMoveType _moveType)
+    // {
+    //     moveIndicatorList[_index].GetComponent<Image>().sprite = moveIndicatorCorrectSpriteList[Convert.ToInt32(_moveType) - 1];
+    // }
 
     public void RemoveAllMoveIndicator()
     {
@@ -278,7 +304,7 @@ public class DesaUIManager : MonoBehaviour
     public IEnumerator ShowTimeUpCountdown(Action _callback = null)
     {
         timeUpCountdown.gameObject.SetActive(true);
-        for (int i = 0; i < 3; i++)
+        for (int i = 4; i >= 0; i--)
         {
             timeUpCountdown.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = countdownSprite[i];
             timeUpCountdown.transform.GetChild(1).gameObject.GetComponent<Image>().sprite = countdownSprite[i];

@@ -46,8 +46,6 @@ public class HutanEventManager : MonoBehaviour
     }
     public void GameOver(int _score, int _coin, int _bug)
     {
-        Time.timeScale = 0;
-
         OnGameOver?.Invoke(_score, _coin, _bug);
     }
     public void Despawned()

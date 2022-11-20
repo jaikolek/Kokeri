@@ -57,5 +57,10 @@ MonoBehaviour:
   bugText: {fileID: 0}
   healthContainer: {fileID: 0}
   healthText: {fileID: 0}
+  healthImageList:
+  - {fileID: 761613296, guid: ddda27b1142b9294b994b3bef0bb1a39, type: 3}
+  - {fileID: -372756579, guid: ddda27b1142b9294b994b3bef0bb1a39, type: 3}
+  - {fileID: 1582782738, guid: ddda27b1142b9294b994b3bef0bb1a39, type: 3}
+  gameOverPanel: {fileID: 0}
   hitText: {fileID: 0}
   catchText: {fileID: 0}

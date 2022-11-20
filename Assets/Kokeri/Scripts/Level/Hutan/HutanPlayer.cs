@@ -41,10 +41,10 @@ public class HutanPlayer : MonoBehaviour
                 animator.runtimeAnimatorController = chikoAnimatorController;
                 break;
             case Character.KETTI:
-                // animator.runtimeAnimatorController = kettiAnimatorController;
+                animator.runtimeAnimatorController = kettiAnimatorController;
                 break;
             case Character.BERI:
-                // animator.runtimeAnimatorController = beriAnimatorController;
+                animator.runtimeAnimatorController = beriAnimatorController;
                 break;
             default:
                 break;
@@ -80,13 +80,12 @@ public class HutanPlayer : MonoBehaviour
         if (other.gameObject.CompareTag("Obstacle"))
         {
             // play hit audio
+            AudioManager.Instance.PlayHutanSFX("Hit");
 
             HutanGameManager.Instance.ReduceHealth();
-            if (HutanGameManager.Instance.IsGameReady)
-            {
-                StartCoroutine(AfterHitCooldown());
-                StartCoroutine(AfterHitSpriteBlink());
-            }
+
+            StartCoroutine(AfterHitCooldown());
+            StartCoroutine(AfterHitSpriteBlink());
         }
     }
 
