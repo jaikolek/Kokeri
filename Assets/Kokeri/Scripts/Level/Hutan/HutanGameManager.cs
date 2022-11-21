@@ -126,14 +126,14 @@ public class HutanGameManager : MonoBehaviour
         HutanUIManager.Instance.UpdateBug(bug);
         catchCounter++;
 
-        // check if bug counter is more than 3
-        if (catchCounter >= 3)
-        {
-            catchCounter = 0;
+        //// check if bug counter is more than 3
+        //if (catchCounter >= 3)
+        //{
+        //    catchCounter = 0;
 
-            // change to another character
-            ChangeCharacter();
-        }
+        //    // change to another character
+        //    ChangeCharacter();
+        //}
     }
 
     public void ReduceHealth()
