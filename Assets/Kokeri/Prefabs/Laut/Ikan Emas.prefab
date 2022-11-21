@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9012118502608138860}
   - component: {fileID: 3754366881369501355}
   - component: {fileID: 3754366881369501364}
+  - component: {fileID: 8052227361773425775}
   m_Layer: 0
   m_Name: Ikan Emas
   m_TagString: Ikan
@@ -113,11 +114,11 @@ BoxCollider2D:
   m_GameObject: {fileID: 3754366881369501354}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_Material: {fileID: 6200000, guid: 3554c5f6dede45144af87ca395daed3a, type: 2}
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000011920929, y: -0.03667152}
+  m_Offset: {x: -0.00000011920929, y: -0.29707536}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -128,5 +129,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7823265, y: 0.92665696}
+  m_Size: {x: 1.7823265, y: 0.40584928}
   m_EdgeRadius: 0
+--- !u!70 &8052227361773425775
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3754366881369501354}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 3554c5f6dede45144af87ca395daed3a, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00520649, y: -0.30206886}
+  m_Size: {x: 1.6804503, y: 0.5225356}
+  m_Direction: 1

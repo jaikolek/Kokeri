@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8527681526475397205}
   - component: {fileID: 1258641447762751609}
   - component: {fileID: 1772911644676280653}
+  - component: {fileID: 6300405157547615414}
   m_Layer: 0
   m_Name: Ikan Sedang 1
   m_TagString: Ikan
@@ -95,11 +96,11 @@ BoxCollider2D:
   m_GameObject: {fileID: 7694745390865204336}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_Material: {fileID: 6200000, guid: 3554c5f6dede45144af87ca395daed3a, type: 2}
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.83163404}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -110,7 +111,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8, y: 3.061693}
+  m_Size: {x: 8, y: 1.3984251}
   m_EdgeRadius: 0
 --- !u!114 &1772911644676280653
 MonoBehaviour:
@@ -130,3 +131,19 @@ MonoBehaviour:
   isKanan: 0
   isTarik: 0
   isSampah: 0
+--- !u!70 &6300405157547615414
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7694745390865204336}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 3554c5f6dede45144af87ca395daed3a, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000009500782, y: -0.7969834}
+  m_Size: {x: 8.01, y: 1.4677293}
+  m_Direction: 1

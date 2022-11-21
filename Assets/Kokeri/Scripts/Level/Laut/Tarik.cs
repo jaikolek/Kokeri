@@ -29,7 +29,7 @@ public class Tarik : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        initialY = transform.position.y;
+        initialY = transform.localPosition.y;
         initialMoveSpeed = move_speed;
         canRotate = true;
     }
@@ -60,7 +60,7 @@ public class Tarik : MonoBehaviour
             rotateAngle -= rotateSpeed * Time.deltaTime;
         }
 
-        transform.rotation = Quaternion.AngleAxis(rotateAngle, Vector3.forward);
+        transform.localRotation = Quaternion.AngleAxis(rotateAngle, Vector3.forward);
 
         if (rotateAngle >= rotationMaxZ)
             rotateRight = false;
@@ -91,7 +91,7 @@ public class Tarik : MonoBehaviour
         if (!canRotate)
         {
             // play sound
-            Vector3 temp = transform.position;
+            Vector3 temp = transform.localPosition;
 
             if (moveDown)
             {
@@ -102,7 +102,7 @@ public class Tarik : MonoBehaviour
                 temp += transform.up * Time.deltaTime * move_speed;
             }
 
-            transform.position = temp;
+            transform.localPosition = temp;
 
             if (temp.y <= maxY)
                 moveDown = false;
