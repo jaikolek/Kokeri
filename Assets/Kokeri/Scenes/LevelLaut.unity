@@ -6199,6 +6199,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inside Water Shader
       objectReference: {fileID: 0}
+    - target: {fileID: 4502411920587746463, guid: b4d5b010a417aa544a473780af2f6245,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4d5b010a417aa544a473780af2f6245, type: 3}
 --- !u!1 &1345956183
@@ -10448,7 +10453,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
+  m_Mass: 8
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -10468,6 +10473,7 @@ GameObject:
   - component: {fileID: 3798343308096948757}
   - component: {fileID: 3798343308096948759}
   - component: {fileID: 3798343308096948756}
+  - component: {fileID: 3798343308096948763}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -10475,6 +10481,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3798343308096948763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3798343308096948762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06cf293643c7fa6439e3850c05a6ee17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &3798343308220289865
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10748,7 +10766,7 @@ BuoyancyEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 392
-  m_SurfaceLevel: 7
+  m_SurfaceLevel: 9
   m_Density: 1.5
   m_LinearDrag: 5
   m_AngularDrag: 5

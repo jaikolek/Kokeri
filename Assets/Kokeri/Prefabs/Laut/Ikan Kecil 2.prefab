@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 157101995263904873}
   - component: {fileID: 157101995263904872}
   - component: {fileID: 36135937936711012}
-  - component: {fileID: 7961917306267869843}
   - component: {fileID: 890001664102354569}
   m_Layer: 0
   m_Name: Ikan Kecil 2
@@ -102,24 +101,6 @@ MonoBehaviour:
   berat: 2
   kecepatan: 2
   skor: 2
-  isKanan: 0
-  isTarik: 0
-  isSampah: 0
---- !u!114 &7961917306267869843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157101995263904875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddf792fa3970cfd498a241d54e1f10b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  berat: 0
-  kecepatan: 0
-  skor: 0
   isKanan: 0
   isTarik: 0
   isSampah: 0
