@@ -41,6 +41,8 @@ public class SceneHandler : MonoBehaviour
     #endregion singleton
 
     public bool isDesaPrologPlayed = false;
+    public bool isHutanPrologPlayed = false;
+    public bool isLautPrologPlayed = false;
 
     public event Action<string> OnSceneChanged;
     public void LoadScene(string _sceneName)

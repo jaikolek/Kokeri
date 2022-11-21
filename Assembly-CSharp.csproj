@@ -118,6 +118,7 @@
      <Compile Include="Assets\Kokeri\Scripts\Shop\ShopPopUp.cs" />
      <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Gelembung.cs" />
      <Compile Include="Assets\Scripts.Old\Delay.cs" />
+     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\LautProlog.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

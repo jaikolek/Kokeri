@@ -12,8 +12,12 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        LautProlog.OnVideoEnd += LautProlog_OnVideoEnd;
+    }
+
+    private void LautProlog_OnVideoEnd()
+    {
         AudioManager.Instance.PlayBGM("Laut");
-        Time.timeScale = 1;
         timer = Time.timeSinceLevelLoad;
     }
 
@@ -21,12 +25,12 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-    
+
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
     }
-    
+
     public void Peta()
     {
         SceneManager.LoadScene(1);
