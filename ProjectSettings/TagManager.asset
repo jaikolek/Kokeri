@@ -20,7 +20,7 @@ TagManager:
   - Water
   - UI
   - Obstacle
-  - 
+  - Light Rendered
   - 
   - 
   - 
@@ -49,11 +49,20 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Light Rendered
+    uniqueID: 2697782005
+    locked: 0
   - name: Background
     uniqueID: 154484429
     locked: 0
+  - name: Ground
+    uniqueID: 3184504077
+    locked: 0
   - name: Character
     uniqueID: 2393472365
+    locked: 0
+  - name: Obstacle
+    uniqueID: 4276173477
     locked: 0
   - name: Ikan Sampah
     uniqueID: 3245530559
