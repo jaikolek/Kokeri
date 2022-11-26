@@ -59,6 +59,7 @@
     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Test\Rotate.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaGameManager.cs" />
     <Compile Include="Assets\Scripts.Old\Events.cs" />
+    <Compile Include="Assets\Shader\Script\SpotLightController.cs" />
     <Compile Include="Assets\Kokeri\Scripts\TimerManager.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanPlayer.cs" />
     <Compile Include="Assets\Kokeri\Scripts\SaveLoad\MockData.cs" />
@@ -71,7 +72,7 @@
     <Compile Include="Assets\Scripts.Old\FindRatio.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaGameOverPopUp.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Object\IkanEmas.cs" />
-    <Compile Include="Assets\Shader\Script\ShipController.cs" />
+    <Compile Include="Assets\Kokeri\Scripts\Level\Laut\ShipController.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Shop\ShopProduct.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Object\Objek.cs" />
     <Compile Include="Assets\Scripts.Old\MoveAssets.cs" />
