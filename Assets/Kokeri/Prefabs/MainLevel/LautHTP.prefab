@@ -310,7 +310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7196876749157453798
 RectTransform:
   m_ObjectHideFlags: 0
@@ -345,7 +345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 4315589825393122919}
-  videoClip: {fileID: 32900000, guid: e7dfa90a1dcd5034d8dded37b23354dd, type: 3}
+  videoClip: {fileID: 32900000, guid: f682c15744cb06c46a2b9b4f8e2a777b, type: 3}
   backBtn: {fileID: 3391208846295285622}
   playBtn: {fileID: 7196876748007826886}
 --- !u!1 &7679673256816843632
@@ -434,7 +434,7 @@ VideoPlayer:
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8400000, guid: be862671eeca8d148af4f3638c6cf151, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 505227a56626e7747bf25974cd264503, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
@@ -453,7 +453,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 0
-  m_Looping: 1
+  m_Looping: 0
   m_WaitForFirstFrame: 0
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []

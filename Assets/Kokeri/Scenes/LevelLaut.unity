@@ -7309,6 +7309,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prolog
       objectReference: {fileID: 0}
+    - target: {fileID: 6241177090327691442, guid: c2410dbef7d95a841a6c1ed73b182e2f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6241177090327691445, guid: c2410dbef7d95a841a6c1ed73b182e2f,
         type: 3}
       propertyPath: m_Pivot.x

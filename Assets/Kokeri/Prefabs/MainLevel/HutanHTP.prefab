@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 7111147759060520350}
-  videoClip: {fileID: 32900000, guid: 6d31c4adfc61d4f448092f3253656299, type: 3}
+  videoClip: {fileID: 32900000, guid: 592c37b752324c94cabe4ee81d6da535, type: 3}
   backBtn: {fileID: 8521988464463408271}
   playBtn: {fileID: 4227649029250528831}
 --- !u!1 &9090193360365078063

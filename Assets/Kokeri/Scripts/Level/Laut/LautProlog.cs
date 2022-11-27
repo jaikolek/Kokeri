@@ -46,7 +46,7 @@ public class LautProlog : MonoBehaviour
         }
 
         // Debug.Log(SceneHandler.Instance.isDesaPrologPlayed);
-        if (SceneHandler.Instance.isLautPrologPlayed)
+        if (SceneHandler.Instance.isDesaPrologPlayed)
         {
             SkipVideo();
             return;
