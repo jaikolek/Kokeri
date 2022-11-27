@@ -239,7 +239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skipBtn: {fileID: 6241177091499830977}
   videoPlayer: {fileID: 6241177090205344749}
-  videoClip: {fileID: 32900000, guid: d51fc0e1150787f478c48de2a267a74b, type: 3}
+  videoClip: {fileID: 32900000, guid: fc920b4b1fd048f408b0e18aad3bf032, type: 3}
 --- !u!1 &6241177091499831039
 GameObject:
   m_ObjectHideFlags: 0

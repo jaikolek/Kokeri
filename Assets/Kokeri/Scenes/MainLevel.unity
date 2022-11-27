@@ -1091,6 +1091,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4315589825393122919, guid: dde801861e67e0140af3797b64ef31d3,
         type: 3}
+<<<<<<< Updated upstream
       propertyPath: m_Looping
       value: 1
       objectReference: {fileID: 0}
@@ -1121,10 +1122,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 32900000, guid: 8350bd07740fcba419f65b6d0e4d1dc2,
         type: 3}
+=======
+      propertyPath: m_TargetCamera
+      value: 
+      objectReference: {fileID: 519420031}
+>>>>>>> Stashed changes
     - target: {fileID: 7196876749157453793, guid: dde801861e67e0140af3797b64ef31d3,
         type: 3}
       propertyPath: m_Name
       value: LautHTP
+      objectReference: {fileID: 0}
+    - target: {fileID: 7196876749157453793, guid: dde801861e67e0140af3797b64ef31d3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7196876749157453798, guid: dde801861e67e0140af3797b64ef31d3,
         type: 3}
