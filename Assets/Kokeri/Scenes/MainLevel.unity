@@ -1245,11 +1245,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HutanHTP
       objectReference: {fileID: 0}
-    - target: {fileID: 4227649030249421848, guid: 952ab3cca448e69448e22af1ff4ff478,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4227649030249421855, guid: 952ab3cca448e69448e22af1ff4ff478,
         type: 3}
       propertyPath: m_Pivot.x
