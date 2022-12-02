@@ -121,14 +121,11 @@
     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanPlayerControl.cs" />
     <Compile Include="Assets\Kokeri\Scripts\BasePopUp.cs" />
     <Compile Include="Assets\Kokeri\Scripts\SaveLoad\SaveSystem.cs" />
-    <Compile Include="Assets\Kokeri\Scripts\Level\Laut\CameraAspectRatioScaler.cs" />
     <Compile Include="Assets\Kokeri\Scripts\SaveLoad\GameData.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanParallax.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaProlog.cs" />
-    <Compile Include="Assets\Kokeri\Scripts\Level\Laut\Player.cs" />
     <Compile Include="Assets\ButtonEvents\ButtonPointerEnterListener.cs" />
     <Compile Include="Assets\Scripts.Old\ContohPlayer.cs" />
-    <Compile Include="Assets\Kokeri\Scripts\Level\Laut\CameraAnchor.cs" />
     <Compile Include="Assets\Kokeri\Scripts\MainMenu\RankingPopUp.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Desa\DesaMoveInventory.cs" />
     <Compile Include="Assets\Kokeri\Scripts\Level\Hutan\HutanObstacle.cs" />
