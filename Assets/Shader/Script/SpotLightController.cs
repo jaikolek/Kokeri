@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
+using UnityEngine.Rendering;
 
 public class SpotLightController : MonoBehaviour
 {
-    [SerializeField] private Light2D light;
+    [SerializeField] private Light targetLigth;
     [SerializeField] private float maxIntensity;
     [SerializeField] private float minoffset;
     [SerializeField] private float startFrom;
@@ -15,21 +15,21 @@ public class SpotLightController : MonoBehaviour
 
     private void Start()
     {
-        light = this.gameObject.GetComponent<Light2D>();
-        light.intensity = startFrom;
+        targetLigth = this.gameObject.GetComponent<Light>();
+        targetLigth.intensity = startFrom;
     }
 
     private void Update()
     {
-        if (light.intensity > maxIntensity)
+        if (targetLigth.intensity > maxIntensity)
             highIntensity = false;
-        if (light.intensity < minoffset)
+        if (targetLigth.intensity < minoffset)
             highIntensity = true;
 
         if (highIntensity)
-            light.intensity += speed;
+            targetLigth.intensity += speed;
         if (!highIntensity)
-            light.intensity -= speed;
+            targetLigth.intensity -= speed;
 
 
     }
